@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	background: #FFF;
+}
+
+#container{
+	width: 100%;
+	height: auto;
+}
+
+#left-nav{
+	float: left;
+	width: 20%;
+	min-width: 200px;
+	min-height: 200px;
+}
+
+#wrapper{
+	width: 80%;
+	float: left;
+}
+#main{
+	margin: 0 auto;
+	height: auto;
+	min-height: 500px;
+}
+
+.fields{
+	margin-left: 20px;
+}

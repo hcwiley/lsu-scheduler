@@ -16,6 +16,22 @@
         <div id='container'>
             <div id='left-nav'>
                 {% block left_nav %}
+                <h3>courses</h3>
+                    {% for student in students %} <a href='{{ student.get_absolute_url }}'>
+                    <li>
+                        {{ student.fields.name }}
+                    </li>
+                    </a>
+                    <div class='fields'>
+                    {% for field, value in student.fields.items %}
+                    <div class='field'>
+                    <p>
+                        {{ field }}: {{ value }}
+                    </p>
+                    </div>
+                    {% endfor %}
+                    </div>
+                    {% endfor %}
                 {% endblock %}
             </div>
             <div id='wrapper'>
@@ -25,12 +41,16 @@
                     <li>
                         {{ course.fields.title }}
                     </li>
-                    <br>
+                    </a>
+                    <div class='fields'>
                     {% for field, value in course.fields.items %}
+                    <div class='field'>
                     <p>
                         {{ field }}: {{ value }}
                     </p>
-                    {% endfor %} </a>
+                    </div>
+                    {% endfor %}
+                    </div>
                     {% endfor %}
                     {% endblock %}
                 </div>
