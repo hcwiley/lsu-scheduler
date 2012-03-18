@@ -12,7 +12,7 @@ except:
 
 TEMPLATE_DEBUG = DEBUG
 
-MAX_IMAGE_SIZE = (1400, 1400)
+#MAX_IMAGE_SIZE = (1400, 1400)
 
 # root directories
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -88,13 +88,15 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.sessions',
     'django.contrib.admin',
-#    'django.contrib.admindocs',
+    'django.contrib.admindocs',
     # everything above needed for admin
     'django.contrib.localflavor',
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.webdesign',
     'south',
+    'apps.course',
+    'apps.student',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window
