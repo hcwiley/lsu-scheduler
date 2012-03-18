@@ -1,4 +1,4 @@
-from apps.course.models import *
+from main.apps.course.models import *
 
 #re.sub('.*\*\*.*\n', '', l)
 
