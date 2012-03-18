@@ -10,18 +10,21 @@ from datetime import datetime
 
 class Date(models.Model):
     WEEKDAYS = (('M', 'Monday'), ('T', 'Tuesday'), ('W', 'Wednesday'), ('TH', 'Thursday'), ('F', 'Friday'))
-    day = models.CharField(choices=WEEKDAYS, max_length=2, default='')
+    day = models.CharField(choices=WEEKDAYS, max_length=2, default='', unique=True)
     
     def __unicode__(self):
-        return self.day
+        return self.day    
 
 class Course(models.Model):
+    CLASS_TYPE = (('RES', 'Research'), ('LAB', 'Lab'), ('SEM', 'SEMINAR'), ('',''))
+    
     title = models.CharField(max_length=30)
     number = models.IntegerField()
     abbr = models.CharField(max_length=4, default='FOO')
     section_number = models.IntegerField()
     start_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
     end_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
+    credit_hours = models.IntegerField(default=3)
     time_tba = models.BooleanField()
     days = models.ManyToManyField(Date, default='')
     building = models.CharField(max_length=50, default='', blank=True, null=True)
@@ -30,6 +33,7 @@ class Course(models.Model):
     available_seats = models.IntegerField(default=42, blank=True, null=True)
     number_enrolled = models.IntegerField(default=0, blank=True, null=True)
     special_enrollment = models.CharField(max_length=100, default='', blank=True, null=True)
+    type = models.CharField(choices=CLASS_TYPE, max_length=3, default='', null=True, blank=True)
     
     def __unicode__(self):
         return self.title
@@ -37,5 +41,15 @@ class Course(models.Model):
     def save(self, *args, **kwargs):
         super(Course, self).save(*args, **kwargs)
         
+class Lab(models.Model):
+    days = models.ManyToManyField(Date, default='', blank=True, null=True)
+    building = models.CharField(max_length=50, default='', blank=True, null=True)
+    room = models.IntegerField(default=42, blank=True, null=True)
+    instructor = models.CharField(max_length=100, default='', blank=True, null=True)
+    start_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
+    end_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
+    course = models.ForeignKey(Course)
+    
 admin.site.register(Course)
+admin.site.register(Lab)
 admin.site.register(Date)
