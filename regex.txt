@@ -76,13 +76,12 @@ for bob in schedule:
 		course.end_time = end
 		if (begin!="TBA"):
 			course.time_tba = false
-		else:
-			course.time_tba = true
-		course.days = days
-		course.building = building
-	    course.instructor = instructor
-	    course.available_seats = avail
-	    course.number_enrolled = enroll
-	    course.special_enrollment = special
-	    
-	    lastCourse = course
+        else:
+            course.time_tba = true
+    	course.days = days
+    	course.building = building
+        course.instructor = instructor
+        course.available_seats = avail
+        course.number_enrolled = enroll
+        course.special_enrollment = special
+        lastCourse = course
