@@ -4,6 +4,7 @@ from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.core.context_processors import csrf
 from django.contrib.auth import logout
 from apps.course.models import *
+from apps.student.models import *
 from django.core import serializers
 
 def common_args(request):
@@ -42,5 +43,6 @@ def common_args(request):
 def home(request):
     args = common_args(request)
     args['courses'] = serializers.serialize( "python", Course.objects.all())
+    args['students'] = serializers.serialize( "python", Student.objects.all())
     args.update(csrf(request))
     return render_to_response('index.html', args)
