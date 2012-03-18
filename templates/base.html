@@ -1,0 +1,42 @@
+<!DOCTYPE HTML5>
+<html>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+        <meta name='description' content='lsu course scheduler' />
+        <meta name='keywords' content='lsu, course, scheduler, scheduling' />
+        <link id='main-css' type='text/css' rel='stylesheet' href='{{ STATIC_URL }}css/styles.css'/>
+        <!--         <link type='image/x-icon' rel="icon" href='{{ STATIC_URL }}images/fav.png' /> -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/main.js"></script>
+        <title>{% block header_title %}LSU Scheduler{% endblock %}</title>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        {% include "header.html" %}
+        <div id='container'>
+            <div id='left-nav'>
+                {% block left_nav %}
+                {% endblock %}
+            </div>
+            <div id='wrapper'>
+                <div id='main'>
+                    {% block center %} <h3>courses</h3>
+                    {% for course in courses %} <a href='{{ course.get_absolute_url }}'>
+                    <li>
+                        {{ course.fields.title }}
+                    </li>
+                    <br>
+                    {% for field, value in course.fields.items %}
+                    <p>
+                        {{ field }}: {{ value }}
+                    </p>
+                    {% endfor %} </a>
+                    {% endfor %}
+                    {% endblock %}
+                </div>
+            </div>
+            <div id='right-nav'></div>
+            {% include 'footer.html' %}
+        </div>
+    </body>
+</html>
