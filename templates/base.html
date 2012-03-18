@@ -16,7 +16,7 @@
         <div id='container'>
             <div id='left-nav'>
                 {% block left_nav %}
-                <h3>courses</h3>
+                <h3>students</h3>
                     {% for student in students %} <a href='{{ student.get_absolute_url }}'>
                     <li>
                         {{ student.fields.name }}

@@ -40,7 +40,12 @@ class Course(models.Model):
     
     def save(self, *args, **kwargs):
         super(Course, self).save(*args, **kwargs)
-        
+
+def update_course(modeladmin, request, queryset):
+    queryset.update(status='p')
+update_course.short_description = "Get courses from regex file parsing"
+class CourseAdmin(admin.ModelAdmin):
+   actions = [update_course]
 class Lab(models.Model):
     days = models.ManyToManyField(Date, default='', blank=True, null=True)
     building = models.CharField(max_length=50, default='', blank=True, null=True)
@@ -50,6 +55,6 @@ class Lab(models.Model):
     end_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
     course = models.ForeignKey(Course)
     
-admin.site.register(Course)
+admin.site.register(Course, CourseAdmin)
 admin.site.register(Lab)
 admin.site.register(Date)
