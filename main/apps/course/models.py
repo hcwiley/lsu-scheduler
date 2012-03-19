@@ -36,7 +36,7 @@ class Course(models.Model):
     type = models.CharField(choices=CLASS_TYPE, max_length=3, default='', null=True, blank=True)
     
     def __unicode__(self):
-        return self.title
+        return '%s %s: %s' % (self.abbr, self.section_number, self.title)
     
     def save(self, *args, **kwargs):
         super(Course, self).save(*args, **kwargs)
