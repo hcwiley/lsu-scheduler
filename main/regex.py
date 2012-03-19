@@ -58,7 +58,7 @@ def main():
 				course.time_tba = False
 			else:
 				course.time_tba = True
-			course.days = Date.objects.get(days=days)
+			course.days = Date.objects.get_or_create(day=days)[0]
 			course.building = building
 			course.instructor = instructor
 			course.available_seats = avail
