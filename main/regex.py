@@ -1,4 +1,8 @@
 from apps.course.models import *
+import urllib
+import urllib2
+#from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 
 #re.sub('.*\*\*.*\n', '', l)
 
@@ -6,7 +10,8 @@ from apps.course.models import *
 
 
 # need classes for Course, lab, multiple instructors?
-
+htmlCourses = pullFromHTML("Fall", 2012, "CSC")
+print htmlCourses
 lastCourse = None
 schedule = []
 def main():
@@ -69,7 +74,20 @@ def main():
 			print course
 			lastCourse = course
 
+def pullFromHTML(semester, year, department):
+	headers = {'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US;' +'rv:1.9.0.11) Gecko/2009060215 Firefox/3.0.11 (.NET CLR 3.5.30729)'}
+	host = 'http://appl003.lsu.edu'
 
+	req = urllib2.Request(host + '/booklet2.nsf/Selector2?OpenForm', '', headers)
+	res = urllib2.urlopen(req)
+
+	data = urllib.urlencode({'SemesterDesc': str(semester).capitalize() + " " + str(year), 'Department': str(dept).upper()})
+
+	req = urllib2.Request(host + BeautifulSoup(res.read()).form['action'], data, headers)
+	res = urllib2.urlopen(req)
+
+	courseslist = BeautifulSoup(res.read()).pre.string[:]
+	return courseslist
 
 #pString = 'Dept:%s Course#:%s Enrollment:%s Available:%s Type:%s Section:%s Title:%s Hours:%s Begin:%s End:%s N:%s Days:%s Room:%s Building:%s Special:%s Instructor:%s' % (dept, num, enroll, avail, type, section, title, hours, begin, end, n, days, room, building, special, instructor)
 
