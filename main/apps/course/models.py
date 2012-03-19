@@ -55,6 +55,3 @@ class Lab(models.Model):
     end_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
     course = models.ForeignKey(Course)
     
-admin.site.register(Course, CourseAdmin)
-admin.site.register(Lab)
-admin.site.register(Date)
