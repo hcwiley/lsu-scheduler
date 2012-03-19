@@ -6,7 +6,7 @@ import BeautifulSoup
 from datetime import time
 
 #re.sub('.*\*\*.*\n', '', l)
-'''
+
 def pullFromHTML(semester, year, dept):
 	headers = {'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US;' +'rv:1.9.0.11) Gecko/2009060215 Firefox/3.0.11 (.NET CLR 3.5.30729)'}
 	host = 'http://appl003.lsu.edu'
@@ -16,10 +16,11 @@ def pullFromHTML(semester, year, dept):
 
 	data = urllib.urlencode({'SemesterDesc': str(semester).capitalize() + " " + str(year), 'Department': str(dept).upper()})
 
-	req = urllib2.Request(host + BeautifulSoup(res.read()).form['action'], data, headers)
+	req = urllib2.Request(host + BeautifulSoup.BeautifulSoup(res.read()).form['action'], data, headers)
 	res = urllib2.urlopen(req)
 
-	courseslist = BeautifulSoup(res.read()).pre.string[:]
+	courseslist = BeautifulSoup.BeautifulSoup(res.read())
+	courseslist = courseslist.pre.string[:]
 	return courseslist
 
 #pString = 'Dept:%s Course#:%s Enrollment:%s Available:%s Type:%s Section:%s Title:%s Hours:%s Begin:%s End:%s N:%s Days:%s Room:%s Building:%s Special:%s Instructor:%s' % (dept, num, enroll, avail, type, section, title, hours, begin, end, n, days, room, building, special, instructor)
@@ -27,17 +28,19 @@ def pullFromHTML(semester, year, dept):
 
 
 # need classes for Course, lab, multiple instructors?
-htmlCourses = pullFromHTML("Fall", 2012, "CSC")
-print htmlCourses
-'''
-lastCourse = None
-schedule = []
+dept = "ART"
+htmlCourses = pullFromHTML("Fall", 2012, dept)
+foo = open('%s.txt' % dept,'a+') 
+foo.write(htmlCourses)
+
+schedule = open('%s.txt' % dept, 'r')
 def main():
+	lastCourse = None
 	c = -1
 	for bob in schedule:
 		c += 1
 		print bob
-		if c < 4:
+		if c < 4 or bob.replace(' ','') == '':
 			continue
 		if len(bob) > 5 and bob[6] == '*':
 			continue
@@ -49,42 +52,78 @@ def main():
 		section = bob[27:31].strip()
 		title = bob[32:54].rstrip()
 		hours = bob[55:61].strip()
-		begin = bob[60:64].strip()
-		begin = (int(begin[:len(begin)/2]) , int(begin[len(begin)/2:]))
-		print begin
-		end = bob[65:69].strip()
-		end = (int(end[:len(end)/2]) , int(end[len(end)/2:]))
-		print end
-		n = bob[69].strip()
-		days = bob[72:77].strip()
-		room = bob[79:83].strip()
-		building = bob[84:100].rstrip()
-		special = bob[100:114].rstrip()
-		instructor = bob[117:130].rstrip()
+		try:
+			begin = bob[60:64].strip()
+			if begin != 'TBA':
+				begin = (int(begin[:len(begin)/2]) , int(begin[len(begin)/2:]))
+#			print begin
+		except:
+			begin = ''
+		try:
+			end = bob[65:69].strip()
+#			print end
+			if end != '':
+				end = (int(end[:len(end)/2]) , int(end[len(end)/2:]))
+			print end
+		except:
+			end = None
+#			print 'no end time'
+		try:		
+			n = bob[69].strip()
+		except:
+			n = ''
+#			print 'no class number'
+		try:
+			days = bob[72:77].strip()
+		except:
+			days = ''
+#			print 'no days'
+		try:
+			room = bob[79:83].strip()
+		except:
+			room = ''
+#			print 'no room number'
+		try:
+			building = bob[84:100].rstrip()
+		except:
+			building = ''
+#			print 'no building'
+		try:
+			special = bob[100:114].rstrip()
+		except:
+			special = ''
+#			print 'no special stuff'
+		try:
+			instructor = bob[117:130].rstrip()
+		except:
+			instructor = ''
+#			print 'no instructor'
+		print "title: %s" % title
 		if courseType == 'LAB' and title == '':
 			lab = Lab.objects.create(course=lastCourse)
-			lab.start_time = begin
-			lab.end_time = end
+			lab.start_time = time(begin[0], begin[1]).strftime('%H:%M')
+			lab.end_time = time(end[0], end[1]).strftime('%H:%M')
 			if begin != "TBA":
 				lab.time_tba = False
 			else:
 				lab.time_tba = True
-			lab.days = days
+			lab.days.add(Date.objects.get_or_create(day=days)[0])
 			lab.building = building
 			lab.instructor = instructor
-		elif title:
-			print "title: %s" % title
-			course = Course.objects.create(title=title)
-#			course.title = title
-			course.number = num
-			course.abbr = dept
+			continue
+		elif type(num) == int:
+			course = Course.objects.create(abbr=dept,number=num)
+			course.title = title
+#			course.number = num
+#			course.abbr = dept
 			course.section_number = section 
-			course.start_time = time(begin[0], begin[1]).strftime('%H:%M')
-			course.end_time = time(end[0], end[1]).strftime('%H:%M')
 			if begin != "TBA":
 				course.time_tba = False
 			else:
 				course.time_tba = True
+			if not course.time_tba:
+				course.start_time = time(begin[0], begin[1]).strftime('%H:%M')
+				course.end_time = time(end[0], end[1]).strftime('%H:%M')
 			course.days.add(Date.objects.get_or_create(day=days)[0])
 			course.building = building
 			course.instructor = instructor
@@ -95,3 +134,4 @@ def main():
 			course.save()
 			print course
 			lastCourse = course
+			print lastCourse
