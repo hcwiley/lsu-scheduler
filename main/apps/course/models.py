@@ -20,23 +20,23 @@ class Course(models.Model):
     
     title = models.CharField(max_length=30)
     number = models.IntegerField()
-    abbr = models.CharField(max_length=4, default='FOO')
+    abbr = models.CharField(max_length=4, default='')
     section_number = models.IntegerField()
-    start_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
-    end_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
+    start_time = models.TimeField(default='', blank=True, null=True)
+    end_time = models.TimeField(default='', blank=True, null=True)
     credit_hours = models.IntegerField(default=3)
     time_tba = models.BooleanField()
     days = models.ManyToManyField(Date, default='')
     building = models.CharField(max_length=50, default='', blank=True, null=True)
-    room = models.IntegerField(default=42, blank=True, null=True)
+    room = models.IntegerField(default=0, blank=True, null=True)
     instructor = models.CharField(max_length=100, default='', blank=True, null=True)
-    available_seats = models.IntegerField(default=42, blank=True, null=True)
+    available_seats = models.IntegerField(default=0, blank=True, null=True)
     number_enrolled = models.IntegerField(default=0, blank=True, null=True)
     special_enrollment = models.CharField(max_length=100, default='', blank=True, null=True)
     type = models.CharField(choices=CLASS_TYPE, max_length=3, default='', null=True, blank=True)
     
     def __unicode__(self):
-        return self.title
+        return '%s %s: %s' % (self.abbr, self.number, self.title)
     
     def save(self, *args, **kwargs):
         super(Course, self).save(*args, **kwargs)
