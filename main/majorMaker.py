@@ -22,5 +22,5 @@ def main():
             if maj[1]:
                 maj = maj[0]
                 maj.name = name
-                maj.college = College.objects.get(abbr=college)
                 maj.save()
+                maj.college = College.objects.get_or_create(abbr=college)[0]

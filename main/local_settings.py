@@ -2,8 +2,8 @@ DATABASES = {
     'default': {
         'HOST': 'localhost',
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'avatar.db',                      
+        'NAME': 'avatar.db',
         'USER': '',
-        'PASSWORD': '',                
+        'PASSWORD': '',
     }
 }

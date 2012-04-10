@@ -36,6 +36,9 @@ class Course(models.Model):
     type = models.CharField(choices=CLASS_TYPE, max_length=3, default='', null=True, blank=True)
 #    department = ''
     
+    class Meta:
+        ordering = ['number']
+    
     def __unicode__(self):
         return '%s: %s' % (self.number, self.title)
     
@@ -63,4 +66,7 @@ class Lab(models.Model):
     start_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
     end_time = models.TimeField(default=datetime.time(datetime.now()), blank=True, null=True)
     course = models.ForeignKey(Course)
+    
+    def __unicode__(self):
+        return 'LAB %s' % (self.course)
     

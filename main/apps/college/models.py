@@ -16,6 +16,10 @@ class College(models.Model):
     def __unicode__(self):
         return self.name
     
+    
+    class Meta:
+        ordering = ['abbr']
+    
     def save(self, *args, **kwargs):
         if self.slug == '':
             self.slug = slugify(self.name)
@@ -30,6 +34,9 @@ class Department(models.Model):
     
     def __unicode__(self):
         return self.name
+    
+    class Meta:
+        ordering = ['abbr']
     
     def save(self, *args, **kwargs):
         if self.slug == '':
@@ -48,6 +55,9 @@ class Major(models.Model):
     
     def __unicode__(self):
         return self.name
+    
+    class Meta:
+        ordering = ['abbr']
     
 class Minor(Major):
     pass
