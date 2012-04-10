@@ -14,8 +14,8 @@ class Migration(SchemaMigration):
             ('building', self.gf('django.db.models.fields.CharField')(default='', max_length=50, null=True, blank=True)),
             ('room', self.gf('django.db.models.fields.IntegerField')(default=42, null=True, blank=True)),
             ('instructor', self.gf('django.db.models.fields.CharField')(default='', max_length=100, null=True, blank=True)),
-            ('start_time', self.gf('django.db.models.fields.TimeField')(default=datetime.time(18, 20, 2, 267693), null=True, blank=True)),
-            ('end_time', self.gf('django.db.models.fields.TimeField')(default=datetime.time(18, 20, 2, 267735), null=True, blank=True)),
+            ('start_time', self.gf('django.db.models.fields.TimeField')(default=datetime.time(0, 0, 0, 0), null=True, blank=True)),
+            ('end_time', self.gf('django.db.models.fields.TimeField')(default=datetime.time(0, 0, 0, 0), null=True, blank=True)),
             ('course', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['course.Course'])),
         ))
         db.send_create_signal('course', ['Lab'])

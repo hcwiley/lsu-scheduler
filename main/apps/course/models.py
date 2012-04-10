@@ -21,11 +21,11 @@ class Course(models.Model):
     title = models.CharField(max_length=30)
     number = models.IntegerField()
     abbr = models.CharField(max_length=4, default='')
-    section_number = models.IntegerField()
-    start_time = models.TimeField(default='', blank=True, null=True)
-    end_time = models.TimeField(default='', blank=True, null=True)
+    section_number = models.IntegerField(default=1)
+    start_time = models.TimeField(blank=True, null=True)
+    end_time = models.TimeField(blank=True, null=True)
     credit_hours = models.IntegerField(default=3)
-    time_tba = models.BooleanField()
+    time_tba = models.BooleanField(default=False)
     days = models.ManyToManyField(Date, default='')
     building = models.CharField(max_length=50, default='', blank=True, null=True)
     room = models.IntegerField(default=0, blank=True, null=True)
@@ -40,12 +40,14 @@ class Course(models.Model):
     
     def save(self, *args, **kwargs):
         super(Course, self).save(*args, **kwargs)
-
-def update_course(modeladmin, request, queryset):
-    queryset.update(status='p')
-update_course.short_description = "Get courses from regex file parsing"
+#
+#def update_course(modeladmin, request, queryset):
+#    queryset.update(status='p')
+#update_course.short_description = "Get courses from regex file parsing"
 class CourseAdmin(admin.ModelAdmin):
-   actions = [update_course]
+    class Meta:
+        model = Course
+#   actions = [update_course]
 class Lab(models.Model):
     days = models.ManyToManyField(Date, default='', blank=True, null=True)
     building = models.CharField(max_length=50, default='', blank=True, null=True)
