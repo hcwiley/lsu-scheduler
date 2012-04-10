@@ -3,6 +3,8 @@ from django.contrib import admin
 from django.views.generic.simple import redirect_to, direct_to_template
 from django.conf.urls.defaults import patterns, url, include
 from django.contrib.auth import views as auth_views
+from apps.college import urls as college_urls
+from apps.course import urls as course_urls
 admin.autodiscover()
 
 
@@ -14,6 +16,8 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     (r'^/$', 'views.home'),
     (r'^$', 'views.home'),
+    (r'^departments/', include(college_urls)),
+    (r'^courses/', include(course_urls)),
 )
 
 

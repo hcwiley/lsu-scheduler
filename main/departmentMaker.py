@@ -4,9 +4,9 @@ from glob import glob
 import os
 #from django.template.defaultfilters import slugify
 
-#print os.getcwd()
-#os.chdir('./apps/college/departments/')
-#print os.getcwd()
+print os.getcwd()
+os.chdir('./apps/college/departments/')
+print os.getcwd()
 print Course.objects.all()
 print Department.objects.all()
 

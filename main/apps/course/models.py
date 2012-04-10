@@ -7,6 +7,7 @@ from django.contrib import admin
 #from django.utils.encoding import smart_str
 #from django.contrib.sites.models import Site
 from datetime import datetime
+from django.contrib.admin.sites import site
 
 class Date(models.Model):
     WEEKDAYS = (('M', 'Monday'), ('T', 'Tuesday'), ('W', 'Wednesday'), ('TH', 'Thursday'), ('F', 'Friday'))
@@ -20,7 +21,6 @@ class Course(models.Model):
     
     title = models.CharField(max_length=30)
     number = models.IntegerField()
-    department = models.CharField(max_length=4, default='')
     section_number = models.IntegerField(default=1)
     start_time = models.TimeField(blank=True, null=True)
     end_time = models.TimeField(blank=True, null=True)
@@ -34,11 +34,18 @@ class Course(models.Model):
     number_enrolled = models.IntegerField(default=0, blank=True, null=True)
     special_enrollment = models.CharField(max_length=100, default='', blank=True, null=True)
     type = models.CharField(choices=CLASS_TYPE, max_length=3, default='', null=True, blank=True)
+#    department = ''
     
     def __unicode__(self):
-        return '%s %s: %s' % (self.abbr, self.number, self.title)
+        return '%s: %s' % (self.number, self.title)
+    
+    @models.permalink
+    def get_absolute_url(self):
+        return ('apps.course.views.course', [str(self.id)])
     
     def save(self, *args, **kwargs):
+#        if self.department == '':
+#            self.department_set.
         super(Course, self).save(*args, **kwargs)
 #
 #def update_course(modeladmin, request, queryset):

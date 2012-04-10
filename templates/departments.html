@@ -1,0 +1,8 @@
+{% extends base_template %}
+{% block center %} <h3>departments</h3>
+{% for department in departments %} <a href='{{ department.get_absolute_url }}'>
+<li>
+    {{ department.name }}
+</li> </a>
+{% endfor %}
+{% endblock %}

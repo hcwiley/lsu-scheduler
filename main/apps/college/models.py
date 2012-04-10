@@ -25,6 +25,7 @@ class Department(models.Model):
     abbr = models.CharField(max_length=4, unique=True, null=True, blank=True, default='')
     slug = models.SlugField(null=True, blank=True, default='', editable=False)
     college = models.ForeignKey(College, null=True, blank=True, default=None)
+    courses = models.ManyToManyField(Course, related_name='Courses', null=True, blank=True, default=None)
     
     def __unicode__(self):
         return self.name
@@ -32,9 +33,11 @@ class Department(models.Model):
     def save(self, *args, **kwargs):
         if self.slug == '':
             self.slug = slugify(self.name)
-        if self.abbr == '':
-            self.abbr = self.slug[:3].upper()
         super(Department, self).save(*args, **kwargs)
+    
+    @models.permalink
+    def get_absolute_url(self):
+        return ('apps.college.views.department', [str(self.abbr)])
 
 class Major(models.Model):
     name = models.CharField(max_length=100)

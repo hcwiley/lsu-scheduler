@@ -42,15 +42,6 @@
                         {{ course.fields.title }}
                     </li>
                     </a>
-                    <div class='fields'>
-                    {% for field, value in course.fields.items %}
-                    <div class='field'>
-                    <p>
-                        {{ field }}: {{ value }}
-                    </p>
-                    </div>
-                    {% endfor %}
-                    </div>
                     {% endfor %}
                     {% endblock %}
                 </div>
