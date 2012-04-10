@@ -1,8 +1,17 @@
 {% extends base_template %}
-{% block center %} <h3>{{ course }}</h3>
-{% for field,value in course.fields %}
+{% block center %} <h3>{{ course.fields.title }}</h3> 
+<!-- <h3>{{ weekdays }}</h3> -->
+{% for f, v in course.fields.items %}
 <li>
-    {{ field }} : {{ value }}
+	{% if f == "days" %}
+		{{f}} : {{v}}
+		<!-- {% for d in v %}
+			{{d}},
+			{{weekday.d}}
+		{% endfor %} -->
+	{% else %}
+    	{{ f }} : {{ v }}
+	{% endif %}	
 </li>
 {% endfor %}
 {% endblock %}

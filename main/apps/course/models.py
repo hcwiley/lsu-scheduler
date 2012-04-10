@@ -9,8 +9,9 @@ from django.contrib import admin
 from datetime import datetime
 from django.contrib.admin.sites import site
 
+WEEKDAYS = (('M', 'Monday'), ('T', 'Tuesday'), ('W', 'Wednesday'), ('TH', 'Thursday'), ('F', 'Friday'))
+
 class Date(models.Model):
-    WEEKDAYS = (('M', 'Monday'), ('T', 'Tuesday'), ('W', 'Wednesday'), ('TH', 'Thursday'), ('F', 'Friday'))
     day = models.CharField(choices=WEEKDAYS, max_length=2, default='', unique=True)
     
     def __unicode__(self):
