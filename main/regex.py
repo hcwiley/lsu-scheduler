@@ -31,11 +31,11 @@ def pullFromHTML(semester, year, dept):
 def getDept(dept):
 #dept = "FILM & MEDIA ARTS"
 	htmlCourses = pullFromHTML("Fall", 2012, dept)
-	foo = open('%s.txt' % dept, 'w') 
+	foo = open('apps/college/departments/%s.txt' % dept, 'w') 
 	foo.write(htmlCourses)
 
 def getAllDepts():
-		foo = open("departments.txt", "r")
+		foo = open("apps/college/departments.data", "r")
 		for dept in foo.readlines():
 			dept = dept.strip()
 			try:
@@ -45,7 +45,7 @@ def getAllDepts():
 				print "couldnt get %s department" % dept
 
 def main(dept):
-	schedule = open('%s.txt' % dept, 'r')
+	schedule = open('apps/college/departments/%s.txt' % dept, 'r')
 	lastCourse = None
 	c = -1
 	for bob in schedule:
@@ -160,14 +160,11 @@ def main(dept):
 #		print "dept: %s" % dept
 #		print "number: %s" % num
 #		print "section: %s" % section
-		course = Course.objects.get_or_create(title=title,abbr=dept,number=num,section_number=section)
+		course = Course.objects.get_or_create(title=title,department=dept,number=num,section_number=section)
 		isUpdate = course[1]
-		print "is updated: %s" % isUpdate
+#		print "is updated: %s" % isUpdate
 		course = course[0]
-#		course.title = title
-#			course.number = num
-#			course.abbr = dept
-#		course.section_number = section 
+ 
 		if begin != "TBA":
 			course.time_tba = False
 		else:
@@ -185,6 +182,5 @@ def main(dept):
 		course.type = courseType
 		if not isUpdate:
 			course.save()
-		print "saved %s" % course
+#		print "saved %s" % course
 		lastCourse = course
-#			print lastCourse

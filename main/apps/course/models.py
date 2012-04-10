@@ -20,7 +20,7 @@ class Course(models.Model):
     
     title = models.CharField(max_length=30)
     number = models.IntegerField()
-    abbr = models.CharField(max_length=4, default='')
+    department = models.CharField(max_length=4, default='')
     section_number = models.IntegerField(default=1)
     start_time = models.TimeField(blank=True, null=True)
     end_time = models.TimeField(blank=True, null=True)

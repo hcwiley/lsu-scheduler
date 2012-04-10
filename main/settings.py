@@ -95,6 +95,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.webdesign',
     'south',
+    'apps.college',
     'apps.course',
     'apps.student',
 )
