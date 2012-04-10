@@ -1,0 +1,51 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 10        VCS  7001 SEM     1  SM: VET CLIN SCIENCE   1.0  TBA
+ 10        VCS  7003         1  SPEC TOP VET CLIN SC   1-4  TBA
+ 10        VCS  7003         2  SPEC TOP VET CLIN SC   1-4  TBA
+ 10        VCS  7202 LAB     1  VET SURGICAL TECHN     1.0  1130-1220   M
+ 10        VCS  7209         1  ADV VET RESPIR DIS     2.0  TBA
+  8        VCS  7210         1  VET SCI JOURNAL REV    1.0  TBA
+  8        VCS  7210         2  VET SCI JOURNAL REV    1.0  TBA
+  8        VCS  7210         3  VET SCI JOURNAL REV    1.0  TBA
+  8        VCS  7210         4  VET SCI JOURNAL REV    1.0  TBA
+  8        VCS  7210         5  VET SCI JOURNAL REV    1.0  TBA
+  8        VCS  7210         6  VET SCI JOURNAL REV    1.0  TBA
+  8        VCS  7210         7  VET SCI JOURNAL REV    1.0  TBA
+
+
+
+
+Fall  2012   VETERINARY CLINICAL SCIENCES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

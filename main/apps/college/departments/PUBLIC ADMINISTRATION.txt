@@ -1,0 +1,59 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+      ***   PADM 5010  ***       CROSS-LISTED WITH   ISDS 5010
+ 49    11  PADM 5010         1  STAT METHODS PUB ADM   3.0   200-0450    T     1220 BUSINESS SCHOOL                  LLORENS J
+                     LAB                                     200-0450    T                                           LLORENS J
+ 21     9  PADM 5010         2  STAT METHODS PUB ADM   3.0   600-0850N    W    1225 BUSINESS SCHOOL                  LLORENS J
+                     LAB                                     600-0850N    W                                          LLORENS J
+      ***   PADM 5600  ***       CROSS-LISTED WITH   ECON 5600
+ 51     9  PADM 5600         1  MICROEC TH POLICY AN   3.0   600-0850N  M      1615 BUSINESS SCHOOL                  RICHARDSON J
+ 14     6  PADM 7610         1  HEALTHCARE ORG/FIN     3.0   600-0850N  M      1409 BUSINESS SCHOOL                  STAFF
+      ***   PADM 7710  ***       CROSS-LISTED WITH   FIN  7710
+  2    28  PADM 7710         1  PUBLIC FIN MGT         3.0   600-0850N   T     1425 BUSINESS SCHOOL                  MOROZOV B
+ 20        PADM 7850 CLI     1  PADM INTERNSHIP        3.0  TBA                                                      STAFF
+ 20        PADM 7851 CLI     1  PADM PRACTICUM         3.0  TBA                                                      STAFF
+      ***   PADM 7902  ***       CROSS-LISTED WITH   POLI 7902
+ 15     5  PADM 7902 SEM     1  SEM PUBL POLICY        3.0   200-0450    T     1120 BUSINESS SCHOOL                  MERGET A
+ 44    16  PADM 7910 SEM     1  PUBL ADM-THRY/PRACT    3.0   600-0850N    W    1220 BUSINESS SCHOOL                  WHITE R
+ 17    13  PADM 7911         1  ORG PUB/NONPROF ORG    3.0   600-0850N  M      1425 BUSINESS SCHOOL                  JURKIEWICZ C
+ 49     1  PADM 7914 SEM     1  PUBLIC BUDGETING       3.0   600-0850N     TH  1321 BUSINESS SCHOOL                  MOROZOV B
+      ***   PADM 7917  ***       CROSS-LISTED WITH   POLI 7917
+ 18     7  PADM 7917 SEM     1  PROGRAM EVALUATION     3.0   600-0850N     TH  1225 BUSINESS SCHOOL                  MERGET A
+  9    11  PADM 7970 CLI     1  FUNDRAIS & GRANT WRT   3.0   600-0850N    W    1409 BUSINESS SCHOOL                  JURKIEWICZ C
+
+
+
+
+Fall  2012   PUBLIC ADMINISTRATION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+  5        CBS  7003 RES     1  SPEC TOP COM BIO SCI   1-4  TBA
+ 20        CBS  7104         1  BIOMED CELL/MOL BIOL   3.0  TBA
+  5     1  CBS  7108         1  CR ANAL MOLE BIOL/ME   3.0  1000-1150     W
+ 10        CBS  7628         1  BIOMED PHYSIOLOGY I    3.0   800-0850   MTWTF
+
+
+
+
+Fall  2012   COMPARATIVE BIOMEDICAL SCIENCE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

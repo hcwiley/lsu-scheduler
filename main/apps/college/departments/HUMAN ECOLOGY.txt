@@ -1,0 +1,178 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+(F)    23  HUEC 1000         1  HUMAN ECOLGY AS PROF   3.0   930-1020   M W F  0143 COATES                           BOURGEOIS E
+                                                                                                                     PULS J
+ 19    16  HUEC 1000         2  HUMAN ECOLGY AS PROF   3.0   930-1020   M W F                       RES COLG-AGRICU
+     **                    Reserved for Agriculture Residential College Students
+ 11     7  HUEC 1014         1  FOOD THEORY & SKILLS   4.0   830-0920   M W F  0129 ALLEN           MAJORS ONLY      MYHAND J
+                                                                                                    SVC LEARNING
+                     LAB                                     130-0420   M      0219 HUMAN ECOLOGY                    MYHAND J
+     **                    THE ABOVE SECTION INCLUDES A SERVICE-LEARNING COMPONENT.
+     **                    FOR MORE INFORMATION, EMAIL JDONOV2@LSU.EDU
+ 15     3  HUEC 1014         2  FOOD THEORY & SKILLS   4.0   830-0920   M W F  0129 ALLEN           MAJORS ONLY      MYHAND J
+                                                                                                    SVC LEARNING
+                     LAB                                     130-0420     W    0219 HUMAN ECOLOGY                    MYHAND J
+     **                    THE ABOVE SECTION INCLUDES A SERVICE-LEARNING COMPONENT.
+     **                    FOR MORE INFORMATION, EMAIL JDONOV2@LSU.EDU
+ 51     5  HUEC 1021         1  DIETETICS AS CAREER    1.0  1030-1120   M      0134 J C MILLER      MAJORS ONLY      MILIOTO B
+149    31  HUEC 1110         1  INTRO TO NUTRITION     3.0  1230-0120   M W F  0010 LOCKETT                          MYHAND J
+162    18  HUEC 1110         2  INTRO TO NUTRITION     3.0   430-0550N   T TH  0010 LOCKETT                          KEENAN M
+(F)     5  HUEC 2032         2  INTRO APPAREL DESIGN   4.0  1200-1250    T TH  0120 TUREAUD HALL    MAJORS ONLY      WELKER D
+                     LAB                                     100-0250    T TH  0247 HUMAN ECOLOGY                    WELKER D
+ 66     9  HUEC 2040         1  TEXTILE SCIENCE        3.0   830-0920   M W F  0221 TUREAUD HALL                     WELKER D
+ 18     7  HUEC 2041 LAB     1  TEXTILE SCIENCE LAB    1.0   130-0420   M      0251 HUMAN ECOLOGY                    STAFF
+ 22     3  HUEC 2041 LAB     2  TEXTILE SCIENCE LAB    1.0   130-0420     W    0251 HUMAN ECOLOGY                    STAFF
+(H)        HUEC 2041 LAB     3  TEXTILE SCIENCE LAB    1.0   130-0420       F  0251 HUMAN ECOLOGY                    STAFF
+ 54    21  HUEC 2050         1  FAMILY DYNAMICS        3.0  1230-0120   M W F  0120 TUREAUD HALL                     MITCHELL K
+ 59    31  HUEC 2065         1  MGT FAMILY SYST SERV   3.0  1200-0120    T TH  0105 TUREAUD HALL                     MARKS L
+ 38    17  HUEC 2110         1  NUTRITION ASSESSMENT   3.0   130-0250    T TH  0132 J C MILLER      MAJORS ONLY      MILIOTO B
+ 11    64  HUEC 2112         1  LIFECYCLE NUTRITION    3.0   730-0850    T TH  0139 ALLEN           MAJORS ONLY      MYHAND J
+ 43    47  HUEC 3010         1  NUTRITION & WELLNESS   3.0   930-1020   M W F                                        TUURI G
+ 34    60  HUEC 3032         1  TEXTILE & APPAR PROD   3.0   830-0920   M W F  0206 TUREAUD HALL                     STAFF
+  2    13  HUEC 3037         1  INTERMED APPAREL PRO   4.0   930-1020   M W    0244 HUMAN ECOLOGY                    STAFF
+                     LAB                                    1030-1220   M W    0244 HUMAN ECOLOGY                    STAFF
+  9     6  HUEC 3037         2  INTERMED APPAREL PRO   4.0   130-0220   M W    0244 HUMAN ECOLOGY                    STAFF
+                     LAB                                     230-0420   M W    0244 HUMAN ECOLOGY                    STAFF
+ 35    40  HUEC 3042         1  APP MDS BUY & MGT      3.0  1230-0120   M W F  0221 TUREAUD HALL                     LIU C
+ 54    56  HUEC 3045         1  VIS MERCHAND & PROMO   3.0   300-0420    T TH  0139 ALLEN                            WELKER D
+(F)    60  HUEC 3055         1  DEV YOUNG CHILD CNTX   4.0   230-0320   M W F  0102 TUREAUD HALL                     PIERCE S
+                     LAB                                    TBA                                                      PIERCE S
+ 53     7  HUEC 3060         1  FAMILY FINANCE         3.0  1030-1150    T TH  0109 TUREAUD HALL                     LAWRENCE F
+  9    28  HUEC 3067 SEM     1  FLD EXPERIENCE FCCS    1-4   730-0820    T     0152 HUMAN ECOLOGY   MAJORS ONLY      CHANEY C
+ 13    24  HUEC 3090 SEM     1  PROF SEMINAR FC&SC;     2.0   730-0920     W    0152 HUMAN ECOLOGY   MAJORS ONLY      MARKS L
+ 19     1  HUEC 3091 RES     1  READ/RES HUM ECOLOGY   1-6  TBA                                     PERMIS OF DEPT   PULS J
+ 19     1  HUEC 3091 RES     2  READ/RES HUM ECOLOGY   1-6  TBA                                     PERMIS OF DEPT   FILLASTRE M
+ 20        HUEC 3091 RES     3  READ/RES HUM ECOLOGY   1-6  TBA                                     PERMIS OF DEPT
+ 36    24  HUEC 3110         1  NUTRITION COUNSELING   3.0  1030-1150    T TH  0132 J C MILLER      MAJORS ONLY      MILIOTO B
+                                                                                                    SVC LEARNING
+     **                    THE ABOVE SECTION INCLUDES A SERVICE-LEARNING COMPONENT.
+     **                    FOR MORE INFORMATION, EMAIL BMILIOTO@LSU.EDU
+ 15    45  HUEC 3115         1  HUMAN NUTRI & METABO   3.0  1030-1150    T TH  0134 J C MILLER      MAJORS ONLY      LAMMI-KEEFE C
+                                                                                                                     KEENAN M
+(F)    15  HUEC 3119         1  QUANT FOODS PRODUCTI   4.0   900-1020    T TH  0208 WILLIAMS        MAJORS ONLY      PULS J
+                     LAB                                     130-0420    T                                           PULS J
+(F)    15  HUEC 3119         2  QUANT FOODS PRODUCTI   4.0   900-1020    T TH  0208 WILLIAMS        MAJORS ONLY      PULS J
+                     LAB                                     130-0420      TH                                        PULS J
+(F)    30  HUEC 3381         1  ECE CURRICULUM         3.0   130-0420    T     0152 HUMAN ECOLOGY   CI-WRITTEN&SPOK;  ZITZMANN N
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    30  HUEC 3382         1  ECE PEDAGOGY           3.0  1230-0220     W    0152 HUMAN ECOLOGY   CI-WRITTEN&VISU;  FILLASTRE M
+                     LAB                                    TBA                                                      FILLASTRE M
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    30  HUEC 3383         1  ASSESS/PLAN REFL INS   3.0  1030-1220     W    0152 HUMAN ECOLOGY   CI-WRITTEN&SPOK;  DICARLO C
+                     LAB                                    TBA                                                      DICARLO C
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    16  HUEC 4021         1  CONTEMP TOP NUTRITIO   1.0  1230-0120   M      0240 LOCKETT         MAJORS ONLY      PULS J
+(F)    23  HUEC 4034         1  TEXTILE & APPAREL PR   3.0   900-0950    T TH  0251 HUMAN ECOLOGY
+                     LAB                                    1000-1150    T     0251 HUMAN ECOLOGY
+(F)    12  HUEC 4037         1  ADV APPAREL PRODUCT    4.0   900-0950    T TH  0244 HUMAN ECOLOGY                    MCROBERTS L
+                     LAB                                    1000-1150    T TH  0244 HUMAN ECOLOGY                    MCROBERTS L
+  1    11  HUEC 4037         2  ADV APPAREL PRODUCT    4.0   100-0150    T TH  0244 HUMAN ECOLOGY                    MCROBERTS L
+                     LAB                                     200-0350    T TH  0244 HUMAN ECOLOGY                    MCROBERTS L
+ 19     6  HUEC 4043         1  ADVANCED TEXTILES      3.0   230-0420    T     0251 HUMAN ECOLOGY                    NEGULESCU I
+                     LAB                                     230-0420      TH  0251 HUMAN ECOLOGY                    NEGULESCU I
+ 24    66  HUEC 4044         1  TEXTILE & APPAREL EC   3.0   300-0420   M W    0145 COATES                           STAFF
+ 25    45  HUEC 4046         1  ADV TOP APPAREL MERC   3.0  1030-1120   M W F  0120 TUREAUD HALL                     LIU C
+  8    29  HUEC 4052         1  FAMILIES: POLICY & L   3.0   900-1020    T TH  0152 HUMAN ECOLOGY                    MONROE P
+ 12    25  HUEC 4064         1  FAMILY STRESS MGT      3.0  1030-1150    T TH  0152 HUMAN ECOLOGY   CI-WRITTEN&SPOK;  CHANEY C
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+  7    68  HUEC 4072         1  DRESS/ADRNMENT FROM    3.0   930-1020   M W F  0212 COATES                           KUTTRUFF J
+ 17    43  HUEC 4111         1  NUTRI & DISEASES I     4.0   730-0920   M W    0220 COATES          MAJORS ONLY      O'NEIL C
+ 10     2  HUEC 4232         1  CAD FOR TEXTILES & A   3.0   300-0350    T TH  0236 HUMAN ECOLOGY                    STAFF
+                     LAB                                     400-0550    T TH  0236 HUMAN ECOLOGY                    STAFF
+ 20    15  HUEC 4382         1  CRIT ISS CHILD EDUC    3.0   830-1120       F  0152 HUMAN ECOLOGY   CI-WRITTEN&SPOK;  BAUMGARTNER J
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 16     4  HUEC 7002         1  TPCS IN MICRONUTRIEN   2-8   300-0420    T TH  0136 HUMAN ECOLOGY
+  9     3  HUEC 7004         1  MOL & CLIN NUTR I      2.0   300-0450   M                                            LAMMI-KEEFE C
+     **                    CLASS WILL BE HELD AT PENNINGTON
+  6     4  HUEC 7041         1  INT RES TEXT/APP/MCH   3.0   300-0420   M W                                          KUTTRUFF J
+     **                    CLASS HELD IN ROOM 334 HUMAN ECOLOGY
+  8     2  HUEC 7043 SEM     1  SEM TEXT/APPAR/FASH    1.0   130-0220    T                                           NEGULESCU I
+     **                    CLASS WILL BE HELD IN ROOM 334 HUMAN ECOLOGY
+ 10        HUEC 7049 CLI     1  FLD EXP TXT/APPL/MER   3-6  TBA                                     PERMIS OF INST   STAFF
+ 11     4  HUEC 7056         1  THEORIES CHLD DVLPMT   3.0   430-0720N   T     0152 HUMAN ECOLOGY                    BAUMGARTNER J
+  4     1  HUEC 7091 RES     1  IND RD/RES HUMAN ECO   1-6  TBA                                     PERMIS OF DEPT   KUTTRUFF J
+  5        HUEC 7091 RES     2  IND RD/RES HUMAN ECO   1-6  TBA                                     PERMIS OF DEPT
+  5        HUEC 7091 RES     3  IND RD/RES HUMAN ECO   1-6  TBA                                     PERMIS OF DEPT
+  5        HUEC 7091 RES     4  IND RD/RES HUMAN ECO   1-6  TBA                                     PERMIS OF DEPT
+  5        HUEC 7091 RES     5  IND RD/RES HUMAN ECO   1-6  TBA                                     PERMIS OF DEPT
+  2        HUEC 7091 RES     6  IND RD/RES HUMAN ECO   1-6  TBA                                     PERMIS OF DEPT
+ 13     2  HUEC 7092 SEM     1  HUMAN ECOLOGY RES SE   1.0  TBA                                                      STAFF
+(F)     1  HUEC 7900 RES     1  RES & PROJ DEV IN HU   1-12 TBA                                     PERMIS OF DEPT   KUTTRUFF J
+ 99        HUEC 8000 RES     2  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   MCROBERTS L
+ 99        HUEC 8000 RES     3  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   DHURANDHAR N
+ 99        HUEC 8000 RES     4  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   CHANEY C
+ 99        HUEC 8000 RES     5  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   DICARLO C
+ 99        HUEC 8000 RES     6  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   GARRISON M
+ 99        HUEC 8000 RES     7  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   GREENWAY F
+ 99        HUEC 8000 RES     8  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   LAMMI-KEEFE C
+ 99        HUEC 8000 RES     9  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   KEENAN M
+ 97     2  HUEC 8000 RES    10  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   KUTTRUFF J
+ 99        HUEC 8000 RES    11  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   BAUMGARTNER J
+ 99        HUEC 8000 RES    13  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   MARKS L
+ 99        HUEC 8000 RES    15  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   NEGULESCU I
+ 99        HUEC 8000 RES    16  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   O'NEIL C
+ 99        HUEC 8000 RES    17  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   PIERCE S
+ 99        HUEC 8000 RES    18  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   MITCHELL K
+ 98     1  HUEC 8000 RES    19  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   TUURI G
+ 99        HUEC 8000 RES    20  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   LIU C
+ 99        HUEC 8000 RES    21  THESIS RESEARCH        1-12 TBA                                     PERMIS OF DEPT   NEGULESCU I
+ 98     1  HUEC 9000 RES     2  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   MCROBERTS L
+ 99        HUEC 9000 RES     3  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   DHURANDHAR N
+ 99        HUEC 9000 RES     4  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   CHANEY C
+ 99        HUEC 9000 RES     5  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   DICARLO C
+ 99        HUEC 9000 RES     6  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   GARRISON M
+ 99        HUEC 9000 RES     7  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   GREENWAY F
+ 99        HUEC 9000 RES     8  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   LAMMI-KEEFE C
+ 99        HUEC 9000 RES     9  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   KEENAN M
+ 99        HUEC 9000 RES    10  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   KUTTRUFF J
+ 99        HUEC 9000 RES    11  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   BAUMGARTNER J
+ 99        HUEC 9000 RES    13  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   MARKS L
+ 99        HUEC 9000 RES    15  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   NEGULESCU I
+ 99        HUEC 9000 RES    16  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   O'NEIL C
+ 98     1  HUEC 9000 RES    17  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   PIERCE S
+ 99        HUEC 9000 RES    18  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   MITCHELL K
+ 99        HUEC 9000 RES    19  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   TUURI G
+ 99        HUEC 9000 RES    20  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   LIU C
+ 98     1  HUEC 9000 RES    21  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   HU G
+ 99        HUEC 9091 RES     1  INDEPENDENT RESEARCH   1-6  TBA                                     PERMIS OF DEPT   LAMMI-KEEFE C
+ 99        HUEC 9091 RES     2  INDEPENDENT RESEARCH   1-6  TBA                                     PERMIS OF DEPT   MARKS L
+ 99        HUEC 9091 RES     3  INDEPENDENT RESEARCH   1-6  TBA                                     PERMIS OF DEPT   STAFF
+ 99        HUEC 9091 RES     4  INDEPENDENT RESEARCH   1-6  TBA                                     PERMIS OF DEPT
+ 99        HUEC 9091 RES     5  INDEPENDENT RESEARCH   1-6  TBA                                     PERMIS OF DEPT
+
+
+
+
+Fall  2012   HUMAN ECOLOGY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

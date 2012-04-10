@@ -1,0 +1,31 @@
+BCH:Biochemistry, BS
+BIOL BIOLSE:Biological Sciences, BS / Secondary Education - BIOL
+BIOL MARINE:Biological Sciences, BS / Marine Biology
+BIOL:Biological Sciences, BS
+CHEM BCHEM:Chemistry, BS / Biological Chemistry
+CHEM CHEM:Chemistry, BS / Chemistry
+CHEM CHEMPH:Chemistry, BS / Chemical Physics
+CHEM CHEMSD:Chemistry, BS / Chemistry & Second Discipline
+CHEM CHEMSE:Chemistry, BS / Secondary Education - CHEM
+CHEM CHMMAT:Chemistry, BS / Materials
+CHEM CHMPLY:Chemistry, BS / Polymers
+CHEM ENVCHM:Chemistry, BS / Environmental Chemistry
+CHEM PPCHEM:Chemistry, BS / Preprofessional Chemistry
+CSC  CSCSD:Computer Science, BS / Computer Science & 2nd Discipl
+CSC  CSCSEG:Computer Science, BS / Software Engineering
+CSC  CSDSN:Computer Science, BS / Distributed Systems & Network
+GEOLPENVGEO:Geology-Professional, BS in / Environmental Geology
+GEOLPGEOLP:Geology-Professional, BS in / Geology
+GEOLPGEOP:Geology-Professional, BS in / Geophysics
+MATH MACMP:Mathematics, BS / Computational Mathematics
+MATH MACTSC:Mathematics, BS / Actuarial Science
+MATH MADM:Mathematics, BS / Applied/Discrete Mathematics
+MATH MATH:Mathematics, BS / Mathematics
+MATH MATHSE:Mathematics, BS / Secondary Education - MATH
+MATH MATHST:Mathematics, BS / Mathematical Statistics
+MBIO:Microbiology, BS
+PHYS ASTR:Physics, BS / Astronomy
+PHYS MPHYS:Physics, BS / Medical Physics
+PHYS PHYS:Physics, BS / Physics
+PHYS PHYSD:Physics, BS / Second Discipline
+PHYS PHYSSE:Physics, BS / Secondary Education - Phys

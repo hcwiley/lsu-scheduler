@@ -1,0 +1,80 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+305    70  ANTH 1001         2  INTR PHYS ANTH/PRHIS   3.0   930-1020   M W F  0130 HOWE RUSSELL E                   LISTI G
+310    65  ANTH 1001         1  INTR PHYS ANTH/PRHIS   3.0   130-0250    T TH  0130 HOWE RUSSELL E                   TAGUE R
+319    56  ANTH 1003         2  INTRO CULT/SOCL ANTH   3.0   130-0220   M W F  0130 HOWE RUSSELL E                   MANAGAN J
+337    38  ANTH 1003         1  INTRO CULT/SOCL ANTH   3.0   900-1020    T TH  0130 HOWE RUSSELL E                   BRODY M
+ 96    52  ANTH 2014         1  INTRO FORENSIC ANTH    3.0  1130-1220   M W F  E137 HOWE RUSSELL E                   MANHEIN M
+ 92    56  ANTH 2015         1  INTRO TO ARCHAEOLOGY   3.0  1030-1150    T TH  E137 HOWE RUSSELL E                   MCKILLOP H
+123    25  ANTH 2050         1  WORLD ARCHAEOLOGY      3.0  1030-1120   M W F  E137 HOWE RUSSELL E                   CHICOINE D
+122    26  ANTH 2051         1  INTR WRLD ETHNOGRPHY   3.0   600-0720N   T TH  E130 HOWE RUSSELL E                   SUTHERLAND P
+      ***   ANTH 2423  ***       CROSS-LISTED WITH   ENGL 2423
+  3    17  ANTH 2423         1  INTR TO FOLKLORE       3.0  1030-1150    T TH  0121 ALLEN                            WARE C
+ 94    54  ANTH 3060         1  INTR ANTH LINGUISTIC   3.0   300-0420    T TH  E130 HOWE RUSSELL E                   BRODY M
+      ***   ANTH 4002  ***       CROSS-LISTED WITH   GEOG 4002, INTL 4002, REL  4001
+(F)    10  ANTH 4002         1  SOUTH ASIA SOC,POL,C   3.0   300-0420    T TH  0103 COATES                           SUTHERLAND P
+      ***   ANTH 4013  ***       CROSS-LISTED WITH   DSM  4013
+(F)    20  ANTH 4013         1  DISASTER ANTHROPOLOG   3.0   600-0850N     TH  E131 HOWE RUSSELL E                   BEECH R
+(F)    35  ANTH 4022         1  ANCIENT CIV SO AMER    3.0  1230-0120   M W F  E131 HOWE RUSSELL E                   CHICOINE D
+  2    33  ANTH 4028         1  ANCIENT MAYA/MEDIA     3.0   900-1020    T TH  0254 HOWE RUSSELL E                   MCKILLOP H
+ 17    13  ANTH 4470         1  FKLRE AFRICAN DIASPO   3.0   400-0650     W    E131 HOWE RUSSELL E                   JACKSON J
+      ***   ANTH 4475  ***       CROSS-LISTED WITH   ENGL 4475
+  4     6  ANTH 4475         1  AMERICAN FOLKLORE      3.0   300-0420    T TH  0121 ALLEN                            WARE C
+ 12     8  ANTH 7108 SEM     1  MESOAMER ARCHEAL SEM   3.0   130-0250    T TH  0254 HOWE RUSSELL E                   MCKILLOP H
+  9     7  ANTH 7200 SEM     1  HUMAN FERTILITY        3.0  1200-0120    T TH  0254 HOWE RUSSELL E                   TAGUE R
+ 20        ANTH 7760 SEM     1  CREOLIZATION           3.0   430-0720N  M                                            EDWARDS J
+     **                    CLASS WILL BE HELD IN 313 HOWE RUSSELL
+ 20        ANTH 7766 SEM     1  READ IN CARIB AND LA   3.0   430-0720N   T                                           EDWARDS J
+     **                    CLASS WILL MEET IN 313 HOWE RUSSELL
+      ***   ANTH 7901  ***       CROSS-LISTED WITH   GEOG 7901
+ 11     3  ANTH 7901         1  INTRO TO GRAD STUDY    1.0  TBA                                                      STAFF
+      ***   ANTH 7909  ***       CROSS-LISTED WITH   LING 7909
+ 17     3  ANTH 7909 RES     1  ANTH OF MEDIA          3.0   430-0720N     TH  0254 HOWE RUSSELL E                   MANAGAN J
+ 29     1  ANTH 8000 RES     1  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   BRODY M
+ 30        ANTH 8000 RES     3  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   JACKSON J
+ 27     3  ANTH 8000 RES     4  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   MANHEIN M
+ 30        ANTH 8000 RES     5  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   MCKILLOP H
+ 29     1  ANTH 8000 RES     7  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   SAUNDERS R
+ 30        ANTH 8000 RES     8  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   TAGUE R
+ 30        ANTH 8000 RES     9  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   REGIS H
+ 30        ANTH 8000 RES    10  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   HESP P
+ 30        ANTH 8000 RES    11  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   MANN R
+ 30        ANTH 8000 RES    12  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   CHICOINE D
+ 30        ANTH 8000 RES    13  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   MANAGAN J
+
+
+
+
+Fall  2012   ANTHROPOLOGY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

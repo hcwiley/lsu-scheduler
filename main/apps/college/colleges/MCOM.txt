@@ -1,0 +1,4 @@
+MC   ADV:Mass Communication, BA in / Advertising
+MC   JOURN:Mass Communication, BA in / Journalism
+MC   POLCM:Mass Communication, BA in / Political Communication
+MC   PR:Mass Communication, BA in / Public Relations

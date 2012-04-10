@@ -1,0 +1,51 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 25        ASST 1001         1  FOUNDATIONS USAF       1.0  1030-1120     W    0149AMIL-AERO STUDIE
+ 23     2  ASST 1001         2  FOUNDATIONS USAF       1.0   130-0220     W    0149AMIL-AERO STUDIE
+ 25        ASST 1001         3  FOUNDATIONS USAF       1.0   330-0420     W    0149AMIL-AERO STUDIE
+ 30        ASST 1011 LAB     1  LEADERSHIP LAB I       1.0   300-0450    T     0149AMIL-AERO STUDIE
+ 30        ASST 1011 LAB     2  LEADERSHIP LAB I       1.0   430-0620N     TH  0149AMIL-AERO STUDIE
+ 25        ASST 2001         1  EVOL USAF AERO POWER   1.0   130-0220      TH  0149AMIL-AERO STUDIE
+ 25        ASST 2001         2  EVOL USAF AERO POWER   1.0   330-0420      TH  0149AMIL-AERO STUDIE
+ 29     1  ASST 2011 LAB     1  LEADERSHIP LAB II      1.0   300-0450    T     0149AMIL-AERO STUDIE
+ 25        ASST 2011 LAB     2  LEADERSHIP LAB II      1.0   430-0620N     TH  0149AMIL-AERO STUDIE
+  7    18  ASST 3001         1  AF LDRSHP STUDIES      3.0  1030-1150    T TH  0149AMIL-AERO STUDIE
+  7    18  ASST 3011 LAB     1  LEADERSHIP LAB III     1.0   300-0450    T     0149AMIL-AERO STUDIE
+ 23     2  ASST 3011 LAB     2  LEADERSHIP LAB III     1.0   430-0620N     TH  0149AMIL-AERO STUDIE
+
+
+
+
+Fall  2012   AEROSPACE STUDIES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

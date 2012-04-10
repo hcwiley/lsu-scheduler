@@ -1,0 +1,44 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+140   235  CLST 2090         1  GREEK ROMAN MYTHOL     3.0  1130-1220   M W F  0002 LOCKETT                          WARGA R
+ 21     4  CLST 2090         2  GREEK ROMAN MYTHOL     3.0  1130-1220   M W F                       RES COLG-MASS C
+     **                    Reserved for Mass Comm Residental College Students
+ 50    10  CLST 2102         1  ROMAN CIVILIZATION     3.0  1200-0120    T TH  0211 TUREAUD HALL                     KATCHMER M
+(F)    30  CLST 3032         1  GRK/RM TRAGEDY TRANS   3.0   900-1020    T TH  0209 COATES                           ANDERSON P
+
+
+
+
+Fall  2012   CLASSICAL STUDIES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

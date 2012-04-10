@@ -1,0 +1,40 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+111    89  PHSC 1001         1  PHYSICAL SCIENCE       3.0   130-0220   M W F  0130 NICHOLSON
+
+
+
+
+Fall  2012   PHYSICAL SCIENCE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 76     1  ECON 2000         1  PRIN MICROECONOMICS    3.0   730-0820   M W F  2162 PATRICK TAYLOR                   HE Q
+ 66    11  ECON 2000         2  PRIN MICROECONOMICS    3.0   830-0920   M W F  2162 PATRICK TAYLOR                   HE Q
+ 53    27  ECON 2000        11  PRIN MICROECONOMICS    3.0  1030-1120   M W F  0214 WILLIAMS                         RUAN D
+ 66    24  ECON 2000        14  PRIN MICROECONOMICS    3.0  1030-1120   M W F  0145 COATES                           FILIZ S
+ 52    25  ECON 2000         3  PRIN MICROECONOMICS    3.0  1230-0120   M W F  2161 PATRICK TAYLOR                   FILIZ S
+ 73     7  ECON 2000        12  PRIN MICROECONOMICS    3.0   130-0220   M W F  0214 WILLIAMS                         RUAN D
+ 71     6  ECON 2000         4  PRIN MICROECONOMICS    3.0   230-0320   M W F  2162 PATRICK TAYLOR                   STAFF
+ 79     1  ECON 2000        13  PRIN MICROECONOMICS    3.0   330-0420   M W F  0202 WILLIAMS                         STAFF
+ 73     7  ECON 2000         5  PRIN MICROECONOMICS    3.0   730-0850    T TH  0202 WILLIAMS                         KNOWLES I
+142    18  ECON 2000         6  PRIN MICROECONOMICS    3.0   900-1020    T TH  1119 PATRICK TAYLOR  RES COLG-BUSINE  NEWMAN R
+     **                    Reserved for Business Residential College Students
+ 22    18  ECON 2000         7  PRIN MICROECONOMICS    3.0  1030-1150    T TH  2150 PATRICK TAYLOR                   KNOWLES I
+ 40        ECON 2000        16  PRIN MICROECONOMICS    3.0  1030-1150    T TH                       RES COLG-BUSINE
+     **                    Reserved for Business Residential College Students
+ 64    11  ECON 2000         8  PRIN MICROECONOMICS    3.0  1200-0120    T TH  2142 PATRICK TAYLOR                   MEANS M
+ 66     9  ECON 2000         9  PRIN MICROECONOMICS    3.0   130-0250    T TH  2142 PATRICK TAYLOR                   MEANS M
+120    10  ECON 2000        10  PRIN MICROECONOMICS    3.0   300-0420    T TH  0102 ALLEN                            SUN Z
+ 80        ECON 2000        15  PRIN MICROECONOMICS    3.0   500-0620N   T TH  0202 WILLIAMS
+  9    21  ECON 2001         1  HNRS PRINC MICROECON   3.0  1030-1150    T TH  3142 PATRICK TAYLOR                   NEWMAN R
+ 76     4  ECON 2010         1  PRIN MACROECONOMICS    3.0   730-0820   M W F  0202 WILLIAMS                         BISWAS T
+ 41    39  ECON 2010         2  PRIN MACROECONOMICS    3.0   830-0920   M W F  0204 TUREAUD HALL                     BISWAS T
+ 53    24  ECON 2010         6  PRIN MACROECONOMICS    3.0   900-1020    T TH  2162 PATRICK TAYLOR                   JHA C
+ 33    29  ECON 2010         3  PRIN MACROECONOMICS    3.0  1030-1150    T TH  2162 PATRICK TAYLOR                   JHA C
+(F)    60  ECON 2010         4  PRIN MACROECONOMICS    3.0  1200-0120    T TH  1800 BUSINESS SCHOOL                  RASCHKE C
+ 56    24  ECON 2010         5  PRIN MACROECONOMICS    3.0   300-0420    T TH  0206 TUREAUD HALL                     RASCHKE C
+ 16    24  ECON 2030         1  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                                                            1130-1220     W    0116 TUREAUD HALL                     LI X
+ 29    11  ECON 2030         2  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                                                            1130-1220       F  0116 TUREAUD HALL                     LI X
+ 33     7  ECON 2030         3  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                                                             130-0220     W    0116 TUREAUD HALL                     LI X
+ 39     1  ECON 2030         4  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                                                             130-0220       F  0116 TUREAUD HALL                     LI X
+ 31     9  ECON 2030         5  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                                                            1130-1220     W    0117 TUREAUD HALL                     HAN S
+ 39     1  ECON 2030         6  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                                                            1130-1220       F  0117 TUREAUD HALL                     HAN S
+ 39     1  ECON 2030         7  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                                                             130-0220     W    0117 TUREAUD HALL                     HAN S
+ 39     1  ECON 2030         8  ECONOMIC PRINCIPLES    3.0   730-0820   M W    0100 DODSON                           ROUSSEL C
+                                                             130-0220       F  0117 TUREAUD HALL                     HAN S
+(F)    40  ECON 2030         9  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                                                            1130-1220     W    0124 TUREAUD HALL                     TIAN X
+(F)    40  ECON 2030        10  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                                                            1130-1220       F  0124 TUREAUD HALL                     TIAN X
+(F)    40  ECON 2030        11  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                                                             130-0220     W    0124 TUREAUD HALL                     TIAN X
+ 11    29  ECON 2030        12  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                                                             130-0220       F  0124 TUREAUD HALL                     TIAN X
+(F)    40  ECON 2030        13  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                                                            1130-1220     W    0129 TUREAUD HALL                     WANG T
+ 20    20  ECON 2030        14  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                                                            1130-1220       F  0129 TUREAUD HALL                     WANG T
+(F)    40  ECON 2030        15  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                                                             130-0220     W    0129 TUREAUD HALL                     WANG T
+ 27    13  ECON 2030        16  ECONOMIC PRINCIPLES    3.0   930-1020   M W    0100 DODSON                           ROUSSEL C
+                                                             130-0220       F  0129 TUREAUD HALL                     WANG T
+ 11    19  ECON 2031         1  HON-ECON PRINCIPLES    3.0  1030-1150    T TH  1114 PATRICK TAYLOR                   ROUSSEL C
+ 90    70  ECON 2035         1  MONEY/BANK/MACRO ACT   3.0   930-1020   M W F  0010 LOCKETT                          STAHL R
+(H)        ECON 2035         3  MONEY/BANK/MACRO ACT   3.0   730-0850    T TH                                        STAFF
+(F)   100  ECON 2035         4  MONEY/BANK/MACRO ACT   3.0   900-1020    T TH  1125 BUSINESS SCHOOL                  KATAYAMA M
+(F)   120  ECON 2035         2  MONEY/BANK/MACRO ACT   3.0   130-0250    T TH  1125 BUSINESS SCHOOL                  KATAYAMA M
+(H)        ECON 2035         5  MONEY/BANK/MACRO ACT   3.0   300-0420    T TH  0202 WILLIAMS                         STAFF
+  1        ECON 3999 RES     1  IND STUDY: ECON PROB   1-3  TBA                                     PERMIS OF DEPT
+  1        ECON 3999 RES     2  IND STUDY: ECON PROB   1-3  TBA                                     PERMIS OF DEPT
+  1        ECON 3999 RES     3  IND STUDY: ECON PROB   1-3  TBA
+ 64    36  ECON 4110         1  PUBLIC FINANCE         3.0   600-0850N   T     1125 BUSINESS SCHOOL                  RICHARDSON J
+ 31     9  ECON 4130         1  URBAN/REGIONAL ECON    3.0   300-0420    T TH  1745 BUSINESS SCHOOL                  PAN Y
+ 22    18  ECON 4220         1  WAGE/EMPLOYMT ANALYS   3.0   900-1020    T TH                                        GITTINGS R
+ 29    11  ECON 4320         1  ENVIRONMENTAL ECON     3.0  1130-1220   M W F  1425 BUSINESS SCHOOL                  STAHL R
+ 36     4  ECON 4325         1  APPLD RESOURCE ECON    3.0   300-0420   M W    1325 BUSINESS SCHOOL
+ 31     9  ECON 4400         1  INDUS ORGAN PUB POL    3.0  1030-1150    T TH  1745 BUSINESS SCHOOL                  BROWN D
+ 11    29  ECON 4520         1  INTERNATIONAL TRADE    3.0   300-0420   M W    1425 BUSINESS SCHOOL                  STAHL R
+ 27    23  ECON 4550         1  INTERNATIONL FINANCE   3.0   130-0250    T TH  1800 BUSINESS SCHOOL                  KORAY F
+  5    35  ECON 4620         1  GAME THEORY            3.0   900-1020    T TH                                        SARANGI S
+ 21    19  ECON 4630         1  INTR TO ECONOMETRICS   3.0   900-1020    T TH                                        HILL R
+ 32     8  ECON 4632         1  FIN ECONOMETRICS       3.0   300-0420    T TH  1325 BUSINESS SCHOOL                  HILLEBRAND E
+ 22    28  ECON 4710         1  AGG ECON ANALYSIS      3.0  1030-1150    T TH  1220 BUSINESS SCHOOL                  UNEL B
+ 25    15  ECON 4710         2  AGG ECON ANALYSIS      3.0   300-0420    T TH  1700 BUSINESS SCHOOL                  STAFF
+  4    16  ECON 4720         1  INT MICROECON THEORY   3.0   900-1020    T TH  1120 BUSINESS SCHOOL                  STAFF
+  7    33  ECON 4720         2  INT MICROECON THEORY   3.0  1030-1150    T TH  1720 BUSINESS SCHOOL                  SARANGI S
+ 15        ECON 7070         1  TH ECONOMIC GROWTH     3.0   300-0420    T TH                                        UNEL B
+ 19     1  ECON 7250         1  WAGE/EMPLYMNT ANALYS   3.0  1030-1150    T TH  1409 BUSINESS SCHOOL                  GITTINGS R
+ 19     1  ECON 7320 SEM     1  SEM ENVMTL & RES ECO   3.0  1130-1220   M W F  1425 BUSINESS SCHOOL                  STAHL R
+ 29     1  ECON 7610         1  MATH FOR ECONOMISTS    3.0  1200-0120    T TH  1425 BUSINESS SCHOOL                  PAN Y
+ 13     7  ECON 7631         1  ECONOMETRIC THEORY I   3.0  1200-0120    T TH  1409 BUSINESS SCHOOL                  HILL R
+ 23     2  ECON 7633         1  DYNAM ECONOMETR THEO   3.0   130-0250    T TH  0129 TUREAUD HALL                     HILLEBRAND E
+ 24     1  ECON 7700         1  PRICE THEORY--I        3.0   130-0250    T TH  0201 TUREAUD HALL                     BROWN D
+ 29     1  ECON 7710         1  MACROECONOMICS I       3.0   130-0250   M W    1225 BUSINESS SCHOOL                  MCMILLIN W
+ 11     4  ECON 7725 SEM     1  ADV MICROECON THEORY   3.0   300-0420    T TH  0116 TUREAUD HALL                     SARANGI S
+ 17     3  ECON 7735 SEM     1  MACROECONOMICS III     3.0   900-1020    T TH  1409 BUSINESS SCHOOL                  CHANDA A
+ 10        ECON 8900 RES     1  PREDISSERT RESEARCH    1-9  TBA                                                      CHANDA A
+ 99        ECON 9000 RES     1  DISSERTATION RES       1-12 TBA                                                      HILL R
+ 99        ECON 9000 RES     2  DISSERTATION RES       1-12 TBA                                                      TERRELL M
+ 99        ECON 9000 RES     3  DISSERTATION RES       1-12 TBA                                                      SARANGI S
+ 99        ECON 9000 RES     4  DISSERTATION RES       1-12 TBA                                                      HILLEBRAND E
+ 99        ECON 9000 RES     5  DISSERTATION RES       1-12 TBA                                                      CHANDA A
+ 99        ECON 9000 RES     6  DISSERTATION RES       1-12 TBA                                                      MCMILLIN W
+ 98     1  ECON 9000 RES     7  DISSERTATION RES       1-12 TBA                                                      MOCAN H
+  5        ECON 9000 RES     8  DISSERTATION RES       1-12 TBA                                                      NEWMAN R
+
+
+
+
+Fall  2012   ECONOMICS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

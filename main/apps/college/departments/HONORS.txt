@@ -1,0 +1,98 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+(F)    20  HNRS 1000 SEM     1  HONORS FOUNDATIONS     1.0   500-0550N     TH                                        BABCOCK F
+     **                    THIS SECTION IS LINKED TO HNRS 2000 001
+(F)    20  HNRS 1000 SEM     4  HONORS FOUNDATIONS     1.0   500-0550N     TH                                        BABCOCK F
+     **                    THIS SECTION IS LINKED TO HNRS 2000 004
+(F)    20  HNRS 1000 SEM     5  HONORS FOUNDATIONS     1.0   500-0550N     TH                                        BABCOCK F
+     **                    THIS SECTION IS LINKED TO HNRS 2000 005
+(F)    20  HNRS 1000 SEM    10  HONORS FOUNDATIONS     1.0   500-0550N     TH                                        BABCOCK F
+     **                    THIS SECTION IS LINKED TO HNRS 2000 010
+(F)    20  HNRS 1000 SEM    12  HONORS FOUNDATIONS     1.0   500-0550N     TH                                        BABCOCK F
+     **                    THIS SECTION IS LINKED TO HNRS 2000 012
+(F)    20  HNRS 1000 SEM    13  HONORS FOUNDATIONS     1.0   500-0550N     TH                                        BABCOCK F
+     **                    THIS SECTION IS LINKED TO HNRS 2000 013
+  4    16  HNRS 1035 SEM     1  HUMAN & CONSERVATION   3.0   130-0250    T TH                                        PLATT W
+(F)    20  HNRS 2000 SEM     1  INDIVIDUAL&COMMUNITY;   3.0   930-1020   M W F                       CI-WRITTEN&SPOK;  BABCOCK F
+     **                    THIS SECTION IS LINKED TO HNRS 1000 001
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    20  HNRS 2000 SEM     2  INDIVIDUAL&COMMUNITY;   3.0   930-1020   M W F                       CI-WRITTEN&SPOK;  BOWLES L
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    20  HNRS 2000 SEM     3  INDIVIDUAL&COMMUNITY;   3.0   930-1020   M W F  0213 FRENCH HOUSE    CI-WRITTEN&SPOK;  MARIN D
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    20  HNRS 2000 SEM     4  INDIVIDUAL&COMMUNITY;   3.0   930-1020   M W F  0220 FRENCH HOUSE    CI-WRITTEN&SPOK;  ROUSE L
+     **                    THIS SECTION IS LINKED TO HNRS 1000 004
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    20  HNRS 2000 SEM     5  INDIVIDUAL&COMMUNITY;   3.0  1030-1150    T TH  0220 FRENCH HOUSE                     HOLMES A
+     **                    THIS SECTION IS LINKED TO HNRS 1000 005
+(F)    20  HNRS 2000 SEM     6  INDIVIDUAL&COMMUNITY;   3.0  1030-1150    T TH  0204BFRENCH HOUSE                     BERTOLINI C
+(F)    20  HNRS 2000 SEM     7  CRITICAL ANALYSIS      3.0  1030-1150    T TH                                        DUMAIS S
+(F)    20  HNRS 2000 SEM     8  CRITICAL ANALYSIS      3.0  1030-1150    T TH  0108 AUDUBON                          KELLEY M
+(F)    20  HNRS 2000 SEM     9  CRITICAL ANALYSIS      3.0  1030-1150    T TH                                        PASQUIER M
+(F)    20  HNRS 2000 SEM    10  CRITICAL ANALYSIS      3.0  1030-1150    T TH  0210 FRENCH HOUSE                     PERCY L
+     **                    THIS SECTION IS LINKED TO HNRS 1000 010
+(F)    20  HNRS 2000 SEM    11  CRITICAL ANALYSIS      3.0  1030-1150    T TH  0213 FRENCH HOUSE                     SONG E
+(F)    20  HNRS 2000 SEM    12  CRITICAL ANALYSIS      3.0   130-0250    T TH  0204BFRENCH HOUSE                     LAMONICA D
+     **                    THIS SECTION IS LINKED TO HNRS 1000 012
+(F)    20  HNRS 2000 SEM    13  CRITICAL ANALYSIS      3.0   130-0250    T TH                       CI-WRITTEN&SPOK;  BUCHANAN T
+     **                    THIS SECTION IS LINKED TO HNRS 1000 013
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    20  HNRS 2000 SEM    14  CRITICAL ANALYSIS      3.0   130-0250    T TH  0220 FRENCH HOUSE                     GARAND J
+(F)    20  HNRS 2000 SEM    15  CRITICAL ANALYSIS      3.0   130-0250    T TH                                        LICATA V
+  1    19  HNRS 2000 SEM    16  CRITICAL ANALYSIS      3.0   130-0250    T TH  0210 FRENCH HOUSE                     NUNN J
+ 10     9  HNRS 2013         1  ARAB & JEW-LIT& FILM   3.0  1200-0120   M W    0213 FRENCH HOUSE                     WAGNER M
+  2    13  HNRS 2013         2  THE COLD WAR           3.0   300-0550    T     0204 FRENCH HOUSE                     CULBERT D
+(F)    19  HNRS 2020 SEM     1  SEE HOW THEY RUN 12    3.0   300-0420    T TH  0204BFRENCH HOUSE                     MANN R
+  7    12  HNRS 2020 SEM     2  CREATIVITYINNOCATION   3.0   300-0420    T TH  0220 FRENCH HOUSE                     OSBORNE W
+(F)    19  HNRS 2021         2  INTRO TO OPERA         3.0  1030-1120   M W F                                        HARRIS R
+(F)    19  HNRS 2021         1  ART AND ITS MARKET     3.0   900-1020    T TH  0220 DESIGN BUILDING                  SPIETH D
+ 12     8  HNRS 3000 SEM     1  PSYCH RES METHODS      3.0  1200-0120    T TH                       CI-WRITTEN&SPOK;  MCDONALD J
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 11     6  HNRS 3030         2  LOUISIANA GLOBAL       3.0   900-1020    T TH  0204BFRENCH HOUSE                     RUSSO A
+  9     8  HNRS 3030         1  WHY ATHENS             3.0  1200-0120    T TH  0204BFRENCH HOUSE                     ZERBA M
+ 10     7  HNRS 3031         2  CONSITITUIONALISM      3.0   300-0420    T TH                                        DEVLIN J
+(F)    19  HNRS 3031         1  WEIGHT&FOOD; POLITICS   3.0   300-0550    T     0111 COATES                           GREY S
+ 14     6  HNRS 3033         1  POLITICS&CAPITALISM;    3.0   130-0250    T TH  0213 FRENCH HOUSE                     KIM W
+           HNRS 3100 RES     1  INTSHP/FLD WK/OFF-CP   1-6  TBA
+ 23     7  HNRS 3110 SEM     1  PEER LEADER WORKSHOP   3.0   500-0620N   T TH                                        BABCOCK F
+(F)        HNRS 4000 RES     1  THESIS                 3.0  TBA
+     **                    TO ENROLL IN HNRS 4000, WHICH REPLACES 3991 AND 3992, COMPLE
+     **                    TE A THESIS ENROLLMENT FORM, AVAILABLE IN 205 FRENCH HOUSE
+(F)     1  HNRS 4000 RES     2  THESIS                 3.0  TBA                                                      RADONJIC M
+
+
+
+
+Fall  2012   HONORS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

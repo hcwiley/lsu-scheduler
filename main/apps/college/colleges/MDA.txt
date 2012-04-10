@@ -1,0 +1,18 @@
+MUSAR:Music, BA
+MUSEDINSTM:Music Education, BME / Instrumental
+MUSEDVOCAL:Music Education, BME / Vocal
+MUSICBRASS:Music, BM / Brass
+MUSICCOMP:Music, BM / Composition
+MUSICHRP:Music, BM / Harp
+MUSICPERC:Music, BM / Percussion
+MUSICPIAPD:Music, BM / Piano Pedagogy
+MUSICPIAPF:Music, BM / Piano Performance
+MUSICSTRNG:Music, BM / String
+MUSICVOICE:Music, BM / Voice
+MUSICWWIND:Music, BM / Woodwind
+THTR ARTSAD:Theatre, BA / Arts Administration
+THTR FLMTV:Theatre, BA / Film & Television
+THTR PERF:Theatre, BA / Performance
+THTR PHYTH:Theatre, BA / Physical Theatre
+THTR TD&T:Theatre, BA / Design/Technology
+THTR THTRST:Theatre, BA / Theatre Studies

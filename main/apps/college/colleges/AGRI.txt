@@ -1,0 +1,50 @@
+ADP  ANIMAL:Animal-Dairy-Poultry Sci, BS / Animal Science
+ADP  DRYFDS:Animal-Dairy-Poultry Sci, BS / Dairy Foods Technology
+ADP  DRYPRD:Animal-Dairy-Poultry Sci, BS / Dairy Production
+ADP  POULTR:Animal-Dairy-Poultry Sci, BS / Poultry Science
+ADP  PVMEDA:Animal-Dairy-Poultry Sci, BS / Preveterinary Medicine-Animal
+ADP  SCITNA:Animal-Dairy-Poultry Sci, BS / Science & Technology-Animal
+AGBU AGBFIN:Agricultural Business, BS / Agribusiness Finance
+AGBU AGBMGT:Agricultural Business, BS / Agribusiness Management
+AGBU AGBRDV:Agricultural Business, BS / Rural Development
+AGBU INTBUS:Agricultural Business, BS / International Business
+AGBU:Agricultural Business, BS
+AGED LDRCOM:Agriculture Educ - Grades 6-12 / Leadership and Communication
+AGED TCHLRN:Agriculture Educ - Grades 6-12 / Teaching and Learning
+AGED:Agriculture Educ - Grades 6-12
+BUED:Business Ed - Grades 6-12
+ENSYSEARM:Environ Management Systems, BS / Environmntl Anals & Risk Mgmt
+ENSYSPLCYAN:Environ Management Systems, BS / Policy Analysis
+ENSYSRESCON:Environ Management Systems, BS / Resource Conservation
+FORM ECOLRS:Forestry-Forest Mgmnt, BS / Ecological Restoration
+FORM FORENT:Forestry-Forest Mgmnt, BS / Forest Enterprise
+FORM FRMGMT:Forestry-Forest Mgmnt, BS / Forest Resources Management
+HECFSCHFS:Child and Family Studies, BS / Child and Family Studies
+HECFSECAL:Child and Family Studies, BS / Early Childhood Administration and Leadership
+HETAMAPPARL:Textiles/Apparel/Merchand, BS / Apparel Design
+HETAMMERCHD:Textiles/Apparel/Merchand, BS / Merchandising
+HETAMTEXTIL:Textiles/Apparel/Merchand, BS / Textile Science
+HRE  ADEXIE:Human Resource Education, BS / Adult-Extension-Internatl Educ
+HRE  CARDEV:Human Resource Education, BS / Career Development
+HRE  HRLD:Human Resource Education, BS / Human Resource & Ldrshp Dev
+NREM CNSVBL:Natural Resource Ecl & Mgt, BS / Conservation Biology
+NREM FSHAQU:Natural Resource Ecl & Mgt, BS / Fisheries & Aquaculture
+NREM PVMEDW:Natural Resource Ecl & Mgt, BS / Prevet Med - Wildlife & Fish
+NREM WHCM:Natural Resource Ecl & Mgt, BS / Wildlife Habitat Conservation
+NREM WLDECL:Natural Resource Ecl & Mgt, BS / Wildlife Ecology
+NREM WLDLAW:Natural Resource Ecl & Mgt, BS / Wildlife Law Enforcement
+NREM WTLNDS:Natural Resource Ecl & Mgt, BS / Wetland Science
+NUTR FST:Nutritional Sciences, BS / Food Science and Technology
+NUTR HEDIET:Nutritional Sciences, BS / Dietetics
+NUTR HENHS:Nutritional Sciences, BS / Nutrition, Health & Society
+NUTR HENUTR:Nutritional Sciences, BS / Nutritional Sciences/Premed
+PLSYSAPME:Plant & Soil Systems, BS / Agricultural Pest Management
+PLSYSAPMP:Plant & Soil Systems, BS / Agricultural Pest Management
+PLSYSCROPSC:Plant & Soil Systems, BS / Crop Science
+PLSYSENVHRT:Plant & Soil Systems, BS / Environmental Horticulture
+PLSYSHORTSC:Plant & Soil Systems, BS / Horticultural Science
+PLSYSLNDMGT:Plant & Soil Systems, BS / Landscape Management
+PLSYSSOILSC:Plant & Soil Systems, BS / Soil Science
+PLSYSSPS:Plant & Soil Systems, BS / Sustainable Production Systems
+PLSYSTRFMGT:Plant & Soil Systems, BS / Turfgrass Management
+PLSYSURBENT:Plant & Soil Systems, BS / Urban Entomology

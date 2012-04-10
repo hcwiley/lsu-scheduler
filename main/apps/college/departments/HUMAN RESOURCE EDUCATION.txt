@@ -1,0 +1,131 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 18     6  HRE  2001         1  FNDTNS OF HMN RES ED   3.0   830-1020    T TH  0102 OLD FORESTRY                     JOHNSON G
+                     LAB                                     830-1020    T TH
+458   142  HRE  2723         1  INTO LEADERSHIP DEV    3.0  TBA                                     100% WEB BASED   HOLTON E
+     **                    WORLD WIDE WEB-BASED DELIVERY
+  6    17  HRE  3101         1  INST/CURR DESN HRE     3.0   130-0420     W    0102 OLD FORESTRY
+ 15    15  HRE  3331         1  STRATEGIC CAREER DEV   3.0   130-0250    T TH  0253 HIMES                            DOWNS J
+ 18    12  HRE  3571         1  NEEDS ANALYSIS HRD     3.0   300-0420    T TH  0217BOLD FORESTRY
+294   106  HRE  3723         1  LDRSHP CONCPTS/PRIN    3.0  TBA                                     100% WEB BASED   HOLTON E
+     **                    WORLD WIDE WEB-BASED DELIVERY
+ 16     7  HRE  4079         1  FOUNDATIONS OF HRD     3.0   430-0720N    W    0102 OLD FORESTRY                     BATES R
+ 17     8  HRE  4301         1  ASSESS/CAREER DEV &    3.0   430-0720N  M      0102 OLD FORESTRY                     JOHNSON G
+ 14    26  HRE  4301         2  ASSESS/CAREER DEV &    3.0  TBA                                     100% WEB BASED   JOHNSON G
+     **                    WORLD WIDE WEB-BASED DELIVERY
+  9    15  HRE  4585         1  CONSULT ORGANIZATION   3.0  TBA                                     100% WEB BASED   HATALA J
+     **                    WORLD WIDE WEB-BASED DELIVERY
+ 16     8  HRE  4601         1  WRKFRC ED LRN ASMNT    3.0   430-0720N   T                                           KOTRLIK J
+     **                    COMPRESSED VIDEO
+121    79  HRE  4723         1  ADV LEADERSHIP DEV     3.0  TBA                                     100% WEB BASED   HOLTON E
+     **                    WORLD WIDE WEB-BASED DELIVERY
+  2     8  HRE  4724         1  HON: ADV LEAD DEV      3.0  TBA
+     **                    WORLD WIDE WEB-BASED DELIVERY
+ 57    18  HRE  4804 CLI     1  LEADERSHIP DEV INTRN   3-12 TBA                                     PERMIS OF INST   BATES R
+                                                                                                    100% WEB BASED
+     **                    WORLD WIDE WEB-BASED DELIVERY
+  1    15  HRE  4804 CLI     2  INTERNSHIP: PROF DEV   3-12 TBA                                     PERMIS OF INST
+(F)     5  HRE  4804 CLI     3  INTERNSHIP: PROF DEV   3-12 TBA                                     PERMIS OF INST
+  5        HRE  4804 CLI     4  INTERNSHIP: PROF DEV   3-12 TBA                                     PERMIS OF INST
+ 12        HRE  4805 CLI     1  TRANSITION COL/WORK    1.0  TBA                                     PERMIS OF INST   BATES R
+  8     2  HRE  4805 CLI     2  TRANSITION COL/WORK    1.0  TBA                                     PERMIS OF INST   HOLTON E
+ 15        HRE  4806 CLI     1  STUDENT TEACHING HRE   9.0  TBA                                     PERMIS OF INST
+ 15        HRE  4807 CLI     1  TEACHING INTERNSHIP    6.0  TBA                                     PERMIS OF INST
+ 19     1  HRE  4809 RES     1  ADV PROB IN HRE        1-3  TBA                                     PERMIS OF INST
+ 20        HRE  4809 RES     2  ADV PROB IN HRE        1-3  TBA                                     PERMIS OF INST
+ 15        HRE  4819 RES     1  SPEC TOP IN AGED       1-3  TBA                                     PERMIS OF INST
+ 15        HRE  4819 RES     2  SPEC TOP IN AGED       1-3  TBA                                     PERMIS OF INST
+ 10        HRE  4849 RES     1  SPEC TOP IN INED       1-3  TBA                                     PERMIS OF INST
+ 19    21  HRE  4859 RES     1  SPEC TOP IN BUED       1-3   430-0720N   T     0212 COATES          PERMIS OF INST   GURIE J
+ 15        HRE  4869 RES     1  SP TOP HOM ECON EDUC   1-3  TBA                                     PERMIS OF INST
+ 12     2  HRE  7003         1  PHILOSOPHY OF HRE      3.0   430-0720N  M      0217BOLD FORESTRY                     JOHNSON E
+ 15     9  HRE  7025         1  ADV ADLT LRN THRY/PR   3.0  TBA                                     100% WEB BASED   HATALA J
+     **                    WORLD WIDE WEB-BASED DELIVERY
+ 16     4  HRE  7122         1  PROGRAM DEVELOPMENT    3.0   430-0720N    W                                          CATER M
+     **                    COMPRESSED VIDEO
+ 18     6  HRE  7205         1  TCH IN HIGH EDUC       3.0   430-0720N    W
+     **                    COMPRESSED VIDEO
+  9    13  HRE  7271         1  LEADING LEARNING HRD   3.0   430-0720N   T     0108 TUREAUD HALL
+  4    19  HRE  7571         1  PERF/NEED ANLSIS HRD   3.0   430-0720N  M      0112 TUREAUD HALL                     BATES R
+ 20     4  HRE  7575         1  MANGING CHG ORG SYST   3.0  TBA                                     100% WEB BASED   HATALA J
+     **                    WORLD WIDE WEB-BASED DELIVERY
+ 12    13  HRE  7622         1  EVALUATION METHODS     3.0   900-1150   M      0102 OLD FORESTRY                     MACHTMES K
+     **                    COMPRESSED VIDEO
+  8     8  HRE  7723         1  LEADERSHIP AND ORG     3.0   430-0720N   T     0101 TUREAUD HALL
+ 14     6  HRE  7801 RES     1  MIXED METHODS          1-3   430-0720N   T     0102 OLD FORESTRY    PERMIS OF INST   MACHTMES K
+     **                    COMPRESSED VIDEO
+ 11     1  HRE  7803 RES     1  IND STUD IN HRE        1-3  TBA                                     PERMIS OF INST   BURNETT M
+ 12        HRE  7803 RES     2  IND STUD IN HRE        1-3  TBA                                     PERMIS OF INST   BATES R
+ 16        HRE  7803 RES     3  IND STUD IN HRE        1-3  TBA                                     PERMIS OF INST   HOLTON E
+ 15        HRE  7803 RES     4  IND STUD IN HRE        1-3  TBA                                     PERMIS OF INST   JOHNSON G
+  6        HRE  7803 RES     5  IND STUD IN HRE        1-3  TBA                                     PERMIS OF INST   KOTRLIK J
+  9     1  HRE  7803 RES     6  IND STUD IN HRE        1-3  TBA                                     PERMIS OF INST   MACHTMES K
+ 12        HRE  7809 CLI     1  PRACT HR EDUCATOR      3-9  TBA                                     PERMIS OF INST
+ 18        HRE  7809 CLI     2  PRACT HR EDUCATOR      3-9  TBA                                     PERMIS OF INST
+  5        HRE  7809 CLI     3  PRACT HR EDUCATOR      3-9  TBA                                     PERMIS OF INST
+  5        HRE  7809 CLI     4  PRACT HR EDUCATOR      3-9  TBA                                     PERMIS OF INST
+ 10        HRE  7822 SEM     1  ADV EXTENSION EDUC     3.0  TBA                                     PERMIS OF INST
+ 15        HRE  7824 RES     1  INDEPEND STUDY EX ED   3.0  TBA                                     PERMIS OF INST
+  2    33  HRE  7901         1  SCIEN METH HRE         3.0   430-0720N     TH                                        BURNETT M
+     **                    COMPRESSED VIDEO
+  8     2  HRE  7905         1  ADV RESEARCH DESIGN    3.0  TBA                                     PERMIS OF INST
+ 12        HRE  8000 RES     1  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   BURNETT M
+ 12        HRE  8000 RES     2  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   BATES R
+ 12        HRE  8000 RES     4  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   HOLTON E
+ 12        HRE  8000 RES     5  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   JOHNSON G
+ 12        HRE  8000 RES     6  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   KOTRLIK J
+ 12        HRE  8000 RES     7  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   MACHTMES K
+ 99        HRE  8000 RES     8  THESIS RESEARCH        1-12 TBA                                     PERMIS OF INST   REDMANN D
+ 10     5  HRE  8900 RES     9  DISS PROP WRITING      1-6   430-0720N     TH                       PERMIS OF INST   KOTRLIK J
+     **                    COMPRESSED VIDEO
+ 12        HRE  8900 RES     1  RESEARCH PROBLEMS      1-6  TBA                                     PERMIS OF INST   BURNETT M
+ 12        HRE  8900 RES     2  RESEARCH PROBLEMS      1-6  TBA                                     PERMIS OF INST   BATES R
+ 11     1  HRE  8900 RES     4  RESEARCH PROBLEMS      1-6  TBA                                     PERMIS OF INST   HOLTON E
+ 12        HRE  8900 RES     5  RESEARCH PROBLEMS      1-6  TBA                                     PERMIS OF INST   JOHNSON G
+ 11     1  HRE  8900 RES     6  RESEARCH PROBLEMS      1-6  TBA                                     PERMIS OF INST   KOTRLIK J
+ 12        HRE  8900 RES     7  RESEARCH PROBLEMS      1-6  TBA                                     PERMIS OF INST   MACHTMES K
+ 99        HRE  8900 RES     8  RESEARCH PROBLEMS      1-6  TBA                                     PERMIS OF INST   REDMANN D
+ 15     5  HRE  9000 RES     1  DISSERTATION RES       1-12 TBA                                     PERMIS OF INST   BURNETT M
+ 11     1  HRE  9000 RES     2  DISSERTATION RES       1-12 TBA                                     PERMIS OF INST   BATES R
+ 11     1  HRE  9000 RES     4  DISSERTATION RES       1-12 TBA                                     PERMIS OF INST   HOLTON E
+ 12        HRE  9000 RES     5  DISSERTATION RES       1-12 TBA                                     PERMIS OF INST   JOHNSON G
+ 13     2  HRE  9000 RES     6  DISSERTATION RES       1-12 TBA                                     PERMIS OF INST   KOTRLIK J
+ 11     1  HRE  9000 RES     7  DISSERTATION RES       1-12 TBA                                     PERMIS OF INST   MACHTMES K
+ 99        HRE  9000 RES     8  DISSERTATION RES       1-12 TBA                                     PERMIS OF INST   REDMANN D
+
+
+
+
+Fall  2012   HUMAN RESOURCE EDUCATION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

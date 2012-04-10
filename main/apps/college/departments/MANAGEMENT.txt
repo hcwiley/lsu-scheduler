@@ -1,0 +1,82 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+  5    25  MGT  2000         1  INNOV & CREATIVITY     3.0  1130-1220   M W F  1720 BUSINESS SCHOOL                  GUR F
+  3    27  MGT  2000         2  INNOV & CREATIVITY     3.0  1230-0120   M W F  1720 BUSINESS SCHOOL                  GUR F
+(F)    40  MGT  3200         2  PRINC OF MANAGEMENT    3.0   930-1020   M W F  1700 BUSINESS SCHOOL                  MCLARTY B
+(F)    40  MGT  3200         3  PRINC OF MANAGEMENT    3.0  1230-0120   M W F  1735 BUSINESS SCHOOL                  MAURER J
+ 11    29  MGT  3200         4  PRINC OF MANAGEMENT    3.0   230-0320   M W F  1800 BUSINESS SCHOOL                  BENDICKSON J
+386   514  MGT  3200         1  PRINC OF MANAGEMENT    3.0  1030-1150    T TH  0101 GYM AUDITORIUM                   SAULEY K
+ 29    11  MGT  3211         1  BUSINESS & SOCIETY     3.0   900-1020    T TH  2171 PATRICK TAYLOR                   MARIN D
+ 22    18  MGT  3211         2  BUSINESS & SOCIETY     3.0  1030-1150    T TH  2171 PATRICK TAYLOR                   MARIN D
+(F)     3  MGT  3280 CLI     1  MGT INTERNSHIP         3.0  TBA                                     PERMIS OF INST   SAULEY K
+(F)    40  MGT  3320         1  HUMAN RESOURCE MGT     3.0   930-1020   M W F  1735 BUSINESS SCHOOL                  HIGHTOWER G
+(F)    40  MGT  3320         2  HUMAN RESOURCE MGT     3.0  1030-1120   M W F  1735 BUSINESS SCHOOL                  HIGHTOWER G
+(F)    40  MGT  3320         3  HUMAN RESOURCE MGT     3.0  1130-1220   M W F  1735 BUSINESS SCHOOL                  CALEO S
+ 32     8  MGT  3320         4  HUMAN RESOURCE MGT     3.0   230-0320   M W F  1735 BUSINESS SCHOOL                  CALEO S
+ 37     3  MGT  3320         5  HUMAN RESOURCE MGT     3.0   330-0420   M W F  1735 BUSINESS SCHOOL                  CALEO S
+(F)    45  MGT  3513         1  LABOR-MGT CONF/COOP    3.0   130-0250   M W    1835 BUSINESS SCHOOL                  CHANDLER T
+  9    36  MGT  3513         2  LABOR-MGT CONF/COOP    3.0   300-0420   M W    1835 BUSINESS SCHOOL                  CHANDLER T
+  9    31  MGT  3830         1  STRAT MANAGING ORGS    3.0   900-1020    T TH  1112 PATRICK TAYLOR                   MCGUIRE J
+ 29    11  MGT  3830         2  STRAT MANAGING ORGS    3.0   900-1020    T TH  1111 PATRICK TAYLOR                   BANKS M
+ 14    26  MGT  3830         3  STRAT MANAGING ORGS    3.0  1030-1150    T TH  1111 PATRICK TAYLOR                   BANKS M
+(F)    40  MGT  3830         4  STRAT MANAGING ORGS    3.0  1200-0120    T TH  1111 PATRICK TAYLOR                   BANKS M
+ 29     6  MGT  3830         5  STRAT MANAGING ORGS    3.0  1200-0120    T TH  1225 BUSINESS SCHOOL CI-WRITTEN&SPOK;  MARIN D
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    40  MGT  3830         6  STRAT MANAGING ORGS    3.0   130-0250    T TH  1225 BUSINESS SCHOOL                  JAMES B
+  5    35  MGT  3830         7  STRAT MANAGING ORGS    3.0   300-0420    T TH  1225 BUSINESS SCHOOL                  JAMES B
+ 39     1  MGT  4020 CLI     1  INTERN ENTREPRENEUR    3.0  TBA                                     PERMIS OF INST   RODRIGUEZ J
+ 33     2  MGT  4030 RES     2  INDEP STUDY ENTREPRE   3.0   300-0550      TH  1720 BUSINESS SCHOOL PERMIS OF INST   RODRIGUEZ J
+                                                                                                    CI-WRITTEN&SPOK;
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 27    13  MGT  4113         1  SMALL BUSINESS MANAG   3.0   900-1020    T TH  2169 PATRICK TAYLOR                   IRWIN J
+ 10    30  MGT  4113         2  SMALL BUSINESS MANAG   3.0  1030-1150    T TH  2169 PATRICK TAYLOR                   IRWIN J
+ 17    13  MGT  4120         1  SOCIAL ENTREPRENEUR    3.0  1030-1150   M W    1745 BUSINESS SCHOOL                  BANKS M
+ 17    23  MGT  4323         1  COMPENSATION ADMINIS   3.0   130-0250   M W    1325 BUSINESS SCHOOL                  RICHARDSON H
+(F)    40  MGT  4420         1  MULTINATIONAL MGT      3.0   130-0250    T TH  1305 BUSINESS SCHOOL                  WHITMAN D
+(F)    40  MGT  4420         2  MULTINATIONAL MGT      3.0   300-0420    T TH  1305 BUSINESS SCHOOL                  WHITMAN D
+(F)    30  MGT  4620         1  HUMAN BEHAV ORGANIZA   3.0   900-1020    T TH  1745 BUSINESS SCHOOL                  BEDEIAN A
+(F)    30  MGT  4620         2  HUMAN BEHAV ORGANIZA   3.0  1200-0120    T TH  1720 BUSINESS SCHOOL                  BERNERTH J
+ 18    12  MGT  4620         3  HUMAN BEHAV ORGANIZA   3.0   130-0250    T TH  1720 BUSINESS SCHOOL                  BERNERTH J
+ 30    15  MGT  7111         1  ENTREPRENEURSHIP MGT   3.0  1200-0120    T TH  1305 BUSINESS SCHOOL                  JUSTIS R
+ 17     5  MGT  7811         1  RES ISS STRATEG MGT    3.0   130-0420      TH  1120 BUSINESS SCHOOL                  GRECKHAMER T
+  3        MGT  9000 RES     1  DISSERTATION RES       1-12 TBA                                                      RICHARDSON H
+  3        MGT  9000 RES     4  DISSERTATION RES       1-12 TBA                                                      MCGUIRE J
+  4     1  MGT  9202 RES     1  PREDISSERT RESEARCH    1-9  TBA                                                      RICHARDSON H
+  4     1  MGT  9202 RES     2  PREDISSERT RESEARCH    1-9  TBA                                                      MCGUIRE J
+
+
+
+
+Fall  2012   MANAGEMENT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

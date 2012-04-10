@@ -1,0 +1,49 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 19    21  AAAS 2000 SEM     1  AFRICAN & AFR/AMER S   3.0  1030-1150    T TH  0026 HATCHER HALL                     SULLIVAN J
+ 23    17  AAAS 2410         1  BLACK POP CULTURE      3.0   400-0650    T     0119 TUREAUD HALL                     ALLEN T
+      ***   AAAS 2511  ***       CROSS-LISTED WITH   SOCL 2511
+  2    38  AAAS 2511         1  RACE RELATIONS         3.0   900-1020    T TH  0253 HIMES                            ALLEN T
+ 32     3  AAAS 3024         2  AF DIASPORA INTELL T   3.0  1030-1150    T TH  0114 AUDUBON                          BIRTHWRIGHT E
+ 31     4  AAAS 3044         1  BLACK RHETORICAL TRA   3.0   300-0420    T TH  0209 COATES                           KELLY H
+ 26     9  AAAS 3122         1  TOPICS IN PRE-COL AF   3.0  1200-0120    T TH  0015 ATKINSON                         COLE G
+ 30        AAAS 3902         3  SP TOP IN AAAS         1-3   330-0450   M W    0103 COATES                           GARCIA D
+ 26     4  AAAS 3902         2  CVL RGTS & BLK POWER   1-3  1030-1150    T TH  0005 HATCHER HALL                     KAROLCZYK P
+ 16     4  AAAS 4020 SEM     1  STEREOTYPES            3.0   600-0850N   T     0111 COATES                           SULLIVAN J
+
+
+
+
+Fall  2012   AFRICAN & AFRICAN-AMERICAN STU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

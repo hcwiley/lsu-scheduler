@@ -1,0 +1,88 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+225   100  ACCT 2000         1  SURVEY OF ACCOUNTING   3.0   830-0920   M W F  0100 DODSON                           LOWE-ARDOIN L
+173   152  ACCT 2000         2  SURVEY OF ACCOUNTING   3.0   130-0250    T TH  0100 DODSON                           DENSTEL C
+258    42  ACCT 2001         1  INTR FINANCIAL ACCT    3.0  1200-0120    T TH  1510 BUSINESS SCHOOL                  DELAUNE L
+259    41  ACCT 2001         2  INTR FINANCIAL ACCT    3.0   130-0250    T TH  1510 BUSINESS SCHOOL                  HOLMES J
+202    98  ACCT 2101         1  INTRO MANAGERIAL ACC   3.0   900-1020    T TH  1510 BUSINESS SCHOOL                  CHENIER J
+143   157  ACCT 2101         2  INTRO MANAGERIAL ACC   3.0  1030-1150    T TH  1510 BUSINESS SCHOOL                  CHENIER J
+ 51     4  ACCT 3001         3  INTERMEDIATE ACCT I    3.0   730-0850    T TH  1615 BUSINESS SCHOOL                  STAFF
+(F)    45  ACCT 3001         2  INTERMEDIATE ACCT I    3.0   900-1020    T TH  1735 BUSINESS SCHOOL                  HOLMES J
+ 47     8  ACCT 3001         4  INTERMEDIATE ACCT I    3.0   900-1020    T TH  1615 BUSINESS SCHOOL                  STAFF
+(F)    45  ACCT 3001         1  INTERMEDIATE ACCT I    3.0  1030-1150    T TH  1735 BUSINESS SCHOOL                  HOLMES J
+  1    39  ACCT 3021         4  INTERMEDIATE ACCT II   3.0   300-0420   M W    1305 BUSINESS SCHOOL                  LEGORIA J
+(F)    40  ACCT 3021         2  INTERMEDIATE ACCT II   3.0  1200-0120    T TH  1321 BUSINESS SCHOOL                  HOLLIE D
+ 32     8  ACCT 3021         1  INTERMEDIATE ACCT II   3.0   130-0250    T TH  1425 BUSINESS SCHOOL                  CHENG C
+  5    35  ACCT 3021         3  INTERMEDIATE ACCT II   3.0   130-0250    T TH  1321 BUSINESS SCHOOL                  HOLLIE D
+  2    58  ACCT 3121         2  COST ANAL & CONTROL    3.0   300-0420   M W    1700 BUSINESS SCHOOL                  PAN S
+ 36    24  ACCT 3121         1  COST ANAL & CONTROL    3.0   430-0550N  M W    1700 BUSINESS SCHOOL                  PAN S
+ 39    16  ACCT 3122         1  ACCT INFO SYSTEMS      3.0   730-0850    T TH  1321 BUSINESS SCHOOL                  SOILEAU J
+(F)    45  ACCT 3122         2  ACCT INFO SYSTEMS      3.0  1030-1150    T TH  1321 BUSINESS SCHOOL                  SOILEAU J
+ 16    39  ACCT 3221         1  INCOME TAX ACCT I      3.0  1030-1120   M W F  1700 BUSINESS SCHOOL                  LOWE-ARDOIN L
+ 15    40  ACCT 3221         2  INCOME TAX ACCT I      3.0  1130-1220   M W F  1700 BUSINESS SCHOOL                  LOWE-ARDOIN L
+(F)    30  ACCT 3222         1  AUDITING               3.0   900-1020    T TH  3131 PATRICK TAYLOR                   SIMONOV A
+(F)    31  ACCT 3222         2  AUDITING               3.0  1030-1150    T TH  3131 PATRICK TAYLOR                   SIMONOV A
+ 34     6  ACCT 4021         1  CASES IN ACCT POLICY   3.0   530-0820N   T     1700 BUSINESS SCHOOL PERMIS OF INST   MOFFITT J
+ 11    29  ACCT 4022         1  ADVANCED ACCOUNTING    3.0   430-0550N  M W    1800 BUSINESS SCHOOL                  LEGORIA J
+(F)    60  ACCT 4121         1  ADVANCED COST ANAL     3.0  1200-0120    T TH  1920 BUSINESS SCHOOL                  LIU M
+ 14    13  ACCT 4221         1  INCOME TAX ACCT II     3.0   300-0420   M W    1220 BUSINESS SCHOOL                  CRUMBLEY D
+100        ACCT 4231 CLI     1  INTERNSHIP IN ACCT     3.0  TBA                                     PERMIS OF INST
+  1    39  ACCT 4234         1  INTERNL AUDIT II       3.0   900-1020    T TH  1720 BUSINESS SCHOOL                  SUMNERS G
+                                                                                                                     LAFLEUR L
+ 14    46  ACCT 4234         2  INTERNL AUDIT II       3.0  1030-1150    T TH  1700 BUSINESS SCHOOL                  SUMNERS G
+                                                                                                                     LAFLEUR L
+100        ACCT 4333 CLI     1  INTERNSHIP INT AUDIT   3.0  TBA
+  7    48  ACCT 4421         1  GOV/NOT-FOR-PROF ACC   3.0   730-0850    T TH  1735 BUSINESS SCHOOL                  TORRES D
+ 14    16  ACCT 7021         3  ADV TH OF ACCOUNTS     3.0   900-1150   M W    1114 PATRICK TAYLOR                   REICHELT K
+     **                    OFFERED ON CONDENSED BASIS, 10/10/12 - 12/8/12
+ 17    13  ACCT 7201         1  TAX ASP OF BUS ENT     3.0   900-1020    T TH  1110 PATRICK TAYLOR                   CHENG C
+ 31     9  ACCT 7222         1  AUDIT THEORY/STNDRDS   3.0  1030-1150    T TH  1425 BUSINESS SCHOOL                  DELAUNE L
+ 99     1  ACCT 7231 CLI     1  INTRNSHIP IN ACCT      3.0  TBA                                     PERMIS OF INST
+ 27    13  ACCT 7234         1  OPERATIONAL AUDITING   3.0   130-0250    T TH  1325 BUSINESS SCHOOL                  SUMNERS G
+ 31     9  ACCT 7235         1  FRAUD AUDITING         3.0   600-0850N  M      1305 BUSINESS SCHOOL                  CRUMBLEY D
+100        ACCT 7333 CLI     1  INTERNSHIP INT AUDIT   3.0  TBA                                     PERMIS OF INST
+ 25     5  ACCT 7401         1  ETHICS FOR PROF ACCT   3.0   130-0250    T TH  3129 PATRICK TAYLOR                   MOFFITT J
+ 27     3  ACCT 7401         2  ETHICS FOR PROF ACCT   3.0   300-0420    T TH  3129 PATRICK TAYLOR                   MOFFITT J
+(H)     2  ACCT 7601         1  INTERNATIONAL ACCOUN   3.0   600-0850N     TH  1425 BUSINESS SCHOOL
+ 12        ACCT 8900 RES     1  PREDISSERT RESEARCH    1-9  TBA                                                      CHENG C
+ 99        ACCT 9000 RES     1  DISSERTATION RES       1-12 TBA                                                      CHENG C
+ 99        ACCT 9000 RES     2  DISSERTATION RES       1-12 TBA                                                      CHENG C
+ 10        ACCT 9001 RES     1  ACCOUNTING RES I       3.0  TBA                                                      CHENG C
+  9     1  ACCT 9003 RES     1  ACCOUNTING RES III     3.0  TBA                                                      REICHELT K
+
+
+
+
+Fall  2012   ACCOUNTING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

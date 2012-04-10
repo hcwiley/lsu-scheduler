@@ -1,0 +1,126 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+295    80  GEOL 1001         1  GEN GEOL PHYSICAL      3.0  1130-1220   M W F  0130 HOWE RUSSELL E                   STAFF
+303    72  GEOL 1001         2  GEN GEOL PHYSICAL      3.0  1230-0120   M W F  0130 HOWE RUSSELL E                   STAFF
+307    68  GEOL 1001         3  GEN GEOL PHYSICAL      3.0  1030-1150    T TH  0130 HOWE RUSSELL E                   LORENZO J
+(F)    18  GEOL 1002         1  HON- GEN GEOL PHY      3.0   900-1020    T TH  0347 HOWE RUSSELL E  CI-WRITTEN&VISU;  NUNN J
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+306    69  GEOL 1003         1  GEN GEOL HISTORICAL    3.0   230-0320   M W F  0130 HOWE RUSSELL E                   BAO H
+ 16    12  GEOL 1601 LAB     1  PHYSICAL GEOL LAB      1.0   930-1220   M      E213 HOWE RUSSELL E                   KELLEY D
+ 17    11  GEOL 1601 LAB     2  PHYSICAL GEOL LAB      1.0  1230-0320   M      E213 HOWE RUSSELL E                   KELLEY D
+  8    20  GEOL 1601 LAB     3  PHYSICAL GEOL LAB      1.0   330-0620   M      E213 HOWE RUSSELL E                   KELLEY D
+(H)     4  GEOL 1601 LAB     4  PHYSICAL GEOL LAB      1.0   900-1150    T     E213 HOWE RUSSELL E                   KELLEY D
+  4    24  GEOL 1601 LAB     5  PHYSICAL GEOL LAB      1.0  1200-0250    T     E213 HOWE RUSSELL E                   KELLEY D
+  1    27  GEOL 1601 LAB     6  PHYSICAL GEOL LAB      1.0   300-0550    T     E213 HOWE RUSSELL E                   KELLEY D
+ 17    11  GEOL 1601 LAB     9  PHYSICAL GEOL LAB      1.0   600-0850N   T     E213 HOWE RUSSELL E                   KELLEY D
+(F)     5  GEOL 1601 LAB     7  PHYSICAL GEOL LAB      1.0   930-1220     W    E213 HOWE RUSSELL E                   KELLEY D
+ 19     9  GEOL 1601 LAB     8  PHYSICAL GEOL LAB      1.0  1230-0320     W    E213 HOWE RUSSELL E                   KELLEY D
+ 14    14  GEOL 1601 LAB    10  PHYSICAL GEOL LAB      1.0   330-0620     W    E213 HOWE RUSSELL E                   KELLEY D
+ 19     5  GEOL 1602 LAB     1  HISTORICAL GEOL LAB    1.0  1230-0320   M      E207 HOWE RUSSELL E                   KELLEY D
+ 14    10  GEOL 1602 LAB     2  HISTORICAL GEOL LAB    1.0   330-0620   M      E207 HOWE RUSSELL E                   KELLEY D
+ 21     3  GEOL 1602 LAB     3  HISTORICAL GEOL LAB    1.0   300-0550    T     E207 HOWE RUSSELL E                   KELLEY D
+ 14    11  GEOL 2081         1  MINERALOGY             4.0  1030-1150    T TH  E207 HOWE RUSSELL E                   DUTROW B
+                     LAB                                     130-0250    T TH  E208 HOWE RUSSELL E                   DUTROW B
+  6    19  GEOL 3032         1  SED & DEP ENVS         4.0   730-0850    T TH  E137 HOWE RUSSELL E                   BENTLEY S
+                     LAB                                     300-0550    T     0360 HOWE RUSSELL E                   BENTLEY S
+ 20     5  GEOL 3032         2  SED & DEP ENVS         4.0   730-0850    T TH  E137 HOWE RUSSELL E                   BENTLEY S
+                     LAB                                     300-0550      TH  0360 HOWE RUSSELL E                   BENTLEY S
+ 17     8  GEOL 3041         1  IG MET PETROLOGY       4.0  1030-1120   M W F  E131 HOWE RUSSELL E  CI-WRITTEN&SPOK;  HENRY D
+                     LAB                                     900-1150      TH  E206 HOWE RUSSELL E                   HENRY D
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    17  GEOL 3041         2  IG MET PETROLOGY       4.0  1030-1120   M W F  E131 HOWE RUSSELL E                   HENRY D
+                     LAB                                    1200-0250      TH  E206 HOWE RUSSELL E                   HENRY D
+(F)    25  GEOL 3200         1  EARTH MATERIALS PETE   3.0  1230-0120   M W    E134 HOWE RUSSELL E                   KELLEY D
+                     LAB                                     730-1020       F  0360 HOWE RUSSELL E                   KELLEY D
+(F)    25  GEOL 3200         2  EARTH MATERIALS PETE   3.0  1230-0120   M W    E134 HOWE RUSSELL E                   KELLEY D
+                     LAB                                    1130-0220       F  0360 HOWE RUSSELL E                   KELLEY D
+(F)     1  GEOL 3909 RES     1  GEOLOGICAL RES         1-3  TBA                                                      WICKS C
+(F)     1  GEOL 3909 RES     2  GEOLOGICAL RES         1-3  TBA                                                      BAO H
+  2     9  GEOL 4012         1  INTRO MICROPALEONTOL   3.0  1130-0120   M      0130 LOCKETT         CI-WRITTEN&SPOK;  BART S
+                     LAB                                    1230-0320     W                                          BART S
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    20  GEOL 4044         1  PETROLEUM GEOLOGY      3.0  1030-1150    T TH  0347 HOWE RUSSELL E                   CLIFT P
+  4    11  GEOL 4066         1  PLATE TECTONICS        3.0   900-1020    T TH  E207 HOWE RUSSELL E  CI-VISUAL&TECH;   WEBB A
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+  6     9  GEOL 4068         2  REFLECT SEISMOLOGY     3.0   730-0820    T TH  E207 HOWE RUSSELL E
+                     LAB                                     200-0450      TH  0347 HOWE RUSSELL E
+      ***   GEOL 4081  ***       CROSS-LISTED WITH   OCS  4126
+  1    14  GEOL 4081         1  CHEM OCEANOGRAPHY      3.0  1030-1150    T TH  1070 ENER,COAST,& EN                  MAITI K
+  5    10  GEOL 4182         1  PHYSICAL HYDROGEOLOG   3.0  1200-0120    T TH  0347 HOWE RUSSELL E  CI-VISUAL&TECH;   WICKS C
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+  3    21  GEOL 7061         1  SEQUENCE STRATIGRAPH   3.0   930-1020   M W F  E207 HOWE RUSSELL E                   BART P
+ 15        GEOL 7900         1  SPEC TOPICS IN GEOL    3.0   830-0920   M W F  0202 TUREAUD HALL
+ 15        GEOL 7900         2  SPEC TOPICS IN GEOL    3.0  1230-0120   M W F  0202 TUREAUD HALL
+  4     1  GEOL 7909 RES     1  DIR RES IN GEOL/GEOP   1-6  TBA
+  5        GEOL 7909 RES     2  DIR RES IN GEOL/GEOP   1-6  TBA
+  6     5  GEOL 7941 SEM     1  IGNE & METMOR PETRGY   2.0  TBA                                                      HENRY D
+  2     9  GEOL 7972 SEM     1  SEM IN GEOPHYSICS      3.0  TBA                                                      WICKS C
+ 99        GEOL 8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      UNASSIGNED
+ 99        GEOL 8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      BAO H
+ 98     1  GEOL 8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      BART P
+ 99        GEOL 8000 RES     4  THESIS RESEARCH        1-12 TBA                                                      BYERLY G
+  5        GEOL 8000 RES     5  THESIS RESEARCH        1-12 TBA                                                      DUTROW B
+ 99        GEOL 8000 RES     6  THESIS RESEARCH        1-12 TBA                                                      ELLWOOD B
+ 99        GEOL 8000 RES     7  THESIS RESEARCH        1-12 TBA                                                      UNASSIGNED
+ 98     1  GEOL 8000 RES     8  THESIS RESEARCH        1-12 TBA                                                      BENTLEY S
+ 99        GEOL 8000 RES     9  THESIS RESEARCH        1-12 TBA                                                      CLIFT P
+ 99        GEOL 8000 RES    10  THESIS RESEARCH        1-12 TBA                                                      HENRY D
+ 99        GEOL 8000 RES    11  THESIS RESEARCH        1-12 TBA                                                      LORENZO J
+ 96     3  GEOL 8000 RES    12  THESIS RESEARCH        1-12 TBA                                                      NUNN J
+ 99        GEOL 8000 RES    13  THESIS RESEARCH        1-12 TBA                                                      SCHIEBOUT J
+ 99        GEOL 8000 RES    14  THESIS RESEARCH        1-12 TBA                                                      BART S
+ 99        GEOL 8000 RES    15  THESIS RESEARCH        1-12 TBA                                                      WEBB A
+ 98     1  GEOL 8000 RES    16  THESIS RESEARCH        1-12 TBA                                                      WICKS C
+ 99        GEOL 9000 RES     1  DISSERTATION RES       1-12 TBA                                                      UNASSIGNED
+ 99        GEOL 9000 RES     2  DISSERTATION RES       1-12 TBA                                                      BAO H
+ 99        GEOL 9000 RES     3  DISSERTATION RES       1-12 TBA                                                      BART P
+  4     1  GEOL 9000 RES     4  DISSERTATION RES       1-12 TBA                                                      BYERLY G
+ 99        GEOL 9000 RES     5  DISSERTATION RES       1-12 TBA                                                      DUTROW B
+ 97     2  GEOL 9000 RES     6  DISSERTATION RES       1-12 TBA                                                      ELLWOOD B
+ 99        GEOL 9000 RES     7  DISSERTATION RES       1-12 TBA                                                      UNASSIGNED
+ 97     2  GEOL 9000 RES     8  DISSERTATION RES       1-12 TBA                                                      BENTLEY S
+ 99        GEOL 9000 RES     9  DISSERTATION RES       1-12 TBA                                                      CLIFT P
+ 99        GEOL 9000 RES    10  DISSERTATION RES       1-12 TBA                                                      HENRY D
+ 99        GEOL 9000 RES    11  DISSERTATION RES       1-12 TBA                                                      LORENZO J
+ 99        GEOL 9000 RES    12  DISSERTATION RES       1-12 TBA                                                      NUNN J
+ 99        GEOL 9000 RES    13  DISSERTATION RES       1-12 TBA                                                      SCHIEBOUT J
+ 99        GEOL 9000 RES    14  DISSERTATION RES       1-12 TBA                                                      BART S
+ 99        GEOL 9000 RES    15  DISSERTATION RES       1-12 TBA                                                      WEBB A
+ 98     1  GEOL 9000 RES    16  DISSERTATION RES       1-12 TBA                                                      WICKS C
+
+
+
+
+Fall  2012   GEOLOGY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

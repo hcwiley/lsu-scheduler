@@ -1,0 +1,50 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+      ***   EMS  1011  ***       CROSS-LISTED WITH   ENVS 1000
+ 34     1  EMS  1011         1  ENVIR TECH: PRSP ENV   3.0  1030-1150    T TH  0134 M B STURGIS     CI-WRITTEN&SPOK;  WALSH M
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+      ***   EMS  2011  ***       CROSS-LISTED WITH   AGRO 2011, HORT 2011
+ 12     8  EMS  2011         1  ANAL ENV ISSUES        3.0   130-0250    T TH  0135 M B STURGIS     CI-WRITTEN&SPOK;  WALSH M
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 17    13  EMS  3050         1  ENVIR REGULAT & COMP   3.0   600-0850N   T     0132 M B STURGIS
+ 10        EMS  3090 CLI     1  ENVIRONMENTAL INTERN   3.0  TBA
+      ***   EMS  7057  ***       CROSS-LISTED WITH   AGRO 7057
+ 18        EMS  7057         1  ADV SOIL PHYSICS       4.0  1030-1150    T TH  0135 M B STURGIS                      SELIM H
+                     LAB                                     100-0250      TH
+
+
+
+
+Fall  2012   ENVIRONMENTAL MANAGEMENT SYSTE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

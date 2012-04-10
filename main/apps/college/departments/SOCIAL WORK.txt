@@ -1,0 +1,86 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+(F)    50  SW   2000         1  INTRO TO SOCIAL WORK   3.0   930-1020   M W F                                        CHIASSON A
+     **                    WORLD WIDE WEB-BASED DELIVERY
+(F)    50  SW   3002         1  CHILD AND COMMUNITY    3.0   900-1020    T TH  0203 TUREAUD HALL                     BROWN M
+(F)    50  SW   3007         1  JUVENILE DELINQUENCY   3.0  1200-0120    T TH  0104 AUDUBON                          RHODES J
+ 11    39  SW   3011         1  COM SERVICES & AGED    3.0   300-0550   M      0218 COATES                           SMELLEY S
+(F)    20  SW   4070         1  AT RISK  YOUTH         3.0   400-0650    T     0146 LONG FIELDHOUSE                  BARTHELEMY J
+ 25        SW   7001         1  HUM BEH/SOC ENV I      3.0   830-1120     W    0156 LONG FIELDHOUSE MAJORS ONLY      ABADIE M
+ 25        SW   7001         2  HUM BEH/SOC ENV I      3.0   830-1120     W    0146 LONG FIELDHOUSE MAJORS ONLY      PAGE T
+ 25        SW   7001         3  HUM BEH/SOC ENV I      3.0   400-0650     W    0156 LONG FIELDHOUSE MAJORS ONLY      BARTHELEMY J
+ 24     1  SW   7003         1  SOC WELFARE HIST/POL   3.0  1230-0320     W    0156 LONG FIELDHOUSE MAJORS ONLY      STAFF
+ 25        SW   7003         2  SOC WELFARE HIST/POL   3.0  1230-0320     W    0146 LONG FIELDHOUSE MAJORS ONLY      STAFF
+ 25        SW   7003         3  SOC WELFARE HIST/POL   3.0   400-0650      TH  0156 LONG FIELDHOUSE MAJORS ONLY      STAFF
+ 20     2  SW   7005         1  SOCIAL WORK PRACT I    3.0   830-1120      TH  0156 LONG FIELDHOUSE MAJORS ONLY      LILLEY T
+ 21     1  SW   7005         2  SOCIAL WORK PRACT I    3.0   830-1120      TH  0146 LONG FIELDHOUSE MAJORS ONLY      MACCIO E
+ 22        SW   7005         3  SOCIAL WORK PRACT I    3.0   830-1120      TH  0152 LONG FIELDHOUSE MAJORS ONLY      STAFF
+ 12    10  SW   7005         4  SOCIAL WORK PRACT I    3.0   400-0650      TH  0146 LONG FIELDHOUSE MAJORS ONLY      LILLEY T
+ 83     2  SW   7007 CLI     1  FOUND FIELD INTERN I   3.0  TBA
+ 30        SW   7008 CLI     1  FOUND FIELD INTERN I   3.0  TBA
+ 17     8  SW   7009 RES     3  SOCIAL WORK RESEARCH   3.0   400-0650     W    0146 LONG FIELDHOUSE MAJORS ONLY      STAFF
+ 23     2  SW   7009 RES     1  SOCIAL WORK RESEARCH   3.0  1230-0320      TH  0146 LONG FIELDHOUSE MAJORS ONLY      LIM Y
+ 22     3  SW   7009 RES     2  SOCIAL WORK RESEARCH   3.0  1230-0320      TH  0156 LONG FIELDHOUSE MAJORS ONLY      STAFF
+  6     4  SW   7200 SEM     1  INTEGR COLLOQ SW I     3.0  1230-0320   M      0152 LONG FIELDHOUSE                  LIM Y
+ 98     1  SW   7205 SEM     1  PEDAGOG ISS SW EDUC    3.0  TBA                                     PERMIS OF DEPT   LIM Y
+ 20     7  SW   7406         1  SW W/LGBT              3.0  1230-0320    T     0152 LONG FIELDHOUSE                  MACCIO E
+(F)    20  SW   7412         1  SW IN MEDICAL CARE     3.0  1230-0320    T     0156 LONG FIELDHOUSE                  MOLES A
+ 10    10  SW   7415         1  CHILD/FAMILY I         3.0   400-0650   M      0146 LONG FIELDHOUSE                  HODNETT R
+(F)    36  SW   7501         1   SOCIAL WORK RESEARC   3.0   830-1120    T     0156 LONG FIELDHOUSE MAJORS ONLY      WILKS S
+  3    24  SW   7501         2   SOCIAL WORK RESEARC   3.0   830-1120    T     0146 LONG FIELDHOUSE MAJORS ONLY      STAFF
+(F)    27  SW   7501         3   SOCIAL WORK RESEARC   3.0   400-0650    T     0152 LONG FIELDHOUSE 50-99% WEB BASE  WILKS S
+     **                    WORLD WIDE WEB-BASED DELIVERY
+ 66    74  SW   7502 CLI     1  ADV FIELD INTERN I     3.0  TBA                                                      LILLEY T
+ 29     1  SW   7503 CLI     1  ADV FLD INTERN II      3.0  TBA                                                      LILLEY T
+(F)    29  SW   7505         1  ADV DIRECT PRACTICE    3.0   830-1120   M      0156 LONG FIELDHOUSE MAJORS ONLY      ABADIE M
+(F)    28  SW   7505         2  ADV DIRECT PRACTICE    3.0   830-1120   M      0146 LONG FIELDHOUSE MAJORS ONLY      PAGE T
+  8    19  SW   7505         3  ADV DIRECT PRACTICE    3.0   400-0650   M      0156 LONG FIELDHOUSE MAJORS ONLY      STAFF
+(F)    33  SW   7506         1  COM/AGCY CONT DIR PR   3.0  1230-0320   M      0156 LONG FIELDHOUSE MAJORS ONLY      LIVERMORE M
+(F)    33  SW   7506         2  COM/AGCY CONT DIR PR   3.0  1230-0320   M      0146 LONG FIELDHOUSE MAJORS ONLY      ALLEN P
+ 17    10  SW   7506         3  COM/AGCY CONT DIR PR   3.0   400-0650    T     0156 LONG FIELDHOUSE MAJORS ONLY      ALLEN P
+  5    15  SW   7801         1  FAMILY VIOLENCE        3.0   400-0650   M                           50-99% WEB BASE  BARTHELEMY J
+     **                    WORLD WIDE WEB-BASED DELIVERY
+  9    16  SW   7804         1  ADDICTIVE DISORDERS    3.0  1230-0320    T     0146 LONG FIELDHOUSE                  LEMIEUX C
+  5        SW   9000 RES     1  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   LEMIEUX C
+  5        SW   9000 RES     2  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   PAGE T
+  5        SW   9000 RES     3  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   CAIN D
+ 99        SW   9000 RES     4  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   LIVERMORE M
+ 99        SW   9000 RES     5  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   GUIN C
+ 99        SW   9000 RES     6  DISSERTATION RES       1-12 TBA                                     PERMIS OF DEPT   MONROE P
+
+
+
+
+Fall  2012   SOCIAL WORK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

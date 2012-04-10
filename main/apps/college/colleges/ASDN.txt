@@ -1,0 +1,9 @@
+ID:Interior Design, BID
+LA:Landscape Architecture, BLA
+STAR CERAM:Studio Art, BFA / Ceramics
+STAR DIGIT:Studio Art, BFA / Digital Art
+STAR GRDESN:Studio Art, BFA / Graphic Design
+STAR PAINT:Studio Art, BFA / Painting &amp; Drawing
+STAR PHOTO:Studio Art, BFA / Photography
+STAR PRINT:Studio Art, BFA / Printmaking
+STAR SCULPT:Studio Art, BFA / Sculpture

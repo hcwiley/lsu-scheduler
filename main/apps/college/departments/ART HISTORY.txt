@@ -1,0 +1,57 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+224    56  ARTH 1440         1  HISTOR SURVEY ARTS     3.0  1130-1220   M W F  0143 COATES                           SANDROCK J
+310    40  ARTH 1441         1  HISTOR SURVEY ARTS     3.0   300-0420    T TH  0002 LOCKETT                          ZUCKER M
+131    19  ARTH 2470         1  SURV 20TH CENT ART     3.0  1200-0120    T TH  0103 DESIGN BUILDING                  RYAN S
+ 36    19  ARTH 4404         1  THE ART OF ROME        3.0   130-0220   M W F  0201 DESIGN BUILDING                  SANDROCK J
+ 32    23  ARTH 4405         1  EARLY CHRIS BYZAN AR   3.0  1200-0120    T TH  0201 DESIGN BUILDING                  SAVAGE M
+ 54     1  ARTH 4420         1  STUDIES IN ART HIST    3.0   630-0920N    W
+     **                    SUB-SAHARAN AFRICA
+(F)    55  ARTH 4423         1  ERLY REN PAINT ITALY   3.0  1030-1150    T TH  0201 DESIGN BUILDING                  ZUCKER M
+ 31    24  ARTH 4451         1  20TH CEN EUROP ART     3.0   930-1020   M W F  0201 DESIGN BUILDING                  SPIETH D
+ 12    43  ARTH 4470         1  HIST OF PHOTOGRAPHY    3.0  1030-1120   M W F  0201 DESIGN BUILDING                  SPIETH D
+(F)    40  ARTH 4482         1  DIGITAL ART HISTORY    3.0   300-0420    T TH  0201 DESIGN BUILDING                  RYAN S
+ 15        ARTH 7410 SEM     1  METHODS COLLOQUIUM     1.0   400-0450   M      0220 DESIGN BUILDING                  ZUCKER M
+ 10     5  ARTH 7441 SEM     1  RES SEM HIST OF ART    3.0   300-0550     W    0220 DESIGN BUILDING                  SAVAGE M
+  3     1  ARTH 8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      SANDROCK J
+  4        ARTH 8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      ZUCKER M
+(F)     4  ARTH 8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      SPIETH D
+  3     1  ARTH 8000 RES     4  THESIS RESEARCH        1-12 TBA                                                      SAVAGE M
+  4        ARTH 8000 RES     5  THESIS RESEARCH        1-12 TBA                                                      RYAN S
+
+
+
+
+Fall  2012   ART HISTORY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

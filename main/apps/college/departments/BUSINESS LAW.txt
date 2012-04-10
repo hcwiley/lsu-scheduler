@@ -1,0 +1,49 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 83   217  BLAW 3201         7  BUSINESS LAW           3.0  1130-1220   M W F  1510 BUSINESS SCHOOL                  FRY M
+ 16     4  BLAW 3201         6  BUSINESS LAW           3.0   300-0420   M W    1409 BUSINESS SCHOOL PERMIS OF DEPT   DUPLECHAIN G
+     **                    FINANCE ACADEMY/HONORS OPTION
+  7    43  BLAW 3201         1  BUSINESS LAW           3.0   430-0550N  M W    1735 BUSINESS SCHOOL                  DUPLECHAIN G
+  8    72  BLAW 3201         5  BUSINESS LAW           3.0   130-0250    T TH  1620 BUSINESS SCHOOL                  FARGASON J
+(F)    50  BLAW 3201         2  BUSINESS LAW           3.0   600-0850N    W    1615 BUSINESS SCHOOL                  DUPLECHAIN G
+  3    59  BLAW 3202         1  COMM TRANSACTIONS      3.0  1230-0120   M W F  1615 BUSINESS SCHOOL                  FRY M
+  3    57  BLAW 3230         1  SPORTS LAW             3.0   130-0250    T TH  1700 BUSINESS SCHOOL                  SIMS J
+(F)    60  BLAW 3230         2  SPORTS LAW             3.0   600-0850N    W    1700 BUSINESS SCHOOL                  RICHARD K
+ 48    32  BLAW 4203         1  COMM TRANS - ACCTNTS   3.0  1200-0120    T TH  1125 BUSINESS SCHOOL                  FARGASON J
+
+
+
+
+Fall  2012   BUSINESS LAW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+BE:Biological Engineering, BS in
+CE:Civil Engineering, BS in
+CHE  CHEBMC:Chemical Engineering, BS in / Biomolecular
+CHE  CHEENV:Chemical Engineering, BS in / Environmental
+CHE  CHEMAT:Chemical Engineering, BS in / Materials
+CHE:Chemical Engineering, BS in
+CM:Construction Management, BS in
+EE:Electrical Engineering, BS in
+EEC:Computer Engineering, BS in
+EVEG:Environmental Engr, BS in
+IE:Industrial Engineering, BS in
+ME:Mechanical Engineering, BS in
+PETE:Petroleum Engineering, BS in

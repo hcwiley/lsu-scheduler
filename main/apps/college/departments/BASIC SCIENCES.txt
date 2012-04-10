@@ -1,0 +1,48 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 12    10  BASC 2010 LAB     1  INQ MATH & SCI TEACH   1.0   930-1020   M W    0205 PRESCOTT                         ANDERSON C
+(H)        BASC 2010 LAB     5  INQ MATH & SCI TEACH   1.0   930-1020   M W    0203 PRESCOTT                         ANDERSON C
+ 16     6  BASC 2010 LAB     2  INQ MATH & SCI TEACH   1.0  1030-1120   M W    0205 PRESCOTT                         ANDERSON C
+(H)        BASC 2010 LAB     6  INQ MATH & SCI TEACH   1.0  1030-1120   M W    0203 PRESCOTT                         ANDERSON C
+ 15     7  BASC 2010 LAB     3  INQ MATH & SCI TEACH   1.0  1230-0120   M W    0205 PRESCOTT                         ANDERSON C
+(H)        BASC 2010 LAB     7  INQ MATH & SCI TEACH   1.0  1230-0120   M W    0203 PRESCOTT                         ANDERSON C
+ 12    10  BASC 2010 LAB     4  INQ MATH & SCI TEACH   1.0   300-0420    T     0205 PRESCOTT                         ANDERSON C
+ 15     7  BASC 2011 LAB     1  INQUIRY BASED MATH &   1.0  1130-1220   M W    0205 PRESCOTT                         CARLIN R
+ 30        BASC 7000 SEM     1  INSTR COL LFE SCI LA   1.0   700-0850N  M      0201 WILLIAMS
+
+
+
+
+Fall  2012   BASIC SCIENCES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

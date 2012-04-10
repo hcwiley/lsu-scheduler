@@ -1,0 +1,145 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 57    38  ANSC 1011         1  INTRO TO ANML SCIENC   3.0   830-0920   M W F  E130 HOWE RUSSELL E                   BIDNER T
+  1    49  ANSC 1011         2  INTRO TO ANML SCIENC   3.0   830-0920   M W F                       RES COLG-AGRICU
+     **                    Reserved for Agriculture Residential College Students
+ 20        ANSC 2001 RES     1  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   ARYANA K
+ 20        ANSC 2001 RES     2  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   BIDNER T
+ 20        ANSC 2001 RES     3  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   BOENEKE C
+ 20        ANSC 2001 RES     4  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   BONDIOLI K
+ 20        ANSC 2001 RES     5  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   GARCIA M
+ 20        ANSC 2001 RES     6  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   GENTRY G
+ 20        ANSC 2001 RES     7  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   HUTCHISON C
+ 20        ANSC 2001 RES     8  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   INGRAM D
+ 19     1  ANSC 2001 RES     9  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   JENNY B
+ 20        ANSC 2001 RES    10  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   MCMILLIN K
+ 20        ANSC 2001 RES    11  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   MILLER J
+ 20        ANSC 2001 RES    12  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   THOMPSON D
+ 20        ANSC 2001 RES    13  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   WILLIAMS C
+ 20        ANSC 2001 RES    14  FARM UNIT INTERNSHIP   1.0  TBA                                     PERMIS OF DEPT   GODKE R
+ 10    10  ANSC 2030         1  BASIC HORSEMANSHIP     3.0  1030-1120   M W    0211 TUREAUD HALL    PERMIS OF DEPT   STAFF
+                     LAB                                     800-0950    T                                           STAFF
+ 15     5  ANSC 2030         2  BASIC HORSEMANSHIP     3.0  1030-1120   M W    0211 TUREAUD HALL    PERMIS OF DEPT   STAFF
+                     LAB                                     900-1050      TH                                        STAFF
+ 17     3  ANSC 2030         3  BASIC HORSEMANSHIP     3.0  1030-1120   M W    0211 TUREAUD HALL    PERMIS OF DEPT   STAFF
+                     LAB                                    1100-1250      TH                                        STAFF
+  6    14  ANSC 2040 CLI     1  JUDGING DAIRY CATTLE   2.0   130-0420    T     0201 DAIRY SCIENCE                    HUTCHISON C
+  9    16  ANSC 2042 LAB     1  TECH JDG/EVAL PL/PRD   2.0   230-0420    T TH  0124 TUREAUD HALL                     INGRAM D
+ 51    24  ANSC 2060         1  COMP ANIMAL MGT        3.0  1030-1120   M W F  0221 TUREAUD HALL                     RITCHIE J
+ 23    27  ANSC 2075         1  MILK AND DAIRY FOODS   3.0  1030-1150    T TH  0211 TUREAUD HALL                     ARYANA K
+(F)    20  ANSC 3053         1  MEATS                  3.0   800-0950    T     0012 FRANCIONI                        MCMILLIN K
+                     LAB                                     800-0950      TH  0012 FRANCIONI                        MCMILLIN K
+ 13     7  ANSC 3053         2  MEATS                  3.0   800-0950    T     0012 FRANCIONI                        MCMILLIN K
+                     LAB                                    1000-1150      TH  0012 FRANCIONI                        MCMILLIN K
+(F)    35  ANSC 3060         1  COMP ANIM HLTH & DIS   3.0  1130-1220   M W F  0112 TUREAUD HALL                     RITCHIE J
+ 26     9  ANSC 3060         2  COMP ANIM HLTH & DIS   3.0  TBA                                                      RITCHIE J
+ 22    23  ANSC 3070         1  SM ANI ANAT & PHYSIO   3.0   930-1020   M W F  0221 TUREAUD HALL                     RITCHIE J
+ 18     2  ANSC 3900 RES     1  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   ARYANA K
+ 20        ANSC 3900 RES     2  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   BIDNER T
+ 19     1  ANSC 3900 RES     3  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   BOENEKE C
+ 20        ANSC 3900 RES     4  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   BONDIOLI K
+ 20        ANSC 3900 RES     5  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   GARCIA M
+ 99        ANSC 3900 RES     6  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   GENTRY G
+ 99        ANSC 3900 RES     7  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   HUTCHISON C
+ 99        ANSC 3900 RES     8  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   INGRAM D
+ 99        ANSC 3900 RES     9  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   MCMILLIN K
+ 99        ANSC 3900 RES    10  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   MILLER J
+ 99        ANSC 3900 RES    11  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   RITCHIE J
+ 97     2  ANSC 3900 RES    12  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   THOMPSON D
+ 99        ANSC 3900 RES    13  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   WILLIAMS C
+ 99        ANSC 3900 RES    14  ANIMAL SCIENCE RES     1-3  TBA                                     PERMIS OF DEPT   JENNY B
+ 36    14  ANSC 4001         1  PARAS EFF ON AN PERF   2.0   130-0220     W    0215 TUREAUD HALL                     MILLER J
+                     LAB                                     230-0420     W    0215 TUREAUD HALL                     MILLER J
+(F)    60  ANSC 4009         1  ANIMAL NUTRITION       3.0   830-0920   M W F  0109 TUREAUD HALL
+ 18    22  ANSC 4018         1  PPLES ANIML GENETICS   4.0  1030-1120   M W F  0101 TUREAUD HALL                     GARCIA M
+                     LAB                                    1230-0220       F  0101 TUREAUD HALL                     GARCIA M
+  5    12  ANSC 4020         1  FRZN/CULT DARY PROD    4.0   900-1020    T TH  0201 DAIRY SCIENCE                    BOENEKE C
+                     LAB                                     130-0420      TH  0201 DAIRY SCIENCE                    BOENEKE C
+(F)    35  ANSC 4043         1  DOM ANIMAL ENDO        3.0  1030-1150    T TH  0124 TUREAUD HALL                     WILLIAMS C
+(F)    46  ANSC 4045         1  REPRO PHYS             3.0   930-1020   M W F  0229 TUREAUD HALL
+ 24     6  ANSC 4050         1  ANIMAL BIOTECHNOLOGY   3.0   230-0350   M W    0012 FRANCIONI                        BONDIOLI K
+ 20     5  ANSC 4051         1  POULTRY BIOLOGY        3.0   430-0520N   T TH  0201 DAIRY SCIENCE   CI-WRITTEN&SPOK;  INGRAM D
+                     LAB                                     530-0720N     TH  0201 DAIRY SCIENCE                    INGRAM D
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)    18  ANSC 4092 SEM     1  AN SC PROSEMINAR       1.0   130-0220   M      0012 FRANCIONI
+ 16     4  ANSC 4900         1  SPECIAL TOPICS         1-3  TBA                                                      INGRAM D
+ 15        ANSC 7001         1  EXPERIMENTAL METHODS   2.0  1030-1120   M W    0012 FRANCIONI                        THOMPSON D
+  8     2  ANSC 7018         1  RUMEN PHYS & METABOL   3.0  TBA                                                      JENNY B
+ 19     1  ANSC 7061 RES     1  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   ARYANA K
+ 20        ANSC 7061 RES     2  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   BIDNER T
+ 20        ANSC 7061 RES     3  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   BOENEKE C
+ 20        ANSC 7061 RES     4  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   BONDIOLI K
+ 20        ANSC 7061 RES     5  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   GARCIA M
+ 20        ANSC 7061 RES     6  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   GENTRY G
+ 20        ANSC 7061 RES     7  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   JENNY B
+ 20        ANSC 7061 RES     8  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   MCMILLIN K
+ 20        ANSC 7061 RES     9  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   MILLER J
+ 20        ANSC 7061 RES    10  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   THOMPSON D
+ 20        ANSC 7061 RES    11  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   WILLIAMS C
+ 20        ANSC 7061 RES    12  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT   GODKE R
+ 20        ANSC 7061 RES    13  RES ANIMAL SCIENCE     1-6  TBA                                     PERMIS OF DEPT
+ 12     3  ANSC 7091 SEM     1  SEMINAR                1.0   330-0420   M      0201 DAIRY SCIENCE
+ 19     1  ANSC 8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      ARYANA K
+ 20        ANSC 8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      BIDNER T
+ 20        ANSC 8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      BOENEKE C
+ 20        ANSC 8000 RES     4  THESIS RESEARCH        1-12 TBA                                                      BONDIOLI K
+ 20        ANSC 8000 RES     5  THESIS RESEARCH        1-12 TBA                                                      GARCIA M
+ 20        ANSC 8000 RES     6  THESIS RESEARCH        1-12 TBA                                                      GENTRY G
+ 20        ANSC 8000 RES     7  THESIS RESEARCH        1-12 TBA                                                      INGRAM D
+ 20        ANSC 8000 RES     8  THESIS RESEARCH        1-12 TBA                                                      JENNY B
+ 20        ANSC 8000 RES     9  THESIS RESEARCH        1-12 TBA                                                      MCMILLIN K
+ 15        ANSC 8000 RES    10  THESIS RESEARCH        1-12 TBA                                                      MILLER J
+ 20        ANSC 8000 RES    11  THESIS RESEARCH        1-12 TBA                                                      THOMPSON D
+ 20        ANSC 8000 RES    12  THESIS RESEARCH        1-12 TBA                                                      WILLIAMS C
+ 20        ANSC 8000 RES    13  THESIS RESEARCH        1-12 TBA                                                      GODKE R
+ 20        ANSC 8000 RES    14  THESIS RESEARCH        1-12 TBA                                                      MOREIRA V
+ 18     2  ANSC 9000 RES     1  DISSERTATION RES       1-12 TBA                                                      ARYANA K
+ 20        ANSC 9000 RES     2  DISSERTATION RES       1-12 TBA                                                      BIDNER T
+ 20        ANSC 9000 RES     3  DISSERTATION RES       1-12 TBA                                                      BOENEKE C
+ 20        ANSC 9000 RES     4  DISSERTATION RES       1-12 TBA                                                      BONDIOLI K
+ 20        ANSC 9000 RES     5  DISSERTATION RES       1-12 TBA                                                      GARCIA M
+ 20        ANSC 9000 RES     6  DISSERTATION RES       1-12 TBA                                                      GENTRY G
+ 20        ANSC 9000 RES     7  DISSERTATION RES       1-12 TBA                                                      INGRAM D
+ 20        ANSC 9000 RES     8  DISSERTATION RES       1-12 TBA                                                      JENNY B
+ 20        ANSC 9000 RES     9  DISSERTATION RES       1-12 TBA                                                      MCMILLIN K
+ 20        ANSC 9000 RES    10  DISSERTATION RES       1-12 TBA                                                      MILLER J
+ 20        ANSC 9000 RES    11  DISSERTATION RES       1-12 TBA                                                      THOMPSON D
+ 20        ANSC 9000 RES    12  DISSERTATION RES       1-12 TBA                                                      WILLIAMS C
+ 20        ANSC 9000 RES    13  DISSERTATION RES       1-12 TBA                                                      GODKE R
+
+
+
+
+Fall  2012   ANIMAL SCIENCES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

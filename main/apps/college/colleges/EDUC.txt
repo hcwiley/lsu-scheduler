@@ -1,0 +1,10 @@
+ATRN:Athletic Training, BS
+ELED 1-5CRT:Elem Grades Education, BS / 4-yr Teach Certification 1-5
+ELED 1-5HCT:Elem Grades Education, BS / Holmes Certification 1-5
+KIN  FITNES:Kinesiology, BS / Fitness Studies
+KIN  HPECRT:Kinesiology, BS / H&PE Teacher Certification
+KIN  HU-MVT:Kinesiology, BS / Human Movement Science
+KIN  SP-STU:Kinesiology, BS / Sports Studies
+PK3CT:PK-3 Teacher Certification, BS
+SPADMSPCOM:Sport Administration, BS / Sport Commerce
+SPADMSPLDR:Sport Administration, BS / Sport Leadership

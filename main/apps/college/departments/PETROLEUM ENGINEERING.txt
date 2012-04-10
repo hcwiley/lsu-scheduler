@@ -1,0 +1,105 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+(F)    45  PETE 1010         1  INTR TO PETR ENGR      2.0   230-0320   M W                                          THURBER F
+ 23    22  PETE 1010         2  INTR TO PETR ENGR      2.0   330-0420   M W                                          THURBER F
+ 26    19  PETE 1010         3  INTR TO PETR ENGR      2.0   300-0350    T TH                                        THURBER F
+(F)    94  PETE 2031         1  RESERVOIR ROCK PROP    3.0   900-1020    T TH  0105 TUREAUD HALL                     KAM S
+  1    19  PETE 2060         4  COMP MTHDS PETE        2.0   300-0350    T     2161 PATRICK TAYLOR                   THOMPSON K
+                     LAB                                     130-0250      TH
+ 11     9  PETE 2060         5  COMP MTHDS PETE        2.0   300-0350    T                                           THOMPSON K
+                     LAB                                     300-0420      TH
+  1    19  PETE 2060         6  COMP MTHDS PETE        2.0   300-0350    T                                           THOMPSON K
+                     LAB                                    1030-1150      TH
+ 35    95  PETE 3025         1  ECON ASPECTS PET PRO   3.0   130-0250    T TH  E130 HOWE RUSSELL E                   KAISER M
+ 30   100  PETE 3036         1  WELL LOGGING           3.0   330-0450   M W                                          DAHI TALEGHAN
+(F)    17  PETE 3037 LAB     1  PETE FIELD OPERATNS    1.0   230-0320   M      2142 PATRICK TAYLOR                   RADONJIC M
+                                                             830-1020    T
+(F)    17  PETE 3037 LAB     2  PETE FIELD OPERATNS    1.0   230-0320   M                                            RADONJIC M
+                                                            1200-0150    T
+(F)    17  PETE 3037 LAB     3  PETE FIELD OPERATNS    1.0   230-0320   M                                            RADONJIC M
+                                                             300-0450    T
+(F)    17  PETE 3037 LAB     4  PETE FIELD OPERATNS    1.0   230-0320   M                                            RADONJIC M
+                                                             530-0720N   T
+ 16    34  PETE 4045         1  DRILLING ENGINEERING   3.0  1130-1220   M W F                                        SMITH J
+(F)    50  PETE 4045         2  DRILLING ENGINEERING   3.0   130-0220   M W F                                        SMITH J
+  2    48  PETE 4051         1  RESERV EST/RESERVOIR   3.0  1130-1220   M W F                                        HUGHES R
+ 16    34  PETE 4051         2  RESERV EST/RESERVOIR   3.0   130-0220   M W F                                        HUGHES R
+(F)    27  PETE 4059 LAB     1  DRILLING FLUIDS LAB    1.0   900-0950      TH                                        WOJTANOWICZ A
+                                                            1030-1220      TH
+(F)    28  PETE 4059 LAB     2  DRILLING FLUIDS LAB    1.0   900-0950      TH                                        WOJTANOWICZ A
+                                                             130-0320      TH
+ 10    12  PETE 4059 LAB     3  DRILLING FLUIDS LAB    1.0   900-0950      TH                                        WOJTANOWICZ A
+                                                             430-0620N     TH
+ 10    12  PETE 4059 LAB     4  DRILLING FLUIDS LAB    1.0   900-0950      TH                                        WOJTANOWICZ A
+                                                             930-1120       F
+(F)    15  PETE 4083         1  SECONDARY RECOV PETR   3.0   430-0550N  M W                                          RAO D
+  8    22  PETE 4088         1  FORMATION EVALUATION   3.0  1200-0120    T TH  2427 PATRICK TAYLOR
+ 13     4  PETE 4241         1  SP TOP PETR ENGR DES   3.0   430-0550N   T TH  2427 PATRICK TAYLOR                   WHITE C
+     **                    GEOTHERMAL
+(F)    50  PETE 4998 RES     1  SENIOR PROJECT I       1.0   230-0420     W    0103 TUREAUD HALL    CI-VISUAL        HUGHES R
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 22    28  PETE 4998 RES     2  SENIOR PROJECT I       1.0   230-0420     W                         CI-WRITTEN       RADONJIC M
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 16     4  PETE 7232         1  THERMAL MET OIL REC    3.0   300-0420    T TH
+ 28     2  PETE 7256 RES     1  SPEC PROB PETR ENGR    1-6   130-0250    T TH                                        TYAGI M
+     **                    OFFSHORE DRILLING & PRODUCTION OPERATIONS
+ 17     3  PETE 7285         1  STAT RESERV MODELING   3.0   430-0550N  M W    2427 PATRICK TAYLOR
+ 38    12  PETE 7999 SEM     1  SEMINAR                1.0   300-0420       F                                        TYAGI M
+ 99        PETE 8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      HUGHES R
+ 99        PETE 8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      RADONJIC M
+ 99        PETE 8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      RAO D
+ 99        PETE 8000 RES     4  THESIS RESEARCH        1-12 TBA                                                      SMITH J
+ 99        PETE 8000 RES     5  THESIS RESEARCH        1-12 TBA                                                      WOJTANOWICZ A
+ 98     1  PETE 8000 RES     6  THESIS RESEARCH        1-12 TBA                                                      WHITE C
+ 99        PETE 8000 RES     7  THESIS RESEARCH        1-12 TBA                                                      TYAGI M
+ 99        PETE 8000 RES     8  THESIS RESEARCH        1-12 TBA                                                      SEARS S
+ 99        PETE 8000 RES     9  THESIS RESEARCH        1-12 TBA                                                      KAM S
+ 99        PETE 8000 RES    10  THESIS RESEARCH        1-12 TBA                                                      HUGHES R
+  1        PETE 8000 RES    11  THESIS RESEARCH        1-12 TBA                                                      WOJTANOWICZ A
+ 98     1  PETE 9000 RES     1  DISSERTATION RES       1-12 TBA                                                      WOJTANOWICZ A
+ 98     1  PETE 9000 RES     2  DISSERTATION RES       1-12 TBA                                                      RADONJIC M
+ 99        PETE 9000 RES     3  DISSERTATION RES       1-12 TBA                                                      RAO D
+ 99        PETE 9000 RES     4  DISSERTATION RES       1-12 TBA                                                      SMITH J
+ 99        PETE 9000 RES     5  DISSERTATION RES       1-12 TBA                                                      KAM S
+ 98     1  PETE 9000 RES     6  DISSERTATION RES       1-12 TBA                                                      WHITE C
+ 99        PETE 9000 RES     7  DISSERTATION RES       1-12 TBA                                                      TYAGI M
+ 99        PETE 9000 RES     8  DISSERTATION RES       1-12 TBA                                                      SEARS S
+ 99        PETE 9000 RES     9  DISSERTATION RES       1-12 TBA                                                      HUGHES R
+ 97     2  PETE 9000 RES    10  DISSERTATION RES       1-12 TBA                                                      DAHI TALEGHAN
+
+
+
+
+Fall  2012   PETROLEUM ENGINEERING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

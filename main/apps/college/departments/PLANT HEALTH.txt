@@ -1,0 +1,91 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 23     7  PLHL 4000         1  GEN PLANT PATHOLOGY    4.0  1030-1150    T TH
+                     LAB                                     130-0420      TH
+      ***   PLHL 4018  ***       CROSS-LISTED WITH   ENTM 4018
+ 16        PLHL 4018         1  FOREST INSECTS & DIS   4.0   730-0850    T TH  0230 RENEWABLE NAT R
+                     LAB                                    1030-1220       F  0110 LIFE SCIENCES
+      ***   PLHL 4054  ***       CROSS-LISTED WITH   BIOL 4054
+  9     1  PLHL 4054         1  INTRO MYCOLOGY         4.0   930-1020   M W F  0308 LIFE SCIENCES
+                     LAB                                    1130-0320     W    0308 LIFE SCIENCES
+      ***   PLHL 7010  ***       CROSS-LISTED WITH   BIOL 7010
+ 16        PLHL 7010         1  PLANT MOLECULAR BIOL   3.0   815-0935    T TH                                        MURAI N
+ 15        PLHL 7052 SEM     1  SEMINAR                1.0   330-0420     W
+  9     1  PLHL 7082         1  SOILBRN PLNT PATHOGE   3.0  TBA
+ 99        PLHL 8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      CLARK C
+ 99        PLHL 8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      COHN M
+ 99        PLHL 8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      DAMANN K
+ 99        PLHL 8000 RES     4  THESIS RESEARCH        1-12 TBA                                                      FERRIN D
+ 99        PLHL 8000 RES     5  THESIS RESEARCH        1-12 TBA                                                      HOLLIER C
+ 99        PLHL 8000 RES     6  THESIS RESEARCH        1-12 TBA                                                      HOY J
+ 99        PLHL 8000 RES     7  THESIS RESEARCH        1-12 TBA                                                      MCGAWLEY E
+ 99        PLHL 8000 RES     8  THESIS RESEARCH        1-12 TBA                                                      MURAI N
+ 99        PLHL 8000 RES     9  THESIS RESEARCH        1-12 TBA                                                      OVERSTREET C
+ 99        PLHL 8000 RES    10  THESIS RESEARCH        1-12 TBA                                                      RUSH M
+ 99        PLHL 8000 RES    11  THESIS RESEARCH        1-12 TBA                                                      SCHNEIDER R
+ 99        PLHL 8000 RES    12  THESIS RESEARCH        1-12 TBA                                                      VALVERDE R
+ 99        PLHL 8000 RES    13  THESIS RESEARCH        1-12 TBA                                                      CHEN Z
+ 99        PLHL 8000 RES    14  THESIS RESEARCH        1-12 TBA                                                      HAM J
+ 99        PLHL 8000 RES    15  THESIS RESEARCH        1-12 TBA                                                      AIME M
+ 11     1  PLHL 8800 CLI     1  PRACT PLANT PATHOLOG   2.0  TBA                                                      SCHNEIDER R
+ 10        PLHL 8900 RES     1  SPECIAL RESEARCH PRO   1-5  TBA                                                      VALVERDE R
+ 10        PLHL 8900 RES     2  SPECIAL RESEARCH PRO   1-5  TBA                                                      SCHNEIDER R
+ 10        PLHL 8900 RES     3  SPECIAL RESEARCH PRO   1-5  TBA                                                      CLARK C
+ 10        PLHL 8900 RES     4  SPECIAL RESEARCH PRO   1-5  TBA                                                      HOY J
+ 10        PLHL 8900 RES     5  SPECIAL RESEARCH PRO   1-5  TBA                                                      MCGAWLEY E
+ 10        PLHL 8900 RES     6  SPECIAL RESEARCH PRO   1-5  TBA                                                      FERRIN D
+  5        PLHL 8900 RES     7  SPECIAL RESEARCH PRO   1-5  TBA                                                      AIME M
+ 99        PLHL 9000 RES     1  DISSERTATION RES       1-12 TBA                                                      CLARK C
+ 99        PLHL 9000 RES     2  DISSERTATION RES       1-12 TBA                                                      COHN M
+ 99        PLHL 9000 RES     3  DISSERTATION RES       1-12 TBA                                                      DAMANN K
+ 99        PLHL 9000 RES     4  DISSERTATION RES       1-12 TBA
+ 99        PLHL 9000 RES     5  DISSERTATION RES       1-12 TBA                                                      HOLLIER C
+ 99        PLHL 9000 RES     6  DISSERTATION RES       1-12 TBA                                                      HOY J
+ 99        PLHL 9000 RES     7  DISSERTATION RES       1-12 TBA                                                      MCGAWLEY E
+ 99        PLHL 9000 RES     8  DISSERTATION RES       1-12 TBA                                                      MURAI N
+ 99        PLHL 9000 RES     9  DISSERTATION RES       1-12 TBA                                                      OVERSTREET C
+ 99        PLHL 9000 RES    10  DISSERTATION RES       1-12 TBA                                                      RUSH M
+ 99        PLHL 9000 RES    11  DISSERTATION RES       1-12 TBA                                                      SCHNEIDER R
+ 99        PLHL 9000 RES    12  DISSERTATION RES       1-12 TBA                                                      VALVERDE R
+ 99        PLHL 9000 RES    13  DISSERTATION RES       1-12 TBA                                                      MURAI N
+ 98     1  PLHL 9000 RES    14  DISSERTATION RES       1-12 TBA                                                      CHEN Z
+ 99        PLHL 9000 RES    15  DISSERTATION RES       1-12 TBA                                                      HAM J
+ 99        PLHL 9000 RES    16  DISSERTATION RES       1-12 TBA                                                      MURAI N
+ 99        PLHL 9000 RES    17  DISSERTATION RES       1-12 TBA                                                      AIME M
+
+
+
+
+Fall  2012   PLANT HEALTH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

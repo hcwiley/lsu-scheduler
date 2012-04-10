@@ -1,0 +1,74 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+(F)     9  ARCH 1001 LAB     1  ARCH DESIGN I          6.0  1230-0420   M W F
+(F)     8  ARCH 1001 LAB     2  ARCH DESIGN I          6.0  1230-0420   M W F
+(F)     8  ARCH 1001 LAB     3  ARCH DESIGN I          6.0  1230-0420   M W F
+(F)     8  ARCH 1001 LAB     4  ARCH DESIGN I          6.0  1230-0420   M W F
+  7     3  ARCH 2001 LAB     1  ARCH DESIGN III        6.0  1230-0420   M W F
+ 18     2  ARCH 2001 LAB     2  ARCH DESIGN III        6.0  1230-0420   M W F
+ 19     1  ARCH 2001 LAB     3  ARCH DESIGN III        6.0  1230-0420   M W F
+ 25     5  ARCH 2003         1  ARCH TECHNIQUES        3.0  1030-1120   M W F  0313 DESIGN BUILDING CI-VISUAL&TECH;   MELENDEZ F
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 29     1  ARCH 2003         2  ARCH TECHNIQUES        3.0  1030-1120   M W F  0112 AUDUBON
+     **
+ 10        ARCH 2101 LAB     1  HNRS ARCH DESN III     6.0  1230-0420   M W F
+     **                    HONORS STUDENTS ONLY
+122    33  ARCH 2401         1  APPRECIATION OF ARCH   3.0   300-0420    T TH  0103 DESIGN BUILDING
+(F)    10  ARCH 3001 LAB     1  ARCH DESN V            6.0  1230-0420   M W F
+(F)    15  ARCH 3001 LAB     2  ARCH DESN V            6.0  1230-0420   M W F
+ 28    22  ARCH 3003         1  ARCH STRUCTURES I      3.0   130-0250    T TH  0313 DESIGN BUILDING                  SHIH J
+ 73    47  ARCH 3005         1  HIST OF ARCH I         3.0   830-0920   M W F  0103 DESIGN BUILDING                  DESMOND J
+ 10    40  ARCH 3007         1  ARCHITECTURAL SYSTEM   3.0   300-0420    T TH  0313 DESIGN BUILDING
+  7     3  ARCH 3101 LAB     1  HNRS ARCH DESN V       6.0  1230-0420   M W F
+     **                    HONORS STUDENTS ONLY
+  1    14  ARCH 4001 LAB     1  ARCH DESIGN VII        6.0  1230-0420   M W F
+ 23    27  ARCH 4031         1  ARCH STRUCTURES III    3.0  1030-1150    T TH  0313 DESIGN BUILDING                  SHIH J
+  4    11  ARCH 4041         2  ISS IN SUSTAINABIITY   3.0   600-0850N   T     0102 ATKINSON                         SATTLER M
+ 12    28  ARCH 4062         3  URBAN DESIGN/PLANNIN   3.0  1030-1120   M W F  0015 ATKINSON
+ 12     3  ARCH 4221 SEM     3  SEL TOP IN ARCHITECT   1-3  TBA
+     **                    FOR WAAC STUDENTS ONLY
+      ***   ARCH 4440  ***       CROSS-LISTED WITH   ANTH 4440
+(F)    15  ARCH 4440         1  VERN ARCH & MAT CULT   3.0   600-0850N  M      0102 ATKINSON                         EMERY MCCLURE
+     **                    LA TECTONIC
+(F)    15  ARCH 5002 LAB     1  ARCH DESN CONCENTRAT   6.0  TBA
+(F)    15  ARCH 5002 LAB     2  ARCH DESN CONCENTRAT   6.0  TBA
+ 12        ARCH 7001 LAB     1  GRAD DESN STUDIO I     6.0  1230-0420   M W F
+  4     8  ARCH 7003 LAB     1  GRAD DESN STUDIO III   6.0  1230-0420   M W F
+  8     4  ARCH 7005 LAB     1  GRAD DESN STUDIO V     6.0  1230-0420   M W F
+
+
+
+
+Fall  2012   ARCHITECTURE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

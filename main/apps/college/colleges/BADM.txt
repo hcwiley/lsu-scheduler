@@ -1,0 +1,12 @@
+ACCT:Accounting, BS
+ECONSEEAE:Economics, BS / Empirical Econ Analysis - ECON
+ECONS:Economics, BS
+FIN:Finance, BS
+GBUS:General Business, BS
+ISDS:Info Systs & Decision Sci, BS
+ITF  EEAI:Internat Trade & Finance, BS / Empirical Econ Analysis - ITF
+ITF:Internat Trade & Finance, BS
+MGT  ENTREP:Management, BS / Entrepreneurship
+MGT  GENMGT:Management, BS / Management
+MGT  HUMRES:Management, BS / Human Resource Management
+MKT:Marketing, BS

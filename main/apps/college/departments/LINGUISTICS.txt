@@ -1,0 +1,62 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+      ***   LING 4310  ***       CROSS-LISTED WITH   ENGL 4310
+  6     4  LING 4310         1  STUDIES IN LANGUAGE    3.0   830-0920   M W F  0131 ALLEN                            OLIVER E
+      ***   LING 4710  ***       CROSS-LISTED WITH   ENGL 4710
+(F)    10  LING 4710         2  INTR TO LINGUISTICS    3.0  1200-0120    T TH  0209 COATES                           CAMP A
+      ***   LING 4712  ***       CROSS-LISTED WITH   ENGL 4712
+  4     6  LING 4712         1  ROOTS OF ENGLISH       3.0   930-1020   M W F  0129 ALLEN                            OLIVER E
+      ***   LING 4715  ***       CROSS-LISTED WITH   ENGL 4715
+  7     8  LING 4715         1  SEMANTICS              3.0   130-0220   M W F  0121 ALLEN                            HEGARTY M
+      ***   LING 7712  ***       CROSS-LISTED WITH   ENGL 7712
+(F)     3  LING 7712 SEM     2  TOP HIST LINGUISTICS   3.0   930-1020   M W F                                        OLIVER E
+ 99        LING 8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      BRODY M
+ 99        LING 8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      HEGARTY M
+ 99        LING 8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      KING J
+ 99        LING 8000 RES     4  THESIS RESEARCH        1-12 TBA                                                      OETTING J
+ 99        LING 8000 RES     5  THESIS RESEARCH        1-12 TBA                                                      OLIVER E
+ 99        LING 8000 RES     6  THESIS RESEARCH        1-12 TBA                                                      OROZCO R
+ 98     1  LING 9000 RES     1  DISSERTATION RESEARC   1-12 TBA                                                      BRODY M
+ 99        LING 9000 RES     2  DISSERTATION RESEARC   1-12 TBA                                                      HEGARTY M
+ 99        LING 9000 RES     3  DISSERTATION RESEARC   1-12 TBA                                                      KING J
+ 99        LING 9000 RES     4  DISSERTATION RESEARC   1-12 TBA                                                      OETTING J
+ 99        LING 9000 RES     5  DISSERTATION RESEARC   1-12 TBA                                                      OLIVER E
+ 99        LING 9000 RES     6  DISSERTATION RESEARC   1-12 TBA                                                      OROZCO R
+ 99        LING 9000 RES     7  DISSERTATION RESEARC   1-12 TBA                                                      MCDONALD J
+
+
+
+
+Fall  2012   LINGUISTICS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

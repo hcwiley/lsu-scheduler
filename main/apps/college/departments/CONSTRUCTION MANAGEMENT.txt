@@ -1,0 +1,108 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 22     8  CM   1010         1  CONS GRAPHCS/NOMENCL   3.0  1030-1220   M      3136 PATRICK TAYLOR                   PECQUET C
+                     LAB                                    1030-1220     W    3136 PATRICK TAYLOR                   PECQUET C
+ 21     9  CM   1010         2  CONS GRAPHCS/NOMENCL   3.0   130-0320   M      0101 CONSTRUCTION MG                  PECQUET C
+                     LAB                                     130-0320     W    0101 CONSTRUCTION MG                  PECQUET C
+ 35    13  CM   1020 LAB     1  ENGR GRAPS FOR MECH    2.0   830-1020    T TH  3136 PATRICK TAYLOR  CI-VISUAL&TECH;   DAVIS P
+     **                    THIS IS A HONORS COURSE SECTION INVOLVES COMMUNICATION-INTEN
+     **                    SIVE LEARNING CI-VISUAL & TECH
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+  7    41  CM   1020 LAB     2  ENGR GRAPS FOR MECH    2.0  1030-1220    T TH  3136 PATRICK TAYLOR  CI-VISUAL&TECH;   DAVIS P
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING CI-VISUAL
+     **                    TECH
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 17    31  CM   1020 LAB     3  ENGR GRAPS FOR MECH    2.0   100-0250    T TH  3136 PATRICK TAYLOR  CI-VISUAL&TECH;   DAVIS P
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+     **                    CI-VISUAL & TECH
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 29    19  CM   1030 LAB     1  ENGIN GRAPHICS         2.0   830-1020   M W    3136 PATRICK TAYLOR  CI-VISUAL&TECH;   DAVIS P
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+     **                    CI-VISUAL & TECH
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 10    20  CM   2012         1  PLN CST ANAL RES CON   3.0   930-1120   M      2218 PATRICK TAYLOR                   HEUMANN S
+                     LAB                                     930-1120     W    2218 PATRICK TAYLOR                   HEUMANN S
+ 16    14  CM   2012         2  PLN CST ANAL RES CON   3.0  1230-0220   M      2218 PATRICK TAYLOR                   HEUMANN S
+                     LAB                                    1230-0220     W    2218 PATRICK TAYLOR                   HEUMANN S
+ 34    26  CM   2121         1  MTRLS MTHDS EQMNT I    3.0   800-0920   M W                                          HEUMANN S
+ 10    50  CM   2131         1  MTRLS MTHDS EQMNT II   3.0   900-1020    T TH                                        KINCHEN D
+(F)    30  CM   2141         1  CONST PLANNING & SCH   3.0  1030-1220    T     0101 CONSTRUCTION MG                  HEBERT K
+                     LAB                                    1030-1220      TH  0101 CONSTRUCTION MG                  HEBERT K
+  3    27  CM   2141         2  CONST PLANNING & SCH   3.0   100-0250    T     0101 CONSTRUCTION MG                  HEBERT K
+                     LAB                                     100-0250      TH  0101 CONSTRUCTION MG                  HEBERT K
+ 19    21  CM   3000         1  CONSTRUTION SAFETY     3.0  1030-1150    T TH                                        PECQUET C
+  9    31  CM   3000         2  CONSTRUTION SAFETY     3.0   130-0250    T TH                                        PECQUET C
+  9    11  CM   3100         1  CONSTRTN SURVEYING     3.0   730-0920   M      2216 PATRICK TAYLOR                   TRAHAN G
+                     LAB                                     730-0920     W    2216 PATRICK TAYLOR                   TRAHAN G
+  3    17  CM   3100         2  CONSTRTN SURVEYING     3.0   930-1120   M      2216 PATRICK TAYLOR                   TRAHAN G
+                     LAB                                     930-1120     W    2216 PATRICK TAYLOR                   TRAHAN G
+(F)    20  CM   3100         3  CONSTRTN SURVEYING     3.0  1230-0220   M      2216 PATRICK TAYLOR                   TRAHAN G
+                     LAB                                    1230-0220     W    2216 PATRICK TAYLOR                   TRAHAN G
+  4    26  CM   3121         1  COM CONS ESTIMATING    3.0   730-0920   M      0101 CONSTRUCTION MG                  SPRING C
+                     LAB                                     730-0920     W    0101 CONSTRUCTION MG                  SPRING C
+(F)    30  CM   3121         2  COM CONS ESTIMATING    3.0   930-1120   M      0101 CONSTRUCTION MG                  SPRING C
+                     LAB                                     930-1120     W    0101 CONSTRUCTION MG                  SPRING C
+ 19    11  CM   3131         1  INDUST CONS ESTIMTNG   3.0   730-0920   M      3213 PATRICK TAYLOR                   KINCHEN D
+                     LAB                                     730-0920     W    3213 PATRICK TAYLOR                   KINCHEN D
+  4    26  CM   3131         2  INDUST CONS ESTIMTNG   3.0   930-1120   M      3213 PATRICK TAYLOR                   KINCHEN D
+                     LAB                                     930-1120     W    3213 PATRICK TAYLOR                   KINCHEN D
+ 28    32  CM   3141         1  HIGHWAY CONSTRUCTION   3.0  1030-1150    T TH                                        STAFF
+ 19    41  CM   3303         1  MECH & ELEC SYSTEMS    3.0   730-0850    T TH                                        SPRING C
+ 13    47  CM   3400         1  CONSTRUCT MATERIALS    3.0   130-0250    T TH                                        HASSAN M
+ 31    29  CM   3505         1  STRUCTURAL TECH I      3.0   900-1020    T TH                                        HEBERT K
+ 18    42  CM   3506         1  STRUCTURAL TECH II     3.0   230-0350   M W                                          HEBERT K
+ 36    24  CM   4200         1  CONS ADMINISTRATION    3.0   230-0350   M W                                          TRAHAN G
+  9    51  CM   4201         1  CONSTRUCTION LAW       3.0   900-1020    T TH                                        SCHNEIDER D
+  3    13  CM   4202         1  CONSTRUCT ENTERPRISE   3.0   730-0850    T TH                                        KINCHEN D
+(F)    16  CM   4202         2  CONSTRUCT ENTERPRISE   3.0  1030-1150    T TH                                        SCHNEIDER D
+(F)    16  CM   4202         3  CONSTRUCT ENTERPRISE   3.0   130-0250    T TH  3133 PATRICK TAYLOR                   SCHNEIDER D
+ 16     4  CM   4206         5  RESIDENTIAL DEVELOP    3.0   230-0520   M      3136 PATRICK TAYLOR  CI-WRITTEN&SPOK;  HEUMANN S
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 18     2  CM   4206         1  DRIVEN PILE CONST      3.0   530-0820N  M      0101 CONSTRUCTION MG                  FRIEDLAND C
+ 20        CM   4206         3  SOIL MECHANICS IN CM   3.0   300-0420    T TH  3213 PATRICK TAYLOR                   HASSAN M
+ 19     1  CM   4206         8  CONSTRUCTION QUALITY   3.0   300-0420    T TH  3133 PATRICK TAYLOR                   SCHNEIDER D
+ 20        CM   4206         7  ADV CONST PRODUCTIV    3.0   430-0720N   T     3133 PATRICK TAYLOR
+  4    16  CM   4206         2  BIM IN CONST MGMT      3.0   430-0720N    W    0101 CONSTRUCTION MG                  ROIDER E
+ 19     1  CM   4206         4  LEAN CONSTRUCTION      3.0   430-0720N    W    3133 PATRICK TAYLOR                   NAHMENS I
+ 19     1  CM   4207 RES     1  INDEPENDENT STUDY      3.0  TBA                                     PERMIS OF DEPT   HASSAN M
+ 19     1  CM   4207 RES     2  INDEPENDENT STUDY      3.0  TBA                                     PERMIS OF DEPT   FRIEDLAND C
+ 19     1  CM   4207 RES     3  INDEPENDENT STUDY      3.0  TBA                                     PERMIS OF DEPT   ROIDER E
+ 20        CM   4208 CLI     1  INTERNSHIP IN CONST    3.0  TBA                                     PERMIS OF DEPT   SPRING C
+ 20        CM   4303         1  LIFE CYCLE ASSESS      3.0   130-0420     W                                          DYLLA H
+
+
+
+
+Fall  2012   CONSTRUCTION MANAGEMENT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

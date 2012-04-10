@@ -1,0 +1,71 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+(F)    60  MKT  3401         3  PRIN OF MARKETING      3.0  1030-1120   M W F  1615 BUSINESS SCHOOL
+(F)    60  MKT  3401         4  PRIN OF MARKETING      3.0  1130-1220   M W F  1615 BUSINESS SCHOOL
+(F)    60  MKT  3401         2  PRIN OF MARKETING      3.0   130-0220   M W F  1615 BUSINESS SCHOOL
+670   330  MKT  3401         1  PRIN OF MARKETING      3.0   130-0250    T TH  0101 GYM AUDITORIUM                   KARAM T
+(F)    25  MKT  3401         5  PRIN OF MARKETING      3.0   300-0420    T TH  1321 BUSINESS SCHOOL                  ROUILLIER R
+  2    38  MKT  3411         1  CONSUM ANALYS & BEHA   3.0   900-1020    T TH  1835 BUSINESS SCHOOL                  NIEDRICH R
+(F)    40  MKT  3411         2  CONSUM ANALYS & BEHA   3.0  1030-1150    T TH  1835 BUSINESS SCHOOL                  NIEDRICH R
+ 13    27  MKT  3413         1  MARKETING RESEARCH     3.0   300-0420   M W    1845 BUSINESS SCHOOL CI-WRITTEN&TECH;  BURNS A
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 21    19  MKT  3413         2  MARKETING RESEARCH     3.0   900-1020    T TH  1800 BUSINESS SCHOOL
+ 16    24  MKT  3421         1  MKT COMM: PROMOTION    3.0  1030-1150    T TH  1800 BUSINESS SCHOOL CI-WRITTEN&VISU;  FOLSE J
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 26    14  MKT  3427         1  BUYER-SELLER COMMUNI   3.0   730-0850    T TH  1835 BUSINESS SCHOOL                  PARR J
+ 13    47  MKT  4443         1  INTERNATIONAL MKT      3.0  1200-0120    T TH  1835 BUSINESS SCHOOL                  WU J
+ 49    11  MKT  4443         2  INTERNATIONAL MKT      3.0   130-0250    T TH  1835 BUSINESS SCHOOL                  WU J
+ 99        MKT  4445 CLI     1  INTERNSHIP IN MKT      1-6  TBA                                     PERMIS OF DEPT
+ 99        MKT  4445 CLI     2  INTERNSHIP IN MKT      1-6  TBA                                     PERMIS OF DEPT
+ 52     8  MKT  4451         1  MARKETING MANAGEMNT    3.0   900-1020    T TH  1845 BUSINESS SCHOOL                  RICE D
+ 43    17  MKT  4451         2  MARKETING MANAGEMNT    3.0  1030-1150    T TH  1845 BUSINESS SCHOOL                  RICE D
+ 99        MKT  4477 RES     1  IND STDY ADV MKT PRB   1-6  TBA                                     PERMIS OF DEPT
+ 45    15  MKT  4490         1  SERVICES MARKETING     3.0   900-1020    T TH  1920 BUSINESS SCHOOL                  ROUILLIER R
+ 41    19  MKT  4490         2  SERVICES MARKETING     3.0  1030-1150    T TH  1920 BUSINESS SCHOOL                  ROUILLIER R
+ 31     9  MKT  4500         1  ENTREPREN MKT & SALE   3.0   130-0250    T TH  1110 PATRICK TAYLOR                   ROUILLIER R
+  7     3  MKT  7450         1  TOP IN ADV MKT MGT     3.0   130-0420    T     1409 BUSINESS SCHOOL                  BLACK W
+ 19     1  MKT  7477 RES     1  SEM ADV MKTG PROBLMS   3.0  TBA                                     PERMIS OF DEPT
+ 20        MKT  7477 RES     2  SEM ADV MKTG PROBLMS   3.0  TBA                                     PERMIS OF DEPT
+ 21     4  MKT  7488         1  MARKETING MODELS       3.0   130-0420    T
+ 59     1  MKT  7716         1  ADV MKT RESRCH TECH    3.0   130-0420     W    2520 BUSINESS SCHOOL                  BLACK W
+ 19     1  MKT  7717 SEM     1  ADV SEM CONSUM BEHAV   3.0   130-0420      TH
+ 10        MKT  7720 SEM     1  SM: MKT THRY & EXP M   3.0   130-0420      TH  1409 BUSINESS SCHOOL                  FOLSE J
+ 97     2  MKT  8900 RES     1  PREDISSERT RESEARCH    1-9  TBA                                                      BURNS A
+ 99        MKT  9000 RES     1  DISSERTATION RES       1-12 TBA                                                      BURNS A
+
+
+
+
+Fall  2012   MARKETING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

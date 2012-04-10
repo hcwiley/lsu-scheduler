@@ -1,0 +1,137 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 17    33  CHE  2160         1  COMP TECH CHE ENG SY   1.0  1230-0120    T     0006 LOCKETT                          HJORTSO M
+ 45    15  CHE  2171         1  CHE FUND MAT EN BAL    3.0   830-0920   M W F  0120 TUREAUD HALL                     BENTON M
+ 36    26  CHE  2171         2  CHE FUND MAT EN BAL    3.0   930-1020   M W F  0120 TUREAUD HALL                     BENTON M
+(F)    60  CHE  2176         1  MATH MOD CHM ENG SYS   3.0   900-1020    T TH  0211 TUREAUD HALL                     KNOPF F
+      ***   CHE  3100  ***       CROSS-LISTED WITH   EVEG 3120
+ 18    12  CHE  3100         1  CHEM EQUIL & KINETIC   3.0   400-0520    T TH  0265 CHEM ENGR                        VALSARAJ K
+ 18    82  CHE  3101         1  MOMENTUM TRANSFER      3.0  1030-1120   M W F  0103 TUREAUD HALL                     WETZEL D
+(F)     9  CHE  3104         1  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0282 CHEM ENGR       CI-WRITTEN&SPOK;  WETZEL D
+                                                                                                                     FLAKE J
+                     LAB                                     130-0420   M      0164 CHEM ENGR                        WETZEL D
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)     6  CHE  3104         2  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0282 CHEM ENGR                        WETZEL D
+                                                                                                                     FLAKE J
+                     LAB                                     130-0420   M      0164 CHEM ENGR                        FLAKE J
+(F)     8  CHE  3104         3  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0282 CHEM ENGR                        WETZEL D
+                                                                                                                     FLAKE J
+                     LAB                                     130-0420    T     0164 CHEM ENGR                        WETZEL D
+(F)    10  CHE  3104         4  ENGR MEASUREMENT LAB   3.0  1230-0120   M W    0282 CHEM ENGR                        WETZEL D
+                                                                                                                     FLAKE J
+                     LAB                                     130-0420    T     0164 CHEM ENGR                        KNOPF F
+ 14    86  CHE  3172         1  CHE THERMODYNAMICS     3.0   930-1020   M W F  0105 TUREAUD HALL                     HUNG F
+(F)    41  CHE  4151         1  UNIT OPS DESIGN        4.0   930-1020   M W F  0155 COATES                           CORRIPIO A
+                                                                                                                     DOOLEY K
+                     LAB                                     900-1020    T TH  0282 CHEM ENGR                        CORRIPIO A
+                                                                                                                     DOOLEY K
+  1    40  CHE  4151         2  UNIT OPS DESIGN        4.0   930-1020   M W F  0155 COATES                           CORRIPIO A
+                                                                                                                     DOOLEY K
+                     LAB                                    1030-1150    T TH  0282 CHEM ENGR                        CORRIPIO A
+                                                                                                                     DOOLEY K
+(F)     5  CHE  4162         1  UNIT OPERATIONS LAB    3.0   430-0520N  M      0265 CHEM ENGR       CI-WRITTEN&SPOK;  TOUPS H
+                     LAB                                     130-0420   M W                                          TOUPS H
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+  2     3  CHE  4162         2  UNIT OPERATIONS LAB    3.0   430-0520N  M      0265 CHEM ENGR       CI-WRITTEN&SPOK;  TOUPS H
+                     LAB                                     130-0420   M W                                          LASHOVER J
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)     5  CHE  4162         3  UNIT OPERATIONS LAB    3.0   430-0520N  M      0265 CHEM ENGR       CI-WRITTEN&SPOK;  TOUPS H
+                     LAB                                     130-0420   M W
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)     5  CHE  4162         4  UNIT OPERATIONS LAB    3.0   430-0520N  M      0265 CHEM ENGR       CI-WRITTEN&SPOK;  TOUPS H
+                     LAB                                     130-0420   M W
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)     5  CHE  4162         5  UNIT OPERATIONS LAB    3.0   430-0520N   T     0112 TUREAUD HALL    CI-WRITTEN&SPOK;  TOUPS H
+                     LAB                                     130-0420    T TH                                        TOUPS H
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)     5  CHE  4162         6  UNIT OPERATIONS LAB    3.0   430-0520N   T     0112 TUREAUD HALL    CI-WRITTEN&SPOK;  TOUPS H
+                     LAB                                     130-0420    T TH                                        LASHOVER J
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)     5  CHE  4162         7  UNIT OPERATIONS LAB    3.0   430-0520N   T     0112 TUREAUD HALL    CI-WRITTEN&SPOK;  TOUPS H
+                     LAB                                     130-0420    T TH                                        THIBODEAUX L
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+(F)     5  CHE  4162         8  UNIT OPERATIONS LAB    3.0   430-0520N   T     0112 TUREAUD HALL    CI-WRITTEN&SPOK;  TOUPS H
+                     LAB                                     130-0420    T TH
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 17    83  CHE  4190         1  CHEM REACTION ENGR     3.0  1130-1220   M W F  0204 TUREAUD HALL                     GRIFFIN G
+ 13    81  CHE  4198         1  PROCESS DYNAMICS       3.0  1030-1120   M W F  0105 TUREAUD HALL                     ROMAGNOLI J
+  9     1  CHE  4222 LAB     1  SENIOR RESEARCH        2.0   530-0820N   T TH  0164 CHEM ENGR                        HUNG F
+  6    19  CHE  4260         1  BIOCHEMICAL ENGR       3.0   130-0250    T TH  0282 CHEM ENGR                        BENTON M
+(F)    35  CHE  4263         1  ENVIRN CHEMODYNAMICS   3.0   830-0920   M W F  0282 CHEM ENGR                        THIBODEAUX L
+ 10    18  CHE  4270         1  PROCESS ADV MATERIAL   3.0  1200-0120    T TH  0282 CHEM ENGR                        FLAKE J
+ 24     1  CHE  7110         1  MATHEMAT MODELS CHE    3.0   330-0450   M W    0282 CHEM ENGR                        HJORTSO M
+ 23     2  CHE  7120         1  CHE THERMODYNAMICS     3.0   500-0620N   T TH  0282 CHEM ENGR                        WORNAT M
+ 23     2  CHE  7130         1  HEAT MASS TRANSPORT    3.0   330-0450    T TH  0282 CHEM ENGR                        NANDAKUMAR K
+ 22     3  CHE  7542         1  CATALYSIS              3.0  1200-0120    T TH  0265 CHEM ENGR                        SPIVEY J
+ 99        CHE  8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      BENTON M
+ 99        CHE  8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      DOOLEY K
+ 99        CHE  8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      FLAKE J
+ 99        CHE  8000 RES     4  THESIS RESEARCH        1-12 TBA                                                      GRIFFIN G
+ 99        CHE  8000 RES     5  THESIS RESEARCH        1-12 TBA                                                      HENRY J
+ 99        CHE  8000 RES     6  THESIS RESEARCH        1-12 TBA                                                      HJORTSO M
+ 99        CHE  8000 RES     7  THESIS RESEARCH        1-12 TBA                                                      HUNG F
+ 99        CHE  8000 RES     8  THESIS RESEARCH        1-12 TBA                                                      KNOPF F
+ 99        CHE  8000 RES     9  THESIS RESEARCH        1-12 TBA                                                      PIKE R
+ 99        CHE  8000 RES    10  THESIS RESEARCH        1-12 TBA                                                      ROMAGNOLI J
+ 99        CHE  8000 RES    11  THESIS RESEARCH        1-12 TBA                                                      SPIVEY J
+ 99        CHE  8000 RES    12  THESIS RESEARCH        1-12 TBA                                                      THIBODEAUX L
+ 99        CHE  8000 RES    13  THESIS RESEARCH        1-12 TBA                                                      THOMPSON K
+ 99        CHE  8000 RES    14  THESIS RESEARCH        1-12 TBA                                                      VALSARAJ K
+ 99        CHE  8000 RES    15  THESIS RESEARCH        1-12 TBA                                                      WORNAT M
+ 99        CHE  8000 RES    16  THESIS RESEARCH        1-12 TBA                                                      NANDAKUMAR K
+ 99        CHE  8000 RES    17  THESIS RESEARCH        1-12 TBA                                                      FLAKE J
+ 99        CHE  8000 RES    18  THESIS RESEARCH        1-12 TBA                                                      BENTON M
+ 99        CHE  8000 RES    19  THESIS RESEARCH        1-12 TBA                                                      HJORTSO M
+ 99        CHE  9000 RES     1  DISSERTATION RES       1-12 TBA                                                      BENTON M
+ 99        CHE  9000 RES     2  DISSERTATION RES       1-12 TBA                                                      DOOLEY K
+ 99        CHE  9000 RES     3  DISSERTATION RES       1-12 TBA                                                      FLAKE J
+ 99        CHE  9000 RES     4  DISSERTATION RES       1-12 TBA                                                      GRIFFIN G
+ 99        CHE  9000 RES     5  DISSERTATION RES       1-12 TBA                                                      HENRY J
+ 99        CHE  9000 RES     6  DISSERTATION RES       1-12 TBA                                                      HJORTSO M
+ 99        CHE  9000 RES     7  DISSERTATION RES       1-12 TBA                                                      HUNG F
+ 99        CHE  9000 RES     8  DISSERTATION RES       1-12 TBA                                                      KNOPF F
+ 99        CHE  9000 RES     9  DISSERTATION RES       1-12 TBA                                                      PIKE R
+ 99        CHE  9000 RES    10  DISSERTATION RES       1-12 TBA                                                      ROMAGNOLI J
+ 98     1  CHE  9000 RES    11  DISSERTATION RES       1-12 TBA                                                      SPIVEY J
+ 99        CHE  9000 RES    12  DISSERTATION RES       1-12 TBA                                                      THIBODEAUX L
+ 99        CHE  9000 RES    13  DISSERTATION RES       1-12 TBA                                                      THOMPSON K
+ 96     3  CHE  9000 RES    14  DISSERTATION RES       1-12 TBA                                                      VALSARAJ K
+ 99        CHE  9000 RES    15  DISSERTATION RES       1-12 TBA                                                      WORNAT M
+ 99        CHE  9000 RES    16  DISSERTATION RES       1-12 TBA                                                      NANDAKUMAR K
+
+
+
+
+Fall  2012   CHEMICAL ENGINEERING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

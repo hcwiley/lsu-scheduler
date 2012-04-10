@@ -1,0 +1,43 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 20        LSU  1001         1  FRESHMAN SEMINAR       1.0   300-0350   M
+ 24     1  LSU  1001         3  FRESHMAN SEMINAR       1.0   400-0450   M
+ 27     2  LSU  1001         2  FRESHMAN SEMINAR       1.0   500-0550N   T
+ 32        LSU  1001         4  FRESHMAN SEMINAR       1.0   400-0450     W
+
+
+
+
+Fall  2012   FRESHMAN SEMINAR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

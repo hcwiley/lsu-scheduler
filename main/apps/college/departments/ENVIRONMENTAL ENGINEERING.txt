@@ -1,0 +1,52 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 28    12  EVEG 2000         1  INT TO ENVIRON ENGR    3.0   900-1020    T TH  3140 PATRICK TAYLOR                   MOE W
+ 35    25  EVEG 3110         3  WATR/WSTWTR TREATMNT   3.0  1130-1220   M W F  2161 PATRICK TAYLOR                   ADRIAN D
+ 14    46  EVEG 3110         1  WATR/WSTWTR TREATMNT   3.0  1200-0120    T TH  2412 PATRICK TAYLOR                   MALONE R
+ 35    55  EVEG 3200         1  WATR RESOURCES ENGR    3.0   830-0920   M W F  0105 TUREAUD HALL                     SMITH H
+  4        EVEG 3273 RES     1  IND UGRAD RES PROJ     1-4  TBA
+  4        EVEG 3273 RES     2  IND UGRAD RES PROJ     1-4  TBA
+ 35     5  EVEG 4105         1  QUANT. WATER MANAGE.   3.0   300-0420    T TH  2228 PATRICK TAYLOR                   MALONE R
+ 14    16  EVEG 4120         1  DSN SLD&HAZ; WST MGT    3.0  1030-1150    T TH  3140 PATRICK TAYLOR                   CONSTANT W
+(F)    15  EVEG 4136 LAB     1  WATER QUAL LAB         1.0   130-0420   M      2103 PATRICK TAYLOR  CI-WRITTEN       ELANGO V
+     **                    SECTION INVOLVES COMMUNICATION-INTENSIVE LEARNING
+ 16    20  EVEG 4145         1  ENV ENGR III           3.0   900-1020    T TH  2228 PATRICK TAYLOR                   PARDUE J
+  6    14  EVEG 4150         1  INT ENVR SYST DESN I   3.0   130-0420     W    2228 PATRICK TAYLOR                   CONSTANT W
+ 26    14  EVEG 4154         1  SUSTAINABILITY ENGR    3.0   130-0250    T TH  3140 PATRICK TAYLOR                   PARDUE J
+
+
+
+
+Fall  2012   ENVIRONMENTAL ENGINEERING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

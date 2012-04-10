@@ -1,0 +1,50 @@
+ANTH:Anthropology, BA
+CMST:Communication Studies, BA
+COMD:Communication Disorders, BA
+ECONAEEAEAS:Economics, BA / Empirical Economic Analysis
+ECONA:Economics, BA
+ENGL ENCW:English, BA / Creative Writing
+ENGL ENGLSE:English, BA / Secondary Education - ENGL
+ENGL ENLT:English, BA / Literature
+ENGL WRITCU:English, BA / Writing & Culture
+FREN FFCS:French, BA / Fren/Francophone Cultural Std
+FREN FFPS:French, BA / Fren/Francophone Pol Std
+FREN FRENSE:French, BA / Secondary Education - French
+FREN INTLBS:French, BA / International Business
+FREN INTLST:French, BA / International Studies
+FREN LITSTD:French, BA / Literary Studies
+FREN:French, BA
+GEOGA:Geography, BA
+GEOGS:Geography, BS
+HIST HISTSE:History, BA / Secondary Education - History
+HIST:History, BA
+INTL AFRICA:International Studies, BA / Africa
+INTL ASIA:International Studies, BA / Asia
+INTL ENVDEV:International Studies, BA / Environment & Development
+INTL EUROPE:International Studies, BA / Europe
+INTL GLBCUL:International Studies, BA / Global Cultures
+INTL GLBDPL:International Studies, BA / Global Diplomacy
+INTL GLOBST:International Studies, BA / Global Studies
+INTL LATNAM:International Studies, BA / Latin America
+INTL MDEAST:International Studies, BA / Middle East
+IS   HLSC:Interdisciplinary Studies, BIS / Health Sciences
+IS   INDS:Interdisciplinary Studies, BIS / Interdisciplinary Studies
+IS   LDS:Interdisciplinary Studies, BIS / Leadership and Society
+IS   STOG:Interdisciplinary Studies, BIS / Studies in Organizations
+IS   WP:Interdisciplinary Studies, BIS / Writing & Performing Arts
+LIBARAAAS:Liberal Arts, BA / African & African-American Stu
+LIBARCLCIV:Liberal Arts, BA / Classical Civilization
+LIBARDSM:Liberal Arts, BA / Disaster Science & Mgt
+LIBARFA-AH:Liberal Arts, BA / Art History
+LIBARFMA:Liberal Arts, BA / Film & Media Arts
+LIBARWGSLA:Liberal Arts, BA / Women's and Gender Studies
+PHIL REL:Philosophy, BA / Religious Studies
+PHIL:Philosophy, BA
+POLI:Political Science, BA
+PSYCS:Psychology, BS
+SOCL APSOCL:Sociology, BA / Applied Sociology
+SOCL RUSOCL:Sociology, BA / Rural Sociology
+SOCL SOCJ:Sociology, BA / Criminology
+SOCL:Sociology, BA
+SPAN SPANSE:Spanish, BA / Secondary Education - SPAN
+SPAN:Spanish, BA

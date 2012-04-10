@@ -1,0 +1,41 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+      ***   HEBR 1001  ***       CROSS-LISTED WITH   REL  1001
+  8     7  HEBR 1001         1  BEGINNING HEBREW       4.0   930-1020   MTWTH  0424 HODGES HALL                      WRIGHT R
+
+
+
+
+Fall  2012   HEBREW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

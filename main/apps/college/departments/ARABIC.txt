@@ -1,0 +1,45 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 10    15  ARAB 1101         1  BEGINNING ARABIC       4.0   930-1020   MTWTH  0237 COATES                           BACHAR H
+ 14    11  ARAB 1101         2  BEGINNING ARABIC       4.0  1130-1220   MTWTH  0111 COATES                           BACHAR H
+ 18     7  ARAB 1101         3  BEGINNING ARABIC       4.0  1230-0120   MTWTH  0111 COATES                           BACHAR H
+  1    24  ARAB 2101         1  INTERMEDIATE ARABIC    4.0  1230-0120   MTWTH  0237 COATES                           KHANNOUS T
+  6    14  ARAB 2101         2  INTERMEDIATE ARABIC    4.0   130-0220   MTWTH  0237 COATES                           KHANNOUS T
+ 17     8  ARAB 3101         1  ADVANCED ARABIC I      3.0  1030-1150   M W    0237 COATES                           WAGNER M
+
+
+
+
+Fall  2012   ARABIC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

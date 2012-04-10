@@ -1,0 +1,118 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+(F)    20  ELRC 2507         1  INTRO CLSSROOM TECH    3.0   430-0720N  M      0114 PEABODY                          STAFF
+(F)    15  ELRC 2507         3  INTRO CLSSROOM TECH    3.0   130-0250    T TH  0118 PEABODY                          HEROMAN D
+(F)    18  ELRC 2507         2  INTRO CLSSROOM TECH    3.0   430-0720N   T     0232 MIDDLETON                        STAFF
+(F)    15  ELRC 3500         1  UTILIZ INSTRUCT MAT    3.0   900-1020    T TH  0118 PEABODY                          HEROMAN D
+(F)    15  ELRC 3500         2  UTILIZ INSTRUCT MAT    3.0  1030-1150    T TH  0118 PEABODY                          HEROMAN D
+ 20     5  ELRC 4006         1  INT APPL STAT ED RES   3.0   430-0720N   T     0214 PEABODY                          ARBUTHNOT K
+ 13    12  ELRC 4249         1  UNDST/APPL RES IN ED   3.0   430-0720N    W    0111 COATES                           ARBUTHNOT K
+ 20     5  ELRC 4360         1  INTRO TO SCHOOL COUN   3.0   430-0720N  M      0120 PEABODY                          CURRY J
+ 32     3  ELRC 4364         1  STUD AFFRS HIGHER ED   3.0   430-0720N     TH  0123 ALLEN                            BOURKE B
+  6     9  ELRC 4507         1  COMPUTER TECH EDUC     3.0   300-0420    T TH  0118 PEABODY                          HEROMAN D
+(F)    15  ELRC 4507         2  COMPUTER TECH EDUC     3.0   430-0720N   T     0118 PEABODY                          HEROMAN D
+ 12     8  ELRC 4602         1  INTRO TO COUNSELING    3.0   430-0720N  M      0104 PEABODY                          CHOATE L
+      ***   ELRC 5300  ***       THIS CLASS WILL MEET ON DESIGNATED DATES IN 120 PEABODY HALL
+ 20        ELRC 5300         1  PROB GUIDNCE/COUNSEL   3.0  TBA                                                      STAFF
+                     LAB                                    TBA                                                      STAFF
+     **                    CLASS DATES: 9/21-4-9:30PM; 9/22-8A-6PM; 10/5-4-9:30PM;
+     **                    10/6-4-9:30PM; 10/20-8A-6PM; 10/26-4-9:30PM; 10/27-8A-6PM
+  2    13  ELRC 7006         1  EDUC STATISTICS        4.0   430-0720N   T     0019 ALLEN                            KENNEDY E
+                     LAB                                     130-0320    T     0114 PEABODY                          KENNEDY E
+  6     9  ELRC 7006         2  EDUC STATISTICS        4.0   430-0720N   T     0019 ALLEN                            KENNEDY E
+                     LAB                                     730-0920N   T     0205 COATES                           KENNEDY E
+ 22     3  ELRC 7016         1  ADV EDUCATIONAL STAT   4.0   430-0720N    W    0023 ALLEN                            KENNEDY E
+                     LAB                                     730-0920N    W    0230EMIDDLETON                        KENNEDY E
+  7     8  ELRC 7243         1  QUAL METH EDUC RESCH   4.0   430-0720N  M      0214 PEABODY                          MACGREGOR S
+                     LAB                                    TBA                                                      MACGREGOR S
+  1        ELRC 7249 CLI     1  ADV RES PRACTICUM      3.0  TBA                                                      STAFF
+ 10     5  ELRC 7270         1  MIXED MTHDS RES EDUC   3.0   430-0720N     TH  0214 PEABODY                          MACGREGOR S
+      ***   ELRC 7299  ***       RESTRICTED TO ONLY ADMITTED DOCTORAL STUDENTS IN ETPP
+ 23     7  ELRC 7299         1  INTRO ED SCHOLARSHIP   3.0   430-0720N  M      0111 COATES          PERMIS OF INST   MATHEWS F
+ 15        ELRC 7330         1  GRP TECH DYN COUNSEL   3.0   430-0720N   T     0120 PEABODY                          CURRY J
+ 15     5  ELRC 7331         1  COUNSEL THEORY/TECHN   3.0   430-0720N    W    0120 PEABODY                          GINTNER G
+ 21     4  ELRC 7362 CLI     1  PRACT IN SCH COUNSEL   3-6   900-1050   M      0214 PEABODY                          STAFF
+ 19     1  ELRC 7364 CLI     1  COM AGENCY COUN PRAC   3-6   900-1050   M      0120 PEABODY                          CHOATE L
+  9     6  ELRC 7393         1  MULTICULT COUNSLNG     3.0   430-0720N   T     0129 ALLEN                            ALBERT K
+ 19     1  ELRC 7397         1  SP TOPICS COUNSELING   3.0   430-0720N  M      0131 ALLEN                            GINTNER G
+                     LAB                                    TBA                                                      GINTNER G
+ 17     5  ELRC 7404 CLI     1  INTERNSHIP IN ED ADM   3-6  TBA                                                      STAFF
+ 16     4  ELRC 7422         1  INTR SCH IMPR/ACT RS   3.0   430-0720N  M                                            TAYLOR D
+     **                    CLASS WILL BE HELD IN 310 PEABODY
+ 14     1  ELRC 7431 CLI     1  BST PRCT SCH LEAD II   6.0   430-1020N     TH                                        TAYLOR D
+     **                    CLASS WILL BE HELD IN 310 PEABODY
+ 26     4  ELRC 7450         1  SUPRV INST E & S SCH   3.0   430-0720N    W    0131 ALLEN                            BICKMORE D
+ 15        ELRC 7500 SEM     1  TECH EDUC LEADERSHIP   3.0   430-0720N   T     0034 ALLEN                            STAFF
+  5        ELRC 7516 LAB     1  PRACTICUM EDUC MEDIA   3-6  TBA                                                      HEROMAN D
+ 10        ELRC 7525 SEM     1  PROF DEV K-12          3.0   430-0720N  M      0118 PEABODY                          NICOLLE P
+ 17     8  ELRC 7601         1  FOUND HIGHER EDUC      3.0   430-0720N   T     0128 ALLEN                            MITCHELL R
+ 10     5  ELRC 7603 SEM     1  LEADERSHIP IN HE       3.0   430-0720N     TH  0128 ALLEN                            OWENS A
+  4    11  ELRC 7605         1  HIGHER EDUC/LAW        3.0   430-0720N  M      0218 STUBBS                           RAY D
+ 10     5  ELRC 7606 SEM     1  CURRICULUM/COLL TCH    3.0   430-0720N  M      0128 ALLEN                            MITCHELL R
+  2    18  ELRC 7611 SEM     1  COLLEGE STUDENTS U.S   3.0   430-0720N   T     0055 ALLEN                            BOURKE B
+ 22     3  ELRC 7806         1  LEADERSHIP LEARNING    3.0   430-0720N     TH  0131 ALLEN                            BICKMORE D
+ 25        ELRC 7900 RES     1  INDEPENDENT STUDY      1-6  TBA                                                      ARBUTHNOT K
+ 22     3  ELRC 7900 RES     2  INDEPENDENT STUDY      1-6  TBA                                                      BOURKE B
+ 24     1  ELRC 7900 RES     3  INDEPENDENT STUDY      1-6  TBA                                                      CURRY J
+ 25        ELRC 7900 RES     4  INDEPENDENT STUDY      1-6  TBA                                                      KENNEDY E
+  1        ELRC 7900 RES     5  INDEPENDENT STUDY      1-6  TBA                                                      MITCHELL R
+  4     1  ELRC 8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      BOURKE B
+  9     1  ELRC 8900 RES     1  PREDISSERTATION RES    1-9  TBA                                                      BOURKE B
+  5        ELRC 8900 RES     2  PREDISSERTATION RES    1-9  TBA                                                      CHOATE L
+  5        ELRC 8900 RES     3  PREDISSERTATION RES    1-9  TBA                                                      CURRY J
+  5        ELRC 8900 RES     4  PREDISSERTATION RES    1-9  TBA                                                      GINTNER G
+  5        ELRC 8900 RES     5  PREDISSERTATION RES    1-9  TBA                                                      KENNEDY E
+  5        ELRC 8900 RES     6  PREDISSERTATION RES    1-9  TBA                                                      LOU Y
+  5        ELRC 8900 RES     7  PREDISSERTATION RES    1-9  TBA                                                      MACGREGOR S
+  5        ELRC 8900 RES     8  PREDISSERTATION RES    1-9  TBA                                                      MITCHELL R
+  5        ELRC 8900 RES     9  PREDISSERTATION RES    1-9  TBA                                                      TAYLOR D
+ 25        ELRC 8900 RES    10  PREDISSERTATION RES    1-9  TBA                                                      SULENTIC DOWE
+ 10        ELRC 9000 RES     1  DISSERTATION RES       1-12 TBA                                                      ARBUTHNOT K
+ 13     2  ELRC 9000 RES     2  DISSERTATION RES       1-12 TBA                                                      BOURKE B
+ 10        ELRC 9000 RES     3  DISSERTATION RES       1-12 TBA                                                      CHOATE L
+ 10        ELRC 9000 RES     4  DISSERTATION RES       1-12 TBA                                                      CURRY J
+ 10        ELRC 9000 RES     5  DISSERTATION RES       1-12 TBA                                                      KENNEDY E
+ 10        ELRC 9000 RES     6  DISSERTATION RES       1-12 TBA                                                      EGEA-KUEHNE D
+  8     2  ELRC 9000 RES     7  DISSERTATION RES       1-12 TBA                                                      MACGREGOR S
+ 17     3  ELRC 9000 RES     8  DISSERTATION RES       1-12 TBA                                                      MITCHELL R
+  9     1  ELRC 9000 RES     9  DISSERTATION RES       1-12 TBA                                                      TAYLOR D
+ 10        ELRC 9000 RES    10  DISSERTATION RES       1-12 TBA                                                      BICKMORE D
+ 10        ELRC 9000 RES    11  DISSERTATION RES       1-12 TBA                                                      CHEEK E
+ 10        ELRC 9000 RES    12  DISSERTATION RES       1-12 TBA                                                      CULROSS R
+
+
+
+
+Fall  2012   EDUC LEADERSHIP RESEARCH COUNS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

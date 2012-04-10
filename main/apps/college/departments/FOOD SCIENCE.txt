@@ -1,0 +1,85 @@
+
+     ENRL   COURSE         SEC                          HR     TIME     DAYS                         SPECIAL
+AVL  CNT   ABBR NUM  TYPE  NUM  COURSE TITLE            CR  BEGIN-END   MTWTFS ROOM  BUILDING        ENROLLMENT      INSTRUCTOR
+----------------------------------------------------------------------------------------------------------------------------------
+ 67    23  FDSC 1049         1  SCIENCE OF FOODS       2.0  1230-0120   M W    0206 TUREAUD HALL                     GUTIERREZ A
+  5    20  FDSC 3000         1  FOOD SAFETY            3.0   930-1020   M W F  0201 DAIRY SCIENCE                    JANES M
+  3        FDSC 3900 RES     1  FOOD SCI RESEARCH      1-3  TBA
+ 18        FDSC 3900 RES     2  FOOD SCI RESEARCH      1-3  TBA
+  1    11  FDSC 3999 SEM     1  FDSC & TECH SEMINAR    1.0  1230-0120      TH  0125 TUREAUD HALL                     KING J
+ 11     9  FDSC 4060         1  FOOD CHEMISTRY         4.0  1030-1150    T TH  0201 DAIRY SCIENCE                    KING J
+                     LAB                                     130-0420    T                                           KING J
+ 18     7  FDSC 4070         1  FOOD LAWS REGULATION   2.0  1130-1220   M W    0201 DAIRY SCIENCE                    FINLEY J
+ 10    10  FDSC 4075         1  FOOD PRESERVATION      3.0  1230-0120   M W    0232 J C MILLER                       WILSON P
+                     LAB                                     130-0420   M                                            WILSON P
+     **                    LAB WILL BE HELD IN 103 J.C. MILLER
+ 11     9  FDSC 4095         1  SENSORY EVAL OF FOOD   4.0  1030-1120   M W F  0215 TUREAUD HALL                     PRINYAWIWATKU
+                     LAB                                     300-0550      TH                                        PRINYAWIWATKU
+      ***   FDSC 4163  ***       CROSS-LISTED WITH   BIOL 4163
+           FDSC 4163         1  INDUSTRIAL MICROBIOL   4.0   130-0220   M W    0119 J C MILLER                       JANES M
+                     LAB                                     300-0450   M W                                          JANES M
+     **                    LAB HELD IN 241 J.C. MILLER
+  1        FDSC 7030 RES     1  ADV FOOD RES           1-6  TBA
+  1        FDSC 7030 RES     5  ADV FOOD RES           1-6  TBA
+  1     9  FDSC 7040         1  FLAVOR & COLORS FOOD   3.0   900-0950    T TH  0116 TUREAUD HALL                     XU Z
+                     LAB                                     130-0250      TH  0116 TUREAUD HALL                     XU Z
+  6     4  FDSC 7050         1  FOOD PROTIEN BIOTECH   3.0   930-1020   M W F  0215 TUREAUD HALL                     LOSSO J
+(F)    10  FDSC 7071 SEM     1  SEM FDSC               1.0  1230-0120      TH  0125 TUREAUD HALL                     XU Z
+ 99        FDSC 8000 RES     1  THESIS RESEARCH        1-12 TBA                                                      AITA G
+ 99        FDSC 8000 RES     2  THESIS RESEARCH        1-12 TBA                                                      DAY D
+ 99        FDSC 8000 RES     3  THESIS RESEARCH        1-12 TBA                                                      LAMPILA L
+ 98     1  FDSC 8000 RES     4  THESIS RESEARCH        1-12 TBA                                                      JANES M
+ 99        FDSC 8000 RES     5  THESIS RESEARCH        1-12 TBA                                                      KING J
+ 99        FDSC 8000 RES     6  THESIS RESEARCH        1-12 TBA                                                      LOSSO J
+ 99        FDSC 8000 RES     7  THESIS RESEARCH        1-12 TBA                                                      FINLEY J
+ 98     1  FDSC 8000 RES     8  THESIS RESEARCH        1-12 TBA                                                      PRINYAWIWATKU
+ 99        FDSC 8000 RES    10  THESIS RESEARCH        1-12 TBA                                                      WILSON P
+ 98     1  FDSC 8000 RES    11  THESIS RESEARCH        1-12 TBA                                                      XU Z
+ 99        FDSC 8000 RES    12  THESIS RESEARCH        1-12 TBA                                                      SATHIVEL S
+ 99        FDSC 8000 RES    13  THESIS RESEARCH        1-12 TBA                                                      FINLEY J
+ 99        FDSC 9000 RES     1  DISSERTATION RES       1-12 TBA                                                      AITA G
+ 99        FDSC 9000 RES     2  DISSERTATION RES       1-12 TBA                                                      DAY D
+ 99        FDSC 9000 RES     3  DISSERTATION RES       1-12 TBA                                                      LAMPILA L
+ 98     1  FDSC 9000 RES     4  DISSERTATION RES       1-12 TBA                                                      JANES M
+ 99        FDSC 9000 RES     5  DISSERTATION RES       1-12 TBA                                                      KING J
+ 97     2  FDSC 9000 RES     6  DISSERTATION RES       1-12 TBA                                                      LOSSO J
+ 97     2  FDSC 9000 RES     7  DISSERTATION RES       1-12 TBA                                                      FINLEY J
+ 98     1  FDSC 9000 RES     8  DISSERTATION RES       1-12 TBA                                                      PRINYAWIWATKU
+ 99        FDSC 9000 RES    10  DISSERTATION RES       1-12 TBA                                                      WILSON P
+ 99        FDSC 9000 RES    11  DISSERTATION RES       1-12 TBA                                                      XU Z
+ 99        FDSC 9000 RES    12  DISSERTATION RES       1-12 TBA                                                      SATHIVEL S
+
+
+
+
+Fall  2012   FOOD SCIENCE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
