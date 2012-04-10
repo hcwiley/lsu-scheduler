@@ -1,8 +1,0 @@
-{% extends base_template %}
-{% block center %} <h3>{{ department }}</h3>
-{% for course in department.courses.all %} <a href='{{ course.get_absolute_url }}'>
-<li>
-    {{ course.title }}
-</li> </a>
-{% endfor %}
-{% endblock %}

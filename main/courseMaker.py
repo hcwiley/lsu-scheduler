@@ -1,4 +1,5 @@
 from apps.course.models import Course, Date, Lab
+from apps.college.models import Department
 import urllib
 import urllib2
 #from BeautifulSoup import BeautifulSoup
@@ -39,13 +40,25 @@ def getAllDepts():
 		for dept in foo.readlines():
 			dept = dept.strip()
 			try:
-				getDept(dept)
+#				print dept
+#				getDept(dept)
+#				print 'pulled down %s' % dept
 				main(dept)
 			except:
 				print "couldnt get %s department" % dept
 
 def main(dept):
 	schedule = open('apps/college/departments/%s.txt' % dept, 'r')
+	dept = dept.rstrip('.txt').capitalize()
+	department = Department.objects.get_or_create(name=dept)
+	if department[1]:
+#		print 'saving department: %s' % department[0].name 
+		department[0].save()
+	department = department[0]
+	abbrSet = False
+	if len(department.abbr) > 2:
+		abbrSet = True
+#	print department.name
 	lastCourse = None
 	c = -1
 	for bob in schedule:
@@ -67,7 +80,7 @@ def main(dept):
 		except:
 			enroll = 0
 			#print 'no enrollment count'
-		dept = bob[11:15].strip()
+		abbr = bob[11:15].strip()
 		try:
 			num = bob[16:20].strip()
 			num = int(num)
@@ -143,28 +156,33 @@ def main(dept):
 			instructor = ''
 			#print 'no instructor'
 		if courseType == 'LAB' and title == '' and lastCourse != None:
-			print 'lab if'
-			lab = Lab.objects.create(course=lastCourse)
+#			print 'lab if'
+			lab = Lab.objects.create(course = lastCourse)
 			if begin != "TBA":
 				lab.time_tba = False
 				lab.start_time = time(begin[0], begin[1]).strftime('%H:%M')
 				lab.end_time = time(end[0], end[1]).strftime('%H:%M')
 			else:
 				lab.time_tba = True
-			lab.days.add(Date.objects.get_or_create(day=days)[0])
+			lab.days.add(Date.objects.get_or_create(day = days)[0])
 			lab.building = building
 			lab.instructor = instructor
 			continue
 #		if type(num) == int:
 #		print "title: %s" % title
-#		print "dept: %s" % dept
+#		print "dept: %s" % abbr
 #		print "number: %s" % num
 #		print "section: %s" % section
-		course = Course.objects.get_or_create(title=title,department=dept,number=num,section_number=section)
-		isUpdate = course[1]
+		if not abbrSet:
+			department.abbr = abbr
+			department.save()
+			abbrSet = True
+#			print 'set the abbr for dept: %s' % department.abbr
+		course = Course.objects.get_or_create(title = title, number = num, section_number = section)
+		isNew = course[1]
 #		print "is updated: %s" % isUpdate
 		course = course[0]
- 
+		department.courses.add(course)
 		if begin != "TBA":
 			course.time_tba = False
 		else:
@@ -172,7 +190,7 @@ def main(dept):
 		if not course.time_tba:
 			course.start_time = time(begin[0], begin[1]).strftime('%H:%M')
 			course.end_time = time(end[0], end[1]).strftime('%H:%M')
-		course.days.add(Date.objects.get_or_create(day=days)[0])
+		course.days.add(Date.objects.get_or_create(day = days)[0])
 		course.building = building
 		course.instructor = instructor
 		course.available_seats = avail
@@ -180,7 +198,7 @@ def main(dept):
 		course.special_enrollment = special
 		course.credit_hours = hours
 		course.type = courseType
-		if not isUpdate:
+		if isNew:
 			course.save()
 #		print "saved %s" % course
 		lastCourse = course

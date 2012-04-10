@@ -10,6 +10,7 @@ from django.template.defaultfilters import slugify
 
 class College(models.Model):
     name = models.CharField(max_length=200, unique=True)
+    abbr = models.CharField(max_length=4, unique=True, null=True, blank=True, default='')
     slug = models.SlugField(null=True, blank=True, default='', editable=False)
     
     def __unicode__(self):
