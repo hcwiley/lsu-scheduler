@@ -57,6 +57,7 @@ class Major(models.Model):
     department = models.ForeignKey(Department, null=True, blank=True, default=None)
     abbr = models.CharField(max_length=15, null=True, blank=True, default="")
     coursesRequired = models.ManyToManyField(Course, related_name='Required_Course', null=True, blank=True, default=None)
+    degree_type = models.CharField(max_length=4, null=True, blank=True, default='')
     
     def __unicode__(self):
         return self.name

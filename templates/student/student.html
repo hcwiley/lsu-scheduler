@@ -1,0 +1,56 @@
+{% extends base_template %}
+{% block center %}
+<style>
+    .neededCourse {
+        margin: 2px;
+    }
+    .neededCourse:hover {
+        cursor: pointer;
+    }
+    .hidden {
+        display: none;
+    }
+    #saveMenu{
+        position: fixed;
+        top: 150px;
+        right: 300px;
+    }
+</style>
+<script type='text/javascript'>
+    $(document).ready(function() {
+        $('.neededCourse').click(function() {
+            console.log($(this));
+            $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', '');
+            $('#id_coursesTaken option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
+            $(this).animate({
+                opacity : .3
+            }, 300);
+        });
+        $("#save").click(function() {
+            $('#studentForm').submit();
+        });
+    });
+
+</script>
+<h3>{{ student.name }}</h3>
+<h4> you need these courses
+<p style='font-variant: small-caps;'>
+    click to indicate you have taken the class
+</p></h4>
+{% for course in student.coursesNeeded.all %}
+<p class='neededCourse' pk='{{ course.id }}'>
+    {{ course }}
+</p>
+{% endfor %}
+<div class='hidden'>
+    <form id='studentForm' action='' method='POST'>
+        {% csrf_token %}
+        {{ studentForm.as_p }}
+    </form>
+</div>
+<div id='saveMenu'>
+    <button id='save'>
+        <h3>save</h3>
+    </button>
+</div>
+{% endblock %} 

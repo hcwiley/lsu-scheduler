@@ -1,5 +1,6 @@
 {% extends base_template %}
 {% block center %} <h3>{{ major }}</h3>
+    <p>degree type: {{ major.degree_type }}</p>
 <a href='{{ major.college.get_absolute_url }}'>
 <li>
     College : {{ major.college }}

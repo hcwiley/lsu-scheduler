@@ -7,7 +7,7 @@
         <link id='main-css' type='text/css' rel='stylesheet' href='{{ STATIC_URL }}css/styles.css'/>
         <!--         <link type='image/x-icon' rel="icon" href='{{ STATIC_URL }}images/fav.png' /> -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="{{ STATIC_URL }}js/main.js"></script>
+<!--         <script type="text/javascript" src="{{ STATIC_URL }}js/main.js"></script> -->
         <title>{% block header_title %}LSU Scheduler{% endblock %}</title>
     </head>
     <body>
@@ -16,10 +16,11 @@
         <div id='container'>
             <div id='left-nav'>
                 {% block left_nav %}
+                {% if students %}
                 <h3>students</h3>
                     {% for student in students %} <a href='{{ student.get_absolute_url }}'>
                     <li>
-                        {{ student.fields.name }}
+                        {{ student.name }}
                     </li>
                     </a>
                     <div class='fields'>
@@ -32,17 +33,12 @@
                     {% endfor %}
                     </div>
                     {% endfor %}
+                    {% endif %}
                 {% endblock %}
             </div>
             <div id='wrapper'>
                 <div id='main'>
-                    {% block center %} <h3>courses</h3>
-                    {% for course in courses %} <a href='{{ course.get_absolute_url }}'>
-                    <li>
-                        {{ course.fields.title }}
-                    </li>
-                    </a>
-                    {% endfor %}
+                    {% block center %} 
                     {% endblock %}
                 </div>
             </div>

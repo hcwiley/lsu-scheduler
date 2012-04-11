@@ -5,6 +5,7 @@ from django.conf.urls.defaults import patterns, url, include
 from django.contrib.auth import views as auth_views
 from apps.college import urls as college_urls
 from apps.course import urls as course_urls
+from apps.student import urls as student_urls
 admin.autodiscover()
 
 
@@ -18,6 +19,7 @@ urlpatterns = patterns('',
     (r'^$', 'views.home'),
     (r'^colleges/', include(college_urls)),
     (r'^courses/', include(course_urls)),
+    (r'^students/', include(student_urls)),
 )
 
 

@@ -43,8 +43,10 @@ def common_args(request):
 
 def home(request):
     args = common_args(request)
-    args['courses'] = serializers.serialize( "python", Course.objects.all())
-    args['students'] = serializers.serialize( "python", Student.objects.all())
+    args['courses'] = Course.objects.all()
+    args['students'] = Student.objects.all()
     args['departments'] = Department.objects.all()
+    args['colleges'] = College.objects.all()
+    args['majors'] = Major.objects.all()
     args.update(csrf(request))
-    return render_to_response('departments.html', args)
+    return render_to_response('index.html', args)

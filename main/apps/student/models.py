@@ -12,10 +12,27 @@ class Student(models.Model):
     name = models.CharField(max_length=144)
     id_number = models.IntegerField(default=0)
     major = models.ForeignKey(Major)
-    minor = models.ForeignKey(Minor, related_name='Minor')
-    coursesWanted = models.ManyToManyField(Course, related_name='Wanted_Course');
-    coursesRegistered = models.ManyToManyField(Course, related_name='Registered_Course');
-    coursesNeeded = models.ManyToManyField(Course, related_name='Needed_Course');
+    minor = models.ForeignKey(Minor, related_name='Minor', null=True, blank=True, default='')
+    coursesWanted = models.ManyToManyField(Course, related_name='Wanted_Course', null=True, blank=True, default=None)
+    coursesRegistered = models.ManyToManyField(Course, related_name='Registered_Course', null=True, blank=True, default=None)
+    coursesNeeded = models.ManyToManyField(Course, related_name='Needed_Course', null=True, blank=True, default=None)
+    coursesTaken = models.ManyToManyField(Course, related_name='Taken_Course', null=True, blank=True, default=None)
     
     def __unicode__(self):
         return self.name
+        
+    class Meta:
+        ordering = ['name']
+        
+    @models.permalink
+    def get_absolute_url(self):
+        return ('apps.student.views.student', [str(self.id)])
+    
+    def getCoursesNeeded(self):
+        self.coursesNeeded = self.major.coursesRequired.all()
+        for course in self.coursesNeeded.all():
+            if self.coursesNeeded.filter(number=course.number).count() > 1:
+                self.coursesNeeded.remove(course)
+        for course in self.coursesTaken.all():
+            self.coursesNeeded.remove(course)
+        return self.coursesNeeded
