@@ -16,7 +16,7 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     (r'^/$', 'views.home'),
     (r'^$', 'views.home'),
-    (r'^departments/', include(college_urls)),
+    (r'^colleges/', include(college_urls)),
     (r'^courses/', include(course_urls)),
 )
 

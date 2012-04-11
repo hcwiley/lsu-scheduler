@@ -24,6 +24,10 @@ class College(models.Model):
         if self.slug == '':
             self.slug = slugify(self.name)
         super(College, self).save(*args, **kwargs)
+        
+    @models.permalink
+    def get_absolute_url(self):
+        return ('apps.college.views.college', [str(self.abbr)])
 
 class Department(models.Model):
     name = models.CharField(max_length=200, unique=True)
@@ -50,6 +54,7 @@ class Department(models.Model):
 class Major(models.Model):
     name = models.CharField(max_length=100)
     college = models.ForeignKey(College, null=True, blank=True, default=None)
+    department = models.ForeignKey(Department, null=True, blank=True, default=None)
     abbr = models.CharField(max_length=15, null=True, blank=True, default="")
     coursesRequired = models.ManyToManyField(Course, related_name='Required_Course', null=True, blank=True, default=None)
     
@@ -58,6 +63,10 @@ class Major(models.Model):
     
     class Meta:
         ordering = ['abbr']
+        
+    @models.permalink
+    def get_absolute_url(self):
+        return ('apps.college.views.major', [str(self.abbr)])
     
 class Minor(Major):
     pass

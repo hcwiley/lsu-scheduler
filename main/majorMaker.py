@@ -1,4 +1,4 @@
-from apps.college.models import Major, College
+from apps.college.models import Major, College, Department
 from glob import glob
 import os
 import re
@@ -30,3 +30,16 @@ def main():
                 maj.save()
             except:
                 print 'no matching college for: %s' % college
+            try:
+                dept = Department.objects.get(abbr=abbr)
+                maj.department = dept
+                print 'department: %s' % dept.name
+                maj.save()
+            except:
+                try:
+                    dept = Department.objects.get(abbr=college)
+                    maj.department = dept
+                    print 'department: %s' % dept.name
+                    maj.save()
+                except:
+                    print 'no matching department for: %s' % abbr

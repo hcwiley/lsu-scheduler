@@ -1,0 +1,33 @@
+{% extends base_template %}
+{% block center %}
+<style>
+.column{
+    width: 300px;
+    float: left;
+}
+</style>
+<div class='column'>
+    <h3>Colleges</h3>
+{% for college in colleges %} <a href='{{ college.get_absolute_url }}'>
+<li>
+    {{ college.name }}
+</li> </a>
+{% endfor %}
+</div>
+<div class='column'>
+<h3>Majors</h3>
+{% for major in majors %} <a href='{{ major.get_absolute_url }}'>
+<li>
+    {{ major.name }}
+</li> </a>
+{% endfor %}
+</div>
+<div class='column'>
+<h3>Departments</h3>
+{% for department in departments %} <a href='{{ department.get_absolute_url }}'>
+<li>
+    {{ department.name }}
+</li> </a>
+{% endfor %}
+</div>
+{% endblock %}

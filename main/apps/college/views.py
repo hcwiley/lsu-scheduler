@@ -13,6 +13,13 @@ def college_args(request):
     args = common_args(request)
     return args
 
+def home(request):
+    args = college_args(request)
+    args['departments'] = Department.objects.all()
+    args['colleges'] = College.objects.all()
+    args['majors'] = Major.objects.all()
+    return render_to_response('college/list-all.html', args)
+
 def department(request, abbr=None):
     if abbr == None:
         return redirect('/departments')
@@ -20,3 +27,19 @@ def department(request, abbr=None):
     args['department'] = Department.objects.get(abbr=abbr)
     args.update(csrf(request))
     return render_to_response('college/department.html', args)
+
+def college(request, abbr=None):
+    if abbr == None:
+        return redirect('/colleges')
+    args = college_args(request)
+    args['college'] = College.objects.get(abbr=abbr)
+    args.update(csrf(request))
+    return render_to_response('college/college.html', args)
+
+def major(request, abbr=None):
+    if abbr == None:
+        return redirect('/majors')
+    args = college_args(request)
+    args['major'] = Major.objects.get(abbr=abbr)
+    args.update(csrf(request))
+    return render_to_response('college/major.html', args)
