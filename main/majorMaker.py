@@ -8,6 +8,7 @@ def main():
     for college in colleges:
         college = college.lstrip('./apps/college/colleges/')
         college = college.rstrip('.txt')
+        college = college.strip()
         print college
         file = open('./apps/college/colleges/%s.txt' % college, 'r')
         for major in file.readlines():
@@ -16,11 +17,16 @@ def main():
             abbr = re.sub(' +',' ',abbr)
             name = major.split(':')[1]
             name = re.sub(' +',' ',name)
-            print 'abbr: %s' % abbr
-            print 'name: %s' % name
-            maj = Major.objects.get_or_create(abbr=abbr)
+            maj = Major.objects.get_or_create(abbr=abbr, name=name)
             if maj[1]:
-                maj = maj[0]
-                maj.name = name
+                maj[0].save()
+            maj = maj[0]
+            if len(abbr.split(' ')) > 0:
+                abbr = abbr.split(' ')[0]
+            try:
+                col = College.objects.get(abbr=college)
+                maj.college = col
+                print 'college: %s' % col.name
                 maj.save()
-                maj.college = College.objects.get_or_create(abbr=college)[0]
+            except:
+                print 'no matching college for: %s' % college
