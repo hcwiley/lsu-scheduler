@@ -1,11 +1,5 @@
 {% extends base_template %}
 {% block center %}
-<style>
-.column{
-    width: 250px;
-    float: left;
-}
-</style>
 <div class='column'>
 <h3>courses</h3>
 {% for course in courses %} <a href='{{ course.get_absolute_url }}'>

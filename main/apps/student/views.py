@@ -27,5 +27,6 @@ def student(request, id=None):
             print 'its valid'
             form.save()
     args['student'].getCoursesNeeded()
+    args['courses'] = Course.objects.all()
     args['studentForm'] = StudentForm(instance=args['student'])
     return render_to_response('student/student.html', args)

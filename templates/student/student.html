@@ -10,10 +10,10 @@
     .hidden {
         display: none;
     }
-    #saveMenu{
+    #saveMenu {
         position: fixed;
-        top: 150px;
-        right: 300px;
+        top: 120px;
+        left: 30px;
     }
 </style>
 <script type='text/javascript'>
@@ -26,6 +26,21 @@
                 opacity : .3
             }, 300);
         });
+        $('.takenCourse').click(function() {
+            console.log($(this));
+            $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
+            $('#id_coursesTaken option[value=' + $(this).attr('pk') + ']').attr('selected', '');
+            $(this).animate({
+                opacity : .3
+            }, 300);
+        });
+        $('.allCourse').click(function() {
+            console.log($(this));
+            $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
+            $(this).animate({
+                opacity : .3
+            }, 300);
+        });
         $("#save").click(function() {
             $('#studentForm').submit();
         });
@@ -33,19 +48,43 @@
 
 </script>
 <h3>{{ student.name }}</h3>
-<h4> you need these courses
-<p style='font-variant: small-caps;'>
-    click to indicate you have taken the class
-</p></h4>
-{% for course in student.coursesNeeded.all %}
-<p class='neededCourse' pk='{{ course.id }}'>
-    {{ course }}
-</p>
-{% endfor %}
+<div class='column'>
+    <h4> you need these courses </h4>
+    <p style='font-style: italic;'>
+        click to indicate you have taken the course
+    </p>
+    {% for course in student.coursesNeeded.all %}
+    <p class='neededCourse' pk='{{ course.id }}'>
+        {{ course }}
+    </p>
+    {% endfor %}
+</div>
+<div class='column'>
+    <h4> you have taken these courses </h4>
+    <p style='font-style: italic;'>
+        click to indicate you have <strong>NOT</strong> taken the course
+    </p>
+    {% for course in student.coursesTaken.all %}
+    <p class='takenCourse' pk='{{ course.id }}'>
+        {{ course }}
+    </p>
+    {% endfor %}
+</div>
+<div class='column'>
+    <h4> these are all the courses</h4>
+    <p style='font-style: italic;'>
+        click to indicate a course you need
+    </p>
+    {% for course in courses %}
+    <p class='allCourse' pk='{{ course.id }}'>
+        {{ course }}
+    </p>
+    {% endfor %}
+</div>
 <div class='hidden'>
     <form id='studentForm' action='' method='POST'>
         {% csrf_token %}
-        {{ studentForm.as_p }}
+        {{ studentForm }}
     </form>
 </div>
 <div id='saveMenu'>

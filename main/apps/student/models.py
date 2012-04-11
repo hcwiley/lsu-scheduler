@@ -29,9 +29,11 @@ class Student(models.Model):
         return ('apps.student.views.student', [str(self.id)])
     
     def getCoursesNeeded(self):
-        self.coursesNeeded = self.major.coursesRequired.all()
+        for course in self.major.coursesRequired.all():
+            if course not in self.coursesNeeded.all():
+                self.coursesNeeded.add(course)
         for course in self.coursesNeeded.all():
-            if self.coursesNeeded.filter(number=course.number).count() > 1:
+            if self.coursesNeeded.filter(number=course.number, title=course.title).count() > 1:
                 self.coursesNeeded.remove(course)
         for course in self.coursesTaken.all():
             self.coursesNeeded.remove(course)

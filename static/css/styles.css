@@ -35,3 +35,14 @@ html, body{
 .fields{
 	margin-left: 20px;
 }
+
+.column{
+    width: 250px;
+    float: left;
+    margin-right: 50px;
+}
+
+stron{
+    font-weight: 900;
+    font-variant: small-caps;
+}
