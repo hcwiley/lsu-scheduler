@@ -1,5 +1,6 @@
 {% extends base_template %}
 {% block center %} <h3>{{ department }}</h3>
+<a href="filter"><h4>Filter List</h4></a>
 {% for course in department.courses.all %} <a href='{{ course.get_absolute_url }}'>
 <li>
     {{ course.title }}

@@ -1,0 +1,29 @@
+{% extends base_template %}
+<script type="text/javascript" >
+	<!--
+	//canvas type things here?
+	//-->
+</script>
+{% block center %} <h3>{{department}} Filter Courses</h3>
+<select id="collegeSelect"> 
+	{% for college in colleges %}
+	<option> 
+		<p>{{college.name}}</p>
+	</option>
+	{% endfor %} 
+</select> 
+<select id="departmentSelect"> 
+	{% for department in departments %}
+	<option> 
+		<p>{{department.abbr}}</p>
+	</option>
+	{% endfor %} 
+</select> 
+<select id="majorSelect"> 
+	{% for major in majors %}
+	<option> 
+		<p>{{major.name}}</p>
+	</option>
+	{% endfor %} 
+</select> 
+{% endblock %}

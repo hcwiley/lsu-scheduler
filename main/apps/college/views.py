@@ -43,3 +43,12 @@ def major(request, abbr=None):
     args['major'] = Major.objects.get(abbr=abbr)
     args.update(csrf(request))
     return render_to_response('college/major.html', args)
+
+def filter(request, abbr=None):
+    args = college_args(request)
+    args['departments'] = Department.objects.all()
+    args['colleges'] = College.objects.all()
+    args['majors'] = Major.objects.all()
+    args.update(csrf(request))
+    return render_to_response('college/filter.html', args)
+    
