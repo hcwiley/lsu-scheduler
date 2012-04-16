@@ -42,7 +42,10 @@
             }, 300);
         });
         $("#save").click(function() {
-            $('#studentForm').submit();
+            $.post(window.location,$('#studentForm').serialize(), function(data){
+               $('html').html(data); 
+            });
+            // $('#studentForm').submit();
         });
     });
 

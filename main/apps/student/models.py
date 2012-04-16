@@ -28,6 +28,11 @@ class Student(models.Model):
     def get_absolute_url(self):
         return ('apps.student.views.student', [str(self.id)])
     
+    ''' TODO Christian optomize this.
+    this should parse the major courses required and check to see if it is in the student needed if not in taken.
+    get rid of duplicates in title and number.
+    if its in taken, make sure its not in needed.
+    '''
     def getCoursesNeeded(self):
         for course in self.major.coursesRequired.all():
             if course not in self.coursesNeeded.all():

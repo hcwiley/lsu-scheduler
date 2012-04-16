@@ -19,14 +19,15 @@ def student(request, id=None):
         return redirect('/students')
     args = student_args(request)
     args.update(csrf(request))
-    args['student'] = Student.objects.get(id=id)
+    student = Student.objects.get(id=id)
+    args['student'] = student
     if request.method == 'POST':
         print 'its a post'
-        form = StudentForm(request.POST, instance=args['student'])
+        form = StudentForm(request.POST, instance=student)
         if form.is_valid():
             print 'its valid'
             form.save()
-    args['student'].getCoursesNeeded()
+    student.getCoursesNeeded()
     args['courses'] = Course.objects.all()
-    args['studentForm'] = StudentForm(instance=args['student'])
+    args['studentForm'] = StudentForm(instance=student)
     return render_to_response('student/student.html', args)
