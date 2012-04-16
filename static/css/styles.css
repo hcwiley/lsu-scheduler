@@ -15,11 +15,12 @@ html, body {
 #left-nav {
     float: left;
     width: 10%;
-    min-width: 150px;
+    min-width: 120px;
     min-height: 200px;
 }
 #wrapper {
     width: 85%;
+    min-width: 1000px;
     float: left;
 }
 #main {
@@ -35,7 +36,7 @@ html, body {
     float: left;
     margin-right: 20px;
 }
-stron {
+strong {
     font-weight: 900;
     font-variant: small-caps;
 }

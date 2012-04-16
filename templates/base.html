@@ -21,27 +21,19 @@
                 <li>
                     {{ student.name }}
                 </li> </a>
-                <div class='fields'>
-                    {% for field, value in student.fields.items %}
-                    <div class='field'>
-                        <p>
-                            {{ field }}: {{ value }}
-                        </p>
-                    </div>
-                    {% endfor %}
-                    {% endfor %}
-                    {% endif %}
-                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+            {% endblock %}
+        </div>
+        <div id='wrapper'>
+            <div id='main'>
+                {% block center %}
                 {% endblock %}
             </div>
-            <div id='wrapper'>
-                <div id='main'>
-                    {% block center %}
-                    {% endblock %}
-                </div>
-            </div>
-            <div id='right-nav'></div>
-            {% include 'footer.html' %}
+        </div>
+        <div id='right-nav'></div>
+        {% include 'footer.html' %}
         </div>
     </body>
 </html>
