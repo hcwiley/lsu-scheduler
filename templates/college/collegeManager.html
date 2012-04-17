@@ -20,43 +20,123 @@
     var college = null;
     $(document).ready(function() {
         $('.college').click(function() {
-            console.log($(this));
-            college = $(this);
-            $('#id_name').val($(college).text());
-            $('#id_abbr').val($(college).attr('abbr'));
-            $(this).animate({
-                opacity : .3
+            if(college) {
+                if(college == this) {
+                    $('#id_name').val('');
+                    $('#id_abbr').val('');
+                    $("#id_pk").val('');
+                    $(this).animate({
+                        opacity : 1
+                    }, 300);
+                    college = null;
+                } else {
+                    $(college).animate({
+                        opacity : 1
+                    }, 300);
+                    college = this;
+                    $('#id_name').val($(college).attr('name'));
+                    $('#id_abbr').val($(college).attr('abbr'));
+                    $('#id_pk').val($(college).attr('pk'));
+                    $(this).animate({
+                        opacity : .3
+                    }, 300);
+                }
+            } else {
+                college = this;
+                $('#id_name').val($(college).attr('name'));
+                $('#id_abbr').val($(college).attr('abbr'));
+                $('#id_pk').val($(college).attr('pk'));
+                $(this).animate({
+                    opacity : .3
+                }, 300);
+            }
+            $('p:not(.college)').animate({
+                opacity : 1
             }, 300);
+            $('option[selected=selected]').attr('selected','');
+            //Init the department list with the colleges current departments
+            $($(college).parent().children('.departments')).children('option').each(function() {
+                var me = this;
+                console.log(me);
+                var p = $('.department[pk=' + $(me).val() + ']');
+                var option = $('#id_departments option[value=' + $(me).val() + ']');
+                if($(me).attr('selected') == 'selected') {
+                    $(option).attr('selected', 'selected');
+                    $(p).animate({
+                        opacity : .3
+                    }, 300);
+                } else {
+                    $(option).removeAttr('selected');
+                    $(p).animate({
+                        opacity : 1
+                    }, 300);
+                }
+            });
+            //Init the major list with the colleges current majors
+            $($(college).parent().children('.majors')).children('option').each(function() {
+                var me = this;
+                var p = $('.major[pk=' + $(this).val() + ']');
+                var option = $('#id_majors option[value=' + $(me).val() + ']');
+                if($(me).attr('selected') == 'selected') {
+                    $(option).attr('selected', 'selected');
+                    $(p).animate({
+                        opacity : .3
+                    }, 300);
+                } else {
+                    $(option).removeAttr('selected');
+                    $(p).animate({
+                        opacity : 1
+                    }, 300);
+                }
+            });
+            console.log($(college));
         });
         $('.major').click(function() {
+            var me = this;
             if(college == null) {
                 alert("Select a college first!");
                 return;
             }
-            console.log($(this));
-            var option = $('<option value=' + $(this).attr('pk') + ' selected=selected>' + $(this).text() + '</option>');
-            $('#id_majors').append(option);
-            // $('#id_coursesTaken option[value=' + $(this).attr('pk') + ']').attr('selected', '');
-            $(this).animate({
-                opacity : .3
-            }, 300);
+            console.log($(me));
+            var option = $('#id_majors option[value=' + $(me).attr('pk') + ']');
+            option = option[0];
+            if($(option).attr('selected') == 'selected') {
+                $(option).removeAttr('selected');
+                $(me).animate({
+                    opacity : 1
+                }, 300);
+            } else {
+                $(option).attr('selected', 'selected');
+                $(me).animate({
+                    opacity : .3
+                }, 300);
+            }
         });
         $('.department').click(function() {
+            var me = this;
             if(college == null) {
                 alert("Select a college first!");
                 return;
             }
-            console.log($(this));
-            // $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
-            $(this).animate({
-                opacity : .3
-            }, 300);
+            console.log(me);
+            var option = $('#id_departments option[value=' + $(me).attr('pk') + ']');
+            option = option[0];
+            if($(option).attr('selected') == 'selected') {
+                $(option).removeAttr('selected');
+                $(me).animate({
+                    opacity : 1
+                }, 300);
+            } else {
+                $(option).attr('selected', 'selected');
+                $(me).animate({
+                    opacity : .3
+                }, 300);
+            }
         });
         $("#save").click(function() {
-            $.post(window.location, $('#studentForm').serialize(), function(data) {
+            $.post(window.location, $('#collegeForm').serialize(), function(data) {
                 $('html').html(data);
             });
-            // $('#studentForm').submit();
         });
     }); 
 </script>
@@ -67,8 +147,18 @@
         Select a college to add majors to it
     </p>
     {% for college in colleges.all %}
-    <p class='college' abbr='{{ college.abbr }}' pk='{{ college.id }}'>
+    <p class='college' name='{{ college.name }}' abbr='{{ college.abbr }}' pk='{{ college.id }}'>
         {{ college }}
+        <div class='hidden majors'>
+            {% for major in college.major_set.all %}
+            <option value='{{ major.id }}' selected='selected'>{{ major }}</option>
+            {% endfor %}
+        </div>
+        <div class='hidden departments'>
+            {% for department in college.department_set.all %}
+            <option value='{{ department.id }}' selected='selected'>{{ department }}</option>
+            {% endfor %}
+        </div>
     </p>
     {% endfor %}
 </div>

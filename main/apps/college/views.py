@@ -65,9 +65,12 @@ def collegeManager(request):
         form = CollegeManagerForm(request.POST)
         if form.is_valid():
             print 'its valid'
+            college.department_set.clear()
             for dept in form.cleaned_data['departments']:
                 college.department_set.add(dept)
+            college.major_set.clear()
             for maj in form.cleaned_data['majors']:
+                print maj
                 college.major_set.add(maj)
             college.save()
     args['majorForm'] = MajorForm()

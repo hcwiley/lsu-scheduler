@@ -20,7 +20,7 @@
     $(document).ready(function() {
         $('.neededCourse').click(function() {
             console.log($(this));
-            $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', '');
+            $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').removeAttr('selected');;
             $('#id_coursesTaken option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
             $(this).animate({
                 opacity : .3
@@ -29,7 +29,7 @@
         $('.takenCourse').click(function() {
             console.log($(this));
             $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
-            $('#id_coursesTaken option[value=' + $(this).attr('pk') + ']').attr('selected', '');
+            $('#id_coursesTaken option[value=' + $(this).attr('pk') + ']').removeAttr('selected');
             $(this).animate({
                 opacity : .3
             }, 300);
