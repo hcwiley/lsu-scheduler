@@ -1,0 +1,108 @@
+{% extends base_template %}
+{% block center %}
+<style>
+    .neededCourse {
+        margin: 2px;
+    }
+    .neededCourse:hover {
+        cursor: pointer;
+    }
+    .hidden {
+        display: none;
+    }
+    #saveMenu {
+        position: fixed;
+        top: 120px;
+        left: 30px;
+    }
+</style>
+<script type='text/javascript'>
+    var college = null;
+    $(document).ready(function() {
+        $('.college').click(function() {
+            console.log($(this));
+            college = $(this);
+            $('#id_name').val($(college).text());
+            $('#id_abbr').val($(college).attr('abbr'));
+            $(this).animate({
+                opacity : .3
+            }, 300);
+        });
+        $('.major').click(function() {
+            if(college == null) {
+                alert("Select a college first!");
+                return;
+            }
+            console.log($(this));
+            var option = $('<option value=' + $(this).attr('pk') + ' selected=selected>' + $(this).text() + '</option>');
+            $('#id_majors').append(option);
+            // $('#id_coursesTaken option[value=' + $(this).attr('pk') + ']').attr('selected', '');
+            $(this).animate({
+                opacity : .3
+            }, 300);
+        });
+        $('.department').click(function() {
+            if(college == null) {
+                alert("Select a college first!");
+                return;
+            }
+            console.log($(this));
+            // $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
+            $(this).animate({
+                opacity : .3
+            }, 300);
+        });
+        $("#save").click(function() {
+            $.post(window.location, $('#studentForm').serialize(), function(data) {
+                $('html').html(data);
+            });
+            // $('#studentForm').submit();
+        });
+    }); 
+</script>
+<h3>{{ student.name }}</h3>
+<div class='column'>
+    <h4> Colleges </h4>
+    <p style='font-style: italic;'>
+        Select a college to add majors to it
+    </p>
+    {% for college in colleges.all %}
+    <p class='college' abbr='{{ college.abbr }}' pk='{{ college.id }}'>
+        {{ college }}
+    </p>
+    {% endfor %}
+</div>
+<div class='column'>
+    <h4> Majors </h4>
+    <p style='font-style: italic;'>
+        Click to indicate this major if part of the selected college
+    </p>
+    {% for major in majors.all %}
+    <p class='major' pk='{{ major.id }}'>
+        {{ major }}
+    </p>
+    {% endfor %}
+</div>
+<div class='column'>
+    <h4> Departments </h4>
+    <p style='font-style: italic;'>
+        Click to indicate this department if part of the selected college
+    </p>
+    {% for department in departments.all %}
+    <p class='department' pk='{{ department.id }}'>
+        {{ department }}
+    </p>
+    {% endfor %}
+</div>
+<div class='hidden'>
+    <form id='collegeForm' action='' method='POST'>
+        {% csrf_token %}
+        {{ collegeForm }}
+    </form>
+</div>
+<div id='saveMenu'>
+    <button id='save'>
+        <h3>save</h3>
+    </button>
+</div>
+{% endblock %} 

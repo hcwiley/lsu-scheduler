@@ -5,6 +5,7 @@ from django.core.context_processors import csrf
 from django.contrib.auth import logout
 from apps.course.models import *
 from apps.student.models import *
+from apps.student.forms import *
 from apps.college.models import *
 from django.core import serializers
 
@@ -26,25 +27,34 @@ def common_args(request):
     return args
 
 
-#def get_form(request, form_class, instance):
-#    if request.method == 'POST':
-#        print 'got here'
-#        form = form_class(request.POST, request.FILES, instance=instance)
-#        if form.is_valid():
-#            print 'valid'
-#            form.save(commit=False)
-#            #DO SOMETHING HERE
-#            form.save()
-#            form = form_class(instance=instance)
-#    else:
-#        form = form_class(instance=instance)
-#        
-#    return form
+def get_form(request, form_class, instance=None):
+    if request.method == 'POST':
+        form = form_class(request.POST, request.FILES, instance=instance)
+        if form.is_valid():
+            print 'valid'
+            form.save(commit=False)
+            #DO SOMETHING HERE
+            form.save()
+            form = form_class(instance=instance)
+    else:
+        form = form_class(instance=instance)
+        
+    return form
+
+def schedule(request):
+    args = common_args(request)
+    args.update(csrf(request))
+    args['courses'] = Course.objects.all()
+    args['departments'] = Department.objects.all()
+    args['colleges'] = College.objects.all()
+    args['majors'] = Major.objects.all()
+    return render_to_response('schedule.html', args)
 
 def home(request):
     args = common_args(request)
-    args['courses'] = Course.objects.all()
     args['students'] = Student.objects.all()
+    args['studentForm'] = get_form(request, StudentForm, None)
+    args['courses'] = Course.objects.all()
     args['departments'] = Department.objects.all()
     args['colleges'] = College.objects.all()
     args['majors'] = Major.objects.all()

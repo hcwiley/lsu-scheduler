@@ -6,6 +6,7 @@ from django.contrib.auth import logout
 #from apps.course.models import *
 #from apps.student.models import *
 from apps.college.models import *
+from apps.college.forms import *
 from django.core import serializers
 from main.views import common_args
 
@@ -51,4 +52,16 @@ def filter(request, abbr=None):
     args['majors'] = Major.objects.all()
     args.update(csrf(request))
     return render_to_response('college/filter.html', args)
+
+def majorManager(request):
+    args = college_args(request)
+    args['majorForm'] = MajorForm()
+    args['collegeForm'] = CollegeForm()
+    args['departmentForm'] = DepartmentForm()
+    args['departments'] = Department.objects.all()
+    args['colleges'] = College.objects.all()
+    args['majors'] = Major.objects.all()
+    args.update(csrf(request))
+    return render_to_response("college/majorManager.html", args)
+
     

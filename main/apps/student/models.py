@@ -9,8 +9,8 @@ from apps.course.models import *
 from apps.college.models import *
 
 class Student(models.Model):
-    name = models.CharField(max_length=144)
-    id_number = models.IntegerField(default=0)
+    name = models.CharField(max_length=144, help_text='John Doe')
+    id_number = models.IntegerField(default=0, help_text='89#######')
     major = models.ForeignKey(Major)
     minor = models.ForeignKey(Minor, related_name='Minor', null=True, blank=True, default='')
     coursesWanted = models.ManyToManyField(Course, related_name='Wanted_Course', null=True, blank=True, default=None)
@@ -23,6 +23,13 @@ class Student(models.Model):
         
     class Meta:
         ordering = ['name']
+        
+    def save(self, *args, **kwargs):
+        super(Student, self).save(*args, **kwargs)
+        if self.coursesNeeded.count() < 1:
+            self.coursesNeeded += self.major.department.courses.all()
+            self.getCoursesNeeded()
+
         
     @models.permalink
     def get_absolute_url(self):

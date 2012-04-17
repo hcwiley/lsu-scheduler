@@ -48,8 +48,6 @@ class Course(models.Model):
         return ('apps.course.views.course', [str(self.id)])
     
     def save(self, *args, **kwargs):
-#        if self.department == '':
-#            self.department_set.
         super(Course, self).save(*args, **kwargs)
 #
 #def update_course(modeladmin, request, queryset):

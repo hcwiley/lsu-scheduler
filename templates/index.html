@@ -1,35 +1,18 @@
 {% extends base_template %}
 {% block center %}
-<div class='column'>
-    <h3>courses</h3>
-    {% for course in courses %} <a href='{{ course.get_absolute_url }}'>
-    <li>
-        {{ course.title }}
-    </li> </a>
-    {% endfor %}
-</div>
-<div class='column'>
-    <h3>Colleges</h3>
-    {% for college in colleges %} <a href='{{ college.get_absolute_url }}'>
-    <li>
-        {{ college.name }}
-    </li> </a>
-    {% endfor %}
-</div>
-<div class='column'>
-    <h3>Majors</h3>
-    {% for major in majors %} <a href='{{ major.get_absolute_url }}'>
-    <li>
-        {{ major.name }}
-    </li> </a>
-    {% endfor %}
-</div>
-<div class='column'>
-    <h3>Departments</h3>
-    {% for department in departments %} <a href='{{ department.get_absolute_url }}'>
-    <li>
-        {{ department.name }}
-    </li> </a>
-    {% endfor %}
+<div>
+    <form id='studentForm' action='' method='POST'>
+        {% csrf_token %}
+        <h5>Name</h5>
+        {{ studentForm.name }}
+        <br>
+        <h5>ID Number</h5>
+        {{ studentForm.id_number }}
+        <br>
+        <h5>Major</h5>
+        {{ studentForm.major }}
+        <br>
+        <input type='submit' val='submit'/>
+    </form>
 </div>
 {% endblock %} 

@@ -40,3 +40,7 @@ strong {
     font-weight: 900;
     font-variant: small-caps;
 }
+input{
+    background: #cdcdcd;
+    font-size: 16px;
+}
