@@ -9,8 +9,11 @@ class DepartmentForm(forms.ModelForm):
     class Meta:
         model = Department
         
-class CollegeForm(forms.ModelForm):
-    majors = forms.MultipleChoiceField()
-    departments = forms.MultipleChoiceField()
+class CollegeManagerForm(forms.Form):
+    pk = forms.IntegerField()
+    name = forms.CharField()
+    abbr = forms.CharField()
+    majors = forms.ModelMultipleChoiceField(queryset=Major.objects.all(), required=False)
+    departments = forms.ModelMultipleChoiceField(queryset=Department.objects.all(), required=False)
     class Meta:
         model = College

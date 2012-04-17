@@ -53,15 +53,30 @@ def filter(request, abbr=None):
     args.update(csrf(request))
     return render_to_response('college/filter.html', args)
 
-def majorManager(request):
+def collegeManager(request):
     args = college_args(request)
+    if request.method == 'POST':
+        print 'its a post'
+        print request.POST
+        pk = request.POST['pk']
+        pk = pk.lstrip(' ')
+        college = College.objects.get(id=pk)
+        print 'college: %s' % college.name
+        form = CollegeManagerForm(request.POST)
+        if form.is_valid():
+            print 'its valid'
+            for dept in form.cleaned_data['departments']:
+                college.department_set.add(dept)
+            for maj in form.cleaned_data['majors']:
+                college.major_set.add(maj)
+            college.save()
     args['majorForm'] = MajorForm()
-    args['collegeForm'] = CollegeForm()
+    args['collegeForm'] = CollegeManagerForm()
     args['departmentForm'] = DepartmentForm()
     args['departments'] = Department.objects.all()
     args['colleges'] = College.objects.all()
     args['majors'] = Major.objects.all()
     args.update(csrf(request))
-    return render_to_response("college/majorManager.html", args)
+    return render_to_response("college/collegeManager.html", args)
 
     

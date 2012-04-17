@@ -8,7 +8,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('apps.college.views',
    (r'^$', 'home'),
-   (r'^majorManager$', 'majorManager'),
+   (r'^collegeManager', 'collegeManager'),
    (r'^department/filter$', 'filter'),
    (r'^department/(?P<abbr>.*)$', 'department'),
    (r'^college/(?P<abbr>.*)$', 'college'),
