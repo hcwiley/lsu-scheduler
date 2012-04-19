@@ -1,8 +1,49 @@
 {% extends base_template %}
+<style>
+    .college {
+        margin: 2px;
+    }
+    .department {
+        cursor: pointer;
+    }
+    .hidden {
+        display: none;
+    }
+    #saveMenu {
+        position: fixed;
+        top: 120px;
+        left: 30px;
+    }
+</style>
 <script type="text/javascript" >
-	<!--
-	//canvas type things here?
-	//-->
+	 $(document).ready(function() {
+        $('.neededCourse').click(function() {
+            console.log($(this));
+            $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', '');
+            $('#id_coursesTaken option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
+            $(this).animate({
+                opacity : .3
+            }, 300);
+        });
+        $('.takenCourse').click(function() {
+            console.log($(this));
+            $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
+            $('#id_coursesTaken option[value=' + $(this).attr('pk') + ']').attr('selected', '');
+            $(this).animate({
+                opacity : .3
+            }, 300);
+        });
+        $('.allCourse').click(function() {
+            console.log($(this));
+            $('#id_coursesNeeded option[value=' + $(this).attr('pk') + ']').attr('selected', 'selected');
+            $(this).animate({
+                opacity : .3
+            }, 300);
+        });
+        $("#save").click(function() {
+            $('#studentForm').submit();
+        });
+    });
 </script>
 {% block center %} <h3>{{department}} Filter Courses</h3>
 <select id="collegeSelect"> 
