@@ -57,10 +57,11 @@ def home(request):
         form = StudentForm(request.POST)
         if form.is_valid():
             print 'valid'
-            form.save(commit=False)
+            student = form.save(commit=False)
             #DO SOMETHING HERE
             form.save()
-            redirect('')
+            print student.get_absolute_url()
+            return redirect(student.get_absolute_url())
     else:
         args['studentForm'] = StudentForm()
     args['courses'] = Course.objects.all()
