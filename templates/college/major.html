@@ -1,14 +1,25 @@
 {% extends base_template %}
 {% block center %} <h3>{{ major }}</h3>
-    <p>degree type: {{ major.degree_type }}</p>
-<a href='{{ major.college.get_absolute_url }}'>
-<li>
-    College : {{ major.college }}
-</li> </a>
-{% if major.department %}
-<a href='{{ major.department.get_absolute_url }}'>
-<li>
-    Department : {{ major.department }}
-</li> </a>
-{% endif %}
+<p>
+    degree type: {{ major.degree_type }}
+</p>
+<div class='column'>
+    <a href='{{ major.college.get_absolute_url }}'>
+    <li>
+        College : {{ major.college }}
+    </li> </a>
+    {% if major.department %}
+    <a href='{{ major.department.get_absolute_url }}'>
+    <li>
+        Department : {{ major.department }}
+    </li> </a>
+    {% endif %}
+</div>
+<div class='column'>
+    {% for course in major.coursesRequired.all %}
+    <a href='{{ course.get_absolute_url }}'>
+    <li>
+        {{ course.title }}
+    </li> {% endfor %}
+</div>
 {% endblock %}
