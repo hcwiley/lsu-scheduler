@@ -53,7 +53,16 @@ def schedule(request):
 def home(request):
     args = common_args(request)
     args['students'] = Student.objects.all()
-    args['studentForm'] = get_form(request, StudentForm, None)
+    if request.method == 'POST':
+        form = StudentForm(request.POST)
+        if form.is_valid():
+            print 'valid'
+            form.save(commit=False)
+            #DO SOMETHING HERE
+            form.save()
+            redirect('')
+    else:
+        args['studentForm'] = StudentForm()
     args['courses'] = Course.objects.all()
     args['departments'] = Department.objects.all()
     args['colleges'] = College.objects.all()
