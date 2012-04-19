@@ -53,7 +53,7 @@
             $('p:not(.college)').animate({
                 opacity : 1
             }, 300);
-            $('option[selected=selected]').attr('selected','');
+            $('option[selected=selected]').removeAttr('selected');
             //Init the department list with the colleges current departments
             $($(college).parent().children('.departments')).children('option').each(function() {
                 var me = this;
@@ -147,8 +147,10 @@
         Select a college to add majors to it
     </p>
     {% for college in colleges.all %}
-    <p class='college' name='{{ college.name }}' abbr='{{ college.abbr }}' pk='{{ college.id }}'>
-        {{ college }}
+    <div>
+        <p class='college' name='{{ college.name }}' abbr='{{ college.abbr }}' pk='{{ college.id }}'>
+            {{ college }}
+        </p>
         <div class='hidden majors'>
             {% for major in college.major_set.all %}
             <option value='{{ major.id }}' selected='selected'>{{ major }}</option>
@@ -159,7 +161,7 @@
             <option value='{{ department.id }}' selected='selected'>{{ department }}</option>
             {% endfor %}
         </div>
-    </p>
+    </div>
     {% endfor %}
 </div>
 <div class='column'>

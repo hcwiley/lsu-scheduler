@@ -1,0 +1,239 @@
+{% extends base_template %}
+{% block center %}
+<style>
+    .neededCourse {
+        margin: 2px;
+    }
+    .neededCourse:hover {
+        cursor: pointer;
+    }
+    .hidden {
+        display: none;
+    }
+    #saveMenu {
+        position: fixed;
+        top: 120px;
+        left: 30px;
+    }
+</style>
+<script type='text/javascript'>
+    var major = null;
+    $(document).ready(function() {
+        $('.major').click(function() {
+            if(major) {
+                if(major == this) {
+                    $('#id_name').val('');
+                    $('#id_abbr').val('');
+                    $("#id_pk").val('');
+                    $('#id_degree_type').val('');
+                    $(major).animate({
+                        opacity : 1
+                    }, 300);
+                    major = null;
+                } else {
+                    $(major).animate({
+                        opacity : 1
+                    }, 300);
+                    major = this;
+                    $('#id_name').val($(major).attr('name'));
+                    $('#id_abbr').val($(major).attr('abbr'));
+                    $('#id_pk').val($(major).attr('pk'));
+                    $('#id_degree_type').val($(major).attr('degree_type'));
+                    $(major).animate({
+                        opacity : .3
+                    }, 300);
+                }
+            } else {
+                major = this;
+                $('#id_name').val($(major).attr('name'));
+                $('#id_abbr').val($(major).attr('abbr'));
+                $('#id_pk').val($(major).attr('pk'));
+                $('#id_degree_type').val($(major).attr('degree_type'));
+                $(major).animate({
+                    opacity : .3
+                }, 300);
+            }
+            $('p:not(.major)').animate({
+                opacity : 1
+            }, 300);
+            $('option[selected=selected]').removeAttr('selected');
+            //Init the coursesRequired list with the major's current coursesRequired
+            $($(major).siblings('.courses')[0]).children('option').each(function() {
+                var me = this;
+                var p = $('.course[pk=' + $(me).val() + ']');
+                console.log(me);
+                var option = $('#id_coursesRequired option[value=' + $(me).val() + ']');
+                $(option).attr('selected', 'selected');
+                $(p).animate({
+                    opacity : .3
+                }, 300);
+            });
+            //Init the college for selected major
+            if($($(major).siblings('.collegeM')[0]).children('option')){
+                var me = $($(major).siblings('.collegeM')[0]).children('option');
+                var option = $('#id_college option[value=' + $(me).val() + ']');
+                var p = $('.college[pk=' + $(me).val() + ']');
+                console.log(me);
+                console.log(option);
+                $(option).attr('selected', 'selected');
+                $(p).animate({
+                    opacity : .3
+                }, 300);
+            }
+            //Init the department for selected major
+            if($($(major).siblings('.depaetmentM')[0]).children('option')){
+                var me = $($(major).siblings('.departmentM')[0]).children('option');
+                var option = $('#id_department option[value=' + $(me).val() + ']');
+                var p = $('.department[pk=' + $(me).val() + ']');
+                $(option).attr('selected', 'selected');
+                $(p).animate({
+                    opacity : .3
+                }, 300);
+            }
+            console.log($(major));
+        });
+        $('.course').click(function() {
+            var me = this;
+            if(major == null) {
+                alert("Select a major first!");
+                return;
+            }
+            console.log($(me));
+            var option = $('#id_coursesRequired option[value=' + $(me).attr('pk') + ']');
+            option = option[0];
+            console.log(option);
+            if($(option).attr('selected') == 'selected') {
+                $(option).removeAttr('selected');
+                $(me).animate({
+                    opacity : 1
+                }, 300);
+            } else {
+                $(option).attr('selected', 'selected');
+                $(me).animate({
+                    opacity : .3
+                }, 300);
+            }
+        });
+        $('.college').click(function() {
+            var me = this;
+            if(major == null) {
+                alert("Select a major first!");
+                return;
+            }
+            console.log(me);
+            var option = $('#id_college option[value=' + $(me).attr('pk') + ']');
+            option = option[0];
+            console.log(option);
+            if($(option).attr('selected') == 'selected') {
+                $(option).removeAttr('selected');
+                $(me).animate({
+                    opacity : 1
+                }, 300);
+            } else {
+                $('#id_college option[selected=selected]').removeAttr('selected');
+                $(option).attr('selected', 'selected');
+                $(me).animate({
+                    opacity : .3
+                }, 300);
+            }
+        });
+        $('.department').click(function() {
+            var me = this;
+            if(major == null) {
+                alert("Select a major first!");
+                return;
+            }
+            console.log(me);
+            var option = $('#id_department option[value=' + $(me).attr('pk') + ']');
+            option = option[0];
+            console.log(option);
+            if($(option).attr('selected') == 'selected') {
+                $(option).removeAttr('selected');
+                $(me).animate({
+                    opacity : 1
+                }, 300);
+            } else {
+                $('#id_department option[selected=selected]').removeAttr('selected');
+                $(option).attr('selected', 'selected');
+                $(me).animate({
+                    opacity : .3
+                }, 300);
+            }
+        });
+        $("#save").click(function() {
+            $.post(window.location, $('#majorForm').serialize(), function(data) {
+                $('html').html(data);
+            });
+        });
+    }); 
+</script>
+<h3>{{ student.name }}</h3>
+<div class='column'>
+    <h4> Majors </h4>
+    <p style='font-style: italic;'>
+        Select a major to manage its college, department, and courses required
+    </p>
+    {% for major in majors.all %}
+    <div>
+    <p class='major' degree_type='{{ major.degree_type }}' name='{{ major.name }}' abbr='{{ major.abbr }}' pk='{{ major.id }}'>
+        {{ major }}
+        <div class='hidden courses'>
+            {% for course in major.coursesRequired.all %}
+                <option value='{{ course.id }}' selected='selected'>{{ course }}</option>
+            {% endfor %}
+        </div>
+        <div class='hidden departmentM'>
+            <option value='{{ major.department.id }}' selected='selected'>{{ major.department }}</option>
+        </div>
+        <div class='hidden collegeM'>
+            <option value='{{ major.college.id }}' selected='selected'>{{ major.college }}</option>
+        </div>
+    </p>
+    </div>
+    {% endfor %}
+</div>
+<div class='column'>
+    <h4> Colleges </h4>
+    <p style='font-style: italic;'>
+        Click to indicate this major if part of the college
+    </p>
+    {% for college in colleges.all %}
+    <p class='college' pk='{{ college.id }}'>
+        {{ college }}
+    </p>
+    {% endfor %}
+</div>
+<div class='column'>
+    <h4> Departments </h4>
+    <p style='font-style: italic;'>
+        Click to indicate this major if part of the department
+    </p>
+    {% for department in departments.all %}
+    <p class='department' pk='{{ department.id }}'>
+        {{ department }}
+    </p>
+    {% endfor %}
+</div>
+<div class='column'>
+    <h4> Courses Required </h4>
+    <p style='font-style: italic;'>
+        Click to indicate this course is required of the major
+    </p>
+    {% for course in courses.all %}
+    <p class='course' pk='{{ course.id }}'>
+        {{ course }}
+    </p>
+    {% endfor %}
+</div>
+<div class='hidden'>
+    <form id='majorForm' action='' method='POST'>
+        {% csrf_token %}
+        {{ majorForm }}
+    </form>
+</div>
+<div id='saveMenu'>
+    <button id='save'>
+        <h3>save</h3>
+    </button>
+</div>
+{% endblock %} 

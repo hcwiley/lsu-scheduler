@@ -27,8 +27,6 @@ class Student(models.Model):
     def save(self, *args, **kwargs):
         super(Student, self).save(*args, **kwargs)
         if self.coursesNeeded.count() < 1:
-            if self.major.department:
-                self.coursesNeeded += self.major.department.courses.all()
             self.getCoursesNeeded()
 
         

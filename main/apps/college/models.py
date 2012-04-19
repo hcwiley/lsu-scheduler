@@ -51,10 +51,10 @@ class Department(models.Model):
         return ('apps.college.views.department', [str(self.abbr)])
 
 class Major(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     college = models.ForeignKey(College, null=True, blank=True, default=None)
     department = models.ForeignKey(Department, null=True, blank=True, default=None)
-    abbr = models.CharField(max_length=15, null=True, blank=True, default="")
+    abbr = models.CharField(max_length=15, null=True, blank=True, default="", unique=True)
     coursesRequired = models.ManyToManyField(Course, related_name='Required_Course', null=True, blank=True, default=None)
     degree_type = models.CharField(max_length=4, null=True, blank=True, default='')
     

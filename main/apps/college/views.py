@@ -82,4 +82,23 @@ def collegeManager(request):
     args.update(csrf(request))
     return render_to_response("college/collegeManager.html", args)
 
-    
+def majorManager(request):
+    args = college_args(request)
+    if request.method == 'POST':
+        print 'its a post'
+        print request.POST
+        abbr = request.POST['abbr']
+        major = Major.objects.get(abbr=abbr)
+        form = MajorForm(request.POST, instance=major)
+        if form.is_valid():
+            form.save()
+            print 'its valid'
+    args['majorForm'] = MajorForm()
+    args['collegeForm'] = CollegeManagerForm()
+    args['departmentForm'] = DepartmentForm()
+    args['departments'] = Department.objects.all()
+    args['colleges'] = College.objects.all()
+    args['majors'] = Major.objects.all()
+    args['courses'] = Course.objects.all()
+    args.update(csrf(request))
+    return render_to_response("college/majorManager.html", args)
