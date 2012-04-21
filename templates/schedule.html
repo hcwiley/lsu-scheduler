@@ -1,5 +1,56 @@
 {% extends base_template %}
 {% block center %}
+<div>
+	<h3>
+		{{student.name}}
+	</h3>
+</div>
+<div >
+	<h3>{{department}} Filter Courses</h3>
+	<select id="collegeSelect"> 
+		{% for college in colleges %}
+		<option> 
+			<p>{{college.name}}</p>
+		</option>
+		{% endfor %} 
+	</select> 
+	<select id="departmentSelect"> 
+		{% for department in departments %}
+		<option> 
+			<p>{{department.abbr}}</p>
+		</option>
+		{% endfor %} 
+	</select> 
+	<select id="majorSelect"> 
+		{% for major in majors %}
+		<option> 
+			<p>{{major.name}}</p>
+		</option>
+		{% endfor %} 
+	</select> 
+	<h3>Start Time</h3>
+	<input type="range" onchange="timeSliderChange(this.value)">
+		<span id="range">0</span>
+		<script>
+		function timeSliderChange(newValue){
+			document.getElementById("range").innerHTML=newValue;
+		}
+		</script>
+	</input>
+	<h3>End Time</h3>
+	<input type="range" onchange="timeSliderChange(this.value)">
+		<span id="range">0</span>
+		<script>
+		function timeSliderChange(newValue){
+			document.getElementById("range").innerHTML=newValue;
+		}
+		</script>
+	</input>
+</div>
+
+<div class="column">
+	
+</div>
 <div class='column'>
     <h3>courses</h3>
     {% for course in courses %} <a href='{{ course.get_absolute_url }}'>
@@ -32,4 +83,5 @@
     </li> </a>
     {% endfor %}
 </div>
+
 {% endblock %} 

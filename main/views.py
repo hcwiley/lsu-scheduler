@@ -42,6 +42,7 @@ def get_form(request, form_class, instance=None):
     return form
 
 def schedule(request, id=None):
+    print(id)
     student = Student.objects.get(id=id)
     args = common_args(request)
     args.update(csrf(request))
@@ -49,6 +50,7 @@ def schedule(request, id=None):
     args['departments'] = Department.objects.all()
     args['colleges'] = College.objects.all()
     args['majors'] = Major.objects.all()
+    args['student'] = student
     return render_to_response('schedule.html', args)
 
 def home(request):
@@ -63,10 +65,11 @@ def home(request):
             return redirect('/schedule/%s' % stu.id )
             return redirect(stu.get_absolute_url())
     else:
-        form = form_class(instance=instance)
-    args['courses'] = Course.objects.all()
-    args['departments'] = Department.objects.all()
-    args['colleges'] = College.objects.all()
-    args['majors'] = Major.objects.all()
-    args.update(csrf(request))
-    return render_to_response('index.html', args)
+        form = StudentForm()#instance=instance)
+        args['studentForm'] = form
+        args['courses'] = Course.objects.all()
+        args['departments'] = Department.objects.all()
+        args['colleges'] = College.objects.all()
+        args['majors'] = Major.objects.all()
+        args.update(csrf(request))
+        return render_to_response('index.html', args)
