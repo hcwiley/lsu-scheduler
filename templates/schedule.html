@@ -7,14 +7,14 @@
 </div>
 <div >
 	<h3>{{department}} Filter Courses</h3>
-	<select id="collegeSelect"> 
+	<select id="collegeSelect" > 
 		{% for college in colleges %}
 		<option> 
 			<p>{{college.name}}</p>
 		</option>
 		{% endfor %} 
 	</select> 
-	<select id="departmentSelect"> 
+	<select id="departmentSelect"onchange="filterDepartment(this.value)"> 
 		{% for department in departments %}
 		<option> 
 			<p>{{department.abbr}}</p>
@@ -28,21 +28,34 @@
 		</option>
 		{% endfor %} 
 	</select> 
-	<h3>Start Time</h3>
-	<input type="range" onchange="timeSliderChange(this.value)">
-		<span id="range">0</span>
+	<span id="filterText"> </span>
+	<h4>Start Time</h4>
+	<input type="range" onchange="startSliderChange(this.value)">
+		<span id="startRange">0</span>
 		<script>
-		function timeSliderChange(newValue){
-			document.getElementById("range").innerHTML=newValue;
+		function filterDepartment(deptValue){
+			document.getElementById("filterText").innerHTML=deptValue;
+		}
+		function startSliderChange(newValue){
+			document.getElementById("startRange").innerHTML=newValue;
 		}
 		</script>
 	</input>
-	<h3>End Time</h3>
+	<h4>End Time</h4>
 	<input type="range" onchange="timeSliderChange(this.value)">
-		<span id="range">0</span>
+		<span id="endRange">0</span>
 		<script>
 		function timeSliderChange(newValue){
-			document.getElementById("range").innerHTML=newValue;
+			document.getElementById("endRange").innerHTML=newValue;
+		}
+		</script>
+	</input>
+	<h4>Course Level</h4>
+	<input type="range" min="1000" max="8000" step="1000" value="1000" onchange="levelSliderChange(this.value)">
+		<span id="levelRange">1000</span>
+		<script>
+		function levelSliderChange(newValue){
+			document.getElementById("levelRange").innerHTML=newValue;
 		}
 		</script>
 	</input>
@@ -52,7 +65,7 @@
 	
 </div>
 <div class='column'>
-    <h3>courses</h3>
+    <h3>Courses Possible</h3>
     {% for course in courses %} <a href='{{ course.get_absolute_url }}'>
     <li>
         {{ course.title }}
@@ -60,28 +73,57 @@
     {% endfor %}
 </div>
 <div class='column'>
-    <h3>Colleges</h3>
-    {% for college in colleges %} <a href='{{ college.get_absolute_url }}'>
+    <h3>Courses Needed</h3>
+    {% for course in student.major.coursesRequired.all %} <a href='{{ course.get_absolute_url }}'>
     <li>
-        {{ college.name }}
+        {{ course.title }}
     </li> </a>
     {% endfor %}
 </div>
 <div class='column'>
-    <h3>Majors</h3>
+    <h3>Course Bucket</h3>
     {% for major in majors %} <a href='{{ major.get_absolute_url }}'>
     <li>
         {{ major.name }}
     </li> </a>
     {% endfor %}
 </div>
+<!--
 <div class='column'>
-    <h3>Departments</h3>
+    <h3>Courses Registered</h3>
     {% for department in departments %} <a href='{{ department.get_absolute_url }}'>
     <li>
         {{ department.name }}
     </li> </a>
     {% endfor %}
+</div>
+-->
+<div class="column">
+	<h3>Schedule</h3>
+	<table border="1">
+		<tr>
+			<th></th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+		<tr>
+			<th>7:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>8:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
 </div>
 
 {% endblock %} 

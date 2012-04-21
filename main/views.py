@@ -42,7 +42,6 @@ def get_form(request, form_class, instance=None):
     return form
 
 def schedule(request, id=None):
-    print(id)
     student = Student.objects.get(id=id)
     args = common_args(request)
     args.update(csrf(request))
@@ -51,6 +50,13 @@ def schedule(request, id=None):
     args['colleges'] = College.objects.all()
     args['majors'] = Major.objects.all()
     args['student'] = student
+    # manual filter for not showing classes already taken 
+    coursesStillNeeded = student.major.coursesRequired
+    for course1 in coursesStillNeeded.all():
+        for course2 in student.coursesTaken.all():
+            if course1.id == course2.id:
+                coursesStillNeeded.remove(course1)
+    args['coursesStillNeeded'] =  coursesStillNeeded
     return render_to_response('schedule.html', args)
 
 def home(request):
