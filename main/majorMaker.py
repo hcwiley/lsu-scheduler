@@ -26,10 +26,23 @@ def main():
                 print 'degree: %s' % degree
             except:
                 pass
-            maj = Major.objects.get_or_create(abbr=abbr, name=name)
-            maj = maj[0]
+            maj = Major.objects.get(abbr=abbr)
             maj.degree_type = degree
             maj.save()
+            
+            #look for the file named maj.abbr + '.txt', parse it, and add the courses to maj.coursesRequired
+            try:
+                majorFile = open('./apps/college/majors/%s.txt' % abbr, 'r')
+                for courseInfo in majorFile.readlines():
+                    #parse the line, determine if it's important, add it as a course.
+                    print(courseInfo)
+                    
+                    
+            except:
+                pass
+            
+            maj.save()
+            
             if len(abbr.split(' ')) > 0:
                 abbr = abbr.split(' ')[0]
             try:
