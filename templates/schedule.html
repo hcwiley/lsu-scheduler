@@ -82,11 +82,12 @@
 </div>
 <div class='column'>
     <h3>Course Bucket</h3>
-    {% for major in majors %} <a href='{{ major.get_absolute_url }}'>
+    {% for course in courseBucket %} <a href='{{ course.get_absolute_url }}'>
     <li>
-        {{ major.name }}
+        {{ course.title }}
     </li> </a>
     {% endfor %}
+    <button type="button">Magic Hat!</button>
 </div>
 <!--
 <div class='column'>

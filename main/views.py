@@ -57,6 +57,7 @@ def schedule(request, id=None):
             if course1.id == course2.id:
                 coursesStillNeeded.remove(course1)
     args['coursesStillNeeded'] =  coursesStillNeeded
+    args['courseBucket'] = []
     return render_to_response('schedule.html', args)
 
 def home(request):
