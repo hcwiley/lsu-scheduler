@@ -41,7 +41,8 @@ def get_form(request, form_class, instance=None):
         
     return form
 
-def schedule(request):
+def schedule(request, id=None):
+    student = Student.objects.get(id=id)
     args = common_args(request)
     args.update(csrf(request))
     args['courses'] = Course.objects.all()
@@ -53,7 +54,16 @@ def schedule(request):
 def home(request):
     args = common_args(request)
     args['students'] = Student.objects.all()
-    args['studentForm'] = get_form(request, StudentForm, None)
+    if request.method == 'POST':
+        form = StudentForm(request.POST)
+        if form.is_valid():
+            print 'valid'
+            stu = form.save(commit=False)
+            form.save()
+            return redirect('/schedule/%s' % stu.id )
+            return redirect(stu.get_absolute_url())
+    else:
+        form = form_class(instance=instance)
     args['courses'] = Course.objects.all()
     args['departments'] = Department.objects.all()
     args['colleges'] = College.objects.all()

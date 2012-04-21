@@ -15,6 +15,12 @@
         top: 120px;
         left: 30px;
     }
+    .link{
+        float: right;
+    }
+   .column{
+       width: 250px;
+   }
 </style>
 <script type='text/javascript'>
     $(document).ready(function() {
@@ -60,6 +66,10 @@
     <p class='neededCourse' pk='{{ course.id }}'>
         {{ course }}
     </p>
+    <a href='{{ course.get_absolute_url }}' target='_blank'>
+        <p class='link'>view course</p>
+    </a>
+    <br>
     {% endfor %}
 </div>
 <div class='column'>
