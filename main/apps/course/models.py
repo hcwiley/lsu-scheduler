@@ -35,7 +35,7 @@ class Course(models.Model):
     number_enrolled = models.IntegerField(default=0, blank=True, null=True)
     special_enrollment = models.CharField(max_length=100, default='', blank=True, null=True)
     type = models.CharField(choices=CLASS_TYPE, max_length=3, default='', null=True, blank=True)
-#    department = ''
+    pretty_days = ''    
     
     class Meta:
         ordering = ['number']
@@ -46,6 +46,14 @@ class Course(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return ('apps.course.views.course', [str(self.id)])
+    
+    def get_pretty_days(self):
+        if self.pretty_days == '':
+            days = ""
+            for day in self.days.all():
+                days += '%s ' % (day)
+            self.pretty_days = days
+        return self.pretty_days
     
     def save(self, *args, **kwargs):
         super(Course, self).save(*args, **kwargs)

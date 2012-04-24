@@ -50,3 +50,17 @@ input {
 .hidden{
     display:none;
 }
+table, tr, th, td{
+    border: 1px solid black;
+}
+#boolean-days{
+    position: relative;
+    left: 400px;
+    top: -100px;
+}
+#boolean-days p{
+    display: inline;
+}
+#boolean-days p{
+    display: inline-block;
+}

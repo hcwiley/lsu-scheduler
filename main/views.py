@@ -58,6 +58,10 @@ def schedule(request, id=None):
                 coursesStillNeeded.remove(course1)
     args['coursesStillNeeded'] =  coursesStillNeeded
     args['courseBucket'] = []
+    h = []
+    for i in range(7,20):
+        h.append(i)
+    args['hours'] = h
     return render_to_response('schedule.html', args)
 
 def home(request):
