@@ -56,21 +56,22 @@
                 var stime = $(this).attr('start');
                 if(stime !== 'None' && stime !== undefined) {
                     if(stime.match(':')) {
-                        var sh = stime.split(":")[0];
+                        var sh = parseInt(stime.split(":")[0]);
                         var sm = stime.split(":")[1];
                         var sampm = sm.split(" ")[1];
-                        sm = sm.split(" ")[0];
+                        sm = parseInt(sm.split(" ")[0]);
                     } else if(stime == 'noon') {
                         var sh = 12;
                         var sm = 0;
                         var sampm = 'pm';
                     } else {
-                        var sh = stime.split(" ")[0];
+                        var sh = parseInt(stime.split(" ")[0]);
                         var sm = 0;
                         var sampm = stime.split(" ")[1];
                     }
-                    if(sampm.match('p'))
+                    if(sampm.match('p')){
                         sh += 12;
+                    }
                     var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
                     if(sd < d)
                         $(this).addClass('hidden');
@@ -90,9 +91,9 @@
             time += newValue * .5;
             var ampm = "am";
             if(time >= 12) {
-                if(time != 12.5) {
-                    time = ((time == 12) ? 12 : time - 12);
-                }
+                // if(time != 12.5) {
+                    // time = ((time == 12) ? 12 : time - 12);
+                // }
                 ampm = "pm";
             }
             var hour = parseInt(time);
@@ -103,21 +104,22 @@
                 var stime = $(this).attr('end');
                 if(stime !== 'None' && stime !== undefined) {
                     if(stime.match(':')) {
-                        var sh = stime.split(":")[0];
+                        var sh = parseInt(stime.split(":")[0]);
                         var sm = stime.split(":")[1];
                         var sampm = sm.split(" ")[1];
-                        sm = sm.split(" ")[0];
+                        sm = parseInt(sm.split(" ")[0]);
                     } else if(stime == 'noon') {
                         var sh = 12;
                         var sm = 0;
                         var sampm = 'pm';
                     } else {
-                        var sh = stime.split(" ")[0];
+                        var sh = parseInt(stime.split(" ")[0]);
                         var sm = 0;
                         var sampm = stime.split(" ")[1];
                     }
-                    if(sampm.match('p'))
+                    if(sampm.match('p')){
                         sh += 12;
+                    }
                     var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
                     if(sd > d)
                         $(this).addClass('hidden');
