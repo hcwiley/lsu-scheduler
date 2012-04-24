@@ -1,73 +1,151 @@
 {% extends base_template %}
 {% block center %}
 <div>
-	<h3>
-		{{student.name}}
-	</h3>
+    <h3> {{student.name}} </h3>
 </div>
 <div >
-	<h3>{{department}} Filter Courses</h3>
-	<select id="collegeSelect" > 
-		{% for college in colleges %}
-		<option> 
-			<p>{{college.name}}</p>
-		</option>
-		{% endfor %} 
-	</select> 
-	<select id="departmentSelect"onchange="filterDepartment(this.value)"> 
-		{% for department in departments %}
-		<option> 
-			<p>{{department.abbr}}</p>
-		</option>
-		{% endfor %} 
-	</select> 
-	<select id="majorSelect"> 
-		{% for major in majors %}
-		<option> 
-			<p>{{major.name}}</p>
-		</option>
-		{% endfor %} 
-	</select> 
-	<span id="filterText"> </span>
-	<h4>Start Time</h4>
-	<input type="range" onchange="startSliderChange(this.value)">
-		<span id="startRange">0</span>
-		<script>
-		function filterDepartment(deptValue){
-			document.getElementById("filterText").innerHTML=deptValue;
-		}
-		function startSliderChange(newValue){
-			document.getElementById("startRange").innerHTML=newValue;
-		}
-		</script>
-	</input>
-	<h4>End Time</h4>
-	<input type="range" onchange="timeSliderChange(this.value)">
-		<span id="endRange">0</span>
-		<script>
-		function timeSliderChange(newValue){
-			document.getElementById("endRange").innerHTML=newValue;
-		}
-		</script>
-	</input>
-	<h4>Course Level</h4>
-	<input type="range" min="1000" max="8000" step="1000" value="1000" onchange="levelSliderChange(this.value)">
-		<span id="levelRange">1000</span>
-		<script>
-		function levelSliderChange(newValue){
-			document.getElementById("levelRange").innerHTML=newValue;
-		}
-		</script>
-	</input>
+    <h3>{{department}} Filter Courses</h3>
+    <select id="collegeSelect" >
+        {% for college in colleges %}
+        <option>
+            <p>
+                {{college.name}}
+            </p></option>
+        {% endfor %}
+    </select>
+    <select id="departmentSelect"onchange="filterDepartment(this.value)">
+        {% for department in departments %}
+        <option>
+            <p>
+                {{department.abbr}}
+            </p></option>
+        {% endfor %}
+    </select>
+    <select id="majorSelect">
+        {% for major in majors %}
+        <option>
+            <p>
+                {{major.name}}
+            </p></option>
+        {% endfor %}
+    </select>
+    <span id="filterText"> </span>
+    <h4>Start Time</h4>
+    <input class='slider' type="range" min="0" max="24" onchange="startSliderChange(this.value)">
+    <span id="startRange">12:00 pm</span>
+    <script>
+        function filterDepartment(deptValue) {
+            document.getElementById("filterText").innerHTML = deptValue;
+        }
+
+        function startSliderChange(newValue) {
+            var time = 7;
+            time += newValue * .5;
+            var ampm = "am";
+            if(time >= 12) {
+                // if(time != 12.5) {
+                    // time = ((time == 12) ? 12 : time - 12);
+                // }
+                ampm = "pm";
+            }
+            var hour = parseInt(time);
+            var minute = (time - hour) * 60;
+            var d = new Date(2012, 1, 1, hour, minute, 0, 0);
+            document.getElementById("startRange").innerHTML = d.toTimeString().substring(0, 5) + " " + ampm;
+            $('.courseNeeded,.allCourse').each(function() {
+                var stime = $(this).attr('start');
+                if(stime !== 'None' && stime !== undefined) {
+                    if(stime.match(':')) {
+                        var sh = stime.split(":")[0];
+                        var sm = stime.split(":")[1];
+                        var sampm = sm.split(" ")[1];
+                        sm = sm.split(" ")[0];
+                    } else if(stime == 'noon') {
+                        var sh = 12;
+                        var sm = 0;
+                        var sampm = 'pm';
+                    } else {
+                        var sh = stime.split(" ")[0];
+                        var sm = 0;
+                        var sampm = stime.split(" ")[1];
+                    }
+                    if(sampm.match('p'))
+                        sh += 12;
+                    var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
+                    if(sd < d)
+                        $(this).addClass('hidden');
+                    else
+                        $(this).removeClass('hidden');
+                }
+            });
+        }
+    </script>
+    </input>
+    <h4>End Time</h4>
+    <input class='slider' type="range" min="0" max="24" onchange="timeSliderChange(this.value)">
+    <span id="endRange">12:00 pm</span>
+    <script>
+        function timeSliderChange(newValue) {
+            var time = 7;
+            time += newValue * .5;
+            var ampm = "am";
+            if(time >= 12) {
+                if(time != 12.5) {
+                    time = ((time == 12) ? 12 : time - 12);
+                }
+                ampm = "pm";
+            }
+            var hour = parseInt(time);
+            var minute = (time - hour) * 60;
+            var d = new Date(2012, 1, 1, hour, minute, 0, 0);
+            document.getElementById("endRange").innerHTML = d.toTimeString().substring(0, 5) + " " + ampm;
+            $('.courseNeeded,.allCourse').each(function() {
+                var stime = $(this).attr('end');
+                if(stime !== 'None' && stime !== undefined) {
+                    if(stime.match(':')) {
+                        var sh = stime.split(":")[0];
+                        var sm = stime.split(":")[1];
+                        var sampm = sm.split(" ")[1];
+                        sm = sm.split(" ")[0];
+                    } else if(stime == 'noon') {
+                        var sh = 12;
+                        var sm = 0;
+                        var sampm = 'pm';
+                    } else {
+                        var sh = stime.split(" ")[0];
+                        var sm = 0;
+                        var sampm = stime.split(" ")[1];
+                    }
+                    if(sampm.match('p'))
+                        sh += 12;
+                    var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
+                    if(sd > d)
+                        $(this).addClass('hidden');
+                    else
+                        $(this).removeClass('hidden');
+                }
+            });
+        }
+    </script>
+    </input>
+    <h4>Course Level</h4>
+    <input class='slider' type="range" min="1000" max="8000" step="1000" value="1000" onchange="levelSliderChange(this.value)">
+    <span id="levelRange">1000</span>
+    <script>
+        function levelSliderChange(newValue) {
+            document.getElementById("levelRange").innerHTML = newValue;
+        }
+    </script>
+    </input>
 </div>
 
 <div class="column">
-	
+
 </div>
 <div class='column'>
     <h3>Courses Possible</h3>
     {% for course in courses %} <a href='{{ course.get_absolute_url }}'>
-    <li>
+    <li class='allCourse' start='{{ course.start_time }}' end='{{ course.end_time }}'>
         {{ course.title }}
     </li> </a>
     {% endfor %}
@@ -75,7 +153,7 @@
 <div class='column'>
     <h3>Courses Needed</h3>
     {% for course in student.major.coursesRequired.all %} <a href='{{ course.get_absolute_url }}'>
-    <li>
+    <li class='courseNeeded' start='{{ course.start_time }}' end='{{ course.end_time }}'>
         {{ course.title }}
     </li> </a>
     {% endfor %}
@@ -87,44 +165,46 @@
         {{ course.title }}
     </li> </a>
     {% endfor %}
-    <button type="button">Magic Hat!</button>
+    <button type="button">
+        Magic Hat!
+    </button>
 </div>
 <!--
 <div class='column'>
-    <h3>Courses Registered</h3>
-    {% for department in departments %} <a href='{{ department.get_absolute_url }}'>
-    <li>
-        {{ department.name }}
-    </li> </a>
-    {% endfor %}
+<h3>Courses Registered</h3>
+{% for department in departments %} <a href='{{ department.get_absolute_url }}'>
+<li>
+{{ department.name }}
+</li> </a>
+{% endfor %}
 </div>
 -->
 <div class="column">
-	<h3>Schedule</h3>
-	<table border="1">
-		<tr>
-			<th></th>
-			<th>Monday</th>
-			<th>Tuesday</th>
-			<th>Wednesday</th>
-			<th>Thursday</th>
-			<th>Friday</th>
-		</tr>
-		<tr>
-			<th>7:00</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<th>8:00</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
+    <h3>Schedule</h3>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <th>7:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>8:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 </div>
 
 {% endblock %} 
