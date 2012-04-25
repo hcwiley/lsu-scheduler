@@ -47,10 +47,17 @@ def main():
                         continue
                     #APPROVED, STUDIO ART, GEN ED, why do they do this crap to us?
                     #try to look up a course by college and number.
+                    try:
+                        departmentCourses = Department.objects.get(abbr=courseInfo[0]).courses.all()
+                        course = departmentCourses.filter(number=courseInfo[1])[0]
+                        maj.coursesRequired.add(course)
+                    except:
+                        pass
+                    maj.save()
                     #course's college = courseInfo[0]
                     #course's number = courseInfo[1]
                     #associate this major with the first match, if any
-                    print(courseInfo)
+                    #print(courseInfo)
                     
             except:
                 pass
