@@ -35,8 +35,22 @@ def main():
                 majorFile = open('./apps/college/majors/%s.txt' % abbr, 'r')
                 for courseInfo in majorFile.readlines():
                     #parse the line, determine if it's important, add it as a course.
+                    if courseInfo == '': #empty line. no data here
+                        continue
+                    elif courseInfo[0].isDigit(): #this is a semester number line
+                        continue
+                    courseInfo = courseInfo.strip('.') #remove '.' for the varying GEN ED lines
+                    courseInfo = courseInfo.split(' ') #split into words
+                    if courseInfo[0] == 'Total': #first word is Total. Total semester hours
+                        continue
+                    elif courseInfo[0] == 'Critical:': #critical requirements. this could be useful later.
+                        continue
+                    #APPROVED, STUDIO ART, GEN ED, why do they do this crap to us?
+                    #try to look up a course by college and number.
+                    #course's college = courseInfo[0]
+                    #course's number = courseInfo[1]
+                    #associate this major with the first match, if any
                     print(courseInfo)
-                    
                     
             except:
                 pass
