@@ -45,6 +45,23 @@ function timeSliderChange(newValue) {
 
 function filterDepartment(deptValue) {
 	document.getElementById("filterText").innerHTML = deptValue;
+	$('.majors').each(function(){
+		if ($(this).attr('dept') == deptValue){
+			$(this).css("display", "inline");
+			document.getElementById("majorSelect").setAttribute("selected", "selected");
+		} else {
+			$(this).css("display", "none");
+		}
+	});
+	/*
+	$('.allCourse').each(function() {
+		document.getElementById("filterText").innerHTML = $(this).attr('dept');
+		if ($(this).attr('dept') != deptValue){
+			$(this).css("visibility", "hidden"); //bangarang, muthafucka
+		} else {
+			$(this).css("visibility", "visible"); //reverse bangarang, muthafucka
+		}
+	});*/
 }
 
 function startSliderChange(newValue) {
@@ -109,4 +126,12 @@ function booleanDay(input) {
 			}
 		}
 	});
+}
+function addClick(){
+	document.getElementById("addButton").style.visibility="hidden";
+	document.getElementById("removeButton").style.visibility="visible";
+}
+function removeClick(){
+	document.getElementById("removeButton").style.visibility="hidden";
+	document.getElementById("addButton").style.visibility="visible";
 }

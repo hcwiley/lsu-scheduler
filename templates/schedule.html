@@ -6,7 +6,7 @@
 </div>
 <div >
     <h3>{{department}} Filter Courses</h3>
-    <select id="collegeSelect" >
+    <select  id="collegeSelect" >
         {% for college in colleges %}
         <option>
             <p>
@@ -14,7 +14,7 @@
             </p></option>
         {% endfor %}
     </select>
-    <select id="departmentSelect"onchange="filterDepartment(this.value)">
+    <select id="departmentSelect" onchange="filterDepartment(this.value)">
         {% for department in departments %}
         <option>
             <p>
@@ -22,9 +22,9 @@
             </p></option>
         {% endfor %}
     </select>
-    <select id="majorSelect">
+    <select  id="majorSelect">
         {% for major in majors %}
-        <option>
+        <option class="majors" dept ="{{major.department.abbr}}">
             <p>
                 {{major.name}}
             </p></option>
@@ -63,6 +63,9 @@
         </p>
         <input type='checkbox' name='F' checked='checked' onchange='booleanDay(this)'/>
     </div>
+    <input type="button" id="addButton" onclick="addClick()" value="Add Class"/input>
+    <input type="button" id="removeButton" onclick="removeClick()" value="Remove Class" style="visibility: hidden" /input>
+    
 </div>
 
 <div class="column">
@@ -71,7 +74,7 @@
 <div class='column'>
     <h3>Courses Possible</h3>
     {% for course in courses %}
-    <li class='allCourse' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
+    <li id="possibleList" class='allCourse' dept='{{departments.}}' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
         {{ course.title }}
     </li>
     {% endfor %}
@@ -79,7 +82,7 @@
 <div class='column'>
     <h3>Courses Needed</h3>
     {% for course in student.major.coursesRequired.all %}
-    <li class='courseNeeded' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
+    <li id="neededList" class='courseNeeded' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
         {{ course.title }}
     </li>
     {% endfor %}
@@ -87,7 +90,7 @@
 <div class='column'>
     <h3>Course Bucket</h3>
     {% for course in courseBucket %}
-    <li href='{{ course.get_absolute_url }}'>
+    <li id="bucketList" href='{{ course.get_absolute_url }}'>
         {{ course.title }}
     </li>
     {% endfor %}
@@ -135,6 +138,8 @@
         </tr>
         {% endfor %}
     </table>
+    <h4>Courses Registered</h4>
+    <li id="registeredList"></li>
 </div>
 
 {% endblock %} 
