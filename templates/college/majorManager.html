@@ -81,7 +81,7 @@
                 }, 300);
             }
             //Init the department for selected major
-            if($($(major).siblings('.depaetmentM')[0]).children('option')){
+            if($($(major).siblings('.departmentM')[0]).children('option')){
                 var me = $($(major).siblings('.departmentM')[0]).children('option');
                 var option = $('#id_department option[value=' + $(me).val() + ']');
                 var p = $('.department[pk=' + $(me).val() + ']');
