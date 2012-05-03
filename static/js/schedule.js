@@ -48,7 +48,7 @@ function filterDepartment(deptValue) {
 	$('.majors').each(function(){
 		if ($(this).attr('dept') == deptValue){
 			$(this).css("display", "inline");
-			document.getElementById("majorSelect").setAttribute("selected", "selected");
+			$(this).setAttribute("selected", true);
 		} else {
 			$(this).css("display", "none");
 		}
@@ -111,6 +111,15 @@ function startSliderChange(newValue) {
 
 function levelSliderChange(newValue) {
 	document.getElementById("levelRange").innerHTML = newValue;
+	$('.allCourse').each(function(){
+		var numb = $(this).attr('num');
+		//document.getElementById("levelRange").innerHTML = numb.charAt(0);
+		if (Number(numb.charAt(0))*1000 == Number(newValue)){
+			$(this).removeClass('hidden');
+		} else {
+			$(this).addClass('hidden');
+		}
+	});
 }
 function booleanDay(input) {
 	$('.courseNeeded,.allCourse').each(function() {
@@ -134,4 +143,8 @@ function addClick(){
 function removeClick(){
 	document.getElementById("removeButton").style.visibility="hidden";
 	document.getElementById("addButton").style.visibility="visible";
+}
+
+function possibleClick(element){
+		element.style.background="blue";
 }

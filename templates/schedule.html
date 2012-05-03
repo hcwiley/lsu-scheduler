@@ -74,7 +74,7 @@
 <div class='column'>
     <h3>Courses Possible</h3>
     {% for course in courses %}
-    <li id="possibleList" class='allCourse' dept='{{departments.}}' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
+    <li id="possibleList" onclick="possibleClick(this)" class='allCourse' num='{{course.number}}' dept='{{departments}}' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
         {{ course.title }}
     </li>
     {% endfor %}
@@ -82,7 +82,7 @@
 <div class='column'>
     <h3>Courses Needed</h3>
     {% for course in student.major.coursesRequired.all %}
-    <li id="neededList" class='courseNeeded' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
+    <li id="neededList" onclick="neededClick(this)" class='courseNeeded' num='{{course.number}}' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
         {{ course.title }}
     </li>
     {% endfor %}
