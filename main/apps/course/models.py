@@ -7,6 +7,7 @@ from django.contrib import admin
 #from django.utils.encoding import smart_str
 #from django.contrib.sites.models import Site
 from datetime import datetime
+import time
 from django.contrib.admin.sites import site
 
 WEEKDAYS = (('M', 'Monday'), ('T', 'Tuesday'), ('W', 'Wednesday'), ('TH', 'Thursday'), ('F', 'Friday'))
@@ -35,7 +36,9 @@ class Course(models.Model):
     number_enrolled = models.IntegerField(default=0, blank=True, null=True)
     special_enrollment = models.CharField(max_length=100, default='', blank=True, null=True)
     type = models.CharField(choices=CLASS_TYPE, max_length=3, default='', null=True, blank=True)
-    pretty_days = ''    
+    pretty_days = models.CharField(max_length=10, blank=True, null=True, default='')
+    pretty_start = models.CharField(max_length=10, blank=True, null=True, default='')
+    pretty_end = models.CharField(max_length=10, blank=True, null=True, default='')
     
     class Meta:
         ordering = ['number']
@@ -48,14 +51,43 @@ class Course(models.Model):
         return ('apps.course.views.course', [str(self.id)])
     
     def get_pretty_days(self):
+        days = ""
+        for day in self.days.all():
+            if day.day == 'H':
+                day = "TH"
+            days += '%s ' % (day)
+        self.pretty_days = days
+        return self.pretty_days
+    
+    def set_pretty_days(self):
         if self.pretty_days == '':
             days = ""
             for day in self.days.all():
+                if day.day == 'H':
+                    day = "TH"
                 days += '%s ' % (day)
             self.pretty_days = days
-        return self.pretty_days
+            self.save()  
+              
+    def pretty_start_time(self):
+        if self.start_time:
+            self.pretty_start = self.start_time.strftime("%H:%M")
+            return self.pretty_start
+    
+    def pretty_end_time(self):
+        if self.end_time:
+            self.pretty_end = self.end_time.strftime("%H:%M")
+            return self.pretty_end
     
     def save(self, *args, **kwargs):
+        days = ""
+        for day in self.days.all():
+            if day.day == 'H':
+                day = "TH"
+            days += '%s ' % (day)
+        self.pretty_days = days.rstrip(' ')
+        self.pretty_start = self.start_time.strftime("%H:%M")
+        self.pretty_end = self.end_time.strftime("%H:%M")
         super(Course, self).save(*args, **kwargs)
 #
 #def update_course(modeladmin, request, queryset):

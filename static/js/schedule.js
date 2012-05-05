@@ -15,24 +15,12 @@ function timeSliderChange(newValue) {
 			0, 5)
 			+ " " + ampm;
 	$('.courseNeeded,.allCourse').each(function() {
-		var stime = $(this).attr('end');
+		var stime = $(this).attr('start');
 		if (stime !== 'None' && stime !== undefined) {
 			if (stime.match(':')) {
 				var sh = parseInt(stime.split(":")[0]);
 				var sm = stime.split(":")[1];
-				var sampm = sm.split(" ")[1];
-				sm = parseInt(sm.split(" ")[0]);
-			} else if (stime == 'noon') {
-				var sh = 12;
-				var sm = 0;
-				var sampm = 'pm';
-			} else {
-				var sh = parseInt(stime.split(" ")[0]);
-				var sm = 0;
-				var sampm = stime.split(" ")[1];
-			}
-			if (sampm.match('p')) {
-				sh += 12;
+				sm = parseInt(sm);
 			}
 			var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
 			if (sd > d)
@@ -45,8 +33,8 @@ function timeSliderChange(newValue) {
 
 function filterDepartment(deptValue) {
 	document.getElementById("filterText").innerHTML = deptValue;
-	$('.majors').each(function(){
-		if ($(this).attr('dept') == deptValue){
+	$('.majors').each(function() {
+		if ($(this).attr('dept') == deptValue) {
 			$(this).css("display", "inline");
 			$(this).setAttribute("selected", true);
 		} else {
@@ -54,14 +42,12 @@ function filterDepartment(deptValue) {
 		}
 	});
 	/*
-	$('.allCourse').each(function() {
-		document.getElementById("filterText").innerHTML = $(this).attr('dept');
-		if ($(this).attr('dept') != deptValue){
-			$(this).css("visibility", "hidden"); //bangarang, muthafucka
-		} else {
-			$(this).css("visibility", "visible"); //reverse bangarang, muthafucka
-		}
-	});*/
+	 * $('.allCourse').each(function() {
+	 * document.getElementById("filterText").innerHTML = $(this).attr('dept');
+	 * if ($(this).attr('dept') != deptValue){ $(this).css("visibility",
+	 * "hidden"); //bangarang, muthafucka } else { $(this).css("visibility",
+	 * "visible"); //reverse bangarang, muthafucka } });
+	 */
 }
 
 function startSliderChange(newValue) {
@@ -86,19 +72,7 @@ function startSliderChange(newValue) {
 			if (stime.match(':')) {
 				var sh = parseInt(stime.split(":")[0]);
 				var sm = stime.split(":")[1];
-				var sampm = sm.split(" ")[1];
-				sm = parseInt(sm.split(" ")[0]);
-			} else if (stime == 'noon') {
-				var sh = 12;
-				var sm = 0;
-				var sampm = 'pm';
-			} else {
-				var sh = parseInt(stime.split(" ")[0]);
-				var sm = 0;
-				var sampm = stime.split(" ")[1];
-			}
-			if (sampm.match('p')) {
-				sh += 12;
+				sm = parseInt(sm);
 			}
 			var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
 			if (sd < d)
@@ -111,10 +85,10 @@ function startSliderChange(newValue) {
 
 function levelSliderChange(newValue) {
 	document.getElementById("levelRange").innerHTML = newValue;
-	$('.allCourse').each(function(){
+	$('.allCourse').each(function() {
 		var numb = $(this).attr('num');
-		//document.getElementById("levelRange").innerHTML = numb.charAt(0);
-		if (Number(numb.charAt(0))*1000 == Number(newValue)){
+		// document.getElementById("levelRange").innerHTML = numb.charAt(0);
+		if (Number(numb.charAt(0)) * 1000 == Number(newValue)) {
 			$(this).removeClass('hidden');
 		} else {
 			$(this).addClass('hidden');
@@ -125,26 +99,36 @@ function booleanDay(input) {
 	$('.courseNeeded,.allCourse').each(function() {
 		var days = $(this).attr('days');
 		if (days !== 'None' && days !== undefined) {
-			if($(input).attr('checked')){
-				if(days.match($(input).attr('name'))){
+			if ($(input).attr('checked')) {
+				if (days.match($(input).attr('name'))) {
 					$(this).addClass('hidden');
-				}
-				else{
+				} else {
 					$(this).removeClass('hidden');
 				}
 			}
 		}
 	});
 }
-function addClick(){
-	document.getElementById("addButton").style.visibility="hidden";
-	document.getElementById("removeButton").style.visibility="visible";
+function addClick() {
+	document.getElementById("addButton").style.visibility = "hidden";
+	document.getElementById("removeButton").style.visibility = "visible";
 }
-function removeClick(){
-	document.getElementById("removeButton").style.visibility="hidden";
-	document.getElementById("addButton").style.visibility="visible";
+function removeClick() {
+	document.getElementById("removeButton").style.visibility = "hidden";
+	document.getElementById("addButton").style.visibility = "visible";
 }
 
-function possibleClick(element){
-		element.style.background="blue";
+function possibleClick(element) {
+	neededClick(element);
+}
+function neededClick(element){
+	var days =  $(element).attr('days');
+	var time =  $(element).attr('start');
+	days = days.split(' ');
+	for(var i = 0; i < days.length; i++){
+		console.log("|"+days[i]+"|");
+		console.log("|"+time+"|");
+		console.log($('table [day="'+days[i]+'"][time="'+time+'"]'));
+		$('table [day="'+days[i]+'"][time="'+time+'"]').text($(element).text());
+	};
 }

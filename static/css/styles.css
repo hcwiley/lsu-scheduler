@@ -19,7 +19,7 @@ html, body {
     min-height: 200px;
 }
 #wrapper {
-    width: 85%;
+    width: 100%;
     min-width: 1000px;
     float: left;
 }
@@ -64,3 +64,29 @@ table, tr, th, td{
 #boolean-days p{
     display: inline-block;
 }
+#schedule-filters{
+    position: absolute;
+    left: 65px;
+    top: 0px;
+    width: 70%;
+}
+#course-columns{
+    width: 75%;
+    float: left;
+    margin: 20px 0 0 30px;
+}
+#course-columns .column{
+    width: 300px;
+}
+#magic-hat{
+    position: absolute;
+    right: 475px;
+    top: 150px;
+}
+#schedule{
+    width: 20%;
+    position: absolute;
+    right: 155px;
+    top: 0px;
+}
+

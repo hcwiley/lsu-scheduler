@@ -1,10 +1,10 @@
 {% extends base_template %}
 {% block center %}
 <script type='text/javascript' src='{{ STATIC_URL }}js/schedule.js'></script>
-<div>
-    <h3> {{student.name}} </h3>
-</div>
-<div >
+<div id='schedule-filters' >
+    <div>
+        <h3> {{student.name}} </h3>
+    </div>
     <h3>{{department}} Filter Courses</h3>
     <select  id="collegeSelect" >
         {% for college in colleges %}
@@ -57,7 +57,7 @@
         <p>
             Thursday
         </p>
-        <input type='checkbox' name='H' onchange='booleanDay(this)'/>
+        <input type='checkbox' name='TH' onchange='booleanDay(this)'/>
         <p>
             Friday
         </p>
@@ -65,50 +65,36 @@
     </div>
     <input type="button" id="addButton" onclick="addClick()" value="Add Class"/input>
     <input type="button" id="removeButton" onclick="removeClick()" value="Remove Class" style="visibility: hidden" /input>
-    
-</div>
-
-<div class="column">
 
 </div>
-<div class='column'>
-    <h3>Courses Possible</h3>
-    {% for course in courses %}
-    <li id="possibleList" onclick="possibleClick(this)" class='allCourse' num='{{course.number}}' dept='{{departments}}' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
-        {{ course.title }}
-    </li>
-    {% endfor %}
+
+<div id='course-columns'>
+    <div class='column'>
+        <h3>Courses Possible</h3>
+        {% for course in courses %}
+        <li id="possibleList" onclick="possibleClick(this)" class='allCourse' num='{{course.number}}' dept='{{ course.department_set }}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+            {{ course.title }}
+        </li>
+        {% endfor %}
+    </div>
+    <div class='column'>
+        <h3>Courses Needed</h3>
+        {% for course in student.coursesNeeded.all %}
+        <li id="neededList" onclick="neededClick(this)" class='courseNeeded' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+            {{ course.title }}
+        </li>
+        {% endfor %}
+    </div>
+    <div class='column'>
+        <h3>Courses Wanted</h3>
+    </div>
 </div>
-<div class='column'>
-    <h3>Courses Needed</h3>
-    {% for course in student.major.coursesRequired.all %}
-    <li id="neededList" onclick="neededClick(this)" class='courseNeeded' num='{{course.number}}' days='{{ course.get_pretty_days }}' start='{{ course.start_time }}' end='{{ course.end_time }}' href='{{ course.get_absolute_url }}'>
-        {{ course.title }}
-    </li>
-    {% endfor %}
-</div>
-<div class='column'>
-    <h3>Course Bucket</h3>
-    {% for course in courseBucket %}
-    <li id="bucketList" href='{{ course.get_absolute_url }}'>
-        {{ course.title }}
-    </li>
-    {% endfor %}
+<div id='magic-hat'>
     <button type="button">
         Magic Hat!
     </button>
 </div>
-<!--
-<div class='column'>
-<h3>Courses Registered</h3>
-{% for department in departments %} <a href='{{ department.get_absolute_url }}'>
-<li>
-{{ department.name }}
-</li> </a>
-{% endfor %}
-</div>
--->
-<div class="column">
+<div id='schedule'>
     <h3>Schedule</h3>
     <table border="1">
         <tr>
@@ -138,8 +124,6 @@
         </tr>
         {% endfor %}
     </table>
-    <h4>Courses Registered</h4>
-    <li id="registeredList"></li>
 </div>
 
 {% endblock %} 
