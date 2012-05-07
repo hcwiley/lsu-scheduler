@@ -33,12 +33,8 @@ function timeSliderChange(newValue) {
 
 function filterCollege(col) {
 	var colValue = col.value;
-	var id = '';
-	$('.college').each(function(){
-		var text = $(this).text() + ""; 
-		if(text.match(colValue))
-			id = $(this).attr('pk');
-	});
+	var id = $('#collegeSelect option')[col.selectedIndex];
+	id = $(id).attr('pk');
 	$('.department').each(function() {
 		if ($(this).attr('college') == colValue) {
 			$('#departmentSelect').append(this);
@@ -56,12 +52,32 @@ function filterCollege(col) {
 
 function filterDepartment(dept) {
 	var deptValue = dept.value;
+	var id = $('#departmentSelect option')[dept.selectedIndex];
+	id = $(id).attr('pk');
 	$('.major').each(function() {
 		if ($(this).attr('department') == deptValue) {
 			$('#majorSelect').append(this);
 		} else {
 			$('#noneMajor').append(this);
 		}
+	});
+	$('#id_department option[selected=selected]').removeAttr('selected');
+	$('#id_department option[value='+id+']').attr('selected', 'selected');
+	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data){
+		console.log('from te server');
+		console.log(data);
+	});
+}
+
+function filterMajor(maj) {
+	var deptValue = maj.value;
+	var id = $('#majorSelect option')[maj.selectedIndex];
+	id = $(id).attr('pk');
+	$('#id_major option[selected=selected]').removeAttr('selected');
+	$('#id_major option[value='+id+']').attr('selected', 'selected');
+	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data){
+		console.log('from te server');
+		console.log(data);
 	});
 }
 

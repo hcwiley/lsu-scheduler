@@ -20,7 +20,7 @@
     </select>
     <select class='hidden' id='noneDepartments'>
         {% for department in departments %}
-        <option class='department' college='{{department.college}}'>
+        <option pk='{{department.id}}' class='department' college='{{department.college}}'>
             <p>
                 {{department.abbr}}
             </p></option>
@@ -31,7 +31,7 @@
     </select>
     <select id='noneMajor' class='hidden'>
         {% for major in majors %}
-        <option class="major" department ="{{major.department.abbr}}">
+        <option class="major" pk='{{major.id}}'' department ="{{major.department.abbr}}">
             <p>
                 {{major.name}}
             </p></option>
