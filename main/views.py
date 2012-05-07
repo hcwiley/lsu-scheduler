@@ -71,43 +71,47 @@ def allCollegeForm(request):
     if request.method == 'POST':
         form = AllCollegeForm(request.POST)
         if form.is_valid():
-            print 'valid'
             #get the ID of the college
             collegeObj = form.cleaned_data['college'] #Not sure if it returns the name or the id
-            print collegeObj
+            collegeObj = collegeObj[0]
             
             #get the ID of the department
-            departmentObj = form.cleaned_data['department'] #Not sure if it returns the name or the id
-            print departmentObj
+            try:
+                departmentObj = form.cleaned_data['department'] #Not sure if it returns the name or the id
+                departmentObj = departmentObj[0]
+            except:
+                departmentObj = None
             
             #get the ID of the major
-            majorObj = form.cleaned_data['major'] #Not sure if it returns the name or the id
-            print majorObj
+            try:
+                majorObj = form.cleaned_data['major'] #Not sure if it returns the name or the id
+                majorObj = majorObj[0]
+            except:
+                majorObj = None
             
             courses = []
-            if (departmentObj == ""):
-                #if we only have a college,
+            if (departmentObj == None):
+                #print("if we only have a college")
                 #Get all departments of the college
                 departments = []
-                departments = Department.objects.get(college=collegeObj) 
+                departments = Department.objects.filter(college=collegeObj)
                 #for each department in the college, add all the courses
                 
                 for dept in departments:
                     for course in dept.courses.all():
                         courses.append(course)
-            elif (majorObj == ""):
-                #if we have a single department, courses are all the courses of that department
-                for course in deptObj.courses.all():
+            elif (majorObj == None):
+                #print("if we have a single department, courses are all the courses of that department")
+                for course in departmentObj.courses.all():
                     courses.append(course)
             else:
-                #if we have a single major, courses are the required courses of that major
+                #print("if we have a single major, courses are the required courses of that major")
                 for majorCourse in majorObj.coursesRequired.all():
                     courses.append(majorCourse)
-                    
-                form = AllCollegeForm()
-                args = {'allCollegeForm' : form, 'courses': courses}
+            form = AllCollegeForm()
+            args = {'allCollegeForm' : form, 'courses': courses}
             args.update(csrf(request))
-            return render_to_response('courseList.html', args)
+            return render_to_response('course/courseList.html', args)
     else:
         return "Raise404"
 

@@ -10,10 +10,12 @@ function filterCollege(col) {
 		}
 	});
 	$('#id_college option[selected=selected]').removeAttr('selected');
+	$('#id_department option[selected=selected]').removeAttr('selected');
+	$('#id_major option[selected=selected]').removeAttr('selected');
 	$('#id_college option[value=' + id + ']').attr('selected', 'selected');
 	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data) {
-		console.log('from te server');
 		console.log(data);
+		$('#course-columns > div:first-child').html(data);
 	});
 }
 
@@ -29,10 +31,10 @@ function filterDepartment(dept) {
 		}
 	});
 	$('#id_department option[selected=selected]').removeAttr('selected');
+	$('#id_major option[selected=selected]').removeAttr('selected');
 	$('#id_department option[value=' + id + ']').attr('selected', 'selected');
 	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data) {
-		console.log('from te server');
-		console.log(data);
+		$('#course-columns > div:first-child').html(data);
 	});
 }
 
@@ -43,8 +45,7 @@ function filterMajor(maj) {
 	$('#id_major option[selected=selected]').removeAttr('selected');
 	$('#id_major option[value=' + id + ']').attr('selected', 'selected');
 	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data) {
-		console.log('from te server');
-		console.log(data);
+		$('#course-columns > div:first-child').html(data);
 	});
 }
 var startDate = new Date(2012, 1, 1, 12, 0, 0, 0);
@@ -188,5 +189,4 @@ function neededClick(element) {
 		$('table [day="' + days[i] + '"][time="' + time + '"]').text(
 				$(element).text());
 	}
-	;
 }

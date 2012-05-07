@@ -1,0 +1,38 @@
+<div id='schedule{{ schedule_number }}'>
+    <h3>Schedule</h3>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        {% for i in hours %}
+        <tr>
+            <th>{{ i }}:00</th>
+            <td day='M' time='{{ i }}:00'></td>
+            <td day='T' time='{{ i }}:00'></td>
+            <td day='W' time='{{ i }}:00'></td>
+            <td day='TH' time='{{ i }}:00'></td>
+            <td day='F' time='{{ i }}:00'></td>
+        </tr>
+        <tr>
+            <th>{{ i }}:30</th>
+            <td day='M' time='{{ i }}:30'></td>
+            <td day='T' time='{{ i }}:30'></td>
+            <td day='W' time='{{ i }}:30'></td>
+            <td day='TH' time='{{ i }}:30'></td>
+            <td day='F' time='{{ i }}:30'></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<div class='hidden'>
+    {% for course in scheduledCourse %}
+    <li class='scheduledCourse' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+            {{ course.title }}
+        </li>
+    {% endfor %}
+</div>
