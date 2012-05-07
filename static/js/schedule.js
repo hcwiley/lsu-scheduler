@@ -1,36 +1,3 @@
-function timeSliderChange(newValue) {
-	var time = 7;
-	time += newValue * .5;
-	var ampm = "am";
-	if (time >= 12) {
-		// if(time != 12.5) {
-		// time = ((time == 12) ? 12 : time - 12);
-		// }
-		ampm = "pm";
-	}
-	var hour = parseInt(time);
-	var minute = (time - hour) * 60;
-	var d = new Date(2012, 1, 1, hour, minute, 0, 0);
-	document.getElementById("endRange").innerHTML = d.toTimeString().substring(
-			0, 5)
-			+ " " + ampm;
-	$('.courseNeeded,.allCourse').each(function() {
-		var stime = $(this).attr('start');
-		if (stime !== 'None' && stime !== undefined) {
-			if (stime.match(':')) {
-				var sh = parseInt(stime.split(":")[0]);
-				var sm = stime.split(":")[1];
-				sm = parseInt(sm);
-			}
-			var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
-			if (sd > d)
-				$(this).addClass('hidden');
-			else
-				$(this).removeClass('hidden');
-		}
-	});
-}
-
 function filterCollege(col) {
 	var colValue = col.value;
 	var id = $('#collegeSelect option')[col.selectedIndex];
@@ -43,8 +10,8 @@ function filterCollege(col) {
 		}
 	});
 	$('#id_college option[selected=selected]').removeAttr('selected');
-	$('#id_college option[value='+id+']').attr('selected', 'selected');
-	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data){
+	$('#id_college option[value=' + id + ']').attr('selected', 'selected');
+	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data) {
 		console.log('from te server');
 		console.log(data);
 	});
@@ -62,8 +29,8 @@ function filterDepartment(dept) {
 		}
 	});
 	$('#id_department option[selected=selected]').removeAttr('selected');
-	$('#id_department option[value='+id+']').attr('selected', 'selected');
-	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data){
+	$('#id_department option[value=' + id + ']').attr('selected', 'selected');
+	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data) {
 		console.log('from te server');
 		console.log(data);
 	});
@@ -74,30 +41,28 @@ function filterMajor(maj) {
 	var id = $('#majorSelect option')[maj.selectedIndex];
 	id = $(id).attr('pk');
 	$('#id_major option[selected=selected]').removeAttr('selected');
-	$('#id_major option[value='+id+']').attr('selected', 'selected');
-	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data){
+	$('#id_major option[value=' + id + ']').attr('selected', 'selected');
+	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data) {
 		console.log('from te server');
 		console.log(data);
 	});
 }
-
+var startDate = new Date(2012, 1, 1, 12, 0, 0, 0);
+var endDate = new Date(2012, 1, 1, 12, 0, 0, 0);
 function startSliderChange(newValue) {
 	var time = 7;
 	time += newValue * .5;
 	var ampm = "am";
 	if (time >= 12) {
-		// if(time != 12.5) {
-		// time = ((time == 12) ? 12 : time - 12);
-		// }
 		ampm = "pm";
 	}
 	var hour = parseInt(time);
 	var minute = (time - hour) * 60;
-	var d = new Date(2012, 1, 1, hour, minute, 0, 0);
-	document.getElementById("startRange").innerHTML = d.toTimeString()
+	startDate = new Date(2012, 1, 1, hour, minute, 0, 0);
+	document.getElementById("startRange").innerHTML = startDate.toTimeString()
 			.substring(0, 5)
 			+ " " + ampm;
-	$('.courseNeeded,.allCourse').each(function() {
+	$('.courseNeeded, .allCourse').each(function() {
 		var stime = $(this).attr('start');
 		if (stime !== 'None' && stime !== undefined) {
 			if (stime.match(':')) {
@@ -106,10 +71,54 @@ function startSliderChange(newValue) {
 				sm = parseInt(sm);
 			}
 			var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
-			if (sd < d)
+			if (sd < startDate || sd > endDate)
 				$(this).addClass('hidden');
 			else
 				$(this).removeClass('hidden');
+			if (startDate >= endDate) {
+				var i = newValue;
+				if (newValue < 24)
+					i++;
+				$('#endSlider').val(i);
+				endSliderChange(i);
+			}
+		}
+	});
+}
+
+function endSliderChange(newValue) {
+	var time = 7;
+	time += newValue * .5;
+	var ampm = "am";
+	if (time >= 12) {
+		ampm = "pm";
+	}
+	var hour = parseInt(time);
+	var minute = (time - hour) * 60;
+	endDate = new Date(2012, 1, 1, hour, minute, 0, 0);
+	document.getElementById("endRange").innerHTML = endDate.toTimeString()
+			.substring(0, 5)
+			+ " " + ampm;
+	$('.courseNeeded, .allCourse').each(function() {
+		var stime = $(this).attr('start');
+		if (stime !== 'None' && stime !== undefined) {
+			if (stime.match(':')) {
+				var sh = parseInt(stime.split(":")[0]);
+				var sm = stime.split(":")[1];
+				sm = parseInt(sm);
+			}
+			var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
+			if (sd < startDate || sd > endDate)
+				$(this).addClass('hidden');
+			else
+				$(this).removeClass('hidden');
+			if (startDate >= endDate) {
+				var i = newValue;
+				if (newValue > 0)
+					i--;
+				$('#startSlider').val(i);
+				startSliderChange(i);
+			}
 		}
 	});
 }
@@ -126,16 +135,32 @@ function levelSliderChange(newValue) {
 		}
 	});
 }
+var selectedDays = [];
 function booleanDay(input) {
+	var day = $(input).attr('name');
+	if ($(input).attr('checked')) {
+		if (selectedDays.indexOf(day) == -1)
+			selectedDays.push(day);
+	} else {
+		var i = selectedDays.indexOf(day);
+		selectedDays.pop(i);
+	}
 	$('.courseNeeded,.allCourse').each(function() {
 		var days = $(this).attr('days');
 		if (days !== 'None' && days !== undefined) {
 			if ($(input).attr('checked')) {
-				if (days.match($(input).attr('name'))) {
+				if (days.match(day)) {
 					$(this).addClass('hidden');
-				} else {
-					$(this).removeClass('hidden');
 				}
+			} else {
+				var toHide = true;
+				for ( var i = 0; i < selectedDays.length; i++) {
+					if (days.match(selectedDays[i])) {
+						toHide  = false;
+					}
+				}
+				if (toHide)
+					$(this).removeClass('hidden');
 			}
 		}
 	});

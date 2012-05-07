@@ -40,10 +40,10 @@
     {% include 'allCollegeForm.html' %}
     <span id="filterText"> </span>
     <h4>Start Time</h4>
-    <input class='slider' type="range" min="0" max="24" onchange="startSliderChange(this.value)" />
+    <input class='slider' id='startSlider' type="range" min="0" max="24" onchange="startSliderChange(this.value)" />
     <span id="startRange">12:00 pm</span>
     <h4>End Time</h4>
-    <input class='slider' type="range" min="0" max="24" onchange="timeSliderChange(this.value)" />
+    <input class='slider' id='endSlider' type="range" min="0" max="24" onchange="endSliderChange(this.value)" />
     <span id="endRange">12:00 pm</span>
     <h4>Course Level</h4>
     <input class='slider' type="range" min="1000" max="8000" step="1000" value="1000" onchange="levelSliderChange(this.value)" />
@@ -69,13 +69,11 @@
         <p>
             Friday
         </p>
-        <input type='checkbox' name='F' checked='checked' onchange='booleanDay(this)'/>
+        <input type='checkbox' name='F' onchange='booleanDay(this)'/>
     </div>
     <input type="button" id="addButton" onclick="addClick()" value="Add Class"/input>
     <input type="button" id="removeButton" onclick="removeClick()" value="Remove Class" style="visibility: hidden" /input>
-
 </div>
-
 <div id='course-columns'>
     <div class='column'>
         <h3>Courses Possible</h3>
