@@ -17,3 +17,8 @@ class CollegeManagerForm(forms.Form):
     departments = forms.ModelMultipleChoiceField(queryset=Department.objects.all(), required=False)
     class Meta:
         model = College
+
+class AllCollegeForm(forms.Form):
+    college = forms.ModelMultipleChoiceField(queryset=College.objects.all(), required=False)
+    major = forms.ModelMultipleChoiceField(queryset=Major.objects.all(), required=False)
+    department = forms.ModelMultipleChoiceField(queryset=Department.objects.all(), required=False)

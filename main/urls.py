@@ -15,12 +15,14 @@ urlpatterns = patterns('',
     (r'^sitemap.txt$', direct_to_template, {'template':'sitemap.txt', 'mimetype':'text/plain'}),
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
     (r'^admin/', include(admin.site.urls)),
+    (r'^allCollegeForm$', 'views.allCollegeForm'),
     (r'^/$', 'views.home'),
     (r'^$', 'views.home'),
     (r'^schedule/(?P<id>.*)$', 'views.schedule'),
     (r'^colleges/', include(college_urls)),
     (r'^courses/', include(course_urls)),
     (r'^students/', include(student_urls)),
+    
 )
 
 

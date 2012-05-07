@@ -7,6 +7,7 @@ from apps.course.models import *
 from apps.student.models import *
 from apps.student.forms import *
 from apps.college.models import *
+from apps.college.forms import *
 from django.core import serializers
 
 def common_args(request):
@@ -62,7 +63,29 @@ def schedule(request, id=None):
     for i in range(7,20):
         h.append(i)
     args['hours'] = h
+    args['allCollegeForm'] = AllCollegeForm()
     return render_to_response('schedule.html', args)
+
+def allCollegeForm(request):
+    print 'hey!'
+    if request.method == 'POST':
+        form = AllCollegeForm(request.POST)
+        if form.is_valid():
+            print 'valid'
+            college = form.cleaned_data['college'] #Not sure if the returns the name or the id
+            print college
+            college = College.objects.get(id=college)
+            
+            courses = []
+            for course in college.courses.all():
+                courses.append(course)
+            #DO SOMETHING HERE
+            form = AllCollegeForm()
+            args = {'allCollegeForm' : form, 'courses': courses}
+            args.update(csrf(request))
+            return render_to_response('courseList.html', args)
+    else:
+        return "Raise404"
 
 def home(request):
     args = common_args(request)

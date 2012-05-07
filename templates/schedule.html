@@ -16,7 +16,7 @@
     </select>
     <select id="departmentSelect" onchange="filterDepartment(this.value)">
         {% for department in departments %}
-        <option>
+        <option college='{{department.college}}'
             <p>
                 {{department.abbr}}
             </p></option>
@@ -24,12 +24,16 @@
     </select>
     <select  id="majorSelect">
         {% for major in majors %}
-        <option class="majors" dept ="{{major.department.abbr}}">
+        <option class="majors" department ="{{major.department.abbr}}">
             <p>
                 {{major.name}}
             </p></option>
         {% endfor %}
     </select>
+    <form class='hidden' id='allCollegeForm'>
+        {% csrf_token %}
+        {{ allCollegeForm }}
+    </form>
     <span id="filterText"> </span>
     <h4>Start Time</h4>
     <input class='slider' type="range" min="0" max="24" onchange="startSliderChange(this.value)" />

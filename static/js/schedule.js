@@ -36,7 +36,7 @@ function filterDepartment(deptValue) {
 	$('.majors').each(function() {
 		if ($(this).attr('dept') == deptValue) {
 			$(this).css("display", "inline");
-			$(this).setAttribute("selected", true);
+			$(this).attr("selected", 'selected');
 		} else {
 			$(this).css("display", "none");
 		}
