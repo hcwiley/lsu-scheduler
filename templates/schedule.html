@@ -78,7 +78,7 @@
     <div class='column'>
         <h3>Courses Possible</h3>
         {% for course in courses %}
-        <li id="possibleList" onclick="possibleClick(this)" class='allCourse' num='{{course.number}}' dept='{{ course.department_set }}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+        <li id="possibleList" pk={{ course.id }} onclick="possibleClick(this)" class='allCourse' num='{{course.number}}' dept='{{ course.department_set }}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
             {{ course.title }}
         </li>
         {% endfor %}
@@ -86,12 +86,12 @@
     <div class='column'>
         <h3>Courses Needed</h3>
         {% for course in student.coursesNeeded.all %}
-        <li id="neededList" onclick="neededClick(this)" class='courseNeeded' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+        <li id="neededList" pk={{ course.id }} onclick="neededClick(this)" class='courseNeeded' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
             {{ course.title }}
         </li>
         {% endfor %}
     </div>
-    <div class='column'>
+    <div class='column' id='courses-wanted'>
         <h3>Courses Wanted</h3>
     </div>
 </div>
@@ -101,5 +101,8 @@
     </button>
 </div>
 {% include 'course/scheduleTable.html' %}
-
+<form id='coursesWanted' class='hidden'>
+    {% csrf_token %}
+    {{ coursesWanted }}
+</form>
 {% endblock %} 

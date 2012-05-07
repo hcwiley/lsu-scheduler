@@ -28,11 +28,11 @@
         </tr>
         {% endfor %}
     </table>
-</div>
-<div class='hidden'>
-    {% for course in scheduledCourse %}
-    <li class='scheduledCourse' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+    <div class='hidden'>
+        {% for course in scheduledCourse %}
+        <li class='scheduledCourse' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
             {{ course.title }}
         </li>
-    {% endfor %}
+        {% endfor %}
+    </div>
 </div>

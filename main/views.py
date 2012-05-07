@@ -59,7 +59,7 @@ def schedule(request, id=None):
             if course1.id == course2.id:
                 coursesStillNeeded.remove(course1)
     args['coursesStillNeeded'] =  coursesStillNeeded
-    args['courseBucket'] = coursesWanted()
+    args['coursesWanted'] = CoursesWanted()
     h = []
     for i in range(7,20):
         h.append(i)
@@ -121,6 +121,17 @@ def coursesWanted(request):
         form = CoursesWanted(request.POST)
         if form.is_valid():
             print("valid!")
+            courses = form.cleaned_data['courses']
+            print courses
+            form = CoursesWanted()
+            args = {'coursesWanted' : form, 'scheduledCourse': courses, 'schedule_number': 1}
+            h = []
+            for i in range(7,20):
+                h.append(i)
+            args['hours'] = h
+            args.update(csrf(request))
+            print('updated')
+            return render_to_response('course/scheduleTable.html', args)
 
 def home(request):
     args = common_args(request)

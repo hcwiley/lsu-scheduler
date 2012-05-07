@@ -157,7 +157,7 @@ function booleanDay(input) {
 				var toHide = true;
 				for ( var i = 0; i < selectedDays.length; i++) {
 					if (days.match(selectedDays[i])) {
-						toHide  = false;
+						toHide = false;
 					}
 				}
 				if (toHide)
@@ -179,14 +179,31 @@ function possibleClick(element) {
 	neededClick(element);
 }
 function neededClick(element) {
-	var days = $(element).attr('days');
-	var time = $(element).attr('start');
-	days = days.split(' ');
-	for ( var i = 0; i < days.length; i++) {
-		console.log("|" + days[i] + "|");
-		console.log("|" + time + "|");
-		console.log($('table [day="' + days[i] + '"][time="' + time + '"]'));
-		$('table [day="' + days[i] + '"][time="' + time + '"]').text(
-				$(element).text());
-	}
+	$('#courses-wanted').append($(element).clone());
+	$('#coursesWanted [value=' + $(element).attr('pk') + ']').attr('selected',
+			'selected');
+	console.log($('#coursesWanted').serialize());
+	$.post('/coursesWanted', $('#coursesWanted').serialize(), function(data) {
+		$('#schedule').html(data);
+		fillSchedule();
+	});
+}
+
+function fillSchedule() {
+	console.log("please populate");
+	$('#schedule .scheduleCourse').each(function() {
+		course = this;
+		console.log(course);
+		var days = $(course).attr('days');
+		var time = $(course).attr('start');
+		days = days.split(' ');
+		for ( var i = 0; i < days.length; i++) {
+			console.log("|" + days[i] + "|");
+			console.log("|" + time + "|");
+			console.log($('table [day="' + days[i] + '"][time="' + time
+					+ '"]'));
+			$('table [day="' + days[i] + '"][time="' + time + '"]')
+					.text($(course).text());
+		}
+	});
 }
