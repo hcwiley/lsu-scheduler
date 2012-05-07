@@ -3,3 +3,4 @@ from apps.course.models import Course
 
 class CoursesWanted(forms.Form):
     courses = forms.ModelMultipleChoiceField(queryset=Course.objects.all(), required=False)
+    student_pk = forms.IntegerField() 

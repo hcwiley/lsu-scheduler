@@ -124,12 +124,20 @@ def coursesWanted(request):
             courses = form.cleaned_data['courses']
             print courses
             form = CoursesWanted()
-            args = {'coursesWanted' : form, 'scheduledCourse': courses, 'schedule_number': 1}
+            
             h = []
             for i in range(7,20):
                 h.append(i)
             args['hours'] = h
             args.update(csrf(request))
+            
+            #this is where teh magic should happen.
+            
+            #curStudent.coursesWanted.append(courses)
+            
+            #args = {'coursesWanted' : form, 'scheduledCourse': courses, 'schedule_number': 1}
+            #html = render('course/scheduleTable.html', args)
+            
             print('updated')
             return render_to_response('course/scheduleTable.html', args)
 
