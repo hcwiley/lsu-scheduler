@@ -3,7 +3,7 @@
 <script type='text/javascript' src='{{ STATIC_URL }}js/schedule.js'></script>
 <div id='schedule-filters' >
     <div>
-        <h3> {{student.name}} </h3>
+        <h3 id='STUDENT' pk='{{ student.id }}'> {{student.name}} </h3>
     </div>
     <h3>{{department}} Filter Courses</h3>
     <select  id="collegeSelect" onchange="filterCollege(this)">

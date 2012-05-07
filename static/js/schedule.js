@@ -182,6 +182,7 @@ function neededClick(element) {
 	$('#courses-wanted').append($(element).clone());
 	$('#coursesWanted [value=' + $(element).attr('pk') + ']').attr('selected',
 			'selected');
+	$('#id_student_pk').val($("#STUDENT").attr('pk'));
 	console.log($('#coursesWanted').serialize());
 	$.post('/coursesWanted', $('#coursesWanted').serialize(), function(data) {
 		$('#schedule').html(data);

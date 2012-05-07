@@ -122,7 +122,10 @@ def coursesWanted(request):
         if form.is_valid():
             print("valid!")
             courses = form.cleaned_data['courses']
+            student = form.cleaned_data['student_pk']
+            student = Student.objects.get(id=student)
             print courses
+            print student.name
             form = CoursesWanted()
             
             h = []
