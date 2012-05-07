@@ -72,14 +72,39 @@ def allCollegeForm(request):
         form = AllCollegeForm(request.POST)
         if form.is_valid():
             print 'valid'
-            college = form.cleaned_data['college'] #Not sure if the returns the name or the id
-            print college
-            college = College.objects.get(id=college)
+            #get the ID of the college
+            collegeObj = form.cleaned_data['college'] #Not sure if it returns the name or the id
+            print collegeObj
             
+            #get the ID of the department
+            departmentObj = form.cleaned_data['department'] #Not sure if it returns the name or the id
+            print departmentObj
+            
+            #get the ID of the major
+            majorObj = form.cleaned_data['major'] #Not sure if it returns the name or the id
+            print majorObj
+            
+            
+            #if we only have a college,
+            #Get all departments of the college
+            departments = []
+            departments = Department.objects.get(college=collegeObj) 
+            #for each department in the college, add all the courses
             courses = []
-            for course in college.courses.all():
+            for dept in departments:
+                for course in dept.courses.all():
+                    courses.append(course)
+            
+            #if we have a single department, courses are all the courses of that department
+            courses = []
+            for course in deptObj.courses.all():
                 courses.append(course)
-            #DO SOMETHING HERE
+                
+            #if we have a single major, courses are the required courses of that major
+            courses = []
+            for majorCourse in majorObj.coursesRequired.all():
+                courses.append(majorCourse)
+                
             form = AllCollegeForm()
             args = {'allCollegeForm' : form, 'courses': courses}
             args.update(csrf(request))
