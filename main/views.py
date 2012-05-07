@@ -84,29 +84,28 @@ def allCollegeForm(request):
             majorObj = form.cleaned_data['major'] #Not sure if it returns the name or the id
             print majorObj
             
-            
-            #if we only have a college,
-            #Get all departments of the college
-            departments = []
-            departments = Department.objects.get(college=collegeObj) 
-            #for each department in the college, add all the courses
             courses = []
-            for dept in departments:
-                for course in dept.courses.all():
+            if (departmentObj == ""):
+                #if we only have a college,
+                #Get all departments of the college
+                departments = []
+                departments = Department.objects.get(college=collegeObj) 
+                #for each department in the college, add all the courses
+                
+                for dept in departments:
+                    for course in dept.courses.all():
+                        courses.append(course)
+            elif (majorObj == ""):
+                #if we have a single department, courses are all the courses of that department
+                for course in deptObj.courses.all():
                     courses.append(course)
-            
-            #if we have a single department, courses are all the courses of that department
-            courses = []
-            for course in deptObj.courses.all():
-                courses.append(course)
-                
-            #if we have a single major, courses are the required courses of that major
-            courses = []
-            for majorCourse in majorObj.coursesRequired.all():
-                courses.append(majorCourse)
-                
-            form = AllCollegeForm()
-            args = {'allCollegeForm' : form, 'courses': courses}
+            else:
+                #if we have a single major, courses are the required courses of that major
+                for majorCourse in majorObj.coursesRequired.all():
+                    courses.append(majorCourse)
+                    
+                form = AllCollegeForm()
+                args = {'allCollegeForm' : form, 'courses': courses}
             args.update(csrf(request))
             return render_to_response('courseList.html', args)
     else:
