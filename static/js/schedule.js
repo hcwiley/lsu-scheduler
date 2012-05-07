@@ -31,23 +31,38 @@ function timeSliderChange(newValue) {
 	});
 }
 
-function filterDepartment(deptValue) {
-	document.getElementById("filterText").innerHTML = deptValue;
-	$('.majors').each(function() {
-		if ($(this).attr('dept') == deptValue) {
-			$(this).css("display", "inline");
-			$(this).attr("selected", 'selected');
+function filterCollege(col) {
+	var colValue = col.value;
+	var id = '';
+	$('.college').each(function(){
+		var text = $(this).text() + ""; 
+		if(text.match(colValue))
+			id = $(this).attr('pk');
+	});
+	$('.department').each(function() {
+		if ($(this).attr('college') == colValue) {
+			$('#departmentSelect').append(this);
 		} else {
-			$(this).css("display", "none");
+			$('#noneDepartments').append(this);
 		}
 	});
-	/*
-	 * $('.allCourse').each(function() {
-	 * document.getElementById("filterText").innerHTML = $(this).attr('dept');
-	 * if ($(this).attr('dept') != deptValue){ $(this).css("visibility",
-	 * "hidden"); //bangarang, muthafucka } else { $(this).css("visibility",
-	 * "visible"); //reverse bangarang, muthafucka } });
-	 */
+	$('#id_college option[selected=selected]').removeAttr('selected');
+	$('#id_college option[value='+id+']').attr('selected', 'selected');
+	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data){
+		console.log('from te server');
+		console.log(data);
+	});
+}
+
+function filterDepartment(dept) {
+	var deptValue = dept.value;
+	$('.major').each(function() {
+		if ($(this).attr('department') == deptValue) {
+			$('#majorSelect').append(this);
+		} else {
+			$('#noneMajor').append(this);
+		}
+	});
 }
 
 function startSliderChange(newValue) {
@@ -121,14 +136,16 @@ function removeClick() {
 function possibleClick(element) {
 	neededClick(element);
 }
-function neededClick(element){
-	var days =  $(element).attr('days');
-	var time =  $(element).attr('start');
+function neededClick(element) {
+	var days = $(element).attr('days');
+	var time = $(element).attr('start');
 	days = days.split(' ');
-	for(var i = 0; i < days.length; i++){
-		console.log("|"+days[i]+"|");
-		console.log("|"+time+"|");
-		console.log($('table [day="'+days[i]+'"][time="'+time+'"]'));
-		$('table [day="'+days[i]+'"][time="'+time+'"]').text($(element).text());
-	};
+	for ( var i = 0; i < days.length; i++) {
+		console.log("|" + days[i] + "|");
+		console.log("|" + time + "|");
+		console.log($('table [day="' + days[i] + '"][time="' + time + '"]'));
+		$('table [day="' + days[i] + '"][time="' + time + '"]').text(
+				$(element).text());
+	}
+	;
 }

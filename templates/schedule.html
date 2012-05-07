@@ -6,34 +6,38 @@
         <h3> {{student.name}} </h3>
     </div>
     <h3>{{department}} Filter Courses</h3>
-    <select  id="collegeSelect" >
+    <select  id="collegeSelect" onchange="filterCollege(this)">
+        <option>Select a college to filter</option>
         {% for college in colleges %}
-        <option>
+        <option pk='{{college.id}}' class='college'>
             <p>
                 {{college.name}}
             </p></option>
         {% endfor %}
     </select>
-    <select id="departmentSelect" onchange="filterDepartment(this.value)">
+    <select id="departmentSelect" onchange="filterDepartment(this)">
+        <option> ---- </option>
+    </select>
+    <select class='hidden' id='noneDepartments'>
         {% for department in departments %}
-        <option college='{{department.college}}'
+        <option class='department' college='{{department.college}}'>
             <p>
                 {{department.abbr}}
             </p></option>
         {% endfor %}
     </select>
-    <select  id="majorSelect">
+    <select  id="majorSelect" onchange="filterMajor(this)">
+        <option>----</option>
+    </select>
+    <select id='noneMajor' class='hidden'>
         {% for major in majors %}
-        <option class="majors" department ="{{major.department.abbr}}">
+        <option class="major" department ="{{major.department.abbr}}">
             <p>
                 {{major.name}}
             </p></option>
         {% endfor %}
     </select>
-    <form class='hidden' id='allCollegeForm'>
-        {% csrf_token %}
-        {{ allCollegeForm }}
-    </form>
+    {% include 'allCollegeForm.html' %}
     <span id="filterText"> </span>
     <h4>Start Time</h4>
     <input class='slider' type="range" min="0" max="24" onchange="startSliderChange(this.value)" />

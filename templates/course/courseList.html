@@ -6,7 +6,4 @@
     </li>
     {% endfor %}
 </div>
-<form class='hidden' id='allCollegeForm'>
-    {% csrf_token %}
-    {{ allCollegeForm }}
-</form>
+{% include 'allCollegeForm.html' %}
