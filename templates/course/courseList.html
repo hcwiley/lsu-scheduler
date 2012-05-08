@@ -1,7 +1,7 @@
 <div class='column'>
     <h3>Courses Possible</h3>
     {% for course in courses %}
-    <li id="possibleList" onclick="possibleClick(this)" class='allCourse' num='{{course.number}}' dept='{{ course.department_set }}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+    <li onclick="possibleClick(this)" pk='{{ course.id }}' class='allCourse' num='{{course.number}}' dept='{{ course.department_set }}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
         {{ course.title }}
     </li>
     {% endfor %}

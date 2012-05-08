@@ -47,46 +47,48 @@ input {
 .slider {
     width: 250px;
 }
-.hidden{
-    display:none;
+.hidden {
+    display: none;
 }
-table, tr, th, td{
+table, tr, th, td {
     border: 1px solid black;
 }
-#boolean-days{
+#boolean-days {
     position: relative;
     left: 400px;
     top: -100px;
 }
-#boolean-days p{
+#boolean-days p {
     display: inline;
 }
-#boolean-days p{
+#boolean-days p {
     display: inline-block;
 }
-#schedule-filters{
+#schedule-filters {
     position: absolute;
     left: 65px;
     top: 0px;
     width: 70%;
 }
-#course-columns{
+#course-columns {
     width: 75%;
     float: left;
     margin: 20px 0 0 30px;
 }
-#course-columns .column{
+#course-columns .column {
     width: 300px;
 }
-#magic-hat{
+#magic-hat {
     position: absolute;
     right: 475px;
     top: 150px;
 }
-#schedule{
-    width: 20%;
+#schedule {
+    width: 260px;
     position: absolute;
-    right: 185px;
+    right: 175px;
     top: 0px;
 }
-
+table {
+    width: 300px;
+}

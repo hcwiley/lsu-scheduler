@@ -75,18 +75,11 @@
     <input type="button" id="removeButton" onclick="removeClick()" value="Remove Class" style="visibility: hidden" /input>
 </div>
 <div id='course-columns'>
-    <div class='column'>
-        <h3>Courses Possible</h3>
-        {% for course in courses %}
-        <li id="possibleList" pk={{ course.id }} onclick="possibleClick(this)" class='allCourse' num='{{course.number}}' dept='{{ course.department_set }}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
-            {{ course.title }}
-        </li>
-        {% endfor %}
-    </div>
+    {% include 'course/courseList.html' %}
     <div class='column'>
         <h3>Courses Needed</h3>
         {% for course in student.coursesNeeded.all %}
-        <li id="neededList" pk={{ course.id }} onclick="neededClick(this)" class='courseNeeded' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+        <li pk='{{ course.id }}' onclick="neededClick(this)" class='courseNeeded' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
             {{ course.title }}
         </li>
         {% endfor %}

@@ -179,31 +179,29 @@ function possibleClick(element) {
 	neededClick(element);
 }
 function neededClick(element) {
-	$('#courses-wanted').append($(element).clone());
+	$('#courses-wanted').append($(element).clone().removeAttr('class'));
 	$('#coursesWanted [value=' + $(element).attr('pk') + ']').attr('selected',
 			'selected');
 	$('#id_student_pk').val($("#STUDENT").attr('pk'));
-	console.log($('#coursesWanted').serialize());
 	$.post('/coursesWanted', $('#coursesWanted').serialize(), function(data) {
-		$('#schedule').html(data);
-		fillSchedule();
+		$('#schedule').html($(data));
+		var num = $(data).attr('id');
+		console.log(num);
+		fillSchedule(num);
 	});
 }
 
-function fillSchedule() {
+function fillSchedule(num) {
 	console.log("please populate");
-	$('#schedule .scheduleCourse').each(function() {
+	$('.scheduledCourse').each(function() {
 		course = this;
-		console.log(course);
 		var days = $(course).attr('days');
 		var time = $(course).attr('start');
 		days = days.split(' ');
 		for ( var i = 0; i < days.length; i++) {
-			console.log("|" + days[i] + "|");
-			console.log("|" + time + "|");
-			console.log($('table [day="' + days[i] + '"][time="' + time
-					+ '"]'));
-			$('table [day="' + days[i] + '"][time="' + time + '"]')
+//			console.log($('table [day="' + days[i] + '"][time="' + time
+//					+ '"]'));
+			$('#'+num+' table [day="' + days[i] + '"][time="' + time + '"]')
 					.text($(course).text());
 		}
 	});
