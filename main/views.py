@@ -153,6 +153,7 @@ def home(request):
             print 'valid'
             stu = form.save(commit=False)
             form.save()
+            stu.getCoursesNeeded()
             return redirect('/schedule/%s' % stu.id )
             return redirect(stu.get_absolute_url())
     else:
