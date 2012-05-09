@@ -135,6 +135,27 @@ def coursesWanted(request):
             args.update(csrf(request))
             
             #this is where teh magic should happen.
+            #total courses we are trying to register 
+            wantedCourses = []
+            for course in courses:
+                wantedCourses.append([])
+                for section in Course.objects.filter(title=course.title, number=course.number):
+                    priority = 0
+                    #if the title of the course is in the courses needed, the priority is higher
+                    if (student.coursesNeeded.filter(title=section.title, number=section.number) > 0):
+                        priority = 1
+                    #check to make sure the time slot isn't taken
+                    for otherCourse in wantedCourses:
+                        #if the other section's start time is the same, and the other sections priority is higher
+                        if (otherCourse[0].start_time == section.start_time and otherCourse[1] > priority):
+                            pass
+                        elif (otherCourse[0].start_time == section.start_time and otherCourse[1] == priority):
+                            #then we have an impasse.  We need a new schedule
+                            pass
+                        else: 
+                            wantedCourses[i].append((section, priority))
+                            student.coursesWanted.append(section)
+            
             
             #curStudent.coursesWanted.append(courses)
             
