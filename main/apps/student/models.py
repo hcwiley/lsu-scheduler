@@ -26,6 +26,7 @@ class Student(models.Model):
         
     def save(self, *args, **kwargs):
         super(Student, self).save(*args, **kwargs)
+        print(self.coursesNeeded.count())
         if self.coursesNeeded.count() < 1:
             self.getCoursesNeeded()
 
@@ -48,4 +49,5 @@ class Student(models.Model):
                 self.coursesNeeded.remove(course)
         for course in self.coursesTaken.all():
             self.coursesNeeded.remove(course)
+        self.save()
         return self.coursesNeeded

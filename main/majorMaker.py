@@ -10,7 +10,7 @@ def main():
         college = college.lstrip('./apps/college/colleges/')
         college = college.rstrip('.txt')
         college = college.strip()
-        print college
+#        print college
         file = open('./apps/college/colleges/%s.txt' % college, 'r')
         for major in file.readlines():
             major = major.strip()
@@ -23,7 +23,7 @@ def main():
                 degree = name.split(',')[1]
                 degree = degree.strip()
                 degree = degree.split(' ')[0]
-                print 'degree: %s' % degree
+#                print 'degree: %s' % degree
             except:
                 pass
             maj = Major.objects.get(abbr=abbr)
@@ -32,15 +32,18 @@ def main():
             
             #look for the file named maj.abbr + '.txt', parse it, and add the courses to maj.coursesRequired
             try:
-                majorFile = open('./apps/college/majors/%s.txt' % abbr, 'r')
+                pathT ='./apps/college/majors/%s.txt' % abbr
+                majorFile = open(pathT, 'r')
+                print pathT
                 for courseInfo in majorFile.readlines():
                     #parse the line, determine if it's important, add it as a course.
                     if courseInfo == '': #empty line. no data here
                         continue
-                    elif courseInfo[0].isDigit(): #this is a semester number line
+                    elif courseInfo[0].isdigit(): #this is a semester number line
                         continue
                     courseInfo = courseInfo.strip('.') #remove '.' for the varying GEN ED lines
                     courseInfo = courseInfo.split(' ') #split into words
+                    print(courseInfo[0])
                     if courseInfo[0] == 'Total': #first word is Total. Total semester hours
                         continue
                     elif courseInfo[0] == 'Critical:': #critical requirements. this could be useful later.
@@ -48,10 +51,22 @@ def main():
                     #APPROVED, STUDIO ART, GEN ED, why do they do this crap to us?
                     #try to look up a course by college and number.
                     try:
-                        departmentCourses = Department.objects.get(abbr=courseInfo[0]).courses.all()
-                        course = departmentCourses.filter(number=courseInfo[1])[0]
-                        maj.coursesRequired.add(course)
+                        myDept = abbr=courseInfo[0]
+                        myNum = int(courseInfo[1])
+                        print("%s: %s" % (myDept, myNum))
+                        myDept = Department.objects.get(abbr=myDept)
+                        print("deptobj: %s" % myDept)
+                        departmentCourses = myDept.courses
+                        print("deptcourses: %s" % departmentCourses)
+                        course = departmentCourses.filter(number=myNum)[0]
+                        print('course is: %s' % course)
+                        print(maj)
+                        print(len(maj.coursesRequired.filter(number=course.number, title=course.title)))
+                        if(len(maj.coursesRequired.filter(number=course.number, title=course.title)) == 0):
+                            maj.coursesRequired.add(course)
+                            print('added course: %s' % course)
                     except:
+                        print 'oh foo bar'
                         pass
                     maj.save()
                     #course's college = courseInfo[0]
@@ -60,6 +75,7 @@ def main():
                     #print(courseInfo)
                     
             except:
+#                print 'error 2'
                 pass
             
             maj.save()

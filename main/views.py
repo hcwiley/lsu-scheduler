@@ -128,6 +128,7 @@ def coursesWanted(request):
             print student.name
             form = CoursesWanted()
             
+            args = {'coursesWanted' : form, 'scheduledCourse': courses, 'schedule_number': '1'}
             h = []
             for i in range(7,20):
                 h.append(i)
@@ -159,7 +160,6 @@ def coursesWanted(request):
             
             #curStudent.coursesWanted.append(courses)
             
-            #args = {'coursesWanted' : form, 'scheduledCourse': courses, 'schedule_number': 1}
             #html = render('course/scheduleTable.html', args)
             
             print('updated')
@@ -174,6 +174,7 @@ def home(request):
             print 'valid'
             stu = form.save(commit=False)
             form.save()
+            stu.getCoursesNeeded()
             return redirect('/schedule/%s' % stu.id )
             return redirect(stu.get_absolute_url())
     else:
