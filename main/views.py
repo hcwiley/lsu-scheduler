@@ -156,13 +156,14 @@ def coursesWanted(request):
                         continue
                     
                     dayOverlap = False
-                    days = course.pretty_days.split(" ")
-                    otherDays = otherCourse[0].pretty_days.split(" ")
-                    for d in days:
-                        if (otherDays.count(d) > 0):
+                    #days = course.pretty_days.split(" ")
+                    days = course.days
+                    #otherDays = otherCourse[0].pretty_days.split(" ")
+                    #otherDays = otherCourse[0].days
+                    for d in days.all():
+                        if (len(d.course_set.filter(id=otherCourse[0].id))>1):
                             dayOverlap = True
                             break
-                        
                     if (dayOverlap):
                         timeOverlap = False    
                         #if the other section's start time is the same
@@ -205,14 +206,13 @@ def coursesWanted(request):
                 h.append(i)
             print("heading to append schedules")
             for schedule in schedules:
-                args = {'coursesWanted' : form, 'scheduledCourse': schedule, 'schedule_number': str(schedules.index(schedule)+1)}
+                args = {'coursesWanted' : form, 'scheduledCourse': schedule, 'schedule_number': str(schedules.index(schedule)+1), 'conflictingCourses': conflictingCourses}
                 args['hours'] = h
                 args.update(csrf(request))
                 temphtml = render_to_response('course/scheduleTable.html', args)
                 print("+= here")
                 html += str(temphtml)
                 #print(temphtml)
-            print("time to return!")
             return HttpResponse('%s' % html, content_type="text/html")
 
 def evaluateBranch(schedules, conflicts, blackList, branchSchedule):
