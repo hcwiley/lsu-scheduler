@@ -170,13 +170,17 @@ select{
 
 #course-columns .column {
     width: 240px;
-    height: 50%;
+    height: 400px;
     background: #dedede;
+}
+
+#course-columns h3 {
+    min-height: 50px;
 }
 
 #course-columns .courses {
     overflow-y:scroll;
-    height: 95%;
+    max-height: 350px;
 }
 .haze{
     position: absolute;
@@ -193,6 +197,10 @@ select{
         color-stop(1, #a1a1a1)
     );
     opacity: .8;
+}
+.added{
+    opacity: .4;
+    margin-left: 10px;
 }
 .column h3{
     background: #434343;
