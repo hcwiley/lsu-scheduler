@@ -10,7 +10,7 @@ from apps.college.models import *
 
 class Student(models.Model):
     name = models.CharField(max_length=144, help_text='John Doe')
-    id_number = models.IntegerField(default=0, help_text='89#######')
+    id_number = models.IntegerField(default=0, help_text='89#######', null=True, blank=True)
     major = models.ForeignKey(Major)
     minor = models.ForeignKey(Minor, related_name='Minor', null=True, blank=True, default='')
     coursesWanted = models.ManyToManyField(Course, related_name='Wanted_Course', null=True, blank=True, default=None)

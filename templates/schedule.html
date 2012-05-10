@@ -101,7 +101,11 @@
         </div>
     </div>
     <div id='course-columns'>
-        <h5>Click on a course below to add it to you</h5>
+        <div style='height: 40px;'>
+            <h5 style='float:left;width: 300px; background-image: url({{ STATIC_URL }}images/down-arrow.jpg); background-repeat: no-repeat; background-position: 100% 0; height: 30px; padding-right: 10px;'>Click on a course below to add it to your courses wanted.</h5>
+            <h5 style='float:left;margin-left: 70px;  width: 330px; background-image: url({{ STATIC_URL }}images/up-arrow.jpg); background-repeat: no-repeat; background-position: 100% 0;  padding-right: 10px;'> Apply filters to your courses need and the other
+            possible courses with the filters above.</h5>
+        </div>
         <div id='possibleCourses' class='column'>
             <h3 id='possibleTitle'>Filter first</h3>
             <div class='courses'>
@@ -115,7 +119,7 @@
             <div class='courses'>
                 {% for course in student.coursesNeeded.all %}
                 <li pk='{{ course.id }}' onmouseover="displayInfo(this)" onclick="neededClick(this)" class='neededCourse' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
-                    {{ course.abbr }} : {{ course.number }}
+                    {{ course.abbr }} {{ course.number }}
                 </li>
                 <div class='course-info hidden'>
                     {% include 'course/courseInfo.html' with course=course %}
@@ -136,10 +140,9 @@
 </div>
 <div id='schedules'>
     <div>
-    {% include 'course/scheduleTable.html' with schedule_number="1" %}
+        {% include 'course/scheduleTable.html' with schedule_number="1" %}
     </div>
-    <div id='schedule-tabs'>
-    </div>
+    <div id='schedule-tabs'></div>
 </div>
 <form id='coursesWanted' class='hidden'>
     {% csrf_token %}
