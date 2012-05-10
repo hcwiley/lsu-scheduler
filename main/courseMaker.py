@@ -215,7 +215,6 @@ def main(dept):
 		course.special_enrollment = special
 		course.credit_hours = hours
 		course.type = courseType
-		if isNew:
-#			print "saved %s" % course.title
-			course.save()
-		lastCourse = course
+		course.abbr = abbr
+        course.save()
+        lastCourse = course
