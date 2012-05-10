@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	applyFilters();
+	$('#schedule-tabs').append($("#schedule1").next(".scheduleTab"));
 });
 var aTime = 200;
 function filterCollege(col) {
@@ -258,28 +259,38 @@ function neededClick(element) {
 			'selected');
 	$('#id_student_pk').val($("#STUDENT").attr('pk'));
 	$.post('/coursesWanted', $('#coursesWanted').serialize(), function(data) {
-		$('#schedule').html($(data));
-		var num = $(data).attr('id');
-		fillSchedule(num);
+		$('#schedules > div:first-child').html($(data));
+		$('#schedule-tabs').html('');
+		$(data).each(function() {
+			var num = $(this).attr('id');
+			fillSchedule(num);
+		});
 	});
 }
 
 function fillSchedule(num) {
-	$('.scheduledCourse').each(
+	$('#' + num + ' .scheduledCourse').each(
 			function() {
 				course = this;
 				var days = $(course).attr('days');
 				var time = $(course).attr('start');
 				days = days.split(' ');
 				for ( var i = 0; i < days.length; i++) {
-					// console.log($('table [day="' + days[i] + '"][time="' +
-					// time
-					// + '"]'));
-					$(
-							'#' + num + ' table [day="' + days[i] + '"][time="'
+					$("#" + num + ' table [day="' + days[i] + '"][time="'
 									+ time + '"]').text($(course).text());
 				}
+				$('#schedule-tabs').append($("#" + num).next(".scheduleTab"));
 			});
+}
+
+function switchSchedules(num){
+	$('.schedule').stop().animate({
+		opacity: 0
+	},aTime);
+	$('#schedule'+num).stop().animate({
+		opacity: 1
+	},aTime);
+	
 }
 
 function highlightFilter() {

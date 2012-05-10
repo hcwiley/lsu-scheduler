@@ -194,7 +194,7 @@ def coursesWanted(request):
                 args.update(csrf(request))
                 temphtml = render_to_response('course/scheduleTable.html', args)
                 print("+= here")
-                html += str(temphtml)
+                html += str(str(temphtml).strip("Content-Type: text/html; charset=utf-8"))
                 #print(temphtml)
             print("time to return!")
             return HttpResponse('%s' % html, content_type="text/html")

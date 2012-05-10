@@ -15,7 +15,7 @@ html, body {
     float: left;
 }
 #wrapper {
-    width:98%;
+    width: 98%;
     height: 100%;
     margin: 0px auto;
 }
@@ -36,18 +36,18 @@ input {
     background: #cdcdcd;
     font-size: 16px;
 }
-input[type='range']{
+input[type='range'] {
     -webkit-appearance: none;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #fefefe),
-        color-stop(0.49, #dddddd),
-        color-stop(0.51, #d1d1d1),
-        color-stop(1, #a1a1a1)
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #fefefe),
+    color-stop(0.49, #dddddd),
+    color-stop(0.51, #d1d1d1),
+    color-stop(1, #a1a1a1)
     );
     background-repeat: no-repeat;
     background-position: 50%;
@@ -55,10 +55,7 @@ input[type='range']{
 .hidden {
     display: none;
 }
-table, tr, th, td {
-    border: 1px solid black;
-}
-#student-info{
+#student-info {
     width: 100%;
     padding: 8px 0px;
     float: left;
@@ -66,7 +63,7 @@ table, tr, th, td {
     text-align: center;
 }
 
-#schedule-selection-area{
+#schedule-selection-area {
     float: left;
     width: 60%;
     margin: 10px;
@@ -75,24 +72,25 @@ table, tr, th, td {
     float: left;
     margin: 10px;
     width: 35%;
-    text-align:center;
+    text-align: center;
+    position: relative;
 }
 
-#course-info{
+#course-info {
     float: left;
     clear: both;
     margin: 5px 0;
     width: 100%;
     height: 100px;
 }
-#course-info *{
+#course-info * {
     display: inline;
 }
-#course-info h4{
+#course-info h4 {
     margin-right: 2px;
 }
 
-#student-info *{
+#student-info * {
     display: inline-block;
     margin: 0px 5px;
 }
@@ -105,17 +103,17 @@ table, tr, th, td {
     border-left: none;
     border-right: none;
 }
-#schedule-filters > div{
+#schedule-filters > div {
     margin: 0px 5px;
 }
-#schedule-filters > div > div > *{
+#schedule-filters > div > div > * {
     display: inline;
 }
-#slider-filters > div > *:not(h4){
+#slider-filters > div > *:not(h4) {
     float: right;
     font-size: 12px;
 }
-#schedule-filters > #slider-filters{
+#schedule-filters > #slider-filters {
     float: left;
     width: 310px;
     height: 100%;
@@ -126,20 +124,20 @@ table, tr, th, td {
     width: 230px;
     height: 20px;
 }
-#collegeFilters{
+#collegeFilters {
     float: left;
     height: 50px;
     width: 400px;
 }
-select{
+select {
     width: 180px;
     height: 25px;
     font-size: 12px;
 }
-#departmentSelect{
+#departmentSelect {
     width: 60px;
 }
-#majorSelect{
+#majorSelect {
     width: 130px;
 }
 #boolean-days {
@@ -151,10 +149,10 @@ select{
     margin: 0px 3px;
     width: 70px;
 }
-#boolean-days input{
+#boolean-days input {
     float: left;
-    margin: 0 ;
-    display:block;
+    margin: 0;
+    display: block;
 }
 #course-columns {
     width: 75%;
@@ -179,50 +177,84 @@ select{
 }
 
 #course-columns .courses {
-    overflow-y:scroll;
+    overflow-y: scroll;
     max-height: 350px;
 }
-.haze{
+.haze {
     position: absolute;
     z-index: 5;
     bottom: 0px;
     height: 40px;
     width: 100%;
     background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #dedede),
-        color-stop(0.5, #cdcdcd),
-        color-stop(1, #a1a1a1)
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #dedede),
+    color-stop(0.5, #cdcdcd),
+    color-stop(1, #a1a1a1)
     );
     opacity: .8;
 }
-.added{
+.added {
     opacity: .4;
     margin-left: 10px;
 }
-.column h3{
+.column h3 {
     background: #434343;
     color: #fff;
-}    
+}
 
-.schedule{
+.schedule {
+    position: absolute;
     margin: 0px auto;
     width: 500px;
+    height: 675px;
     float: left;
+    display: block;
+}
+#schedule-tabs {
+    position: absolute;
+    top: 680px;
+    width: 500px;
+    height: 30px;
+}
+.scheduleTab {
+    float: left;
+    display: inline-block;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #ededed),
+    color-stop(0.5, #cdcdcd),
+    color-stop(1, #a1a1a1)
+    );
+    width: 70px;
+    height: 30px;
+    margin-right: 3px;
+    border-radius: 0px 0px 5px 5px;
 }
 table {
     width: 480px;
 }
-.leveled{
-    display:none;
+tr, th, td {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
-li{
+tr, td, th {
+    height: 22px;
+    width: 15%;
+}
+.leveled {
+    display: none;
+}
+li {
     list-style: none;
     margin: 5px 0px;
+    font-weight: 500;
 }
-.allCourse:hover, .neededCourse:hover, .wantedCourse:hover{
+.allCourse:hover, .neededCourse:hover, .wantedCourse:hover {
     cursor: pointer;
     opacity: .8;
 }

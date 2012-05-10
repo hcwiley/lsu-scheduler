@@ -135,7 +135,11 @@
     </div>
 </div>
 <div id='schedules'>
-    {% include 'course/scheduleTable.html' %}
+    <div>
+    {% include 'course/scheduleTable.html' with schedule_number="1" %}
+    </div>
+    <div id='schedule-tabs'>
+    </div>
 </div>
 <form id='coursesWanted' class='hidden'>
     {% csrf_token %}
