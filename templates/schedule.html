@@ -1,101 +1,144 @@
 {% extends base_template %}
 {% block center %}
 <script type='text/javascript' src='{{ STATIC_URL }}js/schedule.js'></script>
-<div id='schedule-filters' >
-    <div>
-        <h3 id='STUDENT' pk='{{ student.id }}'> {{student.name}} </h3>
-    </div>
-    <h3>{{department}} Filter Courses</h3>
-    <select  id="collegeSelect" onchange="filterCollege(this)">
-        <option>Select a college to filter</option>
-        {% for college in colleges %}
-        <option pk='{{college.id}}' class='college'>
-            <p>
-                {{college.name}}
-            </p></option>
-        {% endfor %}
-    </select>
-    <select id="departmentSelect" onchange="filterDepartment(this)">
-        <option> ---- </option>
-    </select>
-    <select class='hidden' id='noneDepartments'>
-        {% for department in departments %}
-        <option pk='{{department.id}}' class='department' college='{{department.college}}'>
-            <p>
-                {{department.abbr}}
-            </p></option>
-        {% endfor %}
-    </select>
-    <select  id="majorSelect" onchange="filterMajor(this)">
-        <option>----</option>
-    </select>
-    <select id='noneMajor' class='hidden'>
-        {% for major in majors %}
-        <option class="major" pk='{{major.id}}'' department ="{{major.department.abbr}}">
-            <p>
-                {{major.name}}
-            </p></option>
-        {% endfor %}
-    </select>
-    {% include 'allCollegeForm.html' %}
-    <span id="filterText"> </span>
-    <h4>Start Time</h4>
-    <input class='slider' id='startSlider' type="range" min="0" max="24" onchange="startSliderChange(this.value)" />
-    <span id="startRange">12:00 pm</span>
-    <h4>End Time</h4>
-    <input class='slider' id='endSlider' type="range" min="0" max="24" onchange="endSliderChange(this.value)" />
-    <span id="endRange">12:00 pm</span>
-    <h4>Course Level</h4>
-    <input class='slider' type="range" min="1000" max="8000" step="1000" value="1000" onchange="levelSliderChange(this.value)" />
-    <span id="levelRange">1000</span>
-    <div id='boolean-days'>
-        <h4>No class on</h4>
-        <p>
-            Monday
-        </p>
-        <input type='checkbox' name='M' onchange='booleanDay(this)'/>
-        <p>
-            Tuesday
-        </p>
-        <input type='checkbox' name='T' onchange='booleanDay(this)'/>
-        <p>
-            Wednesday
-        </p>
-        <input type='checkbox' name='W' onchange='booleanDay(this)'/>
-        <p>
-            Thursday
-        </p>
-        <input type='checkbox' name='TH' onchange='booleanDay(this)'/>
-        <p>
-            Friday
-        </p>
-        <input type='checkbox' name='F' onchange='booleanDay(this)'/>
-    </div>
-    <input type="button" id="addButton" onclick="addClick()" value="Add Class"/input>
-    <input type="button" id="removeButton" onclick="removeClick()" value="Remove Class" style="visibility: hidden" /input>
+<div id='student-info'>
+    <h2 id='STUDENT' pk='{{ student.id }}'> {{student.name}} </h2>
+    <h4>{{ student.major }}</h4>
 </div>
-<div id='course-columns'>
-    {% include 'course/courseList.html' %}
-    <div class='column'>
-        <h3>Courses Needed</h3>
-        {% for course in student.coursesNeeded.all %}
-        <li pk='{{ course.id }}' onclick="neededClick(this)" class='courseNeeded' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
-            {{ course.title }}
-        </li>
-        {% endfor %}
+<div id='schedule-selection-area'>
+    <div id='schedule-filters' >
+        <div id='slider-filters'>
+            <div>
+                <h4>Start Time</h4>
+                <p>
+                    apply filter
+                </p>
+                <input type='checkbox' onchange="applyFilters()" checked='checked' id='startB'/>
+            </div>
+            <input class='slider' id='startSlider' type="range" value='0' min="0" max="24" onchange="startSliderChange(this.value)" />
+            <span id="startRange">7:00 am</span>
+            <br>
+            <br>
+            <div>
+                <h4>End Time</h4>
+                <p>
+                    apply filter
+                </p>
+                <input type='checkbox' onchange="applyFilters()" checked='checked' id='endB'/>
+            </div>
+            <input class='slider' id='endSlider' value='24' type="range" min="0" max="24" onchange="endSliderChange(this.value)" />
+            <span id="endRange">19:00 pm</span>
+            <br>
+            <br>
+            <div>
+                <h4>Course Level</h4>
+                <p>
+                    apply filter
+                </p>
+                <input type='checkbox' onchange="applyFilters()" checked='checked' id='startB'/>
+            </div>
+            <input id='levelSlider' class='slider' type="range" min="1000" max="8000" step="1000" value="1000" onchange="levelSliderChange(this.value)" />
+            <span id="levelRange">1000</span>
+        </div>
+        <div id='collegeFilters'>
+            <h3>{{department}} Filter Courses</h3>
+            <select  id="collegeSelect" onchange="filterCollege(this)">
+                <option>Select a college to filter</option>
+                {% for college in colleges %}
+                <option pk='{{college.id}}' class='college'> {{college.name}} </option>
+                {% endfor %}
+            </select>
+            <select id="departmentSelect" onchange="filterDepartment(this)">
+                <option> ---- </option>
+            </select>
+            <select class='hidden' id='noneDepartments'>
+                {% for department in departments %}
+                <option pk='{{department.id}}' class='department' college='{{department.college}}'> {{department.abbr}} </option>
+                {% endfor %}
+            </select>
+            <select  id="majorSelect" onchange="filterMajor(this)">
+                <option>----</option>
+            </select>
+            <select id='noneMajor' class='hidden'>
+                {% for major in majors %}
+                <option class="major" pk='{{major.id}}' department ="{{major.department.abbr}}">{{major.name}} </option>
+                {% endfor %}
+            </select>
+            {% include 'allCollegeForm.html' %}
+        </div>
+        <div id='boolean-days'>
+            <h4>No class on</h4>
+            <div>
+                <p>
+                    Mon
+                </p>
+                <input type='checkbox' name='M' onchange='booleanDay(this)'/>
+            </div>
+            <div>
+                <p>
+                    Tues
+                </p>
+                <input type='checkbox' name='T' onchange='booleanDay(this)'/>
+            </div>
+            <div>
+                <p>
+                    Wed
+                </p>
+                <input type='checkbox' name='W' onchange='booleanDay(this)'/>
+            </div>
+            <div>
+                <p>
+                    Thur
+                </p>
+                <input type='checkbox' name='TH' onchange='booleanDay(this)'/>
+            </div>
+            <div>
+                <p>
+                    Fri
+                </p>
+                <input type='checkbox' name='F' onchange='booleanDay(this)'/>
+            </div>
+        </div>
     </div>
-    <div class='column' id='courses-wanted'>
-        <h3>Courses Wanted</h3>
+    <div id='course-columns'>
+        <h5>Click on a course below to add it to you</h5>
+        <div id='possibleCourses' class='column'>
+            <h3 id='possibleTitle'>Filter first</h3>
+            <div class='courses'>
+                <h4 onmouseover="highlightFilter()">Apply a College Filter to see possible courses</h4>
+            </div>
+            <div class='haze'></div>
+            {% include 'allCollegeForm.html' %}
+        </div>
+        <div class='column'>
+            <h3>Courses you need</h3>
+            <div class='courses'>
+                {% for course in student.coursesNeeded.all %}
+                <li pk='{{ course.id }}' onmouseover="displayInfo(this)" onclick="neededClick(this)" class='neededCourse' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+                    {{ course.title }}
+                </li>
+                <div class='course-info hidden'>
+                    {% include 'course/courseInfo.html' with course=course %}
+                </div>
+                {% endfor %}
+            </div>
+            <div class='haze'></div>
+        </div>
+        <div class='column' id='courses-wanted'>
+            <h3>Courses you Want</h3>
+            <div class='courses'></div>
+            <div class='haze'></div>
+        </div>
+    </div>
+    <div id='course-info'>
+        <h3>Hover over a course to see its additional info</h3>
     </div>
 </div>
-<div id='magic-hat'>
-    <button type="button">
-        Magic Hat!
-    </button>
+<div id='schedules'>
+    {% include 'course/scheduleTable.html' %}
 </div>
-{% include 'course/scheduleTable.html' %}
 <form id='coursesWanted' class='hidden'>
     {% csrf_token %}
     {{ coursesWanted }}
 </form>
-{% endblock %} 
+{% endblock %}

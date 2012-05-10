@@ -14,26 +14,12 @@
         <div id="fb-root"></div>
         {% include "header.html" %}
         <div id='container'>
-            {% block left_nav %}
-            <div id='left-nav'>
-                {% if students %} <h3>students</h3>
-                {% for student in students %} <a href='{{ student.get_absolute_url }}'>
-                <li>
-                    {{ student.name }}
-                </li> </a>
-                {% endfor %}
-                {% endif %}
-            </div>
-            {% endblock %}
-        </div>
-        <div id='wrapper'>
-            <div id='main'>
+            <div id='wrapper'>
                 {% block center %}
                 {% endblock %}
             </div>
-        </div>
-        <div id='right-nav'></div>
-        {% include 'footer.html' %}
+            <div id='right-nav'></div>
+            {% include 'footer.html' %}
         </div>
     </body>
 </html>

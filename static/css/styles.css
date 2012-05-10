@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 html, body {
     height: 100%;
@@ -10,28 +11,19 @@ html, body {
 }
 #container {
     width: 100%;
-    height: auto;
-}
-#left-nav {
+    height: 100%;
     float: left;
-    width: 10%;
-    min-width: 120px;
-    min-height: 200px;
 }
 #wrapper {
-    width: 100%;
-    min-width: 1000px;
-    float: left;
-}
-#main {
-    margin: 0 auto;
-    height: auto;
-    min-height: 500px;
+    width:98%;
+    height: 100%;
+    margin: 0px auto;
 }
 .fields {
     margin-left: 20px;
 }
 .column {
+    position: relative;
     width: 230px;
     float: left;
     margin-right: 20px;
@@ -44,8 +36,21 @@ input {
     background: #cdcdcd;
     font-size: 16px;
 }
-.slider {
-    width: 250px;
+input[type='range']{
+    -webkit-appearance: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #fefefe),
+        color-stop(0.49, #dddddd),
+        color-stop(0.51, #d1d1d1),
+        color-stop(1, #a1a1a1)
+    );
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 .hidden {
     display: none;
@@ -53,42 +58,163 @@ input {
 table, tr, th, td {
     border: 1px solid black;
 }
-#boolean-days {
-    position: relative;
-    left: 400px;
-    top: -100px;
+#student-info{
+    width: 100%;
+    padding: 8px 0px;
+    float: left;
+    background: #CDCDCD;
+    text-align: center;
 }
-#boolean-days p {
+
+#schedule-selection-area{
+    float: left;
+    width: 60%;
+    margin: 10px;
+}
+#schedules {
+    float: left;
+    margin: 10px;
+    width: 35%;
+    text-align:center;
+}
+
+#course-info{
+    float: left;
+    clear: both;
+    margin: 5px 0;
+    width: 100%;
+    height: 100px;
+}
+#course-info *{
     display: inline;
 }
-#boolean-days p {
-    display: inline-block;
+#course-info h4{
+    margin-right: 2px;
 }
+
+#student-info *{
+    display: inline-block;
+    margin: 0px 5px;
+}
+
 #schedule-filters {
-    position: absolute;
-    left: 65px;
-    top: 0px;
-    width: 70%;
+    height: 165px;
+    width: 750px;
+    margin-bottom: 20px;
+    border: 2px solid #CDCDCD;
+    border-left: none;
+    border-right: none;
+}
+#schedule-filters > div{
+    margin: 0px 5px;
+}
+#schedule-filters > div > div > *{
+    display: inline;
+}
+#slider-filters > div > *:not(h4){
+    float: right;
+    font-size: 12px;
+}
+#schedule-filters > #slider-filters{
+    float: left;
+    width: 310px;
+    height: 100%;
+    margin-right: 10px;
+    border-right: 2px solid #CDCDCD;
+}
+.slider {
+    width: 230px;
+    height: 20px;
+}
+#collegeFilters{
+    float: left;
+    height: 50px;
+    width: 400px;
+}
+select{
+    width: 180px;
+    height: 25px;
+    font-size: 12px;
+}
+#departmentSelect{
+    width: 60px;
+}
+#majorSelect{
+    width: 130px;
+}
+#boolean-days {
+    float: left;
+    width: 400px;
+}
+#boolean-days div {
+    display: inline-block;
+    margin: 0px 3px;
+    width: 70px;
+}
+#boolean-days input{
+    float: left;
+    margin: 0 ;
+    display:block;
 }
 #course-columns {
     width: 75%;
-    float: left;
+    top: 300px;
+    left: 0px;
     margin: 20px 0 0 30px;
 }
+
+#course-columns {
+    width: 790px;
+    margin: 0px;
+}
+
 #course-columns .column {
-    width: 300px;
+    width: 240px;
+    height: 50%;
+    background: #dedede;
 }
-#magic-hat {
-    position: absolute;
-    right: 475px;
-    top: 150px;
+
+#course-columns .courses {
+    overflow-y:scroll;
+    height: 95%;
 }
-#schedule {
-    width: 260px;
+.haze{
     position: absolute;
-    right: 175px;
-    top: 0px;
+    z-index: 5;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #dedede),
+        color-stop(0.5, #cdcdcd),
+        color-stop(1, #a1a1a1)
+    );
+    opacity: .8;
+}
+.column h3{
+    background: #434343;
+    color: #fff;
+}    
+
+.schedule{
+    margin: 0px auto;
+    width: 500px;
+    float: left;
 }
 table {
-    width: 300px;
+    width: 480px;
+}
+.leveled{
+    display:none;
+}
+li{
+    list-style: none;
+    margin: 5px 0px;
+}
+.allCourse:hover, .neededCourse:hover, .wantedCourse:hover{
+    cursor: pointer;
+    opacity: .8;
 }
