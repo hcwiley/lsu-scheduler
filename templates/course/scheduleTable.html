@@ -1,13 +1,13 @@
-<div class='schedule' id='schedule{{ schedule_number }}'>
-    <h3>Schedule</h3>
-    <table border="1">
+<div class='schedule' num="{{ schedule_number }}" id='schedule{{ schedule_number }}' {% if schedule_number != '1'%} style='opacity: 0' {% endif %}>
+    <h3>Schedule {{ schedule_number }}</h3>
+    <table>
         <tr>
-            <th></th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
+            <th style="border:none;"></th>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wedn</th>
+            <th>Thur</th>
+            <th>Fri</th>
         </tr>
         {% for i in hours %}
         <tr>
@@ -31,8 +31,13 @@
     <div class='hidden'>
         {% for course in scheduledCourse %}
         <li class='scheduledCourse' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
-            {{ course.title }}
+            {{ course.department_set}} : {{ course.number }}
         </li>
         {% endfor %}
     </div>
 </div>
+{% if schedule_number %}
+<div class='scheduleTab' onclick="switchSchedules({{ schedule_number }})" num={{ schedule_number }}>
+    <h3>{{ schedule_number }}</h3>
+</div>
+{% endif %}

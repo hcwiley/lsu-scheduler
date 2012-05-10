@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	applyFilters();
+	$('#schedule-tabs').append($("#schedule1").next(".scheduleTab"));
 });
+var aTime = 200;
 function filterCollege(col) {
 	var colValue = col.value;
 	if (colValue == 'Select a college to filter') {
@@ -9,47 +11,58 @@ function filterCollege(col) {
 						'<h4 onmouseover="highlightFilter()">Apply a College Filter to see possible courses</h4>');
 		return;
 	}
-	var id = $('#collegeSelect option')[col.selectedIndex];
-	id = $(id).attr('pk');
-	$('.department').each(function() {
-		if ($(this).attr('college') == colValue) {
-			$('#departmentSelect').append(this);
-		} else {
-			$('#noneDepartments').append(this);
-		}
-	});
-	$('#id_college option[selected=selected]').removeAttr('selected');
-	$('#id_department option[selected=selected]').removeAttr('selected');
-	$('#id_major option[selected=selected]').removeAttr('selected');
-	$('#majorSelect > *').html('<input> ---- </input>');
-	$('#id_college option[value=' + id + ']').attr('selected', 'selected');
-	$('#possibleTitle').text(colValue + " courses");
-	$('#collegeSelect').css('background', '#fff');
-	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data) {
-		$('#possibleCourses > div.courses').html(data);
-		applyFilters();
-	});
+	$('#possibleCourses .courses').stop().animate({
+		opacity : 0
+	}, aTime);
+	window.setTimeout(function() {
+		var id = $('#collegeSelect option')[col.selectedIndex];
+		id = $(id).attr('pk');
+		$('.department').each(function() {
+			if ($(this).attr('college') == colValue) {
+				$('#departmentSelect').append(this);
+			} else {
+				$('#noneDepartments').append(this);
+			}
+		});
+		$('#id_college option[selected=selected]').removeAttr('selected');
+		$('#id_department option[selected=selected]').removeAttr('selected');
+		$('#id_major option[selected=selected]').removeAttr('selected');
+		$('#majorSelect > *').html('<input> ---- </input>');
+		$('#id_college option[value=' + id + ']').attr('selected', 'selected');
+		$('#possibleTitle').text(colValue + " courses");
+		$('#collegeSelect').css('background', '#fff');
+		$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(
+				data) {
+			updatePossibleCourses(data);
+		});
+	}, aTime);
 }
 
 function filterDepartment(dept) {
 	var deptValue = dept.value;
-	var id = $('#departmentSelect option')[dept.selectedIndex];
-	id = $(id).attr('pk');
-	$('.major').each(function() {
-		if ($(this).attr('department') == deptValue) {
-			$('#majorSelect').append(this);
-		} else {
-			$('#noneMajor').append(this);
-		}
-	});
-	$('#id_department option[selected=selected]').removeAttr('selected');
-	$('#id_major option[selected=selected]').removeAttr('selected');
-	$('#id_department option[value=' + id + ']').attr('selected', 'selected');
-	$('#possibleTitle').text(deptValue + ' department courses');
-	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data) {
-		$('#possibleCourses > div.courses').html(data);
-		applyFilters();
-	});
+	$('#possibleCourses .courses').stop().animate({
+		opacity : 0
+	}, aTime);
+	window.setTimeout(function() {
+		var id = $('#departmentSelect option')[dept.selectedIndex];
+		id = $(id).attr('pk');
+		$('.major').each(function() {
+			if ($(this).attr('department') == deptValue) {
+				$('#majorSelect').append(this);
+			} else {
+				$('#noneMajor').append(this);
+			}
+		});
+		$('#id_department option[selected=selected]').removeAttr('selected');
+		$('#id_major option[selected=selected]').removeAttr('selected');
+		$('#id_department option[value=' + id + ']').attr('selected',
+				'selected');
+		$('#possibleTitle').text(deptValue + ' department courses');
+		$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(
+				data) {
+			updatePossibleCourses(data);
+		});
+	}, aTime);
 }
 
 function displayInfo(element) {
@@ -59,15 +72,31 @@ function displayInfo(element) {
 function filterMajor(maj) {
 	var majValue = maj.value;
 	var id = $('#majorSelect option')[maj.selectedIndex];
-	id = $(id).attr('pk');
-	$('#id_major option[selected=selected]').removeAttr('selected');
-	$('#id_major option[value=' + id + ']').attr('selected', 'selected');
-	$('#possibleTitle').text(majValue + " required courses");
-	$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(data) {
-		$('#possibleCourses > div.courses').html(data);
-		applyFilters();
-	});
+	$('#possibleCourses .courses').stop().animate({
+		opacity : 0
+	}, aTime);
+	window.setTimeout(function() {
+		id = $(id).attr('pk');
+		$('#id_major option[selected=selected]').removeAttr('selected');
+		$('#id_major option[value=' + id + ']').attr('selected', 'selected');
+		$('#possibleTitle').text(majValue + " required courses");
+		$.post('/allCollegeForm', $('#allCollegeForm').serialize(), function(
+				data) {
+			updatePossibleCourses(data);
+		});
+	}, aTime);
 }
+
+function updatePossibleCourses(data) {
+	var me = $('#possibleCourses .courses');
+	$(me).html(data);
+	$(me).height($(me).parent().height() - $(me).siblings('h3').height());
+	applyFilters();
+	$(me).stop().animate({
+		opacity : 1
+	}, aTime);
+}
+
 var startDate = new Date(2012, 1, 1, 12, 0, 0, 0);
 var endDate = new Date(2012, 1, 1, 12, 0, 0, 0);
 function startSliderChange(newValue) {
@@ -83,28 +112,30 @@ function startSliderChange(newValue) {
 	document.getElementById("startRange").innerHTML = startDate.toTimeString()
 			.substring(0, 5)
 			+ " " + ampm;
-	$('.neededCourse, .allCourse').each(function() {
-		var stime = $(this).attr('start');
-		if (stime !== 'None' && stime !== undefined) {
-			if (stime.match(':')) {
-				var sh = parseInt(stime.split(":")[0]);
-				var sm = stime.split(":")[1];
-				sm = parseInt(sm);
-			}
-			var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
-			if ($('#startB').attr('checked') && (sd < startDate || sd > endDate))
-				$(this).addClass('hidden');
-			else
-				$(this).removeClass('hidden');
-			if (startDate >= endDate) {
-				var i = newValue;
-				if (newValue < 24)
-					i++;
-				$('#endSlider').val(i);
-				endSliderChange(i);
-			}
-		}
-	});
+	$('.neededCourse, .allCourse').each(
+			function() {
+				var stime = $(this).attr('start');
+				if (stime !== 'None' && stime !== undefined) {
+					if (stime.match(':')) {
+						var sh = parseInt(stime.split(":")[0]);
+						var sm = stime.split(":")[1];
+						sm = parseInt(sm);
+					}
+					var sd = new Date(2012, 1, 1, sh, sm, 0, 0);
+					if ($('#startB').attr('checked')
+							&& (sd < startDate || sd > endDate))
+						$(this).addClass('hidden');
+					else
+						$(this).removeClass('hidden');
+					if (startDate >= endDate) {
+						var i = newValue;
+						if (newValue < 24)
+							i++;
+						$('#endSlider').val(i);
+						endSliderChange(i);
+					}
+				}
+			});
 }
 
 function applyFilters() {
@@ -153,19 +184,23 @@ function endSliderChange(newValue) {
 
 function levelSliderChange(newValue) {
 	document.getElementById("levelRange").innerHTML = newValue;
-	$('.allCourse').each(function() {
-		var numb = $(this).attr('num');
-		// document.getElementById("levelRange").innerHTML = numb.charAt(0);
-		if ($('#levelB').attr('checked') || parseInt(numb.charAt(0)) * 1000 == parseInt(newValue)) {
-			if ($(this).hasClass('leveled')) {
-				$(this).removeClass('hidden');
-				$(this).removeClass('leveled');
-			}
-		} else {
-			$(this).addClass('hidden');
-			$(this).addClass('leveled');
-		}
-	});
+	$('.allCourse')
+			.each(
+					function() {
+						var numb = $(this).attr('num');
+						// document.getElementById("levelRange").innerHTML =
+						// numb.charAt(0);
+						if ($('#levelB').attr('checked')
+								|| parseInt(numb.charAt(0)) * 1000 == parseInt(newValue)) {
+							if ($(this).hasClass('leveled')) {
+								$(this).removeClass('hidden');
+								$(this).removeClass('leveled');
+							}
+						} else {
+							$(this).addClass('hidden');
+							$(this).addClass('leveled');
+						}
+					});
 }
 var selectedDays = [];
 function booleanDay(input) {
@@ -202,8 +237,9 @@ function possibleClick(element) {
 	neededClick(element);
 }
 function removeCourse(element) {
-	$('#coursesWanted [value=' + $(element).attr('pk') + ']').removeAttr(
-			'selected');
+	var pk = $(element).attr('pk');
+	$('#coursesWanted [value=' + pk + ']').removeAttr('selected');
+	console.log($('li[pk=' + pk + ']').removeClass('added'));
 	$(element).remove();
 	$('#id_student_pk').val($("#STUDENT").attr('pk'));
 	$.post('/coursesWanted', $('#coursesWanted').serialize(), function(data) {
@@ -213,7 +249,7 @@ function removeCourse(element) {
 	});
 }
 function neededClick(element) {
-	if($(element).hasClass('added'))
+	if ($(element).hasClass('added'))
 		return;
 	$(element).addClass('added');
 	$('#courses-wanted > .courses').append(
@@ -223,28 +259,55 @@ function neededClick(element) {
 			'selected');
 	$('#id_student_pk').val($("#STUDENT").attr('pk'));
 	$.post('/coursesWanted', $('#coursesWanted').serialize(), function(data) {
-		$('#schedule').html($(data));
-		var num = $(data).attr('id');
-		fillSchedule(num);
+		$('#schedules > div:first-child').html($(data));
+		$('#schedule-tabs').html('');
+		$(data).each(function() {
+			var num = $(this).attr('id');
+			fillSchedule(num);
+		});
 	});
 }
 
-function fillSchedule(num) {
-	$('.scheduledCourse').each(
+function fillSchedule(id) {
+	$('#' + id + ' .scheduledCourse').each(
 			function() {
 				course = this;
 				var days = $(course).attr('days');
 				var time = $(course).attr('start');
 				days = days.split(' ');
 				for ( var i = 0; i < days.length; i++) {
-					// console.log($('table [day="' + days[i] + '"][time="' +
-					// time
-					// + '"]'));
-					$(
-							'#' + num + ' table [day="' + days[i] + '"][time="'
+					$("#" + id + ' table [day="' + days[i] + '"][time="'
 									+ time + '"]').text($(course).text());
 				}
+				var tab = $("#" + id).next(".scheduleTab");
+				var num = parseInt($("#" + id).attr('num'));
+				var color = ""
+				switch(num){
+				case 1:
+					color = "255,0,0";
+					break;
+				case 2:
+					color = "0,255,0";
+					break;
+				case 3:
+					color = "0,0,255";
+					break;
+				default:
+					color = "0,0,0";
+				}
+				$(tab).children('*').css('color','rgba('+color+',1)');
+				$('#schedule-tabs').append(tab);
 			});
+}
+
+function switchSchedules(num){
+	$('.schedule').stop().animate({
+		opacity: 0
+	},aTime);
+	$('#schedule'+num).stop().animate({
+		opacity: 1
+	},aTime);
+	
 }
 
 function highlightFilter() {
