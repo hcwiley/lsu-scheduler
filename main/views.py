@@ -138,7 +138,9 @@ def coursesWanted(request):
             #list of tuples (section, otherSection) where there is a conflict
             conflictingCourses = []
             #list of low priority tossed classes
-            tossedCourses = []
+            #tossedCourses = []
+            #list of unique conflicting courses
+            conflictList = []
             print("first pass starting")
             #first pass, separate safe and conflicting courses
             for course in courseBucket:
@@ -154,17 +156,33 @@ def coursesWanted(request):
                 for otherCourse in allCourses:
                     if (otherCourse[0]==course):
                         continue
-                    #if the other section's start time is the same
-                    #TODO: check time 'slot' not time start
-                    if (otherCourse[0].start_time == course.start_time ):
-                        print("found a conflict")
-                        conflictingCourses.append((course, otherCourse[0]))
-                        if (safeCourses.count(course)>0):
-                            safeCourses.remove(course)
-                        print ("removed, moving to check")
-                        if (safeCourses.count(otherCourse[0])>0):
-                            safeCourses.remove(otherCourse[0])
-                            
+                    
+                    dayOverlap = False
+                    #days = course.pretty_days.split(" ")
+                    days = course.days
+                    #otherDays = otherCourse[0].pretty_days.split(" ")
+                    #otherDays = otherCourse[0].days
+                    for d in days.all():
+                        if (len(d.course_set.filter(id=otherCourse[0].id))>1):
+                            dayOverlap = True
+                            break
+                    if (dayOverlap):
+                        timeOverlap = False    
+                        #if the other section's start time is the same
+                        #TODO: check time 'slot' not time start
+                        if (otherCourse[0].start_time <= course.start_time and otherCourse[0].end_time > course.start_time ):
+                            timeOverlap = True
+                        elif (otherCourse[0].start_time >= course.start_time and otherCourse[0].start_time < course.end_time):
+                            timeOverlap = True
+                        if (timeOverlap):
+                            conflictingCourses.append((course, otherCourse[0]))
+                            if (safeCourses.count(course)>0):
+                                safeCourses.remove(course)
+                            print ("removed, moving to check")
+                            if (safeCourses.count(otherCourse[0])>0):
+                                safeCourses.remove(otherCourse[0])
+                                
+                                    
                         #here lies unused priority code
                         #if the other section's priority is higher
                         #if ():
@@ -189,14 +207,21 @@ def coursesWanted(request):
                 h.append(i)
             print("heading to append schedules")
             for schedule in schedules:
-                args = {'coursesWanted' : form, 'scheduledCourse': schedule, 'schedule_number': str(schedules.index(schedule)+1)}
+                args = {'coursesWanted' : form, 'scheduledCourse': schedule, 'schedule_number': str(schedules.index(schedule)+1), 'conflictingCourses': conflictingCourses}
                 args['hours'] = h
                 args.update(csrf(request))
                 temphtml = render_to_response('course/scheduleTable.html', args)
                 print("+= here")
                 html += str(str(temphtml).strip("Content-Type: text/html; charset=utf-8"))
                 #print(temphtml)
-            print("time to return!")
+            for x in conflictingCourses:
+                if (conflictList.count(x[0]) == 0):
+                    conflictList.append(x[0])
+                if (conflictList.count(x[1]) == 0):
+                    conflictList.append(x[1])
+            tempargs = [conflictList]
+            temptemp = render_to_response('course/conflictList.html', tempargs)
+            html += str(str(temptemp).strip("Content-Type: text/html; charset=utf-8"))
             return HttpResponse('%s' % html, content_type="text/html")
 
 def evaluateBranch(schedules, conflicts, blackList, branchSchedule):
