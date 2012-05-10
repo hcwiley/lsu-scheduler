@@ -154,17 +154,33 @@ def coursesWanted(request):
                 for otherCourse in allCourses:
                     if (otherCourse[0]==course):
                         continue
-                    #if the other section's start time is the same
-                    #TODO: check time 'slot' not time start
-                    if (otherCourse[0].start_time == course.start_time ):
-                        print("found a conflict")
-                        conflictingCourses.append((course, otherCourse[0]))
-                        if (safeCourses.count(course)>0):
-                            safeCourses.remove(course)
-                        print ("removed, moving to check")
-                        if (safeCourses.count(otherCourse[0])>0):
-                            safeCourses.remove(otherCourse[0])
-                            
+                    
+                    dayOverlap = False
+                    days = course.pretty_days.split(" ")
+                    otherDays = otherCourse[0].pretty_days.split(" ")
+                    for d in days:
+                        if (otherDays.count(d) > 0):
+                            dayOverlap = True
+                            break
+                        
+                    if (dayOverlap):
+                        timeOverlap = False    
+                        #if the other section's start time is the same
+                        #TODO: check time 'slot' not time start
+                        if (otherCourse[0].start_time <= course.start_time and otherCourse[0].end_time > course.start_time ):
+                            timeOverlap = True
+                        elif (otherCourse[0].start_time >= course.start_time and otherCourse[0].start_time < course.end_time):
+                            timeOverlap = True
+                        if (timeOverlap):
+                            print("found a conflict")
+                            conflictingCourses.append((course, otherCourse[0]))
+                            if (safeCourses.count(course)>0):
+                                safeCourses.remove(course)
+                            print ("removed, moving to check")
+                            if (safeCourses.count(otherCourse[0])>0):
+                                safeCourses.remove(otherCourse[0])
+                                
+                                    
                         #here lies unused priority code
                         #if the other section's priority is higher
                         #if ():
