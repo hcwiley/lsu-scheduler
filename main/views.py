@@ -163,7 +163,7 @@ def coursesWanted(request):
                     #otherDays = otherCourse[0].pretty_days.split(" ")
                     #otherDays = otherCourse[0].days
                     for d in days.all():
-                        if (len(d.course_set.filter(id=otherCourse[0].id))>1):
+                        if (len(d.course_set.filter(id=otherCourse[0].id))>0):
                             dayOverlap = True
                             break
                     if (dayOverlap):

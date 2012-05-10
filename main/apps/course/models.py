@@ -39,6 +39,7 @@ class Course(models.Model):
     pretty_days = models.CharField(max_length=10, blank=True, null=True, default='')
     pretty_start = models.CharField(max_length=10, blank=True, null=True, default='')
     pretty_end = models.CharField(max_length=10, blank=True, null=True, default='')
+    abbr = models.CharField(max_length=4, blank=True, null=True, default='')
     
     class Meta:
         ordering = ['number']
