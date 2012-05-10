@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     width: 100%;
     background: #FFF;
+    overflow: hidden;
 }
 #container {
     width: 100%;
@@ -72,8 +73,10 @@ input[type='range'] {
     float: left;
     margin: 10px;
     width: 35%;
+    height: 100%;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 #course-info {
@@ -218,6 +221,7 @@ select {
     top: 680px;
     width: 500px;
     height: 30px;
+    background: #fff;
 }
 .scheduleTab {
     float: left;

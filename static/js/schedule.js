@@ -301,12 +301,13 @@ function fillSchedule(id) {
 }
 
 function switchSchedules(num){
+	var a = 1000;
 	$('.schedule').stop().animate({
-		opacity: 0
-	},aTime);
+		top: 5000
+	},a);
 	$('#schedule'+num).stop().animate({
-		opacity: 1
-	},aTime);
+		top: 0
+	},a);
 	
 }
 
