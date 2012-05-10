@@ -190,7 +190,7 @@ function levelSliderChange(newValue) {
 						var numb = $(this).attr('num');
 						// document.getElementById("levelRange").innerHTML =
 						// numb.charAt(0);
-						if ($('#levelB').attr('checked')
+						if (!$('#levelB').attr('checked')
 								|| parseInt(numb.charAt(0)) * 1000 == parseInt(newValue)) {
 							if ($(this).hasClass('leveled')) {
 								$(this).removeClass('hidden');

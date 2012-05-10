@@ -115,7 +115,7 @@
             <div class='courses'>
                 {% for course in student.coursesNeeded.all %}
                 <li pk='{{ course.id }}' onmouseover="displayInfo(this)" onclick="neededClick(this)" class='neededCourse' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
-                    {{ course.title }}
+                    {{ course.abbr }} : {{ course.number }}
                 </li>
                 <div class='course-info hidden'>
                     {% include 'course/courseInfo.html' with course=course %}

@@ -1,7 +1,7 @@
 <div>
     {% for course in courses %}
     <li onclick="possibleClick(this)" onmouseover="displayInfo(this)" pk='{{ course.id }}' class='allCourse' num='{{course.number}}' dept='{{ course.department_set }}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
-        {{ course.title }}
+        {{ course.abbr }} : {{ course.number }}
     </li>
     <div class='course-info hidden'>
         {% include 'course/courseInfo.html' with course=course %}
