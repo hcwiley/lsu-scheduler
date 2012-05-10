@@ -156,7 +156,7 @@ function levelSliderChange(newValue) {
 	$('.allCourse').each(function() {
 		var numb = $(this).attr('num');
 		// document.getElementById("levelRange").innerHTML = numb.charAt(0);
-		if (parseInt(numb.charAt(0)) * 1000 == parseInt(newValue)) {
+		if ($('#levelB').attr('checked') || parseInt(numb.charAt(0)) * 1000 == parseInt(newValue)) {
 			if ($(this).hasClass('leveled')) {
 				$(this).removeClass('hidden');
 				$(this).removeClass('leveled');
@@ -213,6 +213,9 @@ function removeCourse(element) {
 	});
 }
 function neededClick(element) {
+	if($(element).hasClass('added'))
+		return;
+	$(element).addClass('added');
 	$('#courses-wanted > .courses').append(
 			$(element).clone().removeAttr('class').attr('onclick',
 					'removeCourse(this)').addClass('wantedCourse'));
