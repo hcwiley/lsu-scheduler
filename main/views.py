@@ -138,7 +138,9 @@ def coursesWanted(request):
             #list of tuples (section, otherSection) where there is a conflict
             conflictingCourses = []
             #list of low priority tossed classes
-            tossedCourses = []
+            #tossedCourses = []
+            #list of unique conflicting courses
+            conflictList = []
             print("first pass starting")
             #first pass, separate safe and conflicting courses
             for course in courseBucket:
@@ -173,7 +175,6 @@ def coursesWanted(request):
                         elif (otherCourse[0].start_time >= course.start_time and otherCourse[0].start_time < course.end_time):
                             timeOverlap = True
                         if (timeOverlap):
-                            print("found a conflict")
                             conflictingCourses.append((course, otherCourse[0]))
                             if (safeCourses.count(course)>0):
                                 safeCourses.remove(course)
@@ -213,6 +214,14 @@ def coursesWanted(request):
                 print("+= here")
                 html += str(str(temphtml).strip("Content-Type: text/html; charset=utf-8"))
                 #print(temphtml)
+            for x in conflictingCourses:
+                if (conflictList.count(x[0]) == 0):
+                    conflictList.append(x[0])
+                if (conflictList.count(x[1]) == 0):
+                    conflictList.append(x[1])
+            tempargs = [conflictList]
+            temptemp = render_to_response('course/conflictList.html', tempargs)
+            html += str(str(temptemp).strip("Content-Type: text/html; charset=utf-8"))
             return HttpResponse('%s' % html, content_type="text/html")
 
 def evaluateBranch(schedules, conflicts, blackList, branchSchedule):
