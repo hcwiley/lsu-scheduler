@@ -268,18 +268,35 @@ function neededClick(element) {
 	});
 }
 
-function fillSchedule(num) {
-	$('#' + num + ' .scheduledCourse').each(
+function fillSchedule(id) {
+	$('#' + id + ' .scheduledCourse').each(
 			function() {
 				course = this;
 				var days = $(course).attr('days');
 				var time = $(course).attr('start');
 				days = days.split(' ');
 				for ( var i = 0; i < days.length; i++) {
-					$("#" + num + ' table [day="' + days[i] + '"][time="'
+					$("#" + id + ' table [day="' + days[i] + '"][time="'
 									+ time + '"]').text($(course).text());
 				}
-				$('#schedule-tabs').append($("#" + num).next(".scheduleTab"));
+				var tab = $("#" + id).next(".scheduleTab");
+				var num = parseInt($("#" + id).attr('num'));
+				var color = ""
+				switch(num){
+				case 1:
+					color = "255,0,0";
+					break;
+				case 2:
+					color = "0,255,0";
+					break;
+				case 3:
+					color = "0,0,255";
+					break;
+				default:
+					color = "0,0,0";
+				}
+				$(tab).children('*').css('color','rgba('+color+',1)');
+				$('#schedule-tabs').append(tab);
 			});
 }
 
