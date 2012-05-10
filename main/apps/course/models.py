@@ -86,9 +86,12 @@ class Course(models.Model):
             if day.day == 'H':
                 day = "TH"
             days += '%s ' % (day)
-        self.pretty_days = days.rstrip(' ')
-        self.pretty_start = self.start_time.strftime("%H:%M")
-        self.pretty_end = self.end_time.strftime("%H:%M")
+        if self.days:
+            self.pretty_days = days.rstrip(' ')
+        if self.start_time:
+            self.pretty_start = self.start_time.strftime("%H:%M")
+        if self.end_time:
+            self.pretty_end = self.end_time.strftime("%H:%M")
         super(Course, self).save(*args, **kwargs)
 #
 #def update_course(modeladmin, request, queryset):

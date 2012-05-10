@@ -31,7 +31,7 @@
     <div class='hidden'>
         {% for course in scheduledCourse %}
         <li class='scheduledCourse' pk='{{course.pk}}' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
-            {{ course.department_set}} : {{ course.number }}
+            {{ course.abbr}} : {{ course.number }}
         </li>
         {% endfor %}
     </div>

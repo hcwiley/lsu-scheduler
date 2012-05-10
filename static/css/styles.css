@@ -66,13 +66,13 @@ input[type='range'] {
 
 #schedule-selection-area {
     float: left;
-    width: 60%;
+    width: 55%;
     margin: 10px;
 }
 #schedules {
     float: left;
     margin: 10px;
-    width: 35%;
+    width: 42%;
     height: 100%;
     text-align: center;
     position: relative;
@@ -211,7 +211,7 @@ select {
 .schedule {
     position: absolute;
     margin: 0px auto;
-    width: 500px;
+    width: 520px;
     height: 675px;
     float: left;
     display: block;
@@ -240,7 +240,7 @@ select {
     border-radius: 0px 0px 5px 5px;
 }
 table {
-    width: 480px;
+    width: 520px;
 }
 tr, th, td {
     border-right: 1px solid black;
@@ -248,7 +248,7 @@ tr, th, td {
 }
 tr, td, th {
     height: 22px;
-    width: 15%;
+    width: 17%;
 }
 .leveled {
     display: none;
