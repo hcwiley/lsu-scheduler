@@ -262,9 +262,18 @@ function neededClick(element) {
 		$('#schedules > div:first-child').html($(data));
 		$('#schedule-tabs').html('');
 		$(data).each(function() {
-			var num = $(this).attr('id');
-			fillSchedule(num);
+			var id = $(this).attr('id');
+			if(id == 'conflictingCourses'){
+				conflictingCourses(this);
+			}
+			fillSchedule(id);
 		});
+	});
+}
+
+function conflictingCourses(div){
+	$(div).children('li').each(function(){
+		$('td[pk='+$(this).attr('pk')+']').addClass('conflict');
 	});
 }
 
@@ -273,11 +282,22 @@ function fillSchedule(id) {
 			function() {
 				course = this;
 				var days = $(course).attr('days');
-				var time = $(course).attr('start');
+				var start = $(course).attr('start');
+				var end = $(course).attr('end');
+				if(end.match(':5'))
+					end.replace(':5',":0");
+				else if(end.match(':2'))
+					end.replace(':2',":3");
 				days = days.split(' ');
 				for ( var i = 0; i < days.length; i++) {
-					$("#" + id + ' table [day="' + days[i] + '"][time="'
-									+ time + '"]').text($(course).text());
+					var table = $("#" + id + ' table [day="' + days[i] + '"][time="'
+							+ start + '"]');
+					$(table).attr('pk',$(course).attr('pk'));
+					$(table).text($(course).text());
+					table = $("#" + id + ' table [day="' + days[i] + '"][time="'
+							+ end + '"]');
+					$(table).attr('pk',$(course).attr('pk'));
+					$(table).text($(course).text());
 				}
 				var tab = $("#" + id).next(".scheduleTab");
 				var num = parseInt($("#" + id).attr('num'));
@@ -301,14 +321,15 @@ function fillSchedule(id) {
 }
 
 function switchSchedules(num){
-	var a = 1000;
+	var a = 700;
 	$('.schedule').stop().animate({
-		top: 5000
+		opacity: 0
 	},a);
+	window.setTimeout(function(){
 	$('#schedule'+num).stop().animate({
-		top: 0
+		opacity: 1
 	},a);
-	
+	}, a/2);
 }
 
 function highlightFilter() {

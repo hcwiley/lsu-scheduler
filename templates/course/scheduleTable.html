@@ -1,4 +1,4 @@
-<div class='schedule' num="{{ schedule_number }}" id='schedule{{ schedule_number }}' {% if schedule_number != '1'%} style='top: 5000' {% endif %}>
+<div class='schedule' num="{{ schedule_number }}" id='schedule{{ schedule_number }}' {% if schedule_number != '1'%} style='opacity: 0' {% endif %}>
     <h3>Schedule {{ schedule_number }}</h3>
     <table>
         <tr>
@@ -30,7 +30,7 @@
     </table>
     <div class='hidden'>
         {% for course in scheduledCourse %}
-        <li class='scheduledCourse' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
+        <li class='scheduledCourse' pk='{{course.pk}}' num='{{course.number}}' days='{{ course.pretty_days }}' start='{{ course.pretty_start }}' end='{{ course.pretty_end }}' href='{{ course.get_absolute_url }}'>
             {{ course.department_set}} : {{ course.number }}
         </li>
         {% endfor %}

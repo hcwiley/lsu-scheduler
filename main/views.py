@@ -163,7 +163,7 @@ def coursesWanted(request):
                     #otherDays = otherCourse[0].pretty_days.split(" ")
                     #otherDays = otherCourse[0].days
                     for d in days.all():
-                        if (len(d.course_set.filter(id=otherCourse[0].id))>1):
+                        if (len(d.course_set.filter(id=otherCourse[0].id))>0):
                             dayOverlap = True
                             break
                     if (dayOverlap):
@@ -176,6 +176,7 @@ def coursesWanted(request):
                             timeOverlap = True
                         if (timeOverlap):
                             conflictingCourses.append((course, otherCourse[0]))
+                            print('conflicting!')
                             if (safeCourses.count(course)>0):
                                 safeCourses.remove(course)
                             print ("removed, moving to check")
@@ -219,7 +220,7 @@ def coursesWanted(request):
                     conflictList.append(x[0])
                 if (conflictList.count(x[1]) == 0):
                     conflictList.append(x[1])
-            tempargs = [conflictList]
+            tempargs = {'courses' : conflictList }
             temptemp = render_to_response('course/conflictList.html', tempargs)
             html += str(str(temptemp).strip("Content-Type: text/html; charset=utf-8"))
             return HttpResponse('%s' % html, content_type="text/html")

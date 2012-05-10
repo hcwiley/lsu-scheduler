@@ -253,6 +253,9 @@ tr, td, th {
 .leveled {
     display: none;
 }
+.conflict{
+    background-color: #ff0000;
+}
 li {
     list-style: none;
     margin: 5px 0px;
