@@ -134,7 +134,7 @@ def coursesWanted(request):
             #list of courseLists to return 
             schedules = []
             #list of (section)s where there is no conflict
-            safeCourses = courseBucket
+            safeCourses = list(courseBucket)
             #list of tuples (section, otherSection) where there is a conflict
             conflictingCourses = []
             #list of low priority tossed classes
@@ -159,10 +159,9 @@ def coursesWanted(request):
                     if (otherCourse[0].start_time == course.start_time ):
                         print("found a conflict")
                         conflictingCourses.append((course, otherCourse[0]))
-                        print("appended to conflicting, moving to remove")
                         if (safeCourses.count(course)>0):
                             safeCourses.remove(course)
-                        print ("removed, moving to check o")
+                        print ("removed, moving to check")
                         if (safeCourses.count(otherCourse[0])>0):
                             safeCourses.remove(otherCourse[0])
                             
@@ -198,7 +197,7 @@ def coursesWanted(request):
                 html += str(temphtml)
                 #print(temphtml)
             print("time to return!")
-            return HttpResponse('%s' % html, content_type="text/plain")
+            return HttpResponse('%s' % html, content_type="text/html")
 
 def evaluateBranch(schedules, conflicts, blackList, branchSchedule):
     print("we are evaluating a branch")
